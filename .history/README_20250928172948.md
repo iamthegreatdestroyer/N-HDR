@@ -1,0 +1,5 @@
+# Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
+**© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED**
+
+This repository contains proprietary technology belonging to the HDR Empire.
+All rights reserved. Unauthorized access, use, or distribution is strictly prohibited.
