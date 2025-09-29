@@ -1,0 +1,340 @@
+Corrrec{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Neural-HDR Documentation Configuration Schema",
+  "description": "Configuration schema for Neural-HDR documentation generator",
+  "type": "object",
+  "required": ["output", "source", "template", "content"],
+  "properties": {
+    "output": {
+      "type": "object",
+      "required": ["path", "formats"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Output directory path"
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["html", "markdown", "json"]
+          },
+          "minItems": 1
+        },
+        "clean": {
+          "type": "boolean",
+          "default": true
+        },
+        "prettify": {
+          "type": "boolean",
+          "default": true
+        },
+        "minify": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Source code directory path"
+        },
+        "include": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclude": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "template": {
+      "type": "object",
+      "required": ["path", "defaultLayout"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Templates directory path"
+        },
+        "defaultLayout": {
+          "type": "string"
+        },
+        "cache": {
+          "type": "boolean",
+          "default": true
+        },
+        "helpers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path"],
+            "properties": {
+              "path": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        },
+        "favicon": {
+          "type": "string"
+        },
+        "navigation": {
+          "type": "object",
+          "properties": {
+            "position": {
+              "type": "string",
+              "enum": ["left", "right", "top"]
+            },
+            "depth": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "footer": {
+          "type": "object",
+          "properties": {
+            "copyright": {
+              "type": "boolean"
+            },
+            "links": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["text", "url"],
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "search": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "minChars": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "maxResults": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "highlightResults": {
+          "type": "boolean",
+          "default": true
+        },
+        "indexVersion": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "properties": {
+        "examples": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "runnable": {
+              "type": "boolean",
+              "default": true
+            },
+            "copyButton": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "diagrams": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "format": {
+              "type": "string",
+              "enum": ["mermaid", "plantuml", "dot"]
+            }
+          }
+        },
+        "apiDocs": {
+          "type": "object",
+          "properties": {
+            "groupByModule": {
+              "type": "boolean",
+              "default": true
+            },
+            "showPrivate": {
+              "type": "boolean",
+              "default": false
+            },
+            "showProtected": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "versioning": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "storage": {
+              "type": "string",
+              "enum": ["git", "database", "file"]
+            },
+            "maxVersions": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "properties": {
+        "concurrent": {
+          "type": "boolean",
+          "default": true
+        },
+        "maxConcurrency": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cache": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true
+            },
+            "path": {
+              "type": "string"
+            }
+          }
+        },
+        "performance": {
+          "type": "object",
+          "properties": {
+            "minify": {
+              "type": "boolean",
+              "default": true
+            },
+            "compress": {
+              "type": "boolean",
+              "default": true
+            },
+            "sourcemaps": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rule", "level"],
+            "properties": {
+              "rule": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string",
+                "enum": ["error", "warning", "info"]
+              }
+            }
+          }
+        },
+        "reporting": {
+          "type": "object",
+          "properties": {
+            "console": {
+              "type": "boolean",
+              "default": true
+            },
+            "file": {
+              "type": "boolean",
+              "default": true
+            },
+            "format": {
+              "type": "string",
+              "enum": ["simple", "detailed", "json"]
+            }
+          }
+        }
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "enabled"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "options": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

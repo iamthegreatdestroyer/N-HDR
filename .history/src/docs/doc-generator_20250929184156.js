@@ -97,7 +97,7 @@ class DocumentationGenerator {
     } catch (error) {
       throw new Error(`Failed to generate usage guides: ${error.message}`);
     }
-  }1080
+  }
   /**
    * Recursively walks a directory to find files
    * @private

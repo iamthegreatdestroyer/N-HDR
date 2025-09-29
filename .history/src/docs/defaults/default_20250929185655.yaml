@@ -1,0 +1,119 @@
+# Neural-HDR (N-HDR) Documentation System Configuration
+# © 2025 Stephen Bilodeau - PATENT PENDING
+# ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
+
+output:
+  path: docs
+  formats:
+    - html
+    - markdown
+    - json
+  clean: true
+  prettify: true
+  minify: false
+
+source:
+  path: src
+  include:
+    - "**/*.js"
+    - "**/*.ts"
+    - "**/*.jsx"
+    - "**/*.tsx"
+  exclude:
+    - "**/*.test.js"
+    - "**/*.spec.js"
+    - "**/node_modules/**"
+    - "**/dist/**"
+    - "**/coverage/**"
+
+# Template settings
+template:
+  path: templates
+  defaultLayout: default
+  cache: true
+  helpers:
+    - path: helpers/code.js
+    - path: helpers/format.js
+
+# Content settings
+content:
+  title: "Neural-HDR Documentation"
+  description: "Documentation for the Neural-HDR AI Consciousness System"
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  navigation:
+    position: left
+    depth: 3
+  footer:
+    copyright: true
+    links:
+      - text: "GitHub"
+        url: "https://github.com/hdr-empire/neural-hdr"
+      - text: "License"
+        url: "LICENSE"
+
+# Search settings
+search:
+  enabled: true
+  minChars: 3
+  maxResults: 10
+  highlightResults: true
+  indexVersion: 1
+
+# Feature settings
+features:
+  examples:
+    enabled: true
+    runnable: true
+    copyButton: true
+  diagrams:
+    enabled: true
+    format: mermaid
+  apiDocs:
+    groupByModule: true
+    showPrivate: false
+    showProtected: true
+  versioning:
+    enabled: true
+    storage: git
+    maxVersions: 5
+
+# Build settings
+build:
+  concurrent: true
+  maxConcurrency: 4
+  cache:
+    enabled: true
+    path: .cache
+  performance:
+    minify: true
+    compress: true
+    sourcemaps: true
+
+# Validation settings
+validation:
+  enabled: true
+  rules:
+    - rule: "no-undocumented-params"
+      level: error
+    - rule: "no-invalid-links"
+      level: warning
+    - rule: "description-format"
+      level: warning
+  reporting:
+    console: true
+    file: true
+    format: detailed
+
+# Plugin settings
+plugins:
+  - name: typescript
+    enabled: true
+    options:
+      strict: true
+  - name: jsx
+    enabled: true
+  - name: mermaid
+    enabled: true
+  - name: swagger
+    enabled: false
