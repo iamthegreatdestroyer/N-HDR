@@ -8,12 +8,11 @@ module.exports = {
   transform: {
     ...tsJestTransformCfg,
   },
-};
-module.exports = {
+};module.exports = {
   transform: {
-    "^.+\\.[tj]sx?$": "babel-jest",
+    '^.+\\.[tj]sx?$': 'babel-jest',
   },
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  testEnvironment: "node",
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.[tj]sx?$",
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  testEnvironment: 'node',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.[tj]sx?$'
 };

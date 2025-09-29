@@ -15,12 +15,6 @@
     "test:security": "node tests/security/security-suite.js",
     "test:quantum": "jest --config=jest.quantum.config.js"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
