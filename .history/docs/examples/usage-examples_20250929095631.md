@@ -1,0 +1,325 @@
+# Neural-HDR (N-HDR) Usage Examples
+
+© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+HDR EMPIRE - CONFIDENTIAL
+
+## Basic Setup
+
+Initialize the NS-HDR system in your application:
+
+```javascript
+const { SwarmController } = require("./ns-hdr-consolidated");
+
+async function initializeSystem() {
+  const controller = new SwarmController();
+  await controller.initialize();
+  return controller;
+}
+```
+
+## Task Processing Examples
+
+### Simple Task Processing
+
+Process a basic task with quantum entropy:
+
+```javascript
+const controller = new SwarmController();
+controller.initialize();
+
+const task = async (entropy) => {
+  // Use quantum entropy for secure operations
+  const result = await someSecureOperation(entropy);
+  return result;
+};
+
+try {
+  const result = await controller.processTask(task);
+  console.log("Task completed:", result);
+} catch (error) {
+  console.error("Task failed:", error);
+}
+```
+
+### Batch Task Processing
+
+Process multiple tasks concurrently:
+
+```javascript
+const tasks = Array(10)
+  .fill()
+  .map((_, i) => async (entropy) => {
+    // Each task gets its own quantum entropy
+    const result = await processDataSecurely(data[i], entropy);
+    return result;
+  });
+
+try {
+  const results = await Promise.all(
+    tasks.map((task) => controller.processTask(task))
+  );
+  console.log("All tasks completed:", results);
+} catch (error) {
+  console.error("Batch processing failed:", error);
+}
+```
+
+## Thermal Management Examples
+
+### Temperature Monitoring
+
+Monitor system temperature and throttling status:
+
+```javascript
+const { ThermalManager } = require("./ns-hdr-consolidated");
+
+function setupThermalMonitoring() {
+  const thermal = new ThermalManager();
+  thermal.startMonitoring();
+
+  // Log temperature every 5 seconds
+  setInterval(() => {
+    const temp = thermal.getCurrentTemperature();
+    const throttled = thermal.isSystemThrottled();
+
+    console.log(`System Temperature: ${temp}°C`);
+    if (throttled) {
+      console.warn("System is throttled due to high temperature");
+    }
+  }, 5000);
+
+  return thermal;
+}
+```
+
+### Adaptive Task Processing
+
+Adjust processing based on thermal conditions:
+
+```javascript
+async function adaptiveProcessing(tasks) {
+  const controller = new SwarmController();
+  controller.initialize();
+
+  const results = [];
+  for (const task of tasks) {
+    if (controller.getStatus().isThrottled) {
+      // Wait for cooldown if system is throttled
+      await new Promise((resolve) =>
+        setTimeout(resolve, CONFIG.thermal.cooldownPeriod)
+      );
+    }
+
+    try {
+      const result = await controller.processTask(task);
+      results.push(result);
+    } catch (error) {
+      console.error("Task failed:", error);
+      results.push(null);
+    }
+  }
+
+  return results;
+}
+```
+
+## Quantum Security Examples
+
+### Secure Key Generation
+
+Generate secure keys using quantum entropy:
+
+```javascript
+const { QuantumEntropyGenerator } = require("./ns-hdr-consolidated");
+
+async function generateSecureKey(length = 32) {
+  const quantum = new QuantumEntropyGenerator();
+
+  // Get quantum entropy
+  const entropy = await quantum.getEntropy(length);
+
+  // Create secure key
+  const key = crypto.createHash("sha256").update(entropy).digest();
+
+  return key;
+}
+```
+
+### Secure Communication Channel
+
+Establish a secure communication channel:
+
+```javascript
+async function createSecureChannel() {
+  const quantum = new QuantumEntropyGenerator();
+
+  // Generate channel key
+  const channelKey = await quantum.getEntropy(32);
+
+  // Create encryption cipher
+  const encrypt = (data) => {
+    const iv = crypto.randomBytes(16);
+    const cipher = crypto.createCipheriv("aes-256-gcm", channelKey, iv);
+
+    const encrypted = Buffer.concat([cipher.update(data), cipher.final()]);
+
+    const tag = cipher.getAuthTag();
+    return { encrypted, iv, tag };
+  };
+
+  // Create decryption decipher
+  const decrypt = (data, iv, tag) => {
+    const decipher = crypto.createDecipheriv("aes-256-gcm", channelKey, iv);
+
+    decipher.setAuthTag(tag);
+    return Buffer.concat([decipher.update(data), decipher.final()]);
+  };
+
+  return { encrypt, decrypt };
+}
+```
+
+## Error Handling Examples
+
+### Task Retry Logic
+
+Implement retry logic for failed tasks:
+
+```javascript
+async function retryTask(task, maxRetries = 3) {
+  const controller = new SwarmController();
+  controller.initialize();
+
+  let attempts = 0;
+  while (attempts < maxRetries) {
+    try {
+      return await controller.processTask(task);
+    } catch (error) {
+      attempts++;
+
+      if (error.message === "System throttled") {
+        // Wait for thermal cooldown
+        await new Promise((resolve) =>
+          setTimeout(resolve, CONFIG.thermal.cooldownPeriod)
+        );
+      } else if (attempts === maxRetries) {
+        throw new Error(
+          `Task failed after ${maxRetries} attempts: ${error.message}`
+        );
+      }
+
+      // Exponential backoff
+      await new Promise((resolve) =>
+        setTimeout(resolve, Math.pow(2, attempts) * 1000)
+      );
+    }
+  }
+}
+```
+
+### System Health Monitoring
+
+Monitor system health and handle issues:
+
+```javascript
+function monitorSystemHealth(controller, interval = 60000) {
+  setInterval(() => {
+    const status = controller.getStatus();
+
+    // Check temperature
+    if (status.temperature > CONFIG.thermal.maxTemperature) {
+      console.error("Critical temperature detected!");
+      // Implement emergency shutdown if needed
+    }
+
+    // Check task queue
+    if (status.queueLength > CONFIG.processing.queueLimit * 0.9) {
+      console.warn("Task queue near capacity!");
+      // Implement queue management
+    }
+
+    // Log system metrics
+    console.log("System Health:", {
+      temperature: status.temperature,
+      isThrottled: status.isThrottled,
+      activeTaskCount: status.activeTaskCount,
+      queueLength: status.queueLength,
+    });
+  }, interval);
+}
+```
+
+## Migration Examples
+
+### System Upgrade
+
+Upgrade from a previous version:
+
+```javascript
+const NSHDRMigrationUtility = require("./ns-hdr-migration-utility");
+
+async function upgradeSystem() {
+  try {
+    const migrator = new NSHDRMigrationUtility({
+      sourceDir: process.cwd(),
+      backupDir: "./backups",
+    });
+
+    // Run migration
+    await migrator.migrate();
+
+    // Initialize new system
+    const controller = new SwarmController();
+    await controller.initialize();
+
+    console.log("System upgrade completed successfully");
+    return controller;
+  } catch (error) {
+    console.error("Upgrade failed:", error);
+    throw error;
+  }
+}
+```
+
+## Testing Examples
+
+### Thermal Load Test
+
+Test system behavior under thermal stress:
+
+```javascript
+const { ThermalTestRunner } = require("../tests/thermal/ns-hdr-thermal-test");
+
+async function runThermalTest() {
+  const runner = new ThermalTestRunner();
+
+  console.log("Starting thermal load test...");
+  await runner.runTests();
+
+  const results = runner.getResults();
+  console.log("Test Results:", results);
+}
+```
+
+### Quantum Security Benchmark
+
+Run quantum security benchmarks:
+
+```javascript
+const {
+  QuantumBenchmarkRunner,
+} = require("../tests/quantum/quantum-security-benchmark");
+
+async function runSecurityBenchmark() {
+  const runner = new QuantumBenchmarkRunner();
+
+  console.log("Starting quantum security benchmark...");
+  const results = await runner.runBenchmark();
+
+  console.log("Benchmark Results:", {
+    entropyQuality: results.summary.averageEntropyQuality,
+    securityScore: results.security.score,
+    recommendations: results.security.analysis.recommendations,
+  });
+}
+```

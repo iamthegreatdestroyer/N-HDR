@@ -1,0 +1,224 @@
+# Neural-HDR (N-HDR) API Reference
+
+© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+HDR EMPIRE - CONFIDENTIAL
+
+## Overview
+
+The Neural-HDR (N-HDR) system provides a revolutionary quantum-enhanced task processing framework with built-in thermal management and security features. This document outlines the core APIs and their usage.
+
+## Core Components
+
+### SwarmController
+
+The main entry point for the NS-HDR system. Manages task processing and system coordination.
+
+```javascript
+const { SwarmController } = require("./ns-hdr-consolidated");
+const controller = new SwarmController();
+controller.initialize();
+```
+
+#### Methods
+
+- `initialize()`: Initialize the NS-HDR system
+- `processTask(task: Function): Promise<any>`: Process a quantum task
+- `getStatus(): Object`: Get current system status
+
+### QuantumEntropyGenerator
+
+Provides quantum-derived entropy for secure operations.
+
+```javascript
+const { QuantumEntropyGenerator } = require("./ns-hdr-consolidated");
+const quantum = new QuantumEntropyGenerator();
+const entropy = await quantum.getEntropy(32);
+```
+
+#### Methods
+
+- `getEntropy(bytes: number): Promise<Buffer>`: Get quantum entropy bytes
+
+### ThermalManager
+
+Manages system temperature and thermal throttling.
+
+```javascript
+const { ThermalManager } = require("./ns-hdr-consolidated");
+const thermal = new ThermalManager();
+thermal.startMonitoring();
+```
+
+#### Methods
+
+- `startMonitoring()`: Start temperature monitoring
+- `isSystemThrottled(): boolean`: Check if system is throttled
+- `getCurrentTemperature(): number`: Get current temperature
+
+### TaskProcessor
+
+Handles quantum-enhanced task processing with thermal management.
+
+```javascript
+const { TaskProcessor } = require("./ns-hdr-consolidated");
+const processor = new TaskProcessor();
+processor.initialize();
+```
+
+#### Methods
+
+- `initialize()`: Initialize the processor
+- `addTask(task: Function): Promise<any>`: Add task to queue
+
+## Configuration
+
+The system can be configured through the `CONFIG` object:
+
+```javascript
+const { CONFIG } = require("./ns-hdr-consolidated");
+
+CONFIG.quantum = {
+  entropyBufferSize: 4096,
+  hashAlgorithm: "sha512",
+  saltLength: 32,
+};
+
+CONFIG.thermal = {
+  maxTemperature: 85,
+  throttleThreshold: 75,
+  pollingInterval: 1000,
+  cooldownPeriod: 5000,
+};
+
+CONFIG.processing = {
+  maxConcurrent: os.cpus().length,
+  queueLimit: 10000,
+  timeoutMs: 30000,
+};
+```
+
+## Usage Examples
+
+### Basic Task Processing
+
+```javascript
+const { SwarmController } = require("./ns-hdr-consolidated");
+
+async function main() {
+  const controller = new SwarmController();
+  controller.initialize();
+
+  // Define a quantum task
+  const task = async (entropy) => {
+    // Use quantum entropy in task
+    const hash = crypto.createHash("sha256").update(entropy).digest("hex");
+    return hash;
+  };
+
+  // Process the task
+  const result = await controller.processTask(task);
+  console.log("Task result:", result);
+}
+```
+
+### Temperature Monitoring
+
+```javascript
+const { ThermalManager } = require("./ns-hdr-consolidated");
+
+async function monitor() {
+  const thermal = new ThermalManager();
+  thermal.startMonitoring();
+
+  setInterval(() => {
+    const temp = thermal.getCurrentTemperature();
+    const throttled = thermal.isSystemThrottled();
+    console.log(`Temperature: ${temp}°C, Throttled: ${throttled}`);
+  }, 1000);
+}
+```
+
+### Quantum Entropy Generation
+
+```javascript
+const { QuantumEntropyGenerator } = require("./ns-hdr-consolidated");
+
+async function generateSecureData() {
+  const quantum = new QuantumEntropyGenerator();
+
+  // Get 32 bytes of quantum entropy
+  const entropy = await quantum.getEntropy(32);
+
+  // Use for encryption keys, nonces, etc.
+  const key = crypto.createHash("sha256").update(entropy).digest();
+
+  return key;
+}
+```
+
+## Security Notes
+
+1. Always use quantum entropy for cryptographic operations
+2. Monitor thermal conditions to prevent side-channel attacks
+3. Keep configuration settings secure
+4. Regular security audits recommended
+
+## Performance Considerations
+
+1. Use appropriate task timeouts
+2. Monitor queue lengths
+3. Implement proper error handling
+4. Consider thermal throttling in task planning
+
+## Error Handling
+
+The system uses async/await pattern with proper error handling:
+
+```javascript
+try {
+  await controller.processTask(task);
+} catch (error) {
+  if (error.message === "Task timeout") {
+    // Handle timeout
+  } else if (error.message === "System throttled") {
+    // Handle thermal throttling
+  } else {
+    // Handle other errors
+  }
+}
+```
+
+## Migration Guide
+
+When upgrading from previous versions:
+
+1. Use the migration utility:
+
+```javascript
+const NSHDRMigrationUtility = require("./ns-hdr-migration-utility");
+const migrator = new NSHDRMigrationUtility();
+await migrator.migrate();
+```
+
+2. Update configuration settings
+3. Test thermal management
+4. Verify quantum security features
+
+## Testing
+
+Run the test suite to verify functionality:
+
+```bash
+npm test              # Run all tests
+npm run test:thermal  # Test thermal management
+npm run test:quantum  # Test quantum security
+```
+
+## Support
+
+For technical support and updates, contact HDR Empire support services.
+
+---
+
+© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+HDR EMPIRE - CONFIDENTIAL
