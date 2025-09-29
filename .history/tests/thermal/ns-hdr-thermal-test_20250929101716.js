@@ -393,11 +393,35 @@ class ThermalTestRunner {
     
     console.log("\nLoad balancing test:", valid ? "PASSED" : "FAILED");
     if (!valid) throw new Error("Thermal load balancing validation failed");
+  } {
+    console.log("\nTesting load balancing...");
+
+    const tasks = [];
+    for (let i = 0; i < 10; i++) {
+      tasks.push(async () => {
+        await this.simulator.simulateLoad(2000);
+        return true;
+      });
+    }
+
+    console.log("Submitting concurrent tasks...");
+    const startTime = Date.now();
+
+    const results = await Promise.all(
+      tasks.map((task) => this.processor.addTask(task))
+    );
+
+    const duration = Date.now() - startTime;
+    console.log("Tasks completed in:", duration, "ms");
+    console.log("Final temperature:", this.simulator.getTemperature());
+
+    const allCompleted = results.every((r) => r === true);
+    console.log("Load balancing test:", allCompleted ? "PASSED" : "FAILED");
   }
 }
 
-// Export test runner
-module.exports = {
-  ThermalTestRunner,
-  THERMAL_CONFIG
-};
+// Run tests if executed directly
+if (require.main === module) {
+  const runner = new ThermalTestRunner();
+  runner.runTests().catch(console.error);
+}
