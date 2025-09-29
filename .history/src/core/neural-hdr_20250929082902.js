@@ -13,7 +13,7 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import CryptoJS from "crypto-js";
+import crypto from "crypto-js";
 import * as tf from "@tensorflow/tfjs";
 import SecurityManager from "./security/security-manager";
 import QuantumProcessor from "./quantum/quantum-processor";
@@ -25,7 +25,7 @@ import config from "../../config/nhdr-config";
  */
 class NeuralHDR {
   constructor() {
-    this.id = CryptoJS.lib.WordArray.random(16).toString();
+    this.id = crypto.lib.WordArray.random(16).toString();
     this.version = config.version;
     this.layers = new Map();
     this.security = new SecurityManager();
@@ -426,47 +426,7 @@ class NeuralHDR {
     };
   }
 
-  /**
-   * Creates a base knowledge layer from weights
-   * @private
-   */
-  _createBaseKnowledgeLayer(weights) {
-    // Convert weights to tensor structure
-    const tensors = [];
-
-    // Process each weight matrix
-    for (const [key, value] of Object.entries(weights)) {
-      // Skip empty or invalid weights
-      if (!value || !value.length) continue;
-
-      // Create tensor from weight matrix
-      const weightTensor = Array.isArray(value)
-        ? tf.tensor(value)
-        : tf.scalar(value);
-
-      tensors.push(weightTensor);
-    }
-
-    // Stack tensors if multiple exist
-    return tensors.length > 1 ? tf.stack(tensors) : tensors[0] || tf.zeros([1]);
-  }
-
-  /**
-   * Parses an NHDR file
-   * @private
-   */
-  _parseNHDRFile(nhdrData) {
-    // Parse file structure
-    const { layers } = JSON.parse(new TextDecoder().decode(nhdrData));
-
-    // Convert to Map
-    const layerMap = new Map();
-    for (const layer of layers) {
-      layerMap.set(layer.index, layer.data);
-    }
-
-    return layerMap;
-  }
+  // Additional private methods would be implemented here
 }
 
 export default NeuralHDR;

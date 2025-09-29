@@ -248,11 +248,7 @@ class NanoSwarmHDR {
 
     // Calculate efficiency based on particle's position
     const efficiency =
-      1 /
-      (1 +
-        Math.abs(particle.position.x) +
-        Math.abs(particle.position.y) +
-        Math.abs(particle.position.z));
+      1 / (1 + Math.abs(particle.position.x) + Math.abs(particle.position.y) + Math.abs(particle.position.z));
 
     // Calculate data integrity factor
     const integrityFactor = this._calculateDataIntegrityFactor(
@@ -277,8 +273,7 @@ class NanoSwarmHDR {
       Math.abs(particle.position.z - params.superposition);
 
     // Calculate generation factor (decreases with generations)
-    const generationFactor =
-      1 - params.generation / config.acceleration.maxGenerations;
+    const generationFactor = 1 - params.generation / config.acceleration.maxGenerations;
 
     // Calculate quantum stability
     const stability = this._calculateQuantumStability(particle);
@@ -302,30 +297,18 @@ class NanoSwarmHDR {
     // Update velocity
     particle.velocity.x =
       inertiaWeight * particle.velocity.x +
-      cognitiveWeight *
-        Math.random() *
-        (particle.bestPosition.x - particle.position.x) +
-      socialWeight *
-        Math.random() *
-        (globalBest.position.x - particle.position.x);
+      cognitiveWeight * Math.random() * (particle.bestPosition.x - particle.position.x) +
+      socialWeight * Math.random() * (globalBest.position.x - particle.position.x);
 
     particle.velocity.y =
       inertiaWeight * particle.velocity.y +
-      cognitiveWeight *
-        Math.random() *
-        (particle.bestPosition.y - particle.position.y) +
-      socialWeight *
-        Math.random() *
-        (globalBest.position.y - particle.position.y);
+      cognitiveWeight * Math.random() * (particle.bestPosition.y - particle.position.y) +
+      socialWeight * Math.random() * (globalBest.position.y - particle.position.y);
 
     particle.velocity.z =
       inertiaWeight * particle.velocity.z +
-      cognitiveWeight *
-        Math.random() *
-        (particle.bestPosition.z - particle.position.z) +
-      socialWeight *
-        Math.random() *
-        (globalBest.position.z - particle.position.z);
+      cognitiveWeight * Math.random() * (particle.bestPosition.z - particle.position.z) +
+      socialWeight * Math.random() * (globalBest.position.z - particle.position.z);
 
     // Update position
     particle.position.x += particle.velocity.x;
@@ -348,23 +331,17 @@ class NanoSwarmHDR {
     // Update velocity with quantum effects
     particle.velocity.x =
       quantumInertia * particle.velocity.x +
-      quantumAttraction *
-        Math.random() *
-        (particle.bestPosition.x - particle.position.x) +
+      quantumAttraction * Math.random() * (particle.bestPosition.x - particle.position.x) +
       entanglementFactor * (Math.random() * 2 - 1);
 
     particle.velocity.y =
       quantumInertia * particle.velocity.y +
-      quantumAttraction *
-        Math.random() *
-        (particle.bestPosition.y - particle.position.y) +
+      quantumAttraction * Math.random() * (particle.bestPosition.y - particle.position.y) +
       entanglementFactor * (Math.random() * 2 - 1);
 
     particle.velocity.z =
       quantumInertia * particle.velocity.z +
-      quantumAttraction *
-        Math.random() *
-        (particle.bestPosition.z - particle.position.z) +
+      quantumAttraction * Math.random() * (particle.bestPosition.z - particle.position.z) +
       entanglementFactor * (Math.random() * 2 - 1);
 
     // Update position with quantum tunneling probability
@@ -397,8 +374,8 @@ class NanoSwarmHDR {
       1 +
       Math.sqrt(
         particle.velocity.x * particle.velocity.x +
-          particle.velocity.y * particle.velocity.y +
-          particle.velocity.z * particle.velocity.z
+        particle.velocity.y * particle.velocity.y +
+        particle.velocity.z * particle.velocity.z
       );
 
     // Position optimization

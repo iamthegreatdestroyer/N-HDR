@@ -13,14 +13,19 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import CryptoJS from "crypto-js";
-import aes from "crypto-js/aes";
-import encBase64 from "crypto-js/enc-base64";
-import encUtf8 from "crypto-js/enc-utf8";
-import pbkdf2 from "crypto-js/pbkdf2";
-import hmacSha512 from "crypto-js/hmac-sha512";
-import sha512 from "crypto-js/sha512";
-import sha256 from "crypto-js/sha256";
+import cryptojs from "crypto-js";
+const {
+  AES,
+  enc,
+  lib,
+  mode,
+  pad,
+  SHA256,
+  SHA512,
+  HmacSHA256,
+  HmacSHA512,
+  PBKDF2
+} = cryptojs;
 import config from "../../../config/nhdr-config";
 
 /**
@@ -48,25 +53,18 @@ class SecurityManager {
     // Convert data to string
     const dataString = JSON.stringify(data);
 
-    // Create IV using CryptoJS.WordArray
-    const iv = CryptoJS.lib.WordArray.random(16);
-
-    // Convert to WordArray for AES
-    const key = CryptoJS.lib.WordArray.random(32);
-
     // Encrypt with AES
-    const encrypted = aes.encrypt(dataString, key, {
-      iv: iv,
-      mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7,
+    const encrypted = AES.encrypt(dataString, layerKey, {
+      mode: mode.GCM,
+      padding: pad.Pkcs7,
     });
 
     // Add integrity hash
-    const integrity = hmacSha512(encrypted.toString(), layerKey);
+    const integrity = HmacSHA512(encrypted.toString(), layerKey);
 
     return {
       data: encrypted.toString(),
-      iv: iv.toString(CryptoJS.enc.Base64),
+      iv: encrypted.iv.toString(),
       integrity: integrity.toString(),
     };
   }
@@ -84,27 +82,21 @@ class SecurityManager {
     const layerKey = this._deriveLayerKey(this.quantumKey, layerIndex);
 
     // Verify integrity
-    const calculatedIntegrity = hmacSha512(
-      encryptedLayer.data,
-      layerKey
-    ).toString();
+    const calculatedIntegrity = HmacSHA512(encryptedLayer.data, layerKey)
+      .toString();
     if (calculatedIntegrity !== encryptedLayer.integrity) {
       throw new Error(`Layer ${layerIndex} integrity check failed`);
     }
 
-    // Convert key to WordArray
-    const key = CryptoJS.enc.Utf8.parse(layerKey);
-    const iv = CryptoJS.enc.Base64.parse(encryptedLayer.iv);
-
     // Decrypt data
-    const decrypted = aes.decrypt(encryptedLayer.data, key, {
-      iv: iv,
-      mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7,
+    const decrypted = AES.decrypt(encryptedLayer.data, layerKey, {
+      iv: enc.Hex.parse(encryptedLayer.iv),
+      mode: mode.GCM,
+      padding: pad.Pkcs7,
     });
 
     // Parse JSON
-    return JSON.parse(decrypted.toString(CryptoJS.enc.Utf8));
+    return JSON.parse(decrypted.toString(enc.Utf8));
   }
 
   /**
@@ -149,10 +141,8 @@ class SecurityManager {
     const { integrity, header, layers } = nhdrFile;
 
     // Verify header integrity
-    const headerIntegrity = CryptoJS.HmacSHA512(
-      JSON.stringify(header),
-      this.quantumKey
-    ).toString();
+    const headerIntegrity = HmacSHA512(JSON.stringify(header), this.quantumKey)
+      .toString();
 
     if (headerIntegrity !== integrity.headerIntegrity) {
       console.warn("Header integrity check failed");
@@ -163,10 +153,7 @@ class SecurityManager {
     for (const layer of layers) {
       // Verify each layer
       const layerKey = this._deriveLayerKey(this.quantumKey, layer.index);
-      const layerIntegrity = CryptoJS.HmacSHA512(
-        layer.data,
-        layerKey
-      ).toString();
+      const layerIntegrity = HmacSHA512(layer.data, layerKey).toString();
 
       if (layerIntegrity !== layer.integrity) {
         console.warn(`Layer ${layer.index} integrity check failed`);
@@ -190,17 +177,13 @@ class SecurityManager {
 
     for (const layer of layers) {
       const layerKey = this._deriveLayerKey(this.quantumKey, layer.index);
-      layerIntegrity[layer.index] = CryptoJS.HmacSHA512(
-        layer.data.toString(),
-        layerKey
-      ).toString();
+      layerIntegrity[layer.index] = HmacSHA512(layer.data.toString(), layerKey)
+        .toString();
     }
 
     // Create header integrity
-    const headerIntegrity = CryptoJS.HmacSHA512(
-      JSON.stringify(this._createFileHeader()),
-      this.quantumKey
-    ).toString();
+    const headerIntegrity = HmacSHA512(JSON.stringify(this._createFileHeader()), this.quantumKey)
+      .toString();
 
     return {
       layerIntegrity,
@@ -216,7 +199,7 @@ class SecurityManager {
    */
   generateBiometricHash() {
     // In a real implementation, this would use actual biometric data
-    return CryptoJS.SHA256("user-biometric-template").toString();
+    return SHA256("user-biometric-template").toString();
   }
 
   /**
@@ -228,14 +211,12 @@ class SecurityManager {
     console.log("Securing shared consciousness pool...");
 
     // Encrypt the pool
-    const poolKey = CryptoJS.lib.WordArray.random(32);
-    const encrypted = CryptoJS.AES.encrypt(
+    const poolKey = lib.WordArray.random(32);
+    const encrypted = AES.encrypt(
       JSON.stringify(sharedPool),
       poolKey.toString(),
       {
-        mode: CryptoJS.mode.GCM,
-        padding: CryptoJS.pad.Pkcs7,
-        iv: CryptoJS.lib.WordArray.random(16),
+        mode: mode.GCM,
       }
     );
 
@@ -257,7 +238,7 @@ class SecurityManager {
    */
   _generateQuantumKey() {
     // In a real quantum implementation, this would use quantum random number generation
-    return CryptoJS.lib.WordArray.random(32).toString(CryptoJS.enc.Base64);
+    return lib.WordArray.random(32).toString();
   }
 
   /**
@@ -265,13 +246,13 @@ class SecurityManager {
    * @private
    */
   _deriveLayerKey(masterKey, layerIndex) {
-    const salt = CryptoJS.enc.Utf8.parse(`nhdr-layer-${layerIndex}`);
-    const masterKeyWA = CryptoJS.enc.Base64.parse(masterKey);
+    const salt = `nhdr-layer-${layerIndex}`;
 
-    return pbkdf2(masterKeyWA, salt, {
-      keySize: 256 / 32, // 256-bit key
-      iterations: config.security.encryption.iterations || 1000,
-    }).toString(CryptoJS.enc.Base64);
+    return PBKDF2(masterKey, salt, {
+        keySize: 8,
+        iterations: config.security.encryption.iterations / 100, // Reduced for demo
+      })
+      .toString();
   }
 
   /**
@@ -280,7 +261,7 @@ class SecurityManager {
    */
   _hashBiometric(biometric) {
     // In reality, this would use specialized biometric hashing
-    return sha512(JSON.stringify(biometric)).toString(CryptoJS.enc.Base64);
+    return SHA512(JSON.stringify(biometric)).toString();
   }
 
   /**
@@ -291,32 +272,16 @@ class SecurityManager {
     // This is a simplified similarity calculation
     // Real biometric systems use more sophisticated methods
 
-    // Convert base64 to byte arrays for comparison
-    const bytes1 = CryptoJS.enc.Base64.parse(hash1);
-    const bytes2 = CryptoJS.enc.Base64.parse(hash2);
-
-    // Compare bytes
-    let matchingBytes = 0;
-    const words1 = bytes1.words;
-    const words2 = bytes2.words;
-    const length = Math.min(words1.length, words2.length);
+    let matchingChars = 0;
+    const length = Math.min(hash1.length, hash2.length);
 
     for (let i = 0; i < length; i++) {
-      // XOR the words and count matching bits
-      const xor = words1[i] ^ words2[i];
-      matchingBytes += this._countMatchingBits(xor);
+      if (hash1[i] === hash2[i]) {
+        matchingChars++;
+      }
     }
 
-    return matchingBytes / (length * 32); // 32 bits per word
-  }
-
-  _countMatchingBits(n) {
-    n = n - ((n >> 1) & 0x55555555);
-    n = (n & 0x33333333) + ((n >> 2) & 0x33333333);
-    n = (n + (n >> 4)) & 0x0f0f0f0f;
-    n = n + (n >> 8);
-    n = n + (n >> 16);
-    return 32 - (n & 0x3f); // Number of 0 bits = matching bits
+    return matchingChars / length;
   }
 
   /**
@@ -326,8 +291,8 @@ class SecurityManager {
   _generateQuantumVerification() {
     // In a real quantum system, this would use quantum properties
     return {
-      entanglement: CryptoJS.lib.WordArray.random(16).toString(),
-      superposition: CryptoJS.lib.WordArray.random(16).toString(),
+      entanglement: lib.WordArray.random(16).toString(),
+      superposition: lib.WordArray.random(16).toString(),
       timestamp: Date.now(),
     };
   }
@@ -351,9 +316,9 @@ class SecurityManager {
    */
   _createAccessControl(key) {
     // Create access tokens for different security levels
-    const readToken = CryptoJS.HmacSHA256(key.toString(), "read").toString();
-    const writeToken = CryptoJS.HmacSHA256(key.toString(), "write").toString();
-    const adminToken = CryptoJS.HmacSHA256(key.toString(), "admin").toString();
+    const readToken = HmacSHA256(key.toString(), "read").toString();
+    const writeToken = HmacSHA256(key.toString(), "write").toString();
+    const adminToken = HmacSHA256(key.toString(), "admin").toString();
 
     return {
       read: readToken,

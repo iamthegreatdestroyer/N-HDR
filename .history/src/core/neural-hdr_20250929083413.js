@@ -433,14 +433,14 @@ class NeuralHDR {
   _createBaseKnowledgeLayer(weights) {
     // Convert weights to tensor structure
     const tensors = [];
-
+    
     // Process each weight matrix
     for (const [key, value] of Object.entries(weights)) {
       // Skip empty or invalid weights
       if (!value || !value.length) continue;
 
       // Create tensor from weight matrix
-      const weightTensor = Array.isArray(value)
+      const weightTensor = Array.isArray(value) 
         ? tf.tensor(value)
         : tf.scalar(value);
 
@@ -448,7 +448,9 @@ class NeuralHDR {
     }
 
     // Stack tensors if multiple exist
-    return tensors.length > 1 ? tf.stack(tensors) : tensors[0] || tf.zeros([1]);
+    return tensors.length > 1
+      ? tf.stack(tensors)
+      : tensors[0] || tf.zeros([1]);
   }
 
   /**
@@ -457,7 +459,9 @@ class NeuralHDR {
    */
   _parseNHDRFile(nhdrData) {
     // Parse file structure
-    const { layers } = JSON.parse(new TextDecoder().decode(nhdrData));
+    const { layers } = JSON.parse(
+      new TextDecoder().decode(nhdrData)
+    );
 
     // Convert to Map
     const layerMap = new Map();

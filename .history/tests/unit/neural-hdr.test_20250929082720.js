@@ -15,7 +15,7 @@
 
 import NeuralHDR from "../../src/core/neural-hdr";
 import SecurityManager from "../../src/core/security/security-manager";
-import QuantumProcessor from "../../src/core/quantum/quantum-processor";
+import { QuantumProcessor } from "../../src/core/quantum/quantum-processor";
 import config from "../../config/nhdr-config";
 
 describe("NeuralHDR Core Tests", () => {

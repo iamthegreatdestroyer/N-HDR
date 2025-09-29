@@ -14,13 +14,13 @@
  */
 
 import CryptoJS from "crypto-js";
-import aes from "crypto-js/aes";
-import encBase64 from "crypto-js/enc-base64";
-import encUtf8 from "crypto-js/enc-utf8";
-import pbkdf2 from "crypto-js/pbkdf2";
-import hmacSha512 from "crypto-js/hmac-sha512";
-import sha512 from "crypto-js/sha512";
-import sha256 from "crypto-js/sha256";
+import aes from 'crypto-js/aes';
+import encBase64 from 'crypto-js/enc-base64';
+import encUtf8 from 'crypto-js/enc-utf8';
+import pbkdf2 from 'crypto-js/pbkdf2';
+import hmacSha512 from 'crypto-js/hmac-sha512';
+import sha512 from 'crypto-js/sha512';
+import sha256 from 'crypto-js/sha256';
 import config from "../../../config/nhdr-config";
 
 /**
@@ -58,7 +58,7 @@ class SecurityManager {
     const encrypted = aes.encrypt(dataString, key, {
       iv: iv,
       mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7,
+      padding: CryptoJS.pad.Pkcs7
     });
 
     // Add integrity hash
@@ -67,7 +67,7 @@ class SecurityManager {
     return {
       data: encrypted.toString(),
       iv: iv.toString(CryptoJS.enc.Base64),
-      integrity: integrity.toString(),
+      integrity: integrity.toString()
     };
   }
 
@@ -84,10 +84,8 @@ class SecurityManager {
     const layerKey = this._deriveLayerKey(this.quantumKey, layerIndex);
 
     // Verify integrity
-    const calculatedIntegrity = hmacSha512(
-      encryptedLayer.data,
-      layerKey
-    ).toString();
+    const calculatedIntegrity = hmacSha512(encryptedLayer.data, layerKey)
+      .toString();
     if (calculatedIntegrity !== encryptedLayer.integrity) {
       throw new Error(`Layer ${layerIndex} integrity check failed`);
     }
@@ -100,7 +98,7 @@ class SecurityManager {
     const decrypted = aes.decrypt(encryptedLayer.data, key, {
       iv: iv,
       mode: CryptoJS.mode.CBC,
-      padding: CryptoJS.pad.Pkcs7,
+      padding: CryptoJS.pad.Pkcs7
     });
 
     // Parse JSON
@@ -149,10 +147,8 @@ class SecurityManager {
     const { integrity, header, layers } = nhdrFile;
 
     // Verify header integrity
-    const headerIntegrity = CryptoJS.HmacSHA512(
-      JSON.stringify(header),
-      this.quantumKey
-    ).toString();
+    const headerIntegrity = CryptoJS.HmacSHA512(JSON.stringify(header), this.quantumKey)
+      .toString();
 
     if (headerIntegrity !== integrity.headerIntegrity) {
       console.warn("Header integrity check failed");
@@ -163,10 +159,7 @@ class SecurityManager {
     for (const layer of layers) {
       // Verify each layer
       const layerKey = this._deriveLayerKey(this.quantumKey, layer.index);
-      const layerIntegrity = CryptoJS.HmacSHA512(
-        layer.data,
-        layerKey
-      ).toString();
+      const layerIntegrity = CryptoJS.HmacSHA512(layer.data, layerKey).toString();
 
       if (layerIntegrity !== layer.integrity) {
         console.warn(`Layer ${layer.index} integrity check failed`);
@@ -190,17 +183,13 @@ class SecurityManager {
 
     for (const layer of layers) {
       const layerKey = this._deriveLayerKey(this.quantumKey, layer.index);
-      layerIntegrity[layer.index] = CryptoJS.HmacSHA512(
-        layer.data.toString(),
-        layerKey
-      ).toString();
+      layerIntegrity[layer.index] = CryptoJS.HmacSHA512(layer.data.toString(), layerKey)
+        .toString();
     }
 
     // Create header integrity
-    const headerIntegrity = CryptoJS.HmacSHA512(
-      JSON.stringify(this._createFileHeader()),
-      this.quantumKey
-    ).toString();
+    const headerIntegrity = CryptoJS.HmacSHA512(JSON.stringify(this._createFileHeader()), this.quantumKey)
+      .toString();
 
     return {
       layerIntegrity,
@@ -235,7 +224,7 @@ class SecurityManager {
       {
         mode: CryptoJS.mode.GCM,
         padding: CryptoJS.pad.Pkcs7,
-        iv: CryptoJS.lib.WordArray.random(16),
+        iv: CryptoJS.lib.WordArray.random(16)
       }
     );
 
@@ -269,9 +258,10 @@ class SecurityManager {
     const masterKeyWA = CryptoJS.enc.Base64.parse(masterKey);
 
     return pbkdf2(masterKeyWA, salt, {
-      keySize: 256 / 32, // 256-bit key
-      iterations: config.security.encryption.iterations || 1000,
-    }).toString(CryptoJS.enc.Base64);
+        keySize: 256/32, // 256-bit key
+        iterations: config.security.encryption.iterations || 1000
+      })
+      .toString(CryptoJS.enc.Base64);
   }
 
   /**
