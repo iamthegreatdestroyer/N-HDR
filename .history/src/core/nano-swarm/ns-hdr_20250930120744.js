@@ -737,12 +737,9 @@ class NanoSwarmHDR {
    */
   _clampQuantumPosition(position, params) {
     const quantumRange = 1 + params.superposition;
-    const clampedPosition = {
-      x: Math.max(-quantumRange, Math.min(quantumRange, position.x)),
-      y: Math.max(-quantumRange, Math.min(quantumRange, position.y)),
-      z: Math.max(-quantumRange, Math.min(quantumRange, position.z))
-    };
-    return clampedPosition;
+    position.x = Math.max(-quantumRange, Math.min(quantumRange, position.x));
+    position.y = Math.max(-quantumRange, Math.min(quantumRange, position.y));
+    position.z = Math.max(-quantumRange, Math.min(quantumRange, position.z));
   }
 
   /**
@@ -792,7 +789,7 @@ class NanoSwarmHDR {
 
     for (const target of targets) {
       const amplitude = state.superposition[target];
-      newState.superposition[target] = amplitude * Math.exp(Complex.I * angle);
+      newState.superposition[target] = amplitude * Math.exp(1i * angle);
     }
 
     return newState;

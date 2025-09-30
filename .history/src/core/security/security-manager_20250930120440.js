@@ -32,7 +32,7 @@ class SecurityManager {
     this.quantumKey = this._generateQuantumKey();
     this.biometricData = new Map();
     this.accessLog = [];
-
+    
     // Initialize biometric authentication system
     this._initializeBiometrics();
   }
@@ -159,20 +159,6 @@ class SecurityManager {
     // Convert key to WordArray
     const key = CryptoJS.enc.Utf8.parse(layerKey);
     const iv = CryptoJS.enc.Base64.parse(encryptedLayer.iv);
-    const authTag = CryptoJS.enc.Base64.parse(encryptedLayer.authTag);
-
-    // Set authentication tag for GCM mode
-    const cipherParams = CryptoJS.lib.CipherParams.create({
-      ciphertext: CryptoJS.enc.Base64.parse(encryptedLayer.data),
-      iv: iv,
-      salt: null,
-      algorithm: CryptoJS.algo.AES,
-      mode: CryptoJS.mode.GCM,
-      padding: CryptoJS.pad.Pkcs7,
-      blockSize: 4,
-      formatter: CryptoJS.format.OpenSSL,
-    });
-    cipherParams.setAuthTag(authTag);
 
     // Decrypt data
     const decrypted = aes.decrypt(encryptedLayer.data, key, {
@@ -439,116 +425,6 @@ class SecurityManager {
       admin: adminToken,
       expires: Date.now() + 24 * 60 * 60 * 1000, // 24 hours
     };
-  }
-
-  /**
-   * Process biometric data
-   * @private
-   * @param {string} type - Type of biometric data
-   * @param {Object} data - Raw biometric data
-   * @returns {Promise<Object>} - Processed template
-   */
-  async _processBiometricData(type, data) {
-    // Extract features based on biometric type
-    const features = await this._extractBiometricFeatures(type, data);
-
-    // Create template
-    return {
-      type,
-      features,
-      createdAt: Date.now(),
-      hash: sha256(JSON.stringify(features)).toString(),
-    };
-  }
-
-  /**
-   * Match a biometric sample against stored template
-   * @private
-   * @param {string} type - Type of biometric data
-   * @param {Object} sample - Current sample
-   * @param {Object} template - Stored template
-   * @returns {Promise<number>} - Match score (0-1)
-   */
-  async _matchBiometricSample(type, sample, template) {
-    // Extract features from sample
-    const sampleFeatures = await this._extractBiometricFeatures(type, sample);
-
-    // Compare features
-    const matchScore = await this._compareBiometricFeatures(
-      type,
-      sampleFeatures,
-      template.features
-    );
-
-    return matchScore;
-  }
-
-  /**
-   * Extract features from biometric data
-   * @private
-   * @param {string} type - Type of biometric data
-   * @param {Object} data - Raw biometric data
-   * @returns {Promise<Object>} - Extracted features
-   */
-  async _extractBiometricFeatures(type, data) {
-    switch (type) {
-      case "fingerprint":
-        return this._extractFingerprintFeatures(data);
-      case "retina":
-        return this._extractRetinaFeatures(data);
-      case "voice":
-        return this._extractVoiceFeatures(data);
-      default:
-        throw new Error(`Unsupported biometric type: ${type}`);
-    }
-  }
-
-  /**
-   * Compare biometric features
-   * @private
-   * @param {string} type - Type of biometric data
-   * @param {Object} sample - Sample features
-   * @param {Object} template - Template features
-   * @returns {Promise<number>} - Match score (0-1)
-   */
-  async _compareBiometricFeatures(type, sample, template) {
-    switch (type) {
-      case "fingerprint":
-        return this._compareFingerprintFeatures(sample, template);
-      case "retina":
-        return this._compareRetinaFeatures(sample, template);
-      case "voice":
-        return this._compareVoiceFeatures(sample, template);
-      default:
-        throw new Error(`Unsupported biometric type: ${type}`);
-    }
-  }
-
-  /**
-   * Log access attempt
-   * @private
-   * @param {boolean} successful - Whether access was granted
-   */
-  _logAccessAttempt(successful) {
-    this.accessLog.push({
-      timestamp: Date.now(),
-      successful,
-      ip: "127.0.0.1", // Replace with actual IP
-      biometricTypes: Array.from(this.biometricData.keys()),
-    });
-  }
-
-  /**
-   * Update combined biometric hash
-   * @private
-   */
-  _updateBiometricHash() {
-    const templates = Array.from(this.biometricData.values())
-      .filter((t) => t !== null)
-      .map((t) => t.hash)
-      .join("");
-
-    this.biometricHash = sha512(templates).toString();
   }
 }
 

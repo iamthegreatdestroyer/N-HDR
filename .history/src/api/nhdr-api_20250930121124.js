@@ -55,23 +55,8 @@ const NanoSwarmHDR = require("../core/nano-swarm/ns-hdr");
 
 class NeuralHDRApi {
   constructor(config) {
-    this.config = config;
     this.nhdr = new NeuralHDR(config);
     this.nsHdr = new NanoSwarmHDR(config);
-
-    // Bind methods
-    this._authenticate = this._authenticate.bind(this);
-    this._errorHandler = this._errorHandler.bind(this);
-    this._captureConsciousness = this._captureConsciousness.bind(this);
-    this._restoreConsciousness = this._restoreConsciousness.bind(this);
-    this._mergeConsciousness = this._mergeConsciousness.bind(this);
-    this._createSharedPool = this._createSharedPool.bind(this);
-    this._accelerateConsciousness = this._accelerateConsciousness.bind(this);
-    this._createNetwork = this._createNetwork.bind(this);
-    this._getSwarmStatus = this._getSwarmStatus.bind(this);
-    this._healthCheck = this._healthCheck.bind(this);
-
-    // Create router
     this.router = this._setupRouter();
   }
 
@@ -192,136 +177,101 @@ class NeuralHDRApi {
   };
 
 /**
-   * Create shared consciousness pool
-   * POST /api/v1/consciousness/pool
-   */
-  _createSharedPool = async (req, res) => {
-    try {
-      const sharedPool = await this.nhdr.createSharedConsciousness();
-      res.json(sharedPool);
-    } catch (error) {
-      console.error("Failed to create shared consciousness pool:", error);
-      res.status(500).json({
-        error: "Failed to create consciousness pool",
-        message: error.message,
-      });
-    }
-  };
+ * Create shared consciousness pool
+ * POST /api/v1/consciousness/pool
+ */
+app.post("/api/v1/consciousness/pool", authenticate, async (req, res) => {
+  try {
+    const sharedPool = await nhdr.createSharedConsciousness();
+    res.json(sharedPool);
+  } catch (error) {
+    console.error("Failed to create shared consciousness pool:", error);
+    res.status(500).json({
+      error: "Failed to create consciousness pool",
+      message: error.message,
+    });
+  }
+});
 
 /**
-   * Accelerate consciousness processing
-   * POST /api/v1/swarm/accelerate
-   */
-  _accelerateConsciousness = async (req, res) => {
-    try {
-      const { consciousnessData } = req.body;
-      if (!consciousnessData) {
-        return res.status(400).json({
-          error: "Invalid request",
-          message: "Consciousness data is required",
-        });
-      }
-
-      const accelerated = await this.nsHdr.accelerateProcessing(consciousnessData);
-      res.json({
-        success: true,
-        accelerated,
-      });
-    } catch (error) {
-      console.error("Acceleration failed:", error);
-      res.status(500).json({
-        error: "Acceleration failed",
-        message: error.message,
+ * Accelerate consciousness processing
+ * POST /api/v1/swarm/accelerate
+ */
+app.post("/api/v1/swarm/accelerate", authenticate, async (req, res) => {
+  try {
+    const { consciousnessData } = req.body;
+    if (!consciousnessData) {
+      return res.status(400).json({
+        error: "Invalid request",
+        message: "Consciousness data is required",
       });
     }
-  };
 
-  /**
-   * Create NS-HDR processing network
-   * POST /api/v1/swarm/network
-   */
-  _createNetwork = async (req, res) => {
-    try {
-      const network = await this.nsHdr.createProcessingNetwork();
-      res.json({
-        success: true,
-        network,
-      });
-    } catch (error) {
-      console.error("Network creation failed:", error);
-      res.status(500).json({
-        error: "Network creation failed",
-        message: error.message,
-      });
-    }
-  };
-
-  /**
-   * Get swarm status
-   * GET /api/v1/swarm/status
-   */
-  _getSwarmStatus = async (req, res) => {
-    try {
-      const swarmStatus = this.nsHdr.getStatus();
-      res.json(swarmStatus);
-    } catch (error) {
-      console.error("Failed to get swarm status:", error);
-      res.status(500).json({
-        error: "Failed to get swarm status",
-        message: error.message,
-      });
-    }
-  };
-
-  /**
-   * Health check endpoint
-   * GET /health
-   */
-  _healthCheck = (req, res) => {
+    const accelerated = await nsHdr.accelerateProcessing(consciousnessData);
     res.json({
-      status: "healthy",
-      version: this.config.version,
-      timestamp: Date.now(),
+      success: true,
+      accelerated,
     });
-  };
-
-  /**
-   * Set up API routes
-   */
-  _setupRouter() {
-    const router = express.Router();
-    
-    // Consciousness endpoints
-    router.post("/api/v1/consciousness/capture", this._authenticate, this._captureConsciousness);
-    router.post("/api/v1/consciousness/restore", this._authenticate, this._restoreConsciousness);
-    router.post("/api/v1/consciousness/merge", this._authenticate, this._mergeConsciousness);
-    router.post("/api/v1/consciousness/pool", this._authenticate, this._createSharedPool);
-
-    // Swarm endpoints
-    router.post("/api/v1/swarm/accelerate", this._authenticate, this._accelerateConsciousness);
-    router.post("/api/v1/swarm/network", this._authenticate, this._createNetwork);
-    router.get("/api/v1/swarm/status", this._authenticate, this._getSwarmStatus);
-
-    // Health endpoint
-    router.get("/health", this._healthCheck);
-
-    // Error handling
-    router.use(this._errorHandler);
-
-    return router;
+  } catch (error) {
+    console.error("Acceleration failed:", error);
+    res.status(500).json({
+      error: "Acceleration failed",
+      message: error.message,
+    });
   }
+});
 
-  /**
-   * Get the configured Express router
-   * @returns {express.Router} The configured router instance
-   */
-  getRouter() {
-    return this.router;
+/**
+ * Create NS-HDR processing network
+ * POST /api/v1/swarm/network
+ */
+app.post("/api/v1/swarm/network", authenticate, async (req, res) => {
+  try {
+    const network = await nsHdr.createProcessingNetwork();
+    res.json({
+      success: true,
+      network,
+    });
+  } catch (error) {
+    console.error("Network creation failed:", error);
+    res.status(500).json({
+      error: "Network creation failed",
+      message: error.message,
+    });
   }
-}
+});
 
-// Export API class
-module.exports = NeuralHDRApi;
+/**
+ * Get swarm status
+ * GET /api/v1/swarm/status
+ */
+app.get("/api/v1/swarm/status", authenticate, async (req, res) => {
+  try {
+    const swarmStatus = nsHdr.getStatus();
+    res.json(swarmStatus);
+  } catch (error) {
+    console.error("Failed to get swarm status:", error);
+    res.status(500).json({
+      error: "Failed to get swarm status",
+      message: error.message,
+    });
+  }
+});
+
+/**
+ * Health check endpoint
+ * GET /health
+ */
+app.get("/health", (req, res) => {
+  res.json({
+    status: "healthy",
+    version: config.version,
+    timestamp: Date.now(),
+  });
+});
+
+// Apply error handling middleware
+app.use(errorHandler);
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {

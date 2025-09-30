@@ -310,14 +310,6 @@ class NeuralHDRApi {
 
     return router;
   }
-
-  /**
-   * Get the configured Express router
-   * @returns {express.Router} The configured router instance
-   */
-  getRouter() {
-    return this.router;
-  }
 }
 
 // Export API class

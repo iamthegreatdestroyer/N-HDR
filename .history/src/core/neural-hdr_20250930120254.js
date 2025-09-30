@@ -383,10 +383,8 @@ class NeuralHDR {
    * @returns {number} - Number of connections
    */
   _calculateConnections(layer) {
-    const previousNeurons = layer.previousLayer
-      ? layer.previousLayer.neuronCount
-      : 0;
-    return layer.neuronCount * (previousNeurons + 1); // +1 for bias
+    const previousNeurons = layer.previousLayer ? layer.previousLayer.neuronCount : 0;
+    return layer.neuronCount * (previousNeurons + 1);  // +1 for bias
   }
 
   /**
@@ -432,9 +430,7 @@ class NeuralHDR {
       const processedData = await this.quantum.processSyncData(syncData);
 
       // Update relevant consciousness layers
-      for (const [layerIndex, layerData] of Object.entries(
-        processedData.layers
-      )) {
+      for (const [layerIndex, layerData] of Object.entries(processedData.layers)) {
         await this._updateConsciousnessLayer(parseInt(layerIndex), layerData);
       }
     } catch (error) {

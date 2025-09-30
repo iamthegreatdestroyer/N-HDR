@@ -32,7 +32,7 @@ class SecurityManager {
     this.quantumKey = this._generateQuantumKey();
     this.biometricData = new Map();
     this.accessLog = [];
-
+    
     // Initialize biometric authentication system
     this._initializeBiometrics();
   }
@@ -170,7 +170,7 @@ class SecurityManager {
       mode: CryptoJS.mode.GCM,
       padding: CryptoJS.pad.Pkcs7,
       blockSize: 4,
-      formatter: CryptoJS.format.OpenSSL,
+      formatter: CryptoJS.format.OpenSSL
     });
     cipherParams.setAuthTag(authTag);
 
@@ -451,13 +451,13 @@ class SecurityManager {
   async _processBiometricData(type, data) {
     // Extract features based on biometric type
     const features = await this._extractBiometricFeatures(type, data);
-
+    
     // Create template
     return {
       type,
       features,
       createdAt: Date.now(),
-      hash: sha256(JSON.stringify(features)).toString(),
+      hash: sha256(JSON.stringify(features)).toString()
     };
   }
 
@@ -472,7 +472,7 @@ class SecurityManager {
   async _matchBiometricSample(type, sample, template) {
     // Extract features from sample
     const sampleFeatures = await this._extractBiometricFeatures(type, sample);
-
+    
     // Compare features
     const matchScore = await this._compareBiometricFeatures(
       type,
@@ -534,7 +534,7 @@ class SecurityManager {
       timestamp: Date.now(),
       successful,
       ip: "127.0.0.1", // Replace with actual IP
-      biometricTypes: Array.from(this.biometricData.keys()),
+      biometricTypes: Array.from(this.biometricData.keys())
     });
   }
 
@@ -544,10 +544,10 @@ class SecurityManager {
    */
   _updateBiometricHash() {
     const templates = Array.from(this.biometricData.values())
-      .filter((t) => t !== null)
-      .map((t) => t.hash)
+      .filter(t => t !== null)
+      .map(t => t.hash)
       .join("");
-
+    
     this.biometricHash = sha512(templates).toString();
   }
 }

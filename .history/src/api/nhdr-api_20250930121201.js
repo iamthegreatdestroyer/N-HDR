@@ -55,23 +55,8 @@ const NanoSwarmHDR = require("../core/nano-swarm/ns-hdr");
 
 class NeuralHDRApi {
   constructor(config) {
-    this.config = config;
     this.nhdr = new NeuralHDR(config);
     this.nsHdr = new NanoSwarmHDR(config);
-
-    // Bind methods
-    this._authenticate = this._authenticate.bind(this);
-    this._errorHandler = this._errorHandler.bind(this);
-    this._captureConsciousness = this._captureConsciousness.bind(this);
-    this._restoreConsciousness = this._restoreConsciousness.bind(this);
-    this._mergeConsciousness = this._mergeConsciousness.bind(this);
-    this._createSharedPool = this._createSharedPool.bind(this);
-    this._accelerateConsciousness = this._accelerateConsciousness.bind(this);
-    this._createNetwork = this._createNetwork.bind(this);
-    this._getSwarmStatus = this._getSwarmStatus.bind(this);
-    this._healthCheck = this._healthCheck.bind(this);
-
-    // Create router
     this.router = this._setupRouter();
   }
 
@@ -309,14 +294,6 @@ class NeuralHDRApi {
     router.use(this._errorHandler);
 
     return router;
-  }
-
-  /**
-   * Get the configured Express router
-   * @returns {express.Router} The configured router instance
-   */
-  getRouter() {
-    return this.router;
   }
 }
 
