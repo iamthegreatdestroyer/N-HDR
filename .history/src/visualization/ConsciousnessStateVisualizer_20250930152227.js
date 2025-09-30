@@ -39,7 +39,7 @@ class ConsciousnessStateVisualizer {
     this.crystallizer = new KnowledgeCrystallizer();
     this.expertiseEngine = new ExpertiseEngine();
     this.crystallineStorage = new CrystallineStorage();
-
+    
     // O-HDR visualization layers
     this.crystalLayer = null;
     this.expertiseLayer = null;
@@ -73,20 +73,20 @@ class ConsciousnessStateVisualizer {
     });
 
     this.crystalLayer = new THREE.Mesh(geometry, material);
-
+    
     // Add glow effect
     const glowMaterial = new THREE.ShaderMaterial({
       uniforms: {
-        c: { value: 0.5 },
-        p: { value: 2.0 },
+        "c": { value: 0.5 },
+        "p": { value: 2.0 },
         glowColor: { value: new THREE.Color(0x00ff88) },
-        viewVector: { value: new THREE.Vector3() },
+        viewVector: { value: new THREE.Vector3() }
       },
       vertexShader: this._getGlowVertexShader(),
       fragmentShader: this._getGlowFragmentShader(),
       side: THREE.BackSide,
       blending: THREE.AdditiveBlending,
-      transparent: true,
+      transparent: true
     });
 
     const glowMesh = new THREE.Mesh(geometry.clone(), glowMaterial);
@@ -109,7 +109,7 @@ class ConsciousnessStateVisualizer {
     const material = new THREE.LineBasicMaterial({
       color: 0xff8800,
       transparent: true,
-      opacity: 0.6,
+      opacity: 0.6
     });
 
     // Create expertise pattern network
@@ -126,12 +126,7 @@ class ConsciousnessStateVisualizer {
     const indices = [];
     for (let i = 0; i < points.length; i++) {
       for (let j = i + 1; j < points.length; j++) {
-        if (
-          this._areExpertisePatternsRelated(
-            expertise.patterns[i],
-            expertise.patterns[j]
-          )
-        ) {
+        if (this._areExpertisePatternsRelated(expertise.patterns[i], expertise.patterns[j])) {
           indices.push(i, j);
         }
       }
@@ -154,13 +149,13 @@ class ConsciousnessStateVisualizer {
     }
 
     // Update position and scale based on stability
-    const scale = 1 + crystal.stability * 0.5;
+    const scale = 1 + (crystal.stability * 0.5);
     this.crystalLayer.scale.set(scale, scale, scale);
     this.crystalLayer.position.y = crystal.stability * 2;
 
     // Update glow intensity based on patterns
     const glow = this.crystalLayer.children[0];
-    glow.material.uniforms.c.value = 0.5 + crystal.patterns.length * 0.1;
+    glow.material.uniforms.c.value = 0.5 + (crystal.patterns.length * 0.1);
   }
 
   /**
@@ -196,11 +191,10 @@ class ConsciousnessStateVisualizer {
    */
   _areExpertisePatternsRelated(pattern1, pattern2) {
     // Calculate pattern correlation
-    const correlation = tf
-      .tensor1d(pattern1.features)
+    const correlation = tf.tensor1d(pattern1.features)
       .dot(tf.tensor1d(pattern2.features))
       .dataSync()[0];
-
+    
     return correlation > 0.7;
   }
 

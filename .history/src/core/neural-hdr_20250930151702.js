@@ -34,7 +34,7 @@ class NeuralHDR {
     this.layers = new Map();
     this.security = new SecurityManager();
     this.quantum = new QuantumProcessor();
-
+    
     // O-HDR integration
     this.crystallizer = new KnowledgeCrystallizer();
     this.expertiseEngine = new ExpertiseEngine();
@@ -103,9 +103,9 @@ class NeuralHDR {
       const crystal = await this._crystallizeKnowledge({
         weights,
         context,
-        reasoning,
+        reasoning
       });
-
+      
       const expertise = await this._extractExpertise(crystal);
       const emotions = this._extractEmotions(aiState);
 
@@ -113,13 +113,13 @@ class NeuralHDR {
       await this.crystallineStorage.storeCrystal({
         id: this.id + "-crystal",
         data: crystal,
-        stability: crystal.stability,
+        stability: crystal.stability
       });
-
+      
       await this.crystallineStorage.storeExpertise({
         id: this.id + "-expertise",
         patterns: expertise,
-        domains: expertise.domains,
+        domains: expertise.domains
       });
 
       // Create layer data
@@ -600,7 +600,7 @@ class NeuralHDR {
    * Creates layer data for a specific layer
    * @private
    */
-  /**
+    /**
    * Creates data for a consciousness layer
    * @private
    * @param {Object} layer - Layer configuration
@@ -612,15 +612,7 @@ class NeuralHDR {
    * @param {Object} expertise - Expertise patterns
    * @returns {Object} - Layer data with O-HDR integration
    */
-  _createLayerData(
-    layer,
-    weights,
-    context,
-    reasoning,
-    emotions,
-    crystal,
-    expertise
-  ) {
+  _createLayerData(layer, weights, context, reasoning, emotions, crystal, expertise) {
     switch (layer.name) {
       case "Base Knowledge Matrix":
         return this._createBaseKnowledgeLayer(weights);

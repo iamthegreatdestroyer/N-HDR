@@ -33,118 +33,9 @@ class QuantumProcessor {
     this.crystallizer = new KnowledgeCrystallizer();
     this.expertiseEngine = new ExpertiseEngine();
     this.crystallineStorage = new CrystallineStorage();
-
+    
     // Initialize quantum states for O-HDR
     this._initializeOHDRQuantum();
-  }
-
-  /**
-   * Initialize quantum states for O-HDR components
-   * @private
-   */
-  async _initializeOHDRQuantum() {
-    await this.crystallizer.initialize();
-    await this.expertiseEngine.initialize();
-    await this.crystallineStorage.configureStorage();
-
-    // Create quantum states for O-HDR
-    const crystalState = this._createQuantumState("crystal");
-    const expertiseState = this._createQuantumState("expertise");
-    const storageState = this._createQuantumState("storage");
-
-    // Set up entanglement between states
-    this._entangleStates([crystalState, expertiseState, storageState]);
-  }
-
-  /**
-   * Creates quantum states specific to O-HDR components
-   * @private
-   * @param {string} component - Component name
-   * @returns {Object} Quantum state
-   */
-  _createQuantumState(component) {
-    const stateId = this._generateStateId();
-    const state = {
-      id: stateId,
-      component,
-      superposition: this._generateSuperposition(),
-      entanglement: [],
-      coherence: 1.0,
-    };
-
-    this.superposition.set(stateId, state);
-    return state;
-  }
-
-  /**
-   * Processes crystallized knowledge through quantum enhancement
-   * @param {Object} crystal - Crystal to process
-   * @returns {Promise<Object>} - Quantum enhanced crystal
-   */
-  async processCrystal(crystal) {
-    // Generate quantum signature
-    const signature = await this._generateQuantumSignature(crystal);
-
-    // Create superposition states
-    const superpositionStates = await this.createSuperposition(crystal);
-    const stateId = this._generateStateId();
-    this.superposition.set(stateId, superpositionStates);
-
-    // Apply quantum optimization
-    const optimized = await this._applyQuantumOptimization(
-      crystal,
-      superpositionStates
-    );
-
-    return {
-      ...optimized,
-      quantumSignature: signature,
-      stateId,
-      coherence: this._calculateCoherence(optimized),
-    };
-  }
-
-  /**
-   * Processes expertise patterns through quantum enhancement
-   * @param {Object} expertise - Expertise to process
-   * @returns {Promise<Object>} - Quantum enhanced expertise
-   */
-  async processExpertise(expertise) {
-    // Generate quantum signature
-    const signature = await this._generateQuantumSignature(expertise);
-
-    // Create superposition states
-    const superpositionStates = await this.createSuperposition(expertise);
-    const stateId = this._generateStateId();
-    this.superposition.set(stateId, superpositionStates);
-
-    // Apply quantum optimization
-    const optimized = await this._applyQuantumOptimization(
-      expertise,
-      superpositionStates
-    );
-
-    return {
-      ...optimized,
-      quantumSignature: signature,
-      stateId,
-      coherence: this._calculateCoherence(optimized),
-    };
-  }
-
-  /**
-   * Generates quantum signature for O-HDR data
-   * @private
-   * @param {Object} data - Data to sign
-   * @returns {Promise<string>} - Quantum signature
-   */
-  async _generateQuantumSignature(data) {
-    const quantumNoise = this._generateQuantumNoise();
-    const signature = await crypto
-      .SHA3(JSON.stringify(data) + quantumNoise)
-      .toString();
-
-    return signature;
   }
 
   /**
@@ -165,17 +56,6 @@ class QuantumProcessor {
 
     // Create tensor representation
     const tensorData = this._createTensorData(superpositionStates, dimension);
-
-    // Process O-HDR data if present
-    if (layerData.crystal) {
-      const crystalQuantum = await this.processCrystal(layerData.crystal);
-      tensorData.crystal = crystalQuantum;
-    }
-
-    if (layerData.expertise) {
-      const expertiseQuantum = await this.processExpertise(layerData.expertise);
-      tensorData.expertise = expertiseQuantum;
-    }
 
     // Apply quantum properties
     return {

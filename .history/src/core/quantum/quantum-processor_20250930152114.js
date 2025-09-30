@@ -33,7 +33,7 @@ class QuantumProcessor {
     this.crystallizer = new KnowledgeCrystallizer();
     this.expertiseEngine = new ExpertiseEngine();
     this.crystallineStorage = new CrystallineStorage();
-
+    
     // Initialize quantum states for O-HDR
     this._initializeOHDRQuantum();
   }
@@ -48,9 +48,9 @@ class QuantumProcessor {
     await this.crystallineStorage.configureStorage();
 
     // Create quantum states for O-HDR
-    const crystalState = this._createQuantumState("crystal");
-    const expertiseState = this._createQuantumState("expertise");
-    const storageState = this._createQuantumState("storage");
+    const crystalState = this._createQuantumState('crystal');
+    const expertiseState = this._createQuantumState('expertise');
+    const storageState = this._createQuantumState('storage');
 
     // Set up entanglement between states
     this._entangleStates([crystalState, expertiseState, storageState]);
@@ -69,7 +69,7 @@ class QuantumProcessor {
       component,
       superposition: this._generateSuperposition(),
       entanglement: [],
-      coherence: 1.0,
+      coherence: 1.0
     };
 
     this.superposition.set(stateId, state);
@@ -91,16 +91,13 @@ class QuantumProcessor {
     this.superposition.set(stateId, superpositionStates);
 
     // Apply quantum optimization
-    const optimized = await this._applyQuantumOptimization(
-      crystal,
-      superpositionStates
-    );
+    const optimized = await this._applyQuantumOptimization(crystal, superpositionStates);
 
     return {
       ...optimized,
       quantumSignature: signature,
       stateId,
-      coherence: this._calculateCoherence(optimized),
+      coherence: this._calculateCoherence(optimized)
     };
   }
 
@@ -119,16 +116,13 @@ class QuantumProcessor {
     this.superposition.set(stateId, superpositionStates);
 
     // Apply quantum optimization
-    const optimized = await this._applyQuantumOptimization(
-      expertise,
-      superpositionStates
-    );
+    const optimized = await this._applyQuantumOptimization(expertise, superpositionStates);
 
     return {
       ...optimized,
       quantumSignature: signature,
       stateId,
-      coherence: this._calculateCoherence(optimized),
+      coherence: this._calculateCoherence(optimized)
     };
   }
 
@@ -140,9 +134,9 @@ class QuantumProcessor {
    */
   async _generateQuantumSignature(data) {
     const quantumNoise = this._generateQuantumNoise();
-    const signature = await crypto
-      .SHA3(JSON.stringify(data) + quantumNoise)
-      .toString();
+    const signature = await crypto.SHA3(
+      JSON.stringify(data) + quantumNoise
+    ).toString();
 
     return signature;
   }

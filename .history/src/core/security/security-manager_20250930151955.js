@@ -44,7 +44,7 @@ class SecurityManager {
 
     // Initialize biometric authentication system
     this._initializeBiometrics();
-
+    
     // Initialize O-HDR security
     this._initializeOHDRSecurity();
   }
@@ -64,9 +64,9 @@ class SecurityManager {
     await this.crystallineStorage.configureStorage();
 
     // Generate security keys for O-HDR
-    this.ohdrSecurityKeys.set("crystal", this._generateQuantumKey());
-    this.ohdrSecurityKeys.set("expertise", this._generateQuantumKey());
-    this.ohdrSecurityKeys.set("storage", this._generateQuantumKey());
+    this.ohdrSecurityKeys.set('crystal', this._generateQuantumKey());
+    this.ohdrSecurityKeys.set('expertise', this._generateQuantumKey());
+    this.ohdrSecurityKeys.set('storage', this._generateQuantumKey());
 
     // Set up security monitoring
     this._setupOHDRMonitoring();
@@ -108,7 +108,7 @@ class SecurityManager {
 
       const calculatedSignature = await this._generateSignature(data, key);
       if (signature !== calculatedSignature) {
-        throw new Error("Invalid token signature");
+        throw new Error('Invalid token signature');
       }
 
       // Verify operation permissions
@@ -119,7 +119,7 @@ class SecurityManager {
 
       return true;
     } catch (error) {
-      console.error("O-HDR token validation failed:", error);
+      console.error('O-HDR token validation failed:', error);
       return false;
     }
   }
@@ -130,15 +130,19 @@ class SecurityManager {
    * @returns {Promise<Object>} - Encrypted crystal
    */
   async encryptCrystal(crystal) {
-    const key = this.ohdrSecurityKeys.get("crystal");
+    const key = this.ohdrSecurityKeys.get('crystal');
     const iv = CryptoJS.lib.WordArray.random(16);
-
-    const encrypted = aes.encrypt(JSON.stringify(crystal), key, { iv: iv });
+    
+    const encrypted = aes.encrypt(
+      JSON.stringify(crystal),
+      key,
+      { iv: iv }
+    );
 
     return {
       data: encrypted.toString(),
       iv: iv.toString(),
-      signature: await this._generateSignature(crystal, key),
+      signature: await this._generateSignature(crystal, key)
     };
   }
 
@@ -148,15 +152,19 @@ class SecurityManager {
    * @returns {Promise<Object>} - Encrypted expertise
    */
   async encryptExpertise(expertise) {
-    const key = this.ohdrSecurityKeys.get("expertise");
+    const key = this.ohdrSecurityKeys.get('expertise');
     const iv = CryptoJS.lib.WordArray.random(16);
-
-    const encrypted = aes.encrypt(JSON.stringify(expertise), key, { iv: iv });
+    
+    const encrypted = aes.encrypt(
+      JSON.stringify(expertise),
+      key,
+      { iv: iv }
+    );
 
     return {
       data: encrypted.toString(),
       iv: iv.toString(),
-      signature: await this._generateSignature(expertise, key),
+      signature: await this._generateSignature(expertise, key)
     };
   }
 
@@ -166,18 +174,20 @@ class SecurityManager {
    * @returns {Promise<Object>} - Decrypted crystal
    */
   async decryptCrystal(encrypted) {
-    const key = this.ohdrSecurityKeys.get("crystal");
-
+    const key = this.ohdrSecurityKeys.get('crystal');
+    
     // Verify signature
-    const decrypted = aes.decrypt(encrypted.data, key, {
-      iv: CryptoJS.enc.Hex.parse(encrypted.iv),
-    });
+    const decrypted = aes.decrypt(
+      encrypted.data,
+      key,
+      { iv: CryptoJS.enc.Hex.parse(encrypted.iv) }
+    );
 
     const crystal = JSON.parse(decrypted.toString(encUtf8));
     const signature = await this._generateSignature(crystal, key);
 
     if (signature !== encrypted.signature) {
-      throw new Error("Crystal integrity verification failed");
+      throw new Error('Crystal integrity verification failed');
     }
 
     return crystal;
@@ -189,18 +199,20 @@ class SecurityManager {
    * @returns {Promise<Object>} - Decrypted expertise
    */
   async decryptExpertise(encrypted) {
-    const key = this.ohdrSecurityKeys.get("expertise");
-
+    const key = this.ohdrSecurityKeys.get('expertise');
+    
     // Verify signature
-    const decrypted = aes.decrypt(encrypted.data, key, {
-      iv: CryptoJS.enc.Hex.parse(encrypted.iv),
-    });
+    const decrypted = aes.decrypt(
+      encrypted.data,
+      key,
+      { iv: CryptoJS.enc.Hex.parse(encrypted.iv) }
+    );
 
     const expertise = JSON.parse(decrypted.toString(encUtf8));
     const signature = await this._generateSignature(expertise, key);
 
     if (signature !== encrypted.signature) {
-      throw new Error("Expertise integrity verification failed");
+      throw new Error('Expertise integrity verification failed');
     }
 
     return expertise;

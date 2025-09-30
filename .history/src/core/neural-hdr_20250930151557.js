@@ -34,7 +34,7 @@ class NeuralHDR {
     this.layers = new Map();
     this.security = new SecurityManager();
     this.quantum = new QuantumProcessor();
-
+    
     // O-HDR integration
     this.crystallizer = new KnowledgeCrystallizer();
     this.expertiseEngine = new ExpertiseEngine();
@@ -42,44 +42,6 @@ class NeuralHDR {
 
     // Initialize consciousness layers
     this._initializeLayers();
-  }
-
-  /**
-   * Initializes O-HDR components
-   * @private
-   */
-  async _initializeOHDR() {
-    await this.crystallizer.initialize();
-    await this.expertiseEngine.initialize();
-    await this.crystallineStorage.configureStorage();
-  }
-
-  /**
-   * Extracts and crystallizes knowledge from consciousness state
-   * @private
-   * @param {Object} state - Consciousness state
-   * @returns {Promise<Object>} - Crystallized knowledge
-   */
-  async _crystallizeKnowledge(state) {
-    const result = await this.crystallizer.crystallize(state);
-    if (!result.success) {
-      throw new Error("Knowledge crystallization failed");
-    }
-    return result.crystal;
-  }
-
-  /**
-   * Extracts expertise patterns from crystallized knowledge
-   * @private
-   * @param {Object} crystal - Crystallized knowledge
-   * @returns {Promise<Object>} - Expertise patterns
-   */
-  async _extractExpertise(crystal) {
-    const result = await this.expertiseEngine.extractExpertise([crystal]);
-    if (!result.success) {
-      throw new Error("Expertise extraction failed");
-    }
-    return result.expertise;
   }
 
   /**
@@ -91,36 +53,11 @@ class NeuralHDR {
     try {
       console.log("Capturing consciousness state...");
 
-      // Initialize O-HDR components
-      await this._initializeOHDR();
-
       // Extract neural weights and state
       const weights = this._extractWeights(aiState);
       const context = this._extractContext(aiState);
       const reasoning = this._extractReasoning(aiState);
-
-      // Crystallize knowledge and extract expertise
-      const crystal = await this._crystallizeKnowledge({
-        weights,
-        context,
-        reasoning,
-      });
-
-      const expertise = await this._extractExpertise(crystal);
       const emotions = this._extractEmotions(aiState);
-
-      // Store crystallized knowledge and expertise
-      await this.crystallineStorage.storeCrystal({
-        id: this.id + "-crystal",
-        data: crystal,
-        stability: crystal.stability,
-      });
-
-      await this.crystallineStorage.storeExpertise({
-        id: this.id + "-expertise",
-        patterns: expertise,
-        domains: expertise.domains,
-      });
 
       // Create layer data
       for (let i = 0; i < config.consciousness.layers.length; i++) {
@@ -130,9 +67,7 @@ class NeuralHDR {
           weights,
           context,
           reasoning,
-          emotions,
-          crystal,
-          expertise
+          emotions
         );
 
         // Process through quantum layer
@@ -141,11 +76,10 @@ class NeuralHDR {
           layer.dimension
         );
 
-        // Encrypt layer with O-HDR integration
+        // Encrypt layer
         const encryptedLayer = await this.security.encryptLayer(
           quantumLayerData,
-          i,
-          crystal.patterns // Add crystal patterns for enhanced security
+          i
         );
 
         // Store layer
@@ -600,27 +534,7 @@ class NeuralHDR {
    * Creates layer data for a specific layer
    * @private
    */
-  /**
-   * Creates data for a consciousness layer
-   * @private
-   * @param {Object} layer - Layer configuration
-   * @param {Array} weights - Neural weights
-   * @param {Object} context - Context data
-   * @param {Object} reasoning - Reasoning data
-   * @param {Object} emotions - Emotional data
-   * @param {Object} crystal - Crystallized knowledge
-   * @param {Object} expertise - Expertise patterns
-   * @returns {Object} - Layer data with O-HDR integration
-   */
-  _createLayerData(
-    layer,
-    weights,
-    context,
-    reasoning,
-    emotions,
-    crystal,
-    expertise
-  ) {
+  _createLayerData(layer, weights, context, reasoning, emotions) {
     switch (layer.name) {
       case "Base Knowledge Matrix":
         return this._createBaseKnowledgeLayer(weights);
