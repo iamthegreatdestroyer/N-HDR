@@ -8,7 +8,7 @@
  * supporting multi-dimensional node networks and emergent behavior detection.
  */
 
-const crypto = require("crypto");
+import crypto from "crypto";
 
 /**
  * @class ConsciousnessNode
@@ -584,4 +584,4 @@ class ConsciousnessLayer {
   }
 }
 
-module.exports = ConsciousnessLayer;
+export default ConsciousnessLayer;

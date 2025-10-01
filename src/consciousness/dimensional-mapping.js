@@ -8,8 +8,8 @@
  * enabling seamless transitions between different dimensional representations.
  */
 
-const crypto = require("crypto");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
+import crypto from "crypto";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
 
 /**
  * @class DimensionalVector
@@ -498,4 +498,4 @@ class DimensionalMapping {
   }
 }
 
-module.exports = DimensionalMapping;
+export default DimensionalMapping;

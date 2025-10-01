@@ -293,4 +293,4 @@ class DimensionalConverter {
   }
 }
 
-module.exports = DimensionalConverter;
+export default DimensionalConverter;

@@ -8,11 +8,11 @@
  * instantaneous state synchronization and non-local correlations.
  */
 
-const crypto = require("crypto");
-const {
+import crypto from "crypto";
+import {
   QuantumEntropyGenerator,
-} = require("../quantum/quantum-entropy-generator");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
+} from "../quantum/quantum-entropy-generator.js";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
 
 /**
  * @class EntanglementPair
@@ -408,4 +408,4 @@ class QuantumEntanglement {
   }
 }
 
-module.exports = QuantumEntanglement;
+export default QuantumEntanglement;

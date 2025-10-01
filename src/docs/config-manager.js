@@ -7,10 +7,10 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const yaml = require("js-yaml");
-const deepmerge = require("deepmerge");
-const { cosmiconfigSync } = require("cosmiconfig");
+import path from "path";
+import yaml from "js-yaml";
+import deepmerge from "deepmerge";
+import { cosmiconfigSync } from "cosmiconfig";
 
 class ConfigManager {
   /**
@@ -220,4 +220,4 @@ class ConfigManager {
   }
 }
 
-module.exports = ConfigManager;
+export default ConfigManager;

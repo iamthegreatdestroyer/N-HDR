@@ -7,10 +7,10 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const vm = require("vm");
-const { spawn } = require("child_process");
-const marked = require("marked");
+import path from "path";
+import vm from "vm";
+import { spawn } from "child_process";
+import marked from "marked";
 
 class DocTester {
   /**
@@ -423,4 +423,4 @@ class DocTester {
   }
 }
 
-module.exports = DocTester;
+export default DocTester;

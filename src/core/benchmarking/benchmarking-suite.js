@@ -3,7 +3,7 @@
  * @copyright HDR Empire. Patent-pending. All rights reserved.
  */
 
-const { performance } = require("perf_hooks");
+import { performance } from "perf_hooks";
 
 class BenchmarkingSuite {
   constructor() {
@@ -274,4 +274,4 @@ class BenchmarkingSuite {
   }
 }
 
-module.exports = BenchmarkingSuite;
+export default BenchmarkingSuite;

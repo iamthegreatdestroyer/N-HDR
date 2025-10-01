@@ -6,11 +6,11 @@
  * API change tracking system for monitoring and documenting API modifications.
  */
 
-const path = require("path");
+import path from "path";
 const fs = require("fs").promises;
-const yaml = require("js-yaml");
-const semver = require("semver");
-const { diffJson } = require("diff");
+import yaml from "js-yaml";
+import semver from "semver";
+import { diffJson } from "diff";
 
 class ApiTracker {
   /**
@@ -951,4 +951,4 @@ class ApiTracker {
   }
 }
 
-module.exports = ApiTracker;
+export default ApiTracker;

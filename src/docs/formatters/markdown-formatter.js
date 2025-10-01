@@ -6,7 +6,7 @@
  * Markdown documentation formatter.
  */
 
-const BaseFormatter = require("./base-formatter");
+import BaseFormatter from "./base-formatter.js";
 
 class MarkdownFormatter extends BaseFormatter {
   formatComponent(component) {
@@ -141,4 +141,4 @@ ${c.methods.map((m) => `  - [${m.name}](#${m.name})`).join("\n")}
   }
 }
 
-module.exports = MarkdownFormatter;
+export default MarkdownFormatter;

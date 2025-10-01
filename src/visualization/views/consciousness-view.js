@@ -7,9 +7,9 @@
  * Real-time visualization of consciousness layer states and interactions
  */
 
-const BaseView = require("../base-view");
-const THREE = require("three");
-const tf = require("@tensorflow/tfjs");
+import BaseView from "../base-view.js";
+import THREE from "three";
+import tf from "@tensorflow/tfjs";
 
 /**
  * @class ConsciousnessView
@@ -444,4 +444,4 @@ class ConsciousnessView extends BaseView {
   }
 }
 
-module.exports = ConsciousnessView;
+export default ConsciousnessView;

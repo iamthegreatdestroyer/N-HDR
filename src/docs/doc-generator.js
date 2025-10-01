@@ -4,8 +4,8 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const jsdoc = require("jsdoc-to-markdown");
+import path from "path";
+import jsdoc from "jsdoc-to-markdown";
 
 class DocumentationGenerator {
   constructor() {
@@ -180,4 +180,4 @@ class DocumentationGenerator {
   }
 }
 
-module.exports = DocumentationGenerator;
+export default DocumentationGenerator;

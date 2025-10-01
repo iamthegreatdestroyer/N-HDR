@@ -6,13 +6,13 @@
  * API Server - RESTful API interface for Neural-HDR system
  */
 
-const express = require("express");
-const helmet = require("helmet");
-const cors = require("cors");
-const rateLimit = require("express-rate-limit");
-const bodyParser = require("body-parser");
-const jwt = require("jsonwebtoken");
-const eventBus = require("./event-bus");
+import express from "express";
+import helmet from "helmet";
+import cors from "cors";
+import rateLimit from "express-rate-limit";
+import bodyParser from "body-parser";
+import jwt from "jsonwebtoken";
+import eventBus from "./event-bus.js";
 
 class ApiServer {
   constructor(options = {}) {
@@ -427,4 +427,4 @@ class ApiServer {
   }
 }
 
-module.exports = ApiServer;
+export default ApiServer;

@@ -15,9 +15,9 @@
  * Comprehensive benchmarking suite for the N-HDR system.
  */
 
-const fs = require("fs");
-const path = require("path");
-const { EventEmitter } = require("events");
+import fs from "fs";
+import path from "path";
+import { EventEmitter } from "events";
 
 /**
  * Comprehensive benchmarking suite for N-HDR system
@@ -352,4 +352,4 @@ class BenchmarkSuite extends EventEmitter {
   }
 }
 
-module.exports = BenchmarkSuite;
+export default BenchmarkSuite;

@@ -13,11 +13,11 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import SwarmVisualizationEngine from "./SwarmVisualizationEngine";
-import ConsciousnessStateVisualizer from "./ConsciousnessStateVisualizer";
-import MultidimensionalDataRenderer from "./MultidimensionalDataRenderer";
-import { SecurityManager } from "../core/security/security-manager";
-import config from "../../config/nhdr-config";
+import SwarmVisualizationEngine from "./SwarmVisualizationEngine.js";
+import ConsciousnessStateVisualizer from "./ConsciousnessStateVisualizer.js";
+import MultidimensionalDataRenderer from "./MultidimensionalDataRenderer.js";
+import SecurityManager from "../core/security/security-manager.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * InteractiveAnalysisDashboard

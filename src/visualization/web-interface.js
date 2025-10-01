@@ -13,7 +13,7 @@ Created: 2025-09-29
 HDR Empire - Pioneering the Future of AI Consciousness
 */
 
-import VisualizationEngine from "./visualization-engine";
+import VisualizationEngine from "./visualization-engine.js";
 
 /**
  * Web interface for N-HDR visualization

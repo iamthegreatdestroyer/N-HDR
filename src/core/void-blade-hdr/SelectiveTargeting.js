@@ -476,4 +476,4 @@ class SelectiveTargeting {
   }
 }
 
-module.exports = SelectiveTargeting;
+export default SelectiveTargeting;

@@ -388,4 +388,4 @@ class SystemComponent {
   }
 }
 
-module.exports = SystemComponent;
+export default SystemComponent;

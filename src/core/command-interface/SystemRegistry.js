@@ -7,8 +7,8 @@
  * Registry system for HDR subsystem management and discovery
  */
 
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
-const crypto = require("crypto");
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
+import crypto from "crypto";
 
 class SystemRegistry {
   constructor(config = {}) {
@@ -345,4 +345,4 @@ class SystemRegistry {
   }
 }
 
-module.exports = SystemRegistry;
+export default SystemRegistry;

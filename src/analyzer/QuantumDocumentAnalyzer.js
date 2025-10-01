@@ -13,11 +13,11 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import DocumentIngestionModule from "./DocumentIngestionModule";
-import ConceptualSwarmDeployer from "./ConceptualSwarmDeployer";
-import KnowledgeExtractionEngine from "./KnowledgeExtractionEngine";
-import { SecurityManager } from "../core/security/security-manager";
-import config from "../../config/nhdr-config";
+import DocumentIngestionModule from "./DocumentIngestionModule.js";
+import ConceptualSwarmDeployer from "./ConceptualSwarmDeployer.js";
+import KnowledgeExtractionEngine from "./KnowledgeExtractionEngine.js";
+import SecurityManager from "../core/security/security-manager.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * QuantumDocumentAnalyzer

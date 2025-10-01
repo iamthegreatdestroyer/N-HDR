@@ -7,8 +7,8 @@
  * Real-time system metrics and state visualization
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
 
 class SystemMonitor extends EventEmitter {
   constructor(config = {}) {
@@ -336,4 +336,4 @@ class SystemMonitor extends EventEmitter {
   }
 }
 
-module.exports = SystemMonitor;
+export default SystemMonitor;

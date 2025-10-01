@@ -7,8 +7,8 @@
  * Translates between different system state representations
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
 
 class StateTranslator extends EventEmitter {
   constructor(config = {}) {
@@ -333,4 +333,4 @@ class StateTranslator extends EventEmitter {
   }
 }
 
-module.exports = StateTranslator;
+export default StateTranslator;

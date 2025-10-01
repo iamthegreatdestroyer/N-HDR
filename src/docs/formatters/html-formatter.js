@@ -6,9 +6,9 @@
  * HTML documentation formatter.
  */
 
-const BaseFormatter = require("./base-formatter");
-const marked = require("marked");
-const hljs = require("highlight.js");
+import BaseFormatter from "./base-formatter.js";
+import marked from "marked";
+import hljs from "highlight.js";
 
 class HtmlFormatter extends BaseFormatter {
   constructor() {
@@ -208,4 +208,4 @@ class HtmlFormatter extends BaseFormatter {
   }
 }
 
-module.exports = HtmlFormatter;
+export default HtmlFormatter;

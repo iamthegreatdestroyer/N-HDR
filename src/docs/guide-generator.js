@@ -235,4 +235,4 @@ const metrics = await nsHdr.getHealthMetrics();`,
   }
 }
 
-module.exports = UsageGuideGenerator;
+export default UsageGuideGenerator;

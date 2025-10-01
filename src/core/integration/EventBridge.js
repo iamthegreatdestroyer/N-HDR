@@ -7,7 +7,7 @@
  * Manages event communication between different HDR system components
  */
 
-const { EventEmitter } = require("events");
+import { EventEmitter } from "events";
 
 class EventBridge extends EventEmitter {
   constructor(config = {}) {
@@ -329,4 +329,4 @@ class EventBridge extends EventEmitter {
   }
 }
 
-module.exports = EventBridge;
+export default EventBridge;

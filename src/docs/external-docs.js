@@ -6,9 +6,9 @@
  * External documentation services integration.
  */
 
-const axios = require("axios");
-const path = require("path");
-const { promisify } = require("util");
+import axios from "axios";
+import path from "path";
+import { promisify } from "util";
 const fs = require("fs").promises;
 
 class ExternalDocsIntegration {
@@ -494,4 +494,4 @@ class ExternalDocsIntegration {
   }
 }
 
-module.exports = ExternalDocsIntegration;
+export default ExternalDocsIntegration;

@@ -7,11 +7,11 @@
  * Central command system for managing HDR Empire protocol subsystems.
  */
 
-const SystemRegistry = require("./SystemRegistry");
-const CommandRouter = require("./CommandRouter");
-const SystemMonitor = require("./SystemMonitor");
-const ConfigurationManager = require("./ConfigurationManager");
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import SystemRegistry from "./SystemRegistry.js";
+import CommandRouter from "./CommandRouter.js";
+import SystemMonitor from "./SystemMonitor.js";
+import ConfigurationManager from "./ConfigurationManager.js";
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class HDREmpireCommander {
   constructor(config = {}) {
@@ -464,4 +464,4 @@ class HDREmpireCommander {
   }
 }
 
-module.exports = HDREmpireCommander;
+export default HDREmpireCommander;

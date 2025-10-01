@@ -6,9 +6,9 @@
  * Optimization Engine - Automated system parameter optimization
  */
 
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
-const PerformanceAnalyzer = require("./performance-analyzer");
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
+import PerformanceAnalyzer from "./performance-analyzer.js";
 
 class OptimizationEngine {
   constructor(options = {}) {
@@ -486,4 +486,4 @@ class OptimizationEngine {
   }
 }
 
-module.exports = OptimizationEngine;
+export default OptimizationEngine;

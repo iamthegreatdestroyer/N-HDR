@@ -374,4 +374,4 @@ class SecurityBenchmark {
   }
 }
 
-module.exports = SecurityBenchmark;
+export default SecurityBenchmark;

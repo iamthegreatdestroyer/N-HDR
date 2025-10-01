@@ -375,4 +375,4 @@ class NavigableDimensions {
   }
 }
 
-module.exports = NavigableDimensions;
+export default NavigableDimensions;

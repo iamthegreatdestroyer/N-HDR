@@ -6,9 +6,9 @@
  * Documentation formatters for multi-format output support.
  */
 
-const HtmlFormatter = require("./html-formatter");
-const MarkdownFormatter = require("./markdown-formatter");
-const JsonFormatter = require("./json-formatter");
+import HtmlFormatter from "./html-formatter.js";
+import MarkdownFormatter from "./markdown-formatter.js";
+import JsonFormatter from "./json-formatter.js";
 
 /**
  * Get formatter instance for specified format

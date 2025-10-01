@@ -16,8 +16,8 @@
  * analysis and automated adjustments.
  */
 
-const EventEmitter = require("events");
-const PerformanceAnalyzer = require("./performance-analyzer");
+import EventEmitter from "events";
+import PerformanceAnalyzer from "./performance-analyzer.js";
 
 class Optimizer extends EventEmitter {
   /**
@@ -485,4 +485,4 @@ class Optimizer extends EventEmitter {
   }
 }
 
-module.exports = Optimizer;
+export default Optimizer;

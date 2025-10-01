@@ -7,9 +7,9 @@
  * Advanced consciousness state mapping and analysis
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
-const StateTranslator = require("../core/integration/StateTranslator");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
+import StateTranslator from "../core/integration/StateTranslator.js";
 
 class ConsciousnessMapper extends EventEmitter {
   constructor(config = {}) {
@@ -431,4 +431,4 @@ class ConsciousnessMapper extends EventEmitter {
   }
 }
 
-module.exports = ConsciousnessMapper;
+export default ConsciousnessMapper;

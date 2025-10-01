@@ -15,10 +15,10 @@
 
 import CryptoJS from "crypto-js";
 import * as tf from "@tensorflow/tfjs";
-import { QuantumSecureChannel } from "./QuantumSecureChannel";
-import { SwarmConsciousnessManager } from "./SwarmConsciousnessManager";
-import { DimensionalDataStructures } from "./DimensionalDataStructures";
-import config from "../../../../config/nhdr-config";
+import { QuantumSecureChannel } from "./QuantumSecureChannel.js";
+import { SwarmConsciousnessManager } from "./SwarmConsciousnessManager.js";
+import { DimensionalDataStructures } from "./DimensionalDataStructures.js";
+import config from "../../../../config/nhdr-config.js";
 
 /**
  * ConsciousnessStateTransferProtocol

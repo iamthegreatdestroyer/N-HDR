@@ -389,4 +389,4 @@ class DecisionPathway {
   }
 }
 
-module.exports = DecisionPathway;
+export default DecisionPathway;

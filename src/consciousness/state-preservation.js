@@ -8,9 +8,9 @@
  * quantum-secured temporal snapshots and integrity verification.
  */
 
-const crypto = require("crypto");
-const { VanishingKeyManager } = require("../quantum/vanishing-key-manager");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
+import crypto from "crypto";
+import { VanishingKeyManager } from "../quantum/vanishing-key-manager.js";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
 
 /**
  * @class StatePreservation
@@ -305,4 +305,4 @@ class StatePreservation {
   }
 }
 
-module.exports = StatePreservation;
+export default StatePreservation;

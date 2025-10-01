@@ -491,4 +491,4 @@ class SwarmComponent {
   }
 }
 
-module.exports = SwarmComponent;
+export default SwarmComponent;

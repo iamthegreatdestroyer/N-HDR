@@ -7,10 +7,10 @@
  * Manages and orchestrates dream state transitions and preservation
  */
 
-const crypto = require("crypto");
-const { EventEmitter } = require("events");
-const QuantumProcessor = require("../quantum/quantum-processor");
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import crypto from "crypto";
+import { EventEmitter } from "events";
+import QuantumProcessor from "../quantum/quantum-processor.js";
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class DreamStateManager extends EventEmitter {
   constructor(config = {}) {
@@ -436,4 +436,4 @@ class DreamStateManager extends EventEmitter {
   }
 }
 
-module.exports = DreamStateManager;
+export default DreamStateManager;

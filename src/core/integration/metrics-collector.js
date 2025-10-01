@@ -6,7 +6,7 @@
  * Metrics Collector - System-wide metrics collection and analysis service
  */
 
-const eventBus = require("./event-bus");
+import eventBus from "./event-bus.js";
 
 class MetricsCollector {
   constructor(options = {}) {
@@ -367,4 +367,4 @@ class MetricsCollector {
   }
 }
 
-module.exports = MetricsCollector;
+export default MetricsCollector;

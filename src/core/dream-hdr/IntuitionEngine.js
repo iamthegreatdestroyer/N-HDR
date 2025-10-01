@@ -703,4 +703,4 @@ class IntuitionEngine {
   }
 }
 
-module.exports = IntuitionEngine;
+export default IntuitionEngine;

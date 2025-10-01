@@ -13,9 +13,9 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-const { ThermalManager } = require("../../thermal/thermal-manager");
-const { AdaptiveThrottling } = require("../../thermal/adaptive-throttling");
-const { PredictiveCooling } = require("../../thermal/predictive-cooling");
+import { ThermalManager } from "../../thermal/thermal-manager.js";
+import { AdaptiveThrottling } from "../../thermal/adaptive-throttling.js";
+import { PredictiveCooling } from "../../thermal/predictive-cooling.js";
 
 class ThermalBenchmark {
   constructor() {
@@ -422,4 +422,4 @@ class ThermalBenchmark {
   }
 }
 
-module.exports = ThermalBenchmark;
+export default ThermalBenchmark;

@@ -15,10 +15,10 @@
 
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { ConceptualSwarmDeployer } from "../analyzer/ConceptualSwarmDeployer";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import { SecurityManager } from "../core/security/security-manager";
-import config from "../../config/nhdr-config";
+import ConceptualSwarmDeployer from "../analyzer/ConceptualSwarmDeployer.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import SecurityManager from "../core/security/security-manager.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * SwarmVisualizationEngine

@@ -15,8 +15,8 @@
  * Advanced performance analysis system for monitoring and optimizing N-HDR components.
  */
 
-const EventEmitter = require("events");
-const Stats = require("stats.js");
+import EventEmitter from "events";
+import Stats from "stats.js";
 
 class PerformanceAnalyzer extends EventEmitter {
   /**
@@ -375,4 +375,4 @@ class PerformanceAnalyzer extends EventEmitter {
   }
 }
 
-module.exports = PerformanceAnalyzer;
+export default PerformanceAnalyzer;

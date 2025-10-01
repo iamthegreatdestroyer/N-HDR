@@ -6,10 +6,10 @@
  * Integration Manager - System component coordination and integration service
  */
 
-const eventBus = require("./event-bus");
-const ApiServer = require("./api-server");
-const WebSocketServer = require("./websocket-server");
-const MetricsCollector = require("./metrics-collector");
+import eventBus from "./event-bus.js";
+import ApiServer from "./api-server.js";
+import WebSocketServer from "./websocket-server.js";
+import MetricsCollector from "./metrics-collector.js";
 
 class IntegrationManager {
   constructor(options = {}) {
@@ -416,4 +416,4 @@ class IntegrationManager {
   }
 }
 
-module.exports = IntegrationManager;
+export default IntegrationManager;

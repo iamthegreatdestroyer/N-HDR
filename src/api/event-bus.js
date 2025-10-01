@@ -6,7 +6,7 @@
  * Event bus system for internal system communication
  */
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 class EventBus {
   constructor(options = {}) {
@@ -279,4 +279,4 @@ class EventBus {
   }
 }
 
-module.exports = EventBus;
+export default EventBus;

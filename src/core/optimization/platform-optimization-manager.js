@@ -3,11 +3,11 @@
  * @copyright HDR Empire. Patent-pending. All rights reserved.
  */
 
-const os = require("os");
-const { performance } = require("perf_hooks");
-const { cpus } = require("os");
-const { promisify } = require("util");
-const { exec } = require("child_process");
+import os from "os";
+import { performance } from "perf_hooks";
+import { cpus } from "os";
+import { promisify } from "util";
+import { exec } from "child_process";
 const execAsync = promisify(exec);
 
 class PlatformOptimizationManager {
@@ -781,4 +781,4 @@ class PlatformOptimizationManager {
   }
 }
 
-module.exports = PlatformOptimizationManager;
+export default PlatformOptimizationManager;

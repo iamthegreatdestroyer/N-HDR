@@ -7,9 +7,9 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const prettier = require("prettier");
-const hljs = require("highlight.js");
+import path from "path";
+import prettier from "prettier";
+import hljs from "highlight.js";
 
 class ExampleSystem {
   /**
@@ -387,4 +387,4 @@ class ExampleSystem {
   }
 }
 
-module.exports = ExampleSystem;
+export default ExampleSystem;

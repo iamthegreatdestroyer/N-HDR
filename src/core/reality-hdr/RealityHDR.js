@@ -7,10 +7,10 @@
  * Handles physical space compression, dimension conversion, and reality navigation.
  */
 
-const SpatialCompressor = require("./SpatialCompressor");
-const DimensionalConverter = require("./DimensionalConverter");
-const NavigableDimensions = require("./NavigableDimensions");
-const RealityImporter = require("./RealityImporter");
+import SpatialCompressor from "./SpatialCompressor.js";
+import DimensionalConverter from "./DimensionalConverter.js";
+import NavigableDimensions from "./NavigableDimensions.js";
+import RealityImporter from "./RealityImporter.js";
 
 class RealityHDR {
   constructor(config = {}) {
@@ -101,4 +101,4 @@ class RealityHDR {
   }
 }
 
-module.exports = RealityHDR;
+export default RealityHDR;

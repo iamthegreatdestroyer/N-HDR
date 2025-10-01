@@ -7,8 +7,8 @@
  * Real-time visualization of thermal management system
  */
 
-const BaseView = require("../base-view");
-const THREE = require("three");
+import BaseView from "../base-view.js";
+import THREE from "three";
 
 /**
  * @class ThermalView
@@ -359,4 +359,4 @@ class ThermalView extends BaseView {
   }
 }
 
-module.exports = ThermalView;
+export default ThermalView;

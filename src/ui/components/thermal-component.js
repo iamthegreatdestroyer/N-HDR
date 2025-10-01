@@ -385,4 +385,4 @@ class ThermalComponent {
   }
 }
 
-module.exports = ThermalComponent;
+export default ThermalComponent;

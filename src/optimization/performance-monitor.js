@@ -6,7 +6,7 @@
  * Real-time performance monitoring system for Neural-HDR components.
  */
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 class PerformanceMonitor extends EventEmitter {
   constructor(analyzer, optimizer, options = {}) {
@@ -388,4 +388,4 @@ class PerformanceMonitor extends EventEmitter {
   }
 }
 
-module.exports = PerformanceMonitor;
+export default PerformanceMonitor;

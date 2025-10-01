@@ -7,10 +7,10 @@
  * System-wide configuration management with security integration
  */
 
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
-const crypto = require("crypto");
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
+import crypto from "crypto";
 const fs = require("fs").promises;
-const path = require("path");
+import path from "path";
 
 class ConfigurationManager {
   constructor(config = {}) {
@@ -518,4 +518,4 @@ class ConfigurationManager {
   }
 }
 
-module.exports = ConfigurationManager;
+export default ConfigurationManager;

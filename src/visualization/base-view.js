@@ -207,4 +207,4 @@ class BaseView {
   }
 }
 
-module.exports = BaseView;
+export default BaseView;

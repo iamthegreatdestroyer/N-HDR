@@ -6,10 +6,10 @@
  * TypeScript and JSX parser for documentation system.
  */
 
-const ts = require("typescript");
-const { parse: babelParse } = require("@babel/parser");
+import ts from "typescript";
+import { parse: babelParse } from "@babel/parser";
 const traverse = require("@babel/traverse").default;
-const { Project } = require("ts-morph");
+import { Project } from "ts-morph";
 
 class TypescriptParser {
   /**
@@ -455,4 +455,4 @@ class TypescriptParser {
   }
 }
 
-module.exports = TypescriptParser;
+export default TypescriptParser;

@@ -8,13 +8,13 @@
  * and state preservation capabilities.
  */
 
-const crypto = require("crypto");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
-const {
+import crypto from "crypto";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
+import {
   QuantumEntropyGenerator,
-} = require("../quantum/quantum-entropy-generator");
-const { ConsciousnessLayer } = require("../consciousness/consciousness-layer");
-const { StatePreservation } = require("../consciousness/state-preservation");
+} from "../quantum/quantum-entropy-generator.js";
+import { ConsciousnessLayer } from "../consciousness/consciousness-layer.js";
+import { StatePreservation } from "../consciousness/state-preservation.js";
 
 /**
  * Thermal state monitoring class
@@ -330,4 +330,4 @@ class NanoBot {
   }
 }
 
-module.exports = NanoBot;
+export default NanoBot;

@@ -15,13 +15,13 @@
 
 import * as THREE from "three";
 import * as tf from "@tensorflow/tfjs";
-import { ConsciousnessLayer } from "../consciousness/consciousness-layer";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import { SecurityManager } from "../core/security/security-manager";
-import { KnowledgeCrystallizer } from "../ohdr/KnowledgeCrystallizer";
-import { ExpertiseEngine } from "../ohdr/ExpertiseEngine";
-import { CrystallineStorage } from "../ohdr/CrystallineStorage";
-import config from "../../config/nhdr-config";
+import ConsciousnessLayer from "../consciousness/consciousness-layer.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import SecurityManager from "../core/security/security-manager.js";
+import KnowledgeCrystallizer from "../ohdr/KnowledgeCrystallizer.js";
+import ExpertiseEngine from "../ohdr/ExpertiseEngine.js";
+import CrystallineStorage from "../ohdr/CrystallineStorage.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * ConsciousnessStateVisualizer

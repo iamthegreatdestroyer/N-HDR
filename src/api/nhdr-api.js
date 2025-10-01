@@ -17,9 +17,9 @@ import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
 import helmet from "helmet";
-import NeuralHDR from "../core/neural-hdr";
-import NanoSwarmHDR from "../core/nano-swarm/ns-hdr";
-import config from "../../config/nhdr-config";
+import NeuralHDR from "../core/neural-hdr.js";
+import NanoSwarmHDR from "../core/nano-swarm/ns-hdr.js";
+import config from "../../config/nhdr-config.js";
 
 // Create Express app
 const app = express();
@@ -46,14 +46,14 @@ app.use(limiter);
 // Body parsing
 app.use(express.json({ limit: "50mb" }));
 
-const express = require("express");
-const rateLimit = require("express-rate-limit");
-const biometricAuth = require("./middleware/biometric-auth");
-const tokenAuth = require("./middleware/token-auth");
-const config = require("../../config/nhdr-config");
-const NeuralHDR = require("../core/neural-hdr");
-const SecurityManager = require("../core/security/security-manager");
-const NanoSwarmHDR = require("../core/nano-swarm/ns-hdr");
+import express from "express";
+import rateLimit from "express-rate-limit";
+import biometricAuth from "./middleware/biometric-auth.js";
+import tokenAuth from "./middleware/token-auth.js";
+import config from "../../config/nhdr-config.js";
+import NeuralHDR from "../core/neural-hdr.js";
+import SecurityManager from "../core/security/security-manager.js";
+import NanoSwarmHDR from "../core/nano-swarm/ns-hdr.js";
 
 // Rate limiting configuration
 const apiLimiter = rateLimit({
@@ -334,7 +334,7 @@ class NeuralHDRApi {
 }
 
 // Export API class
-module.exports = NeuralHDRApi;
+export default NeuralHDRApi;
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {

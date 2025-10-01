@@ -7,13 +7,13 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const crypto = require("crypto");
-const zlib = require("zlib");
-const { promisify } = require("util");
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
-const ConfigurationManager = require("./configuration-manager");
+import path from "path";
+import crypto from "crypto";
+import zlib from "zlib";
+import { promisify } from "util";
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
+import ConfigurationManager from "./configuration-manager.js";
 
 // Promisify zlib methods
 const gzip = promisify(zlib.gzip);
@@ -628,4 +628,4 @@ class BackupManager {
   }
 }
 
-module.exports = BackupManager;
+export default BackupManager;

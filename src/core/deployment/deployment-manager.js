@@ -4,9 +4,9 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const childProcess = require("child_process");
-const { promisify } = require("util");
+import path from "path";
+import childProcess from "child_process";
+import { promisify } from "util";
 const exec = promisify(childProcess.exec);
 
 class DeploymentManager {
@@ -456,4 +456,4 @@ class DeploymentManager {
   }
 }
 
-module.exports = DeploymentManager;
+export default DeploymentManager;

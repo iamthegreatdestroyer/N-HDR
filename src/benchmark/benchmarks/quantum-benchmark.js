@@ -13,11 +13,11 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-const {
+import {
   QuantumEntropyGenerator,
-} = require("../../quantum/quantum-entropy-generator");
-const { VanishingKeyManager } = require("../../quantum/vanishing-key-manager");
-const { SecureTaskExecution } = require("../../quantum/secure-task-execution");
+} from "../../quantum/quantum-entropy-generator.js";
+import { VanishingKeyManager } from "../../quantum/vanishing-key-manager.js";
+import { SecureTaskExecution } from "../../quantum/secure-task-execution.js";
 
 class QuantumBenchmark {
   constructor() {
@@ -260,4 +260,4 @@ class QuantumBenchmark {
   }
 }
 
-module.exports = QuantumBenchmark;
+export default QuantumBenchmark;

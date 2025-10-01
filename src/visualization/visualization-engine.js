@@ -15,7 +15,7 @@ HDR Empire - Pioneering the Future of AI Consciousness
 
 import * as THREE from "three";
 import * as tf from "@tensorflow/tfjs";
-import config from "../../config/nhdr-config";
+import config from "../../config/nhdr-config.js";
 
 /**
  * 3D Visualization Engine for N-HDR consciousness states

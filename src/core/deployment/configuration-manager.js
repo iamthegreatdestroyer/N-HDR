@@ -7,10 +7,10 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
-const crypto = require("crypto");
+import path from "path";
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
+import crypto from "crypto";
 
 class ConfigurationManager {
   constructor(options = {}) {
@@ -519,4 +519,4 @@ class ConfigurationManager {
   }
 }
 
-module.exports = ConfigurationManager;
+export default ConfigurationManager;

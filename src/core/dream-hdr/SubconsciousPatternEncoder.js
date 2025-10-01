@@ -456,4 +456,4 @@ class SubconsciousPatternEncoder {
   }
 }
 
-module.exports = SubconsciousPatternEncoder;
+export default SubconsciousPatternEncoder;

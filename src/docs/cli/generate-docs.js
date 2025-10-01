@@ -18,10 +18,10 @@
  * options and formats.
  */
 
-const path = require("path");
-const yargs = require("yargs");
-const { hideBin } = require("yargs/helpers");
-const DocumentationGenerator = require("../docs/documentation-generator");
+import path from "path";
+import yargs from "yargs";
+import { hideBin } from "yargs/helpers";
+import DocumentationGenerator from "../docs/documentation-generator.js";
 
 const argv = yargs(hideBin(process.argv))
   .usage("Usage: $0 [options]")

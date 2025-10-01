@@ -15,12 +15,12 @@
 
 import CryptoJS from "crypto-js";
 import * as tf from "@tensorflow/tfjs";
-import SecurityManager from "./security/security-manager";
-import QuantumProcessor from "./quantum/quantum-processor";
-import KnowledgeCrystallizer from "../ohdr/KnowledgeCrystallizer";
-import ExpertiseEngine from "../ohdr/ExpertiseEngine";
-import CrystallineStorage from "../ohdr/CrystallineStorage";
-import config from "../../config/nhdr-config";
+import SecurityManager from "./security/security-manager.js";
+import QuantumProcessor from "./quantum/quantum-processor.js";
+import KnowledgeCrystallizer from "../ohdr/KnowledgeCrystallizer.js";
+import ExpertiseEngine from "../ohdr/ExpertiseEngine.js";
+import CrystallineStorage from "../ohdr/CrystallineStorage.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * Core Neural-HDR implementation

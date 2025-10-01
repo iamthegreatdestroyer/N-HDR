@@ -6,8 +6,8 @@
  * Analyzes system performance and provides optimization recommendations.
  */
 
-const os = require("os");
-const EventEmitter = require("events");
+import os from "os";
+import EventEmitter from "events";
 
 class PerformanceAnalyzer extends EventEmitter {
   constructor(options = {}) {
@@ -354,4 +354,4 @@ class PerformanceAnalyzer extends EventEmitter {
   }
 }
 
-module.exports = PerformanceAnalyzer;
+export default PerformanceAnalyzer;

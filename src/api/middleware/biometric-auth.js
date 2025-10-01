@@ -9,7 +9,7 @@
  * rights, including patent-pending technologies, are reserved.
  */
 
-const SecurityManager = require("../../core/security/security-manager");
+import SecurityManager from "../../core/security/security-manager.js";
 
 /**
  * Middleware for biometric authentication
@@ -52,4 +52,4 @@ function biometricAuth(config) {
   };
 }
 
-module.exports = biometricAuth;
+export default biometricAuth;

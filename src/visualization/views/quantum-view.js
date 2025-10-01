@@ -7,9 +7,9 @@
  * Visualization of quantum state and operations
  */
 
-const EventEmitter = require("events");
-const blessed = require("blessed");
-const contrib = require("blessed-contrib");
+import EventEmitter from "events";
+import blessed from "blessed";
+import contrib from "blessed-contrib";
 
 class QuantumView extends EventEmitter {
   constructor(options = {}) {
@@ -287,4 +287,4 @@ class QuantumView extends EventEmitter {
   }
 }
 
-module.exports = QuantumView;
+export default QuantumView;

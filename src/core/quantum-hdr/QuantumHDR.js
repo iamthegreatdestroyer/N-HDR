@@ -7,10 +7,10 @@
  * Manages quantum probability states and future pathway exploration.
  */
 
-const ProbabilityStateManager = require("./ProbabilityStateManager");
-const DecisionPathway = require("./DecisionPathway");
-const FutureExplorer = require("./FutureExplorer");
-const OutcomeOptimizer = require("./OutcomeOptimizer");
+import ProbabilityStateManager from "./ProbabilityStateManager.js";
+import DecisionPathway from "./DecisionPathway.js";
+import FutureExplorer from "./FutureExplorer.js";
+import OutcomeOptimizer from "./OutcomeOptimizer.js";
 
 class QuantumHDR {
   constructor(config = {}) {
@@ -438,4 +438,4 @@ class QuantumHDR {
   }
 }
 
-module.exports = QuantumHDR;
+export default QuantumHDR;

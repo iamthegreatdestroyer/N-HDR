@@ -514,4 +514,4 @@ class QuantumComponent {
   }
 }
 
-module.exports = QuantumComponent;
+export default QuantumComponent;

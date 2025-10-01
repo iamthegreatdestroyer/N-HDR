@@ -14,9 +14,9 @@
  */
 
 import * as tf from "@tensorflow/tfjs";
-import { DimensionalDataStructures } from "./DimensionalDataStructures";
-import { TaskDistributionEngine } from "./TaskDistributionEngine";
-import config from "../../../../config/nhdr-config";
+import { DimensionalDataStructures } from "./DimensionalDataStructures.js";
+import { TaskDistributionEngine } from "./TaskDistributionEngine.js";
+import config from "../../../../config/nhdr-config.js";
 
 /**
  * SwarmConsciousnessManager

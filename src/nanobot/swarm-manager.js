@@ -8,15 +8,15 @@
  * consciousness acceleration through quantum-secured state synchronization.
  */
 
-const crypto = require("crypto");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
-const {
+import crypto from "crypto";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
+import {
   QuantumEntropyGenerator,
-} = require("../quantum/quantum-entropy-generator");
-const {
+} from "../quantum/quantum-entropy-generator.js";
+import {
   QuantumEntanglement,
-} = require("../consciousness/quantum-entanglement");
-const NanoBot = require("./nanobot");
+} from "../consciousness/quantum-entanglement.js";
+import NanoBot from "./nanobot.js";
 
 /**
  * @class SwarmTopology
@@ -829,4 +829,4 @@ class SwarmManager {
   }
 }
 
-module.exports = SwarmManager;
+export default SwarmManager;

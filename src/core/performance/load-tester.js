@@ -6,8 +6,8 @@
  * Load Tester - Performance testing and load simulation component
  */
 
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
 
 class LoadTester {
   constructor(options = {}) {
@@ -434,4 +434,4 @@ class LoadTester {
   }
 }
 
-module.exports = LoadTester;
+export default LoadTester;

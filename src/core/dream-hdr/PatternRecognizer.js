@@ -610,4 +610,4 @@ class PatternRecognizer {
   }
 }
 
-module.exports = PatternRecognizer;
+export default PatternRecognizer;

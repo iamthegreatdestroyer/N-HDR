@@ -502,4 +502,4 @@ class FutureExplorer {
   }
 }
 
-module.exports = FutureExplorer;
+export default FutureExplorer;

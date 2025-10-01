@@ -8,14 +8,14 @@
  * quantum-enhanced distributed processing and emergent pattern optimization.
  */
 
-const crypto = require("crypto");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
-const {
+import crypto from "crypto";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
+import {
   QuantumEntropyGenerator,
-} = require("../quantum/quantum-entropy-generator");
-const { EmergenceEngine } = require("../consciousness/emergence-engine");
-const SwarmManager = require("./swarm-manager");
-const NanoBot = require("./nanobot");
+} from "../quantum/quantum-entropy-generator.js";
+import { EmergenceEngine } from "../consciousness/emergence-engine.js";
+import SwarmManager from "./swarm-manager.js";
+import NanoBot from "./nanobot.js";
 
 /**
  * @class AccelerationProfile
@@ -573,4 +573,4 @@ class SwarmController {
   }
 }
 
-module.exports = SwarmController;
+export default SwarmController;

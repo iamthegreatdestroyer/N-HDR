@@ -7,11 +7,11 @@
  * Generates and manages dream landscapes and scenarios
  */
 
-const crypto = require("crypto");
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
-const QuantumProcessor = require("../quantum/quantum-processor");
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import crypto from "crypto";
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
+import QuantumProcessor from "../quantum/quantum-processor.js";
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class DreamScapeGenerator extends EventEmitter {
   constructor(config = {}) {
@@ -430,4 +430,4 @@ class DreamScapeGenerator extends EventEmitter {
   }
 }
 
-module.exports = DreamScapeGenerator;
+export default DreamScapeGenerator;

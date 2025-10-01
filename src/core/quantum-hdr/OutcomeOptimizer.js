@@ -554,4 +554,4 @@ class OutcomeOptimizer {
   }
 }
 
-module.exports = OutcomeOptimizer;
+export default OutcomeOptimizer;

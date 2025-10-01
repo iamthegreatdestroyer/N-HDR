@@ -558,4 +558,4 @@ class ProbabilityStateManager {
   }
 }
 
-module.exports = ProbabilityStateManager;
+export default ProbabilityStateManager;

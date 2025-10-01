@@ -7,11 +7,11 @@
  * Analyzes and classifies dream patterns using quantum-enhanced neural networks
  */
 
-const crypto = require("crypto");
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
-const QuantumProcessor = require("../quantum/quantum-processor");
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import crypto from "crypto";
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
+import QuantumProcessor from "../quantum/quantum-processor.js";
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class DreamPatternAnalyzer extends EventEmitter {
   constructor(config = {}) {
@@ -487,4 +487,4 @@ class DreamPatternAnalyzer extends EventEmitter {
   }
 }
 
-module.exports = DreamPatternAnalyzer;
+export default DreamPatternAnalyzer;

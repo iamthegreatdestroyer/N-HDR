@@ -7,9 +7,9 @@
  * comparing quantum-derived entropy against standard cryptographic algorithms.
  */
 
-const crypto = require("crypto");
+import crypto from "crypto";
 const fs = require("fs").promises;
-const { QuantumEntropyGenerator } = require("./nano-swarm-hdr");
+import { QuantumEntropyGenerator } from "./nano-swarm-hdr.js";
 
 /**
  * Benchmark configuration

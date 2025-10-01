@@ -7,15 +7,15 @@
  * High-level integration system for Q-HDR, D-HDR, and N-HDR components
  */
 
-const { EventEmitter } = require("events");
-const NeuralHDR = require("../neural-hdr");
-const QuantumProcessor = require("../quantum/quantum-processor");
-const DreamStateManager = require("../dream-hdr/DreamStateManager");
-const DreamScapeGenerator = require("../dream-hdr/DreamScapeGenerator");
-const NeuralDreamEngine = require("../dream-hdr/NeuralDreamEngine");
-const StateTranslator = require("./StateTranslator");
-const UnifiedController = require("./UnifiedController");
-const EventBridge = require("./EventBridge");
+import { EventEmitter } from "events";
+import NeuralHDR from "../neural-hdr.js";
+import QuantumProcessor from "../quantum/quantum-processor.js";
+import DreamStateManager from "../dream-hdr/DreamStateManager.js";
+import DreamScapeGenerator from "../dream-hdr/DreamScapeGenerator.js";
+import NeuralDreamEngine from "../dream-hdr/NeuralDreamEngine.js";
+import StateTranslator from "./StateTranslator.js";
+import UnifiedController from "./UnifiedController.js";
+import EventBridge from "./EventBridge.js";
 
 class SystemIntegrator extends EventEmitter {
   constructor(config = {}) {
@@ -405,4 +405,4 @@ class SystemIntegrator extends EventEmitter {
   }
 }
 
-module.exports = SystemIntegrator;
+export default SystemIntegrator;

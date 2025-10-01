@@ -7,14 +7,14 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const chokidar = require("chokidar");
-const express = require("express");
-const WebSocket = require("ws");
-const marked = require("marked");
-const highlight = require("highlight.js");
-const yaml = require("js-yaml");
-const http = require("http");
+import path from "path";
+import chokidar from "chokidar";
+import express from "express";
+import WebSocket from "ws";
+import marked from "marked";
+import highlight from "highlight.js";
+import yaml from "js-yaml";
+import http from "http";
 
 class PreviewServer {
   /**
@@ -719,4 +719,4 @@ class PreviewServer {
   }
 }
 
-module.exports = PreviewServer;
+export default PreviewServer;

@@ -6,7 +6,7 @@
  * JSON documentation formatter.
  */
 
-const BaseFormatter = require("./base-formatter");
+import BaseFormatter from "./base-formatter.js";
 
 class JsonFormatter extends BaseFormatter {
   formatComponent(component) {
@@ -99,4 +99,4 @@ class JsonFormatter extends BaseFormatter {
   }
 }
 
-module.exports = JsonFormatter;
+export default JsonFormatter;

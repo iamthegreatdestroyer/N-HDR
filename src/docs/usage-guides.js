@@ -105,8 +105,8 @@ module.exports = {
 Initialize and start the system:
 
 \`\`\`javascript
-const { SwarmController } = require('neural-hdr');
-const config = require('./nhdr-config');
+import { SwarmController } from "neural-hdr";
+import config from "./nhdr-config.js";
 
 const controller = new SwarmController(config);
 await controller.start();
@@ -154,7 +154,7 @@ The quantum security system provides:
 Initialize the quantum security components:
 
 \`\`\`javascript
-const { QuantumEntropyGenerator, VanishingKeyManager } = require('neural-hdr');
+import { QuantumEntropyGenerator, VanishingKeyManager } from "neural-hdr";
 
 const generator = new QuantumEntropyGenerator();
 const keyManager = new VanishingKeyManager(generator);
@@ -200,7 +200,7 @@ The consciousness layer manages:
 Preserve and retrieve consciousness states:
 
 \`\`\`javascript
-const { ConsciousnessLayer } = require('neural-hdr');
+import { ConsciousnessLayer } from "neural-hdr";
 
 const layer = new ConsciousnessLayer();
 
@@ -216,7 +216,7 @@ const retrievedState = await layer.retrieveState(entityId);
 Create and manage entanglements:
 
 \`\`\`javascript
-const { QuantumEntanglement } = require('neural-hdr');
+import { QuantumEntanglement } from "neural-hdr";
 
 const entangler = new QuantumEntanglement();
 
@@ -252,7 +252,7 @@ The NanoBot system provides:
 Initialize and use NanoBots:
 
 \`\`\`javascript
-const { NanoBot } = require('neural-hdr');
+import { NanoBot } from "neural-hdr";
 
 const bot = new NanoBot('bot-123', {
     generation: 0,
@@ -272,7 +272,7 @@ const result = await bot.processTask({
 Create and manage NanoBot swarms:
 
 \`\`\`javascript
-const { SwarmManager } = require('neural-hdr');
+import { SwarmManager } from "neural-hdr";
 
 const manager = new SwarmManager(100, {
     thermal: true,
@@ -313,7 +313,7 @@ The thermal management system provides:
 Initialize the thermal management system:
 
 \`\`\`javascript
-const { ThermalManager } = require('neural-hdr');
+import { ThermalManager } from "neural-hdr";
 
 const manager = new ThermalManager({
     maxTemp: 80,
@@ -339,7 +339,7 @@ manager.on('critical', (temp) => {
 Implement predictive cooling:
 
 \`\`\`javascript
-const { PredictiveCooling } = require('neural-hdr');
+import { PredictiveCooling } from "neural-hdr";
 
 const cooling = new PredictiveCooling(manager);
 
@@ -356,4 +356,4 @@ cooling.enable({
   }
 }
 
-module.exports = UsageGuides;
+export default UsageGuides;

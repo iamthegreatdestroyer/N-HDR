@@ -472,4 +472,4 @@ class HypersonicProtection {
   }
 }
 
-module.exports = HypersonicProtection;
+export default HypersonicProtection;

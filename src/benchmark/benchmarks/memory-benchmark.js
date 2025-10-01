@@ -321,4 +321,4 @@ class MemoryBenchmark {
   }
 }
 
-module.exports = MemoryBenchmark;
+export default MemoryBenchmark;

@@ -13,9 +13,9 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import { NanoSwarmHDR } from "../core/nano-swarm/ns-hdr";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import config from "../../config/nhdr-config";
+import NanoSwarmHDR from "../core/nano-swarm/ns-hdr.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * ConceptualSwarmDeployer

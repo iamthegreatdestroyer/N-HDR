@@ -7,8 +7,8 @@
  * Monitoring system for real-time HDR component health tracking
  */
 
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
-const EventEmitter = require("events");
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
+import EventEmitter from "events";
 
 class SystemMonitor extends EventEmitter {
   constructor(config = {}) {
@@ -534,4 +534,4 @@ class SystemMonitor extends EventEmitter {
   }
 }
 
-module.exports = SystemMonitor;
+export default SystemMonitor;

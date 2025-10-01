@@ -507,4 +507,4 @@ class RealityImporter {
   }
 }
 
-module.exports = RealityImporter;
+export default RealityImporter;

@@ -308,4 +308,4 @@ class NeuralBenchmark {
   }
 }
 
-module.exports = NeuralBenchmark;
+export default NeuralBenchmark;

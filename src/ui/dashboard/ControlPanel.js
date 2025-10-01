@@ -7,7 +7,7 @@
  * System control and configuration interface
  */
 
-const { EventEmitter } = require("events");
+import { EventEmitter } from "events";
 
 class ControlPanel extends EventEmitter {
   constructor(config = {}) {
@@ -338,4 +338,4 @@ class ControlPanel extends EventEmitter {
   }
 }
 
-module.exports = ControlPanel;
+export default ControlPanel;

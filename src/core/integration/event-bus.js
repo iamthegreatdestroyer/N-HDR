@@ -6,7 +6,7 @@
  * Event Bus - Central event management and communication system
  */
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 class EventBus {
   constructor() {
@@ -246,4 +246,4 @@ class EventBus {
 }
 
 // Export singleton instance
-module.exports = new EventBus();
+export default new EventBus();

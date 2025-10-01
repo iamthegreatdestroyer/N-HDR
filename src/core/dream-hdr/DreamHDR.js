@@ -7,10 +7,10 @@
  * Manages consciousness dream state processing and creative pattern exploration.
  */
 
-const SubconsciousPatternEncoder = require("./SubconsciousPatternEncoder");
-const CreativityAmplifier = require("./CreativityAmplifier");
-const PatternRecognizer = require("./PatternRecognizer");
-const IntuitionEngine = require("./IntuitionEngine");
+import SubconsciousPatternEncoder from "./SubconsciousPatternEncoder.js";
+import CreativityAmplifier from "./CreativityAmplifier.js";
+import PatternRecognizer from "./PatternRecognizer.js";
+import IntuitionEngine from "./IntuitionEngine.js";
 
 class DreamHDR {
   constructor(config = {}) {
@@ -241,4 +241,4 @@ class DreamHDR {
   }
 }
 
-module.exports = DreamHDR;
+export default DreamHDR;

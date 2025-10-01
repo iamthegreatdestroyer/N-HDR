@@ -14,9 +14,9 @@
  */
 
 import * as THREE from "three";
-import { SecurityManager } from "../core/security/security-manager";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import config from "../../config/nhdr-config";
+import SecurityManager from "../core/security/security-manager.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * QuantumSecurityMonitor

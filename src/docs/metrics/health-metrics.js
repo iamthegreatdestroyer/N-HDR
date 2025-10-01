@@ -7,8 +7,8 @@
  */
 
 const fs = require('fs').promises;
-const path = require('path');
-const marked = require('marked');
+import path from "path";
+import marked from "marked";
 
 class HealthMetrics {
   constructor(options = {}) {
@@ -651,4 +651,4 @@ class HealthMetrics {
   }
 }
 
-module.exports = HealthMetrics;
+export default HealthMetrics;

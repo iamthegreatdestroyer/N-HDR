@@ -502,4 +502,4 @@ class QuantumFieldDistortion {
   }
 }
 
-module.exports = QuantumFieldDistortion;
+export default QuantumFieldDistortion;

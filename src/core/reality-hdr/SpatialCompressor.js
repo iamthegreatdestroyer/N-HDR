@@ -131,4 +131,4 @@ class SpatialCompressor {
   }
 }
 
-module.exports = SpatialCompressor;
+export default SpatialCompressor;

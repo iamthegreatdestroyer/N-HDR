@@ -5,18 +5,18 @@
  * @copyright HDR Empire. Patent-pending. All rights reserved.
  */
 
-const commander = require("commander");
-const chalk = require("chalk");
-const inquirer = require("inquirer");
-const ora = require("ora");
-const NeuralHDR = require("../core/neural-hdr");
-const SecurityManager = require("../core/security/security-manager");
-const QuantumProcessor = require("../core/quantum/quantum-processor");
-const NanoSwarmHDR = require("../core/nano-swarm/ns-hdr");
-const DeploymentManager = require("../core/deployment/deployment-manager");
-const EnvironmentDetector = require("../core/environment/environment-detector");
-const DocumentationGenerator = require("../docs/doc-generator");
-const BenchmarkingSuite = require("../core/benchmarking/benchmarking-suite");
+import commander from "commander";
+import chalk from "chalk";
+import inquirer from "inquirer";
+import ora from "ora";
+import NeuralHDR from "../core/neural-hdr.js";
+import SecurityManager from "../core/security/security-manager.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import NanoSwarmHDR from "../core/nano-swarm/ns-hdr.js";
+import DeploymentManager from "../core/deployment/deployment-manager.js";
+import EnvironmentDetector from "../core/environment/environment-detector.js";
+import DocumentationGenerator from "../docs/doc-generator.js";
+import BenchmarkingSuite from "../core/benchmarking/benchmarking-suite.js";
 
 class NHDRCLI {
   constructor() {

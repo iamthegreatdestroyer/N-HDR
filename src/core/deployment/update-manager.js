@@ -7,12 +7,12 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const crypto = require("crypto");
-const semver = require("semver");
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
-const ConfigurationManager = require("./configuration-manager");
+import path from "path";
+import crypto from "crypto";
+import semver from "semver";
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
+import ConfigurationManager from "./configuration-manager.js";
 
 class UpdateManager {
   constructor(options = {}) {
@@ -512,4 +512,4 @@ class UpdateManager {
   }
 }
 
-module.exports = UpdateManager;
+export default UpdateManager;

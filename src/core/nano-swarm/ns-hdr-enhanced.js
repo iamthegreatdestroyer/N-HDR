@@ -11,8 +11,8 @@
  * rights, including patent-pending technologies, are reserved.
  */
 
-const crypto = require("crypto");
-const os = require("os");
+import crypto from "crypto";
+import os from "os";
 
 /**
  * Hardware Thermal Management System

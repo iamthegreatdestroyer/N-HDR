@@ -8,11 +8,11 @@
  * analysis of multi-dimensional state interactions and temporal evolution.
  */
 
-const crypto = require("crypto");
-const { SecureTaskExecution } = require("../quantum/secure-task-execution");
-const {
+import crypto from "crypto";
+import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
+import {
   QuantumEntropyGenerator,
-} = require("../quantum/quantum-entropy-generator");
+} from "../quantum/quantum-entropy-generator.js";
 
 /**
  * @class EmergencePattern
@@ -982,4 +982,4 @@ class EmergenceEngine {
   }
 }
 
-module.exports = EmergenceEngine;
+export default EmergenceEngine;

@@ -472,4 +472,4 @@ class PerceptionNullifier {
   }
 }
 
-module.exports = PerceptionNullifier;
+export default PerceptionNullifier;

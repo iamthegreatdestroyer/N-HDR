@@ -7,8 +7,8 @@
  * Centralized visualization and monitoring system for N-HDR operations
  */
 
-const EventEmitter = require("events");
-const crypto = require("crypto");
+import EventEmitter from "events";
+import crypto from "crypto";
 
 /**
  * @class DashboardManager
@@ -322,4 +322,4 @@ class DashboardManager extends EventEmitter {
   }
 }
 
-module.exports = DashboardManager;
+export default DashboardManager;

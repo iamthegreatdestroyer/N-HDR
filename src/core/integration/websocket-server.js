@@ -6,9 +6,9 @@
  * WebSocket Server - Real-time communication interface for Neural-HDR system
  */
 
-const WebSocket = require("ws");
-const jwt = require("jsonwebtoken");
-const eventBus = require("./event-bus");
+import WebSocket from "ws";
+import jwt from "jsonwebtoken";
+import eventBus from "./event-bus.js";
 
 class WebSocketServer {
   constructor(options = {}) {
@@ -481,4 +481,4 @@ class WebSocketServer {
   }
 }
 
-module.exports = WebSocketServer;
+export default WebSocketServer;

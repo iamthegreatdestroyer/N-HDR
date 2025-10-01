@@ -7,8 +7,8 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const ejs = require("ejs");
+import path from "path";
+import ejs from "ejs";
 
 class TemplateEngine {
   /**
@@ -146,4 +146,4 @@ class TemplateEngine {
   }
 }
 
-module.exports = TemplateEngine;
+export default TemplateEngine;

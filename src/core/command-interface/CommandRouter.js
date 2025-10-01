@@ -7,7 +7,7 @@
  * Routes commands to appropriate HDR systems with validation and security
  */
 
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class CommandRouter {
   constructor(config = {}) {
@@ -380,4 +380,4 @@ class CommandRouter {
   }
 }
 
-module.exports = CommandRouter;
+export default CommandRouter;

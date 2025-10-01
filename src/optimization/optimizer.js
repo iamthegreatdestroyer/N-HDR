@@ -6,7 +6,7 @@
  * Implements performance optimization strategies for the Neural-HDR system.
  */
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 class Optimizer extends EventEmitter {
   constructor(analyzer, options = {}) {
@@ -410,4 +410,4 @@ class Optimizer extends EventEmitter {
   }
 }
 
-module.exports = Optimizer;
+export default Optimizer;

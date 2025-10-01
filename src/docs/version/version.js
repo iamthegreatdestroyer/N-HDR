@@ -6,12 +6,12 @@
  * Documentation versioning system for tracking changes and maintaining history.
  */
 
-const semver = require("semver");
+import semver from "semver";
 const fs = require("fs").promises;
-const path = require("path");
-const { promisify } = require("util");
+import path from "path";
+import { promisify } from "util";
 const exec = promisify(require("child_process").exec);
-const yaml = require("js-yaml");
+import yaml from "js-yaml";
 
 class DocumentationVersion {
   /**
@@ -799,4 +799,4 @@ class DocumentationVersion {
   }
 }
 
-module.exports = DocumentationVersion;
+export default DocumentationVersion;

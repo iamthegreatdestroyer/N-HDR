@@ -527,4 +527,4 @@ class ConsciousnessComponent {
   }
 }
 
-module.exports = ConsciousnessComponent;
+export default ConsciousnessComponent;

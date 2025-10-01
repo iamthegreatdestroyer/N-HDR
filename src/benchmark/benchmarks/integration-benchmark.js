@@ -378,4 +378,4 @@ class IntegrationBenchmark {
   }
 }
 
-module.exports = IntegrationBenchmark;
+export default IntegrationBenchmark;

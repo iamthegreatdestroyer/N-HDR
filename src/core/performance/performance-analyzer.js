@@ -6,8 +6,8 @@
  * Performance Analyzer - System performance analysis and bottleneck detection
  */
 
-const eventBus = require("../integration/event-bus");
-const MetricsCollector = require("../integration/metrics-collector");
+import eventBus from "../integration/event-bus.js";
+import MetricsCollector from "../integration/metrics-collector.js";
 
 class PerformanceAnalyzer {
   constructor(options = {}) {
@@ -448,4 +448,4 @@ class PerformanceAnalyzer {
   }
 }
 
-module.exports = PerformanceAnalyzer;
+export default PerformanceAnalyzer;

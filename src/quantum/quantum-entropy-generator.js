@@ -8,9 +8,9 @@
  * integrating hardware sources and quantum-inspired algorithms for maximum security.
  */
 
-const crypto = require("crypto");
-const os = require("os");
-const { performance } = require("perf_hooks");
+import crypto from "crypto";
+import os from "os";
+import { performance } from "perf_hooks";
 
 /**
  * @class QuantumEntropyGenerator
@@ -293,4 +293,4 @@ class QuantumEntropyGenerator {
   }
 }
 
-module.exports = QuantumEntropyGenerator;
+export default QuantumEntropyGenerator;

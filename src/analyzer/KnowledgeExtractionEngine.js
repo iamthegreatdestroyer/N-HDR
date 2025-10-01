@@ -14,9 +14,9 @@
  */
 
 import * as tf from "@tensorflow/tfjs";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import { ConsciousnessLayer } from "../consciousness/consciousness-layer";
-import config from "../../config/nhdr-config";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import ConsciousnessLayer from "../consciousness/consciousness-layer.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * KnowledgeExtractionEngine

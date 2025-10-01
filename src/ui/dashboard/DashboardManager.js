@@ -7,9 +7,9 @@
  * Manages unified dashboard interface and component coordination
  */
 
-const { EventEmitter } = require("events");
-const UnifiedController = require("../core/integration/UnifiedController");
-const EventBridge = require("../core/integration/EventBridge");
+import { EventEmitter } from "events";
+import UnifiedController from "../core/integration/UnifiedController.js";
+import EventBridge from "../core/integration/EventBridge.js";
 
 class DashboardManager extends EventEmitter {
   constructor(config = {}) {
@@ -249,4 +249,4 @@ class DashboardManager extends EventEmitter {
   }
 }
 
-module.exports = DashboardManager;
+export default DashboardManager;

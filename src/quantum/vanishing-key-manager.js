@@ -8,8 +8,8 @@
  * for protecting sensitive consciousness data and system operations.
  */
 
-const crypto = require("crypto");
-const QuantumEntropyGenerator = require("./quantum-entropy-generator");
+import crypto from "crypto";
+import QuantumEntropyGenerator from "./quantum-entropy-generator.js";
 
 /**
  * @class VanishingKeyManager
@@ -252,4 +252,4 @@ class VanishingKeyManager {
   }
 }
 
-module.exports = VanishingKeyManager;
+export default VanishingKeyManager;

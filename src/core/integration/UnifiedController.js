@@ -7,8 +7,8 @@
  * Provides centralized control for all HDR system components
  */
 
-const { EventEmitter } = require("events");
-const StateTranslator = require("./StateTranslator");
+import { EventEmitter } from "events";
+import StateTranslator from "./StateTranslator.js";
 
 class UnifiedController extends EventEmitter {
   constructor(config = {}) {
@@ -236,4 +236,4 @@ class UnifiedController extends EventEmitter {
   }
 }
 
-module.exports = UnifiedController;
+export default UnifiedController;

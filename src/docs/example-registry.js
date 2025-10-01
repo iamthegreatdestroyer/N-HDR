@@ -218,4 +218,4 @@ manager.startMonitoring();`,
   }
 }
 
-module.exports = ExampleRegistry;
+export default ExampleRegistry;

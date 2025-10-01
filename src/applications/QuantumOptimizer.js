@@ -7,8 +7,8 @@
  * Quantum state optimization and coherence enhancement
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
 
 class QuantumOptimizer extends EventEmitter {
   constructor(config = {}) {
@@ -472,4 +472,4 @@ class QuantumOptimizer extends EventEmitter {
   }
 }
 
-module.exports = QuantumOptimizer;
+export default QuantumOptimizer;

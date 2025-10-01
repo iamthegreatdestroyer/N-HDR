@@ -9,7 +9,7 @@
  * rights, including patent-pending technologies, are reserved.
  */
 
-const SecurityManager = require("../../core/security/security-manager");
+import SecurityManager from "../../core/security/security-manager.js";
 
 /**
  * Middleware for token-based authentication
@@ -52,4 +52,4 @@ function tokenAuth(config) {
   };
 }
 
-module.exports = tokenAuth;
+export default tokenAuth;

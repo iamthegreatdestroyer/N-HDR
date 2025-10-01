@@ -15,10 +15,10 @@
 
 import * as THREE from "three";
 import * as tf from "@tensorflow/tfjs";
-import { DimensionalDataStructures } from "../core/integration/data/DimensionalDataStructures";
-import { QuantumProcessor } from "../core/quantum/quantum-processor";
-import { SecurityManager } from "../core/security/security-manager";
-import config from "../../config/nhdr-config";
+import { DimensionalDataStructures } from "../core/integration/data/DimensionalDataStructures.js";
+import QuantumProcessor from "../core/quantum/quantum-processor.js";
+import SecurityManager from "../core/security/security-manager.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * MultidimensionalDataRenderer

@@ -6,7 +6,7 @@
  * Main dashboard component for Neural-HDR system
  */
 
-const EventEmitter = require("events");
+import EventEmitter from "events";
 
 class Dashboard {
   constructor(options = {}) {
@@ -412,4 +412,4 @@ class Dashboard {
   }
 }
 
-module.exports = Dashboard;
+export default Dashboard;

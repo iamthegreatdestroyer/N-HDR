@@ -7,8 +7,8 @@
  * Advanced data visualization and analytics
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
 
 class MetricsVisualizer extends EventEmitter {
   constructor(config = {}) {
@@ -407,4 +407,4 @@ class MetricsVisualizer extends EventEmitter {
   }
 }
 
-module.exports = MetricsVisualizer;
+export default MetricsVisualizer;

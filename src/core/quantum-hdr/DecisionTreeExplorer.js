@@ -7,8 +7,8 @@
  * Models and navigates quantum decision pathways
  */
 
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
-const crypto = require("crypto");
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
+import crypto from "crypto";
 
 class DecisionTreeExplorer {
   constructor(config = {}) {
@@ -640,4 +640,4 @@ class DecisionTreeExplorer {
   }
 }
 
-module.exports = DecisionTreeExplorer;
+export default DecisionTreeExplorer;

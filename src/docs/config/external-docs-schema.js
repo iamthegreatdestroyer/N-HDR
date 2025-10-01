@@ -215,4 +215,4 @@ const externalDocsSchema = {
   required: ["services"],
 };
 
-module.exports = externalDocsSchema;
+export default externalDocsSchema;

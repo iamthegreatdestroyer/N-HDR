@@ -8,9 +8,9 @@
  * providing cryptographic proof of execution and integrity validation.
  */
 
-const crypto = require("crypto");
-const QuantumEntropyGenerator = require("./quantum-entropy-generator");
-const VanishingKeyManager = require("./vanishing-key-manager");
+import crypto from "crypto";
+import QuantumEntropyGenerator from "./quantum-entropy-generator.js";
+import VanishingKeyManager from "./vanishing-key-manager.js";
 
 /**
  * @class SecureTaskExecution
@@ -306,4 +306,4 @@ class SecureTaskExecution {
   }
 }
 
-module.exports = SecureTaskExecution;
+export default SecureTaskExecution;

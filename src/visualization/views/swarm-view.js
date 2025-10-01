@@ -7,8 +7,8 @@
  * Real-time visualization of NanoBot swarm operations and behavior
  */
 
-const BaseView = require("../base-view");
-const THREE = require("three");
+import BaseView from "../base-view.js";
+import THREE from "three";
 
 /**
  * @class SwarmView
@@ -682,4 +682,4 @@ class SwarmView extends BaseView {
   }
 }
 
-module.exports = SwarmView;
+export default SwarmView;

@@ -17,10 +17,10 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const jsdoc = require("jsdoc-api");
-const marked = require("marked");
-const hljs = require("highlight.js");
+import path from "path";
+import jsdoc from "jsdoc-api";
+import marked from "marked";
+import hljs from "highlight.js";
 
 /**
  * @class DocumentationGenerator
@@ -500,4 +500,4 @@ class DocumentationGenerator {
   }
 }
 
-module.exports = DocumentationGenerator;
+export default DocumentationGenerator;

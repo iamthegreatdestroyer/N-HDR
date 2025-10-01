@@ -14,9 +14,9 @@
  */
 
 import * as tf from "@tensorflow/tfjs";
-import { ConsciousnessStateTransferProtocol } from "../core/integration/protocols/ConsciousnessStateTransferProtocol";
-import { DimensionalDataStructures } from "../core/integration/data/DimensionalDataStructures";
-import config from "../../config/nhdr-config";
+import ConsciousnessStateTransferProtocol from "../core/integration/protocols/ConsciousnessStateTransferProtocol.js";
+import { DimensionalDataStructures } from "../core/integration/data/DimensionalDataStructures.js";
+import config from "../../config/nhdr-config.js";
 
 /**
  * DocumentIngestionModule

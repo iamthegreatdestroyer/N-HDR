@@ -16,9 +16,9 @@
  * metrics and visualization capabilities.
  */
 
-const EventEmitter = require("events");
-const PerformanceAnalyzer = require("./performance-analyzer");
-const Optimizer = require("./optimizer");
+import EventEmitter from "events";
+import PerformanceAnalyzer from "./performance-analyzer.js";
+import Optimizer from "./optimizer.js";
 
 class PerformanceMonitor extends EventEmitter {
   /**
@@ -470,4 +470,4 @@ class PerformanceMonitor extends EventEmitter {
   }
 }
 
-module.exports = PerformanceMonitor;
+export default PerformanceMonitor;

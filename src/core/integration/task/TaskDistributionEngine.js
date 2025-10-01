@@ -14,7 +14,7 @@
  */
 
 import * as tf from "@tensorflow/tfjs";
-import config from "../../../../config/nhdr-config";
+import config from "../../../../config/nhdr-config.js";
 
 /**
  * TaskDistributionEngine

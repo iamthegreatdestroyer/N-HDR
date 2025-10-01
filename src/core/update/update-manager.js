@@ -4,11 +4,11 @@
  */
 
 const fs = require("fs").promises;
-const path = require("path");
-const semver = require("semver");
-const crypto = require("crypto");
-const { exec } = require("child_process");
-const { promisify } = require("util");
+import path from "path";
+import semver from "semver";
+import crypto from "crypto";
+import { exec } from "child_process";
+import { promisify } from "util";
 const execAsync = promisify(exec);
 
 class UpdateManager {
@@ -612,4 +612,4 @@ class UpdateManager {
   }
 }
 
-module.exports = UpdateManager;
+export default UpdateManager;

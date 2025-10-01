@@ -7,13 +7,13 @@
  * Core dream processing and neural pattern synthesis engine
  */
 
-const crypto = require("crypto");
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
-const DreamStateManager = require("./DreamStateManager");
-const DreamScapeGenerator = require("./DreamScapeGenerator");
-const QuantumProcessor = require("../quantum/quantum-processor");
-const VoidBladeHDR = require("../void-blade-hdr/VoidBladeHDR");
+import crypto from "crypto";
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
+import DreamStateManager from "./DreamStateManager.js";
+import DreamScapeGenerator from "./DreamScapeGenerator.js";
+import QuantumProcessor from "../quantum/quantum-processor.js";
+import VoidBladeHDR from "../void-blade-hdr/VoidBladeHDR.js";
 
 class NeuralDreamEngine extends EventEmitter {
   constructor(config = {}) {
@@ -466,4 +466,4 @@ class NeuralDreamEngine extends EventEmitter {
   }
 }
 
-module.exports = NeuralDreamEngine;
+export default NeuralDreamEngine;

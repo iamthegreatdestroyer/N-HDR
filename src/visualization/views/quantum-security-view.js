@@ -7,8 +7,8 @@
  * Real-time visualization of quantum security metrics and entropy
  */
 
-const BaseView = require("../base-view");
-const THREE = require("three");
+import BaseView from "../base-view.js";
+import THREE from "three";
 
 /**
  * @class QuantumSecurityView
@@ -609,4 +609,4 @@ class QuantumSecurityView extends BaseView {
   }
 }
 
-module.exports = QuantumSecurityView;
+export default QuantumSecurityView;

@@ -3,9 +3,9 @@
  * @copyright HDR Empire. Patent-pending. All rights reserved.
  */
 
-const os = require("os");
-const { exec } = require("child_process");
-const { promisify } = require("util");
+import os from "os";
+import { exec } from "child_process";
+import { promisify } from "util";
 const execAsync = promisify(exec);
 
 class EnvironmentDetector {
@@ -497,4 +497,4 @@ class EnvironmentDetector {
   }
 }
 
-module.exports = EnvironmentDetector;
+export default EnvironmentDetector;

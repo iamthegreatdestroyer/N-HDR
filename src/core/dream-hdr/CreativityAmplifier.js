@@ -355,4 +355,4 @@ class CreativityAmplifier {
   }
 }
 
-module.exports = CreativityAmplifier;
+export default CreativityAmplifier;

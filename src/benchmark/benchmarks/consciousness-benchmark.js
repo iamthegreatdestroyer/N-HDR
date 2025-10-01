@@ -13,17 +13,17 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-const {
+import {
   ConsciousnessLayer,
-} = require("../../consciousness/consciousness-layer");
-const { StatePreservation } = require("../../consciousness/state-preservation");
-const {
+} from "../../consciousness/consciousness-layer.js";
+import { StatePreservation } from "../../consciousness/state-preservation.js";
+import {
   QuantumEntanglement,
-} = require("../../consciousness/quantum-entanglement");
-const {
+} from "../../consciousness/quantum-entanglement.js";
+import {
   DimensionalMapping,
-} = require("../../consciousness/dimensional-mapping");
-const { EmergenceEngine } = require("../../consciousness/emergence-engine");
+} from "../../consciousness/dimensional-mapping.js";
+import { EmergenceEngine } from "../../consciousness/emergence-engine.js";
 
 class ConsciousnessBenchmark {
   constructor() {
@@ -761,4 +761,4 @@ class ConsciousnessBenchmark {
   }
 }
 
-module.exports = ConsciousnessBenchmark;
+export default ConsciousnessBenchmark;

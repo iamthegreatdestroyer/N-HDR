@@ -6,12 +6,12 @@
  * Documentation validation system for ensuring documentation quality and completeness.
  */
 
-const Ajv = require('ajv');
-const markdownlint = require('markdownlint');
-const { unified } = require('unified');
-const markdown = require('remark-parse');
-const yaml = require('js-yaml');
-const path = require('path');
+import Ajv from "ajv";
+import markdownlint from "markdownlint";
+import { unified } from "unified";
+import markdown from "remark-parse";
+import yaml from "js-yaml";
+import path from "path";
 const fs = require('fs').promises;
 
 class DocumentationValidator {
@@ -759,4 +759,4 @@ class DocumentationValidator {
   }
 }
 
-module.exports = DocumentationValidator;
+export default DocumentationValidator;

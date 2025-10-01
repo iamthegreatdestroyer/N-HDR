@@ -7,8 +7,8 @@
  * Deep dream state analysis and pattern recognition
  */
 
-const { EventEmitter } = require("events");
-const tf = require("@tensorflow/tfjs");
+import { EventEmitter } from "events";
+import tf from "@tensorflow/tfjs";
 
 class DreamAnalyzer extends EventEmitter {
   constructor(config = {}) {
@@ -472,4 +472,4 @@ class DreamAnalyzer extends EventEmitter {
   }
 }
 
-module.exports = DreamAnalyzer;
+export default DreamAnalyzer;
