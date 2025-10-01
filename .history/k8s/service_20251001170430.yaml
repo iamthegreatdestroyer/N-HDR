@@ -1,0 +1,44 @@
+# HDR Empire Framework - Kubernetes Service
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hdr-empire
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+    component: main
+spec:
+  type: LoadBalancer
+  selector:
+    app: hdr-empire
+    component: main
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3000
+    protocol: TCP
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hdr-empire-internal
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+    component: main
+spec:
+  type: ClusterIP
+  selector:
+    app: hdr-empire
+    component: main
+  ports:
+  - name: http
+    port: 3000
+    targetPort: 3000
+    protocol: TCP

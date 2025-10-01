@@ -1,0 +1,169 @@
+# HDR Empire Framework - Docker Compose Configuration
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+#
+# This file orchestrates the complete HDR Empire Framework stack including:
+# - N-HDR (Neural-HDR) consciousness preservation
+# - NS-HDR (Nano-Swarm HDR) self-replicating swarms
+# - O-HDR (Omniscient-HDR) knowledge crystallization
+# - R-HDR (Reality-HDR) spatial compression
+# - Q-HDR (Quantum-HDR) probability exploration
+# - D-HDR (Dream-HDR) creativity encoding
+# - VB-HDR (Void-Blade HDR) security protection
+
+version: '3.9'
+
+services:
+  # Main HDR Empire Framework Application
+  hdr-empire:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: hdr-empire-main
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HDR_LOG_LEVEL=info
+      - HDR_ENABLE_MONITORING=true
+      - HDR_QUANTUM_LAYERS=6
+      - HDR_SWARM_INITIAL_BOTS=100
+      - HDR_SECURITY_LEVEL=maximum
+    volumes:
+      # Persistent data volumes
+      - hdr-data:/app/data
+      - hdr-logs:/app/logs
+      - hdr-timestamps:/app/timestamps
+      # Configuration (read-only)
+      - ./config:/app/config:ro
+    networks:
+      - hdr-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - redis
+      - postgres
+    labels:
+      com.hdr.empire.service: "main"
+      com.hdr.empire.version: "1.0.0"
+
+  # Redis for caching and session management
+  redis:
+    image: redis:7-alpine
+    container_name: hdr-empire-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - hdr-network
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL for persistent storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: hdr-empire-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=hdr_empire
+      - POSTGRES_USER=hdr_admin
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme123}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - hdr-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hdr_admin -d hdr_empire"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Prometheus for metrics collection
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: hdr-empire-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./deployment/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    networks:
+      - hdr-network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+
+  # Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: hdr-empire-grafana
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./deployment/monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./deployment/monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    networks:
+      - hdr-network
+    depends_on:
+      - prometheus
+
+  # Nginx reverse proxy (optional)
+  nginx:
+    image: nginx:alpine
+    container_name: hdr-empire-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deployment/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./deployment/nginx/ssl:/etc/nginx/ssl:ro
+    networks:
+      - hdr-network
+    depends_on:
+      - hdr-empire
+
+networks:
+  hdr-network:
+    driver: bridge
+    name: hdr-empire-network
+
+volumes:
+  hdr-data:
+    name: hdr-empire-data
+  hdr-logs:
+    name: hdr-empire-logs
+  hdr-timestamps:
+    name: hdr-empire-timestamps
+  redis-data:
+    name: hdr-empire-redis-data
+  postgres-data:
+    name: hdr-empire-postgres-data
+  prometheus-data:
+    name: hdr-empire-prometheus-data
+  grafana-data:
+    name: hdr-empire-grafana-data

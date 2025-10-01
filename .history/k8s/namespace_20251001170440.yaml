@@ -1,0 +1,49 @@
+# HDR Empire Framework - Kubernetes Namespace
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hdr-system
+  labels:
+    name: hdr-system
+    project: hdr-empire
+    environment: production
+---
+# Service Account for HDR Empire
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hdr-empire
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+---
+# Role for HDR Empire
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: hdr-empire-role
+  namespace: hdr-system
+rules:
+- apiGroups: [""]
+  resources: ["configmaps", "secrets"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+---
+# RoleBinding for HDR Empire
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: hdr-empire-rolebinding
+  namespace: hdr-system
+subjects:
+- kind: ServiceAccount
+  name: hdr-empire
+  namespace: hdr-system
+roleRef:
+  kind: Role
+  name: hdr-empire-role
+  apiGroup: rbac.authorization.k8s.io

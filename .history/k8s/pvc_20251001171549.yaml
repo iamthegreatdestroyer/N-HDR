@@ -1,0 +1,47 @@
+# HDR Empire Framework - Kubernetes Persistent Volume Claims
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hdr-data-pvc
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hdr-logs-pvc
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: standard
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hdr-timestamps-pvc
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: standard

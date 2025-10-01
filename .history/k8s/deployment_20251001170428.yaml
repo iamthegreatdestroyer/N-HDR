@@ -1,0 +1,142 @@
+# HDR Empire Framework - Kubernetes Deployment
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+#
+# Main application deployment for HDR Empire Framework
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hdr-empire
+  namespace: hdr-system
+  labels:
+    app: hdr-empire
+    component: main
+    version: v1.0.0
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: hdr-empire
+      component: main
+  template:
+    metadata:
+      labels:
+        app: hdr-empire
+        component: main
+        version: v1.0.0
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "3000"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: hdr-empire
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1001
+        fsGroup: 1001
+      containers:
+      - name: hdr-empire
+        image: hdr-empire:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 3000
+          protocol: TCP
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: PORT
+          value: "3000"
+        - name: HDR_LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: hdr-config
+              key: log-level
+        - name: HDR_QUANTUM_LAYERS
+          valueFrom:
+            configMapKeyRef:
+              name: hdr-config
+              key: quantum-layers
+        - name: HDR_SWARM_INITIAL_BOTS
+          valueFrom:
+            configMapKeyRef:
+              name: hdr-config
+              key: swarm-initial-bots
+        - name: HDR_SECURITY_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: hdr-config
+              key: security-level
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: hdr-secrets
+              key: postgres-password
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: hdr-secrets
+              key: redis-password
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "2000m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: http
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        volumeMounts:
+        - name: hdr-data
+          mountPath: /app/data
+        - name: hdr-logs
+          mountPath: /app/logs
+        - name: hdr-timestamps
+          mountPath: /app/timestamps
+        - name: config
+          mountPath: /app/config
+          readOnly: true
+      volumes:
+      - name: hdr-data
+        persistentVolumeClaim:
+          claimName: hdr-data-pvc
+      - name: hdr-logs
+        persistentVolumeClaim:
+          claimName: hdr-logs-pvc
+      - name: hdr-timestamps
+        persistentVolumeClaim:
+          claimName: hdr-timestamps-pvc
+      - name: config
+        configMap:
+          name: hdr-config
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - hdr-empire
+              topologyKey: kubernetes.io/hostname

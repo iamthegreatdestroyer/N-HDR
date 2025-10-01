@@ -1,0 +1,16 @@
+# HDR Empire Framework - Grafana Dashboard Provisioning
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+apiVersion: 1
+
+providers:
+  - name: "HDR Empire Dashboards"
+    orgId: 1
+    folder: "HDR Empire"
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards
+      foldersFromFilesStructure: true

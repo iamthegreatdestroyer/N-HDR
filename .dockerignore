@@ -1,0 +1,66 @@
+# HDR Empire Framework - Docker Ignore Configuration
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+*.test.js.snap
+
+# Build outputs
+dist/
+build/
+output/
+*.log
+
+# Development files
+.env.local
+.env.development
+.env.test
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (keep for runtime reference)
+# docs/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Deployment
+docker-compose*.yml
+Dockerfile*
+k8s/
+deployment/
+
+# History and backups
+.history/
+backups/
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp

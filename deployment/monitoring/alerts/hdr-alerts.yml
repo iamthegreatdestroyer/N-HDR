@@ -1,0 +1,116 @@
+# HDR Empire Framework - Prometheus Alert Rules
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+
+groups:
+  - name: hdr_empire_alerts
+    interval: 30s
+    rules:
+      # High CPU usage
+      - alert: HighCPUUsage
+        expr: rate(process_cpu_seconds_total[5m]) > 0.8
+        for: 5m
+        labels:
+          severity: warning
+          component: hdr-empire
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 80% for {{ $labels.pod }} in {{ $labels.namespace }}"
+
+      # High memory usage
+      - alert: HighMemoryUsage
+        expr: (container_memory_usage_bytes / container_spec_memory_limit_bytes) > 0.85
+        for: 5m
+        labels:
+          severity: warning
+          component: hdr-empire
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is above 85% for {{ $labels.pod }} in {{ $labels.namespace }}"
+
+      # Pod not ready
+      - alert: PodNotReady
+        expr: kube_pod_status_phase{namespace="hdr-system",phase!="Running"} > 0
+        for: 5m
+        labels:
+          severity: critical
+          component: hdr-empire
+        annotations:
+          summary: "Pod not in Running state"
+          description: "Pod {{ $labels.pod }} in {{ $labels.namespace }} is not running"
+
+      # Deployment replica mismatch
+      - alert: DeploymentReplicaMismatch
+        expr: kube_deployment_spec_replicas{namespace="hdr-system"} != kube_deployment_status_replicas_available{namespace="hdr-system"}
+        for: 10m
+        labels:
+          severity: warning
+          component: hdr-empire
+        annotations:
+          summary: "Deployment replica mismatch"
+          description: "Deployment {{ $labels.deployment }} has {{ $value }} available replicas, expected {{ $labels.spec_replicas }}"
+
+      # High error rate
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          component: hdr-empire
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is above 5% for {{ $labels.pod }}"
+
+      # Slow response time
+      - alert: SlowResponseTime
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          component: hdr-empire
+        annotations:
+          summary: "Slow response time detected"
+          description: "95th percentile response time is above 1s for {{ $labels.pod }}"
+
+      # Swarm deployment failure
+      - alert: SwarmDeploymentFailure
+        expr: increase(swarm_deployment_failures_total[5m]) > 0
+        for: 1m
+        labels:
+          severity: critical
+          component: ns-hdr
+        annotations:
+          summary: "NS-HDR swarm deployment failed"
+          description: "Swarm deployment failures detected in {{ $labels.namespace }}"
+
+      # Security zone breach
+      - alert: SecurityZoneBreach
+        expr: increase(security_zone_breaches_total[5m]) > 0
+        for: 1m
+        labels:
+          severity: critical
+          component: vb-hdr
+        annotations:
+          summary: "VB-HDR security zone breach detected"
+          description: "Security breach detected in zone {{ $labels.zone_id }}"
+
+      # Quantum processing errors
+      - alert: QuantumProcessingErrors
+        expr: rate(quantum_processing_errors_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+          component: q-hdr
+        annotations:
+          summary: "Q-HDR quantum processing errors"
+          description: "Quantum processing error rate above threshold"
+
+      # Knowledge crystallization failures
+      - alert: CrystallizationFailures
+        expr: increase(knowledge_crystallization_failures_total[10m]) > 3
+        for: 5m
+        labels:
+          severity: warning
+          component: o-hdr
+        annotations:
+          summary: "O-HDR crystallization failures"
+          description: "Multiple knowledge crystallization failures detected"

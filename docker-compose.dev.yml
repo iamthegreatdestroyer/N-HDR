@@ -1,0 +1,64 @@
+# HDR Empire Framework - Development Docker Compose
+# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+#
+# Development environment with hot-reload, debugging, and development tools
+
+version: "3.9"
+
+services:
+  hdr-empire-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    container_name: hdr-empire-dev
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "9229:9229" # Node.js debugging port
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - HDR_LOG_LEVEL=debug
+      - HDR_ENABLE_MONITORING=true
+      - HDR_DEV_MODE=true
+    volumes:
+      # Mount source code for hot-reload
+      - .:/app
+      - /app/node_modules
+      - hdr-dev-data:/app/data
+      - hdr-dev-logs:/app/logs
+    networks:
+      - hdr-dev-network
+    command: node --inspect=0.0.0.0:9229 src/index.js
+    depends_on:
+      - redis-dev
+      - postgres-dev
+
+  redis-dev:
+    image: redis:7-alpine
+    container_name: hdr-empire-redis-dev
+    ports:
+      - "6379:6379"
+    networks:
+      - hdr-dev-network
+
+  postgres-dev:
+    image: postgres:15-alpine
+    container_name: hdr-empire-postgres-dev
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=hdr_empire_dev
+      - POSTGRES_USER=hdr_dev
+      - POSTGRES_PASSWORD=dev123
+    networks:
+      - hdr-dev-network
+
+networks:
+  hdr-dev-network:
+    driver: bridge
+
+volumes:
+  hdr-dev-data:
+  hdr-dev-logs:
