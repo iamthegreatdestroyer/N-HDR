@@ -1,0 +1,27 @@
+{
+  "generated": "2025-10-01T17:33:26.290Z",
+  "author": "Stephen Bilodeau",
+  "copyright": "© 2025 Stephen Bilodeau",
+  "blockchain": "bitcoin",
+  "protocol": "OpenTimestamps",
+  "timestamps": [
+    {
+      "rootHash": "1a3e08465e988154ed3aa5742eac101bde98886d122bc4e7844948f058f45acccc715cf29485005ad3da71e55b74767f47ac3bababf170163b8e3295d359e1a1",
+      "timestamp": 1759340006272,
+      "date": "2025-10-01T17:33:26.272Z",
+      "author": "Stephen Bilodeau",
+      "copyright": "© 2025 Stephen Bilodeau",
+      "blockchain": "bitcoin",
+      "protocol": "OpenTimestamps",
+      "status": "submitted",
+      "proofData": {
+        "version": "1.0",
+        "hashAlgorithm": "sha3-512",
+        "rootHash": "1a3e08465e988154ed3aa5742eac101bde98886d122bc4e7844948f058f45acccc715cf29485005ad3da71e55b74767f47ac3bababf170163b8e3295d359e1a1",
+        "submittedAt": 1759340006273,
+        "selfAttestation": true,
+        "signature": "38312b778aa11f5f3394b20393ea6a9c68b55b003bcf3915b8b304a906b9920308f3509f913fd83178e555f80654b60c6b4904abb74e465a8e186246f06b708a"
+      }
+    }
+  ]
+}

@@ -1096,10 +1096,8 @@ class NanoSwarmHDR {
    * @returns {Promise<Object>} Deployed swarm object
    */
   async deploySwarm(targetPath, options = {}) {
-    const swarmId = `swarm-${Date.now()}-${Math.random()
-      .toString(36)
-      .substr(2, 9)}`;
-
+    const swarmId = `swarm-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    
     const swarm = {
       id: swarmId,
       targetPath,
@@ -1125,38 +1123,36 @@ class NanoSwarmHDR {
         throughput: 0,
         errorRate: 0,
       },
-
+      
       // Swarm control methods
-      setReplicationThreshold: function (threshold) {
+      setReplicationThreshold: function(threshold) {
         this.config.replicationThreshold = threshold;
       },
-
-      setTaskBatchSize: function (size) {
+      
+      setTaskBatchSize: function(size) {
         this.config.taskBatchSize = size;
       },
-
-      enableVanishingKeys: function () {
+      
+      enableVanishingKeys: function() {
         this.config.vanishingKeys = true;
       },
-
-      assignTasks: async function (tasks) {
+      
+      assignTasks: async function(tasks) {
         this.state.tasksActive += tasks.length;
         const results = [];
-
+        
         for (const task of tasks) {
           results.push({
-            taskId:
-              task.id ||
-              `task-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-            status: "assigned",
+            taskId: task.id || `task-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+            status: 'assigned',
             assignedAt: Date.now(),
           });
         }
-
+        
         return results;
       },
-
-      getStatus: function () {
+      
+      getStatus: function() {
         return {
           id: this.id,
           active: this.state.active,
@@ -1166,27 +1162,24 @@ class NanoSwarmHDR {
           metrics: this.metrics,
         };
       },
-
-      terminate: async function () {
+      
+      terminate: async function() {
         this.state.active = false;
         this.bots = [];
       },
     };
-
+    
     // Initialize bots
     for (let i = 0; i < swarm.config.initialBots; i++) {
       swarm.bots.push({
         id: `bot-${swarmId}-${i}`,
-        specialization:
-          swarm.config.specializations[
-            i % swarm.config.specializations.length
-          ] || "general",
-        state: "idle",
+        specialization: swarm.config.specializations[i % swarm.config.specializations.length] || 'general',
+        state: 'idle',
         taskQueue: [],
         generation: 0,
       });
     }
-
+    
     return swarm;
   }
 
@@ -1201,7 +1194,7 @@ class NanoSwarmHDR {
       swarmId,
       tasksAssigned: tasks.length,
       assignedAt: Date.now(),
-      estimatedCompletion: Date.now() + tasks.length * 1000, // Rough estimate
+      estimatedCompletion: Date.now() + (tasks.length * 1000), // Rough estimate
     };
   }
 

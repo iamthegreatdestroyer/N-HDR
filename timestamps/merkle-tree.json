@@ -1,0 +1,2703 @@
+{
+  "leaves": [
+    {
+      "hash": "fddb6e2ba5fbdfc8e1696ebe4648396a3061f9bd66bd8737ea74f0084542dde2daaab12d00d64e0f1c55731c8556201dbf275533d3f7b8b4ecc68e86ce384d58",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\ConceptualSwarmDeployer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "69029c45a8dc2a88b4b51fdbea0a35f89e1a4d3ff13069dc94338807fbfd20b5b4adb75aef62c41a7c06bde8ac99af03456b68163d796a41e87cdc62aea65a53",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\DocumentIngestionModule.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8fec8b7669164ecae34f5853f78050e676e557a0b95dd7217bdc72898d6d25abf702e04a26160ac62f544eccb0594ebcf19cda356a1d9d74626d7f45168e5319",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\KnowledgeExtractionEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "057367babd28208f68c5f79a07888d3dff6bd7a70413720bf8b2f86afb3086897e2ee6229c4e17aee2843d36cce3acddb5dd79567db18188ee6eead1303554d5",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\QuantumDocumentAnalyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\api-server.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6f1167640a0ea0cca0a7e563ff80aa8ae6ee36b7fbcc9b8c572b2c2f5cc15ee070f599ff737610cbd87afbff346bb3b2b4208f9343c854a66d68f482df5f33d8",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\event-bus.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\integration.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b427fe91d3430b203c022ca5360a0cf38bc4baf75acd7e088285e1899abfd03763c5b7f0e8ad124e3498cf17d62bea9bffb1247e026a9e1579e6514f5964692a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\metrics-collector.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "fb36e781fc5f280a0a9461af8acd4bfebe0ed140eadc0785863ef8122da16b45565fef94547b4fb10014fa8042c2c956b361a8f8ba83dae320303c798503e975",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\middleware\\biometric-auth.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "e65eaf8def34bab6a0ff659b50084ad5aeccb5b6ef336f6d631e5257772bf0a798f44d756e46caca158f805bee870281c8a0d0ee1654c93c8450d3b6d44b794a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\middleware\\token-auth.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c08274df4a8dd065b04ca02899811adcf931105aa5cc72c1841c0254ac4b6999a9c1ee00d767cd2ed9a7132582066c552769192f7e3dce4a30640c81c28b82c0",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\nhdr-api.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\websocket-server.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "27f18b08beea844fa93097db1dbd4e837d7618b301cb18a47ea79168f5caa46dfd13317b03875c6ceb9fce71888370d451c569d250283dab00963f453480c3ac",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\ConsciousnessMapper.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "7e52e6aa208c000fdd72faa41cfddb210b417fb5805c610c13bd50926f52356401c126829be8b3f0ba5873819e137fc925e3b38d1eceaeef9ddbc5f405065e79",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\DreamAnalyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f9b92794af4653b72d773d85a008fccfa286a2e85ed7f8024b48e2c0f2b5b1c7d94280da307297e2933e51138b711a6a590a74609bec734b54098d0c99f3d709",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\QuantumOptimizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b40cdadb8026391d2d63d35d99ad4bd95a2648e894655396eeaa72135ae173d5b95ce2fe0d33647f103e1bba251183c96292ec7ee876bf0713004e8d214d13df",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmark-suite.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8968d01d74dd0c456095ef5242244c59d3f025bbef1becf2971731da187b1c259715aa2ccbca61e124410b6257acb14b44ad46dc9ee3f9f2373de94566c97f97",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\consciousness-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "159913581d3affd352768d8bae49da8b8ecfc34eb0ceae118599c203604b228296431ab91912650767bf35980e2dddbcd488f29f0e0c7f77d3bb511655535495",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\integration-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "e3178b25e41d50c99117674c4df3c351874d7dfed0e95916e5c697e91d6713e9435bb221b376e65ddae730da0387f3126ed54aa5f76d22b26bb7a6aac158866e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\memory-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "ad2142eae052176f17292e7a2e119816e2233ba6aca827009dff3d9aeedcbded58235f2080f30429bd1514e824d17cd4fbf6104166ecb9f68a8d35b2b6342ae1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\neural-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "0b3d093876c7ab813a73008eed7daf5f704f1eeaf2d7317bac6fc5e9200b71fc97c4dc42a30eb9501da1219a289bc68827951c0950e0cb49fa898cbd7e0758fc",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\quantum-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d72a98eb3f3a11cb1a281904d18982c2f045b375ff208991d3a20d49ed92afa06f63de7a87344f855198acbed18fdbda1cc63f29bdaad048646ed68ed449bc63",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\security-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "cd16d93a93e33d3aaac43b9430efde0507f16807fedeaffe6154563d2a8773fcf193f7f862640d243b30123cb93f51ebe6bfe692bdcc46f11eeb0ff228487603",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\thermal-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "2fa336b5ce60d8beb411ec3bb1a16119e8d113eee15fc1990634c45c92d228b135d1380a4a07f4e02fc5efd37d09f3029cbf3f5955c93480df7050bfd9b1fcd1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\cli\\execute-hdr-protocol.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "2aff0cacfd70b528a5b891c54dc2584caf0a7b2a116238a74e3417f442a3217c0531e2b8d09ba7add003b8a170104fca7dc565c48db6543b762cedb7e3c05f51",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\cli\\nhdr-cli.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "17a0104baf8366bb1defad1d7d42fa07859a5916e15b974f50844f73a248fe9e70db6e6078f07b23637dd4a3f2574c151bc71d8e180c2b16c4039d54d8e24862",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\consciousness-layer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "ffe49167af2096cd9471fa4c8c2ba0c1493b365d5ce9b2d513505d74b5e34f9e5cdab77a90538b4f2716c2e0352e351acae0dc648c8992e6aae55b9ec64ace49",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\dimensional-mapping.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a65db7cba171ae7cd77cf0acb3daac475facf5f60b8be8a101f8770927df154e9f5a1363b472620a46ae4afa9169b078a384615b923622270b75651f75311cc3",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\emergence-engine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bbf479fbd9b34e5e420a294f55bb0222deb817346cb32d74895cf4bc2456ac261b0ce10529b6f803929d22eab73b6f53f0dbf6d940424680a505579f8fccdb54",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\quantum-entanglement.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b98d0aee774a17dbfb36e19b071eb6731b4d379970c58ae0e5ca8fc077f3812b129aaecf61101e1e794fb458b10253d25c7767abc9beb2ae299e491a66964087",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\state-preservation.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "2af4912f474f67b49ee15811f3c30b6bbd7e35aecbe5f52a5ba5433e0f83a7a3e8732e3b4bfb8be333c7548b3973de1dc82c1cdabd50ce44ed11265d949fc535",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\benchmarking\\benchmarking-suite.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "cb6dfec81cb16f947989f5399be0305db046f70cba0f30236f7be32425af04447ad8c77d76974d804874f7974602913d0ffba0242e8fe4cb119b45781451c454",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\CommandRouter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "243bda8fa64ffd5353b0d8f06f82030962e397718ef280cfb6ced34d510f4a03cf9d4f002feffd64bda8285da5fa0ee1d262a10cb8cd1851dda7496f39122cff",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\ConfigurationManager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6827f5bd05077973911245f63a0f96009a2326b60fed848e4326d6e8117fe98947d2015733413b23464e2f6b9307e6cb84fb2975c093502b94431dd239470dbb",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\HDREmpireCommander.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "fef068c5c0bca86245bde549d4ffac2c81048302276140c032f81898572754da0f9518ac2c16aa1a8d818b4bb7241e533f3e8a442e6cb21c60fd7fd92c265754",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\HDRMonitoringDashboard.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b75a85f1a5f19a7da2afc3a14fa6ae264b37dd8e4c9bc65c45e09d221f52157fd85f678775ee1b3543eb93c19a80cd9929b06392b715139cf811520b7ab214bb",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\SystemMonitor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "78e6623d57f09b40802c0b807f391456456f1ad4b1a868029f525cca538299f7b6cb9311e61d0ae6e2c4fb875b4a40c500475d3980f7322979a34edc3d72055b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\SystemRegistry.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "58d9b376198d5d4640ef39213aa548fe64096b3072b8743532d84730014f5fb5e22140cec236d2ac0ca0979af81492e7413b3b89cf832c73f43c2cd6a13aa07a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\backup-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "efee03cad7abc0d5f117eeed044ff3b60cbdcfaa1707c325ed0c1d0b83474a90dfa9849879841cc473bff5d9d7bf878fe3eeabe9f904c7e8c0d0df7e2169209b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\configuration-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "0f051a2962bcd03a8b5b5d5263b1ec0e809a9a0824701bdb9a2c46ffac52f4598dcfb0715bec43a6586f2daabe1f70b80622044a024a3d4db463d55d5b4ddb53",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\deployment-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "113576b6070708cc5dcb62fa4b96e765380f339290c9804b72e5af97dfc97b550672abe082b174c1a8afab7f488dbd10228fe2ca8c11176c48d143241791db11",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\update-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "346a8748999270f2392314f9abd2206d5963e80ef333cbe014ea1d626b88969fbe96e07b453e28bfe06612bdfa339a5baf6f80c9a41cf12793189b97d8d1072f",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\CreativityAmplifier.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "fa6b46f3c2f755eaad68ac6b06262d71d237e7344956518bf23ad6b104f61a30213e8dffdd5ac7efc0ba770e166b31f87089ce7f9900064560bb738eafa8bc71",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamHDR.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c554222ed62d58d527593ee745ffe730c2a1a850685a6f9139c5d1c7be2e0b855e50e69a04141d6a3e13b5a7215bef606c04a4d150161b7976bec6b3323dc65c",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamPatternAnalyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "19a6177bfbd2233c69e7b250ccb17b0bd2df2f9cf41ef05e96c9c02951bc384226827de51caeaf4b88cf6bb15627c42311aac5f793597eed46cce80469063941",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamScapeGenerator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "243e38077325a73fd58e6587392d90297da6a9333d75a6399e1bc240c7d4b18ccc35d8f18afced6b861702b414404b0243781c7a829a83cb61a25f9988c888ba",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamStateManager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "5a45c49d268492790c5963c39ae8df19beb325b3306cd93e7ad518e855600b30a03e56dc03ec13d7e1355de3f7772437fa3ef298588b5e1c339bb349e3203b9e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\IntuitionEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d4a2809912b5165a39b1f051b5902658f797a02ad48a8f88f9326e875a94047103556f398a4c667f53a98c1728233a0640961417e680db19a554189043f4005d",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\NeuralDreamEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c68c373a47ae87fd7011d69c540f7e7093b86549876490002ff825fd3907c58a840f66c12d1d973c6e962f56218d7d69eee3485b97aaeb4d6114a57bad50c9e6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\PatternRecognizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "90704122ac0375fcef7c3dafaf61bd32ad3a650cbb999e9664915c1d64fae4b258e2028ccb45bdf9706c6fe3c7f5d22c44a5d98be65f9ce455210d349f6bfc22",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\SubconsciousPatternEncoder.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "cc30bce717a982c8c31f6cfdc1cb5f9b0b27613a8dc385874c9d784a90b0172da3042d35883408ca58522560ba04289bb2d80610534e0da6ba161e5da333972c",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\environment\\environment-detector.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9ff249e9a9c842a72460500f782a3929c832d6c65599af7ac9591a5e29489c40b68b6c04c35452fc9b562c659f9e9986b8be3ba4ba985b16aa38605e85836e5a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\HDREmpireProtocolOrchestrator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "ee64f9fc88d034a1cb9b977bfce1bb790c6354ef48c8b2f90c28f16082a0cd6514b27363f19b78ccfc871ba736386316796f56d19fb58f75b88f5d140da7721e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\api-server.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "feb3a4650b02fb9466412f6d637719fce44ff8d56ce099d8fa40d4fde64479dabbda410dc883304d396516143a69654573b27086af01809fe2b3e10e1b7ed64e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\data\\DimensionalDataStructures.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9217aed8513b59fe69b75f1c4201a7b2025b9fd5529ec3ace920d33659ad92954504b3ed08f953a74a7d4c4434717843857da65103b9908e9130de65b752f4ba",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\event-bus.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d1b1f85d57e9a359c6fdf2dde651062f6ff80d0ec7d092eeff0fd548a857096c59497bf40ef6516ae7be759307645c0186e53c1c5716948d9e578c79dcb32851",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\EventBridge.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8529f95f72cda1c63395161162b06b33c60f9180d47b6e761c6977236e84b229accbabbbb8310b56f6af5aca6f9c6cf59ad8f2ccaf25685c5224dae005bf4511",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\integration-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8febb10ffaf04526990ebcb2c13e80c14a233cd18281a135321620274891b0c8dca81b22a9c8003a4fa5cd975367c9acee62b2c9f37c1e7ce2ab2916fa8d679d",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\metrics-collector.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "cb05f7ff988bd3004178655df982da899f1cf32d74bfc52b59520eef5c560f91d5c4ec26792a64f8d1a215f9d2aa119a935ef2b0912f96fa85f949227a035ce1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\protocols\\ConsciousnessStateTransferProtocol.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "7ff96b5f44221fcde8cb71a46b756e6b951b92749082cf3c40ae75c941b1c12f042179c48b5c5881258a5a36c5a5362ae254f76252dc45c7b3a54772342048bf",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\security\\QuantumSecureChannel.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "5b92aa848d8eedf6d1543a8ac3dea979dea5b091bd816caa9d5bb5125db585b74a5905ad572146547b7989f96ef69155658ba09c041aa55e0d35d8a183180be0",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\StateTranslator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "fd17f7ddbed2dda26fa15892d538040266b750a0f1701b3c3324978329a4050f4b825d9afee3a1efb877c3ca606a16694d446becf38d844842dd4e53b98422fc",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\swarm\\SwarmConsciousnessManager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "05508256e8a8fd057abc36bd3a465584dc129d4cc041bc1211f649acb3e444c544526b6dbc23dcc234f04adad96067fc95cf6c73d1b80b83072a0ba76a5a057d",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\SystemIntegrator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d21bdf14ac50a09c3a5965a7bcae07593d6b597c4de9aa97da01573eba031e514819f5e79faf416f6a58b3df035ceed1a0f5687ca7e1aa697de360e278ad1a53",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\task\\TaskDistributionEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "79bc459817ea172f9922472efcaa693e7f485315b0f37382606c59d5774614c97c947aced3e41299c6045a97aad991f2a1b8cae78fc14277b1df13f9c78a4201",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\UnifiedController.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "74edfe5246c466347e68c09d98f3b71aad97afb5ca9659cdff73dfdb01c8e5470963bbd0f60bc89a797571bef927dc3ddbe47b286ce8e2a54322438bc159f1b9",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\websocket-server.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b96e4ae814cd71aa44cff735ba0fd2c5443f50f2fa889d2ecf9b35036712073f6ad7fb750e12885917591c8e28f27007f3e4b3be712f81d778e6b84883f56bed",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\DocumentationSwarmDeployer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "780f7844f68929d38a681b834962f2380901015bf1418b6269604791e22cbeb24b47dcf5ecb09dc0df0c2d1a7cff7ce661dcebee0d33991009e1a5209892eb43",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\nano-swarm-hdr.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "571a80934324edfacf065513373da4d32aab9e860886a2a890a9eca4ab8c53d1ca08ae7d07280a12582762b717ee8501caead0d3d208303b5f0de209d202ee21",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\ns-hdr-enhanced.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "5503cdabf28366bbfce57150141235f771dc4bcdc253546e1f190be8012674624d15e5bd86c01c1423f52fdfc5ca28b131e3f60a9de378e7dc5a0c30b1efa602",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\ns-hdr.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bd219f41bd6d2357bae5f98d58d848f46c296b98ae39d947ea44d350c8b7a81c92250e6b535cf6a86352b686a521769467e1df7e88ebd68ebc036e75f2de2f7b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\neural-hdr.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "e27431dcd6e36f19fc75d68858b0469ea807606a49b9368769e2747e0872d15cfb879a70485e7bd8fd95747ed16a3024bac1d5088a0b42e6044a1fd8b38a6ce8",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\optimization\\platform-optimization-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "775a40d89faa25ff2f660c7f008b787cd80ed52b83fdc4818e6c1a2ed1d86e0a2c9b23d178bbe7f9225e6668f967274f950b793ecfe5284b9c397ccb317e7557",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\load-tester.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "4ca4cb1fa43e1ef99905dab0bc9efedbf5fd91bdb9b7d1839a12cbd1021ae236794b1378f4ab7273c3191a08f7008ae8f23957d4119c0285c73cbcd8b8636302",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\optimization-engine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "aac805aaa18263c6b1d66368eae3355f70cb6d4a81f585dc84db7fb4fab981cd21d53a171b8e9e20be5dc160308fec6f7db01acd3ed4be5b7079f7e39830a067",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\performance-analyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "dcd60b0e7dd89481f99148f08f02c714cce9d64a92ead0c04e9583644b6f988730f01c19891f34cd708ee6be890d3401205c438109ae6a2b0821995093296f27",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\math-verification-protocol.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "07a82d46f9672d0aca96adec71c1e0878575c13d1351c5ea6bda405e7a66cf58ca7858aa4681371a379eeb610c6ef8a56ba1b434dd96a733753e7f5d907e2948",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\quantum-processor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "89d405ca5fc9f76319f40e773ff0f98d737d5c450050f24d06a41db4d95ebf73c914936d6f18e5854aae5a176d5702316eea02a084703cebc03f467cad55a35b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\quantum-security-benchmark.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "95c97df93bc95ea30e12517357a95e5e9cd889ef14706dfa1c5012ca41d4e1d62a579ee9304019aa4799cf1fffd5d2383855195ea3fe2d34428c9158e2028d18",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\DecisionPathway.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "400c2a427407973d895e066d64b8061cd0f2d2b6c4c89755056116a6a9a9696058b9f3c66bca200f12cbfbbde502affcf77404c43abf0595cfe2bc1409ba2458",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\DecisionTreeExplorer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a19e53ded26ca578b5b4da448e77d18df76ed9610fa8a948d377d898840c96f7f0575769a2f5c90ba6fe88c7377d978493abeb6e9f17e9e0863ec6cb8e2e6a11",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\FutureExplorer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6de21fb221da1a89d00418bceb808c0ba4512ff51e66095e2289df3496790b1b445329916760098238dd50f7852295ee1fcd0de7325a5796f016f8c51d365c57",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\OutcomeOptimizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "981f66f3d05a9460bec78563cd5e38894aa8697965722fa7bc5c4976c6ca56d936c542827b61dad81e084c1a671f1a574e8aa305369bc4308b2b94bbd9800b36",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\ProbabilityStateManager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "27f9353444373b648c9db5cc2d8b3b358056f8beea8722b39564067066762d2b81a81b7d32126d4a6a5a84d32fc32b4c8f7c68226cdc20cefd91025dcce32a4a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\QuantumHDR.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "df109b52cf96f140ebb23cf59cf3c72f6e2d27a73b3a906829b79de8d16f49571f2d68adfa6af1165fd87633864dac14111eb856fc4d9402c985bbb8d1b5f4a0",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\DimensionalConverter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "0a669f69c0cd26ed82a6e467be591987df9624da20208f9cc979795e613c3462e26fe5e37874f6a5d9160261f67dba885b2ef1d9584df27f2e2384288d79c532",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\NavigableDimensions.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "28ed0f25ba8dba9d80fdb0724f801c0f4c57bf6fe82e810cbc80e7afab452ca548ae9341c711c129099cc6289dd14b59e3439f5fb93de8c277dc142024d22b50",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\RealityHDR.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "e25cdb6e675e928f7c1cd96cae04e2df46acc0f4f41352f518849bb2a5e491ec5ff209198df26e1c1827e1c9e76fc4c41f60be2ece4a84fd08e4607e5a2d94b1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\RealityImporter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d8321d366e326dab4976fb0365e25be0045086a2b36acb5ca3e6803a8040a366ad42189c9523190a6207d6f1240016d7b86ee25c66528a74fb916b21a6a6bcba",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\SpatialCompressor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "349883faa353fc01c5843f60b217b2fe8108454ff9b72299ad8ed284f5d7b420aef6e998ad8877cbe103c7e8c114c01011f306aa7e9222122309a201ce295d44",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\security\\BlockchainTimestampVerification.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "39aaa5afd972c96ab69938ccc1443fccd3d1c0b8fd4e26baa2cf0175b85b8727e5bb36e9c2cfdc78d252ff70820bd5cdc9076c947ebedcefd385148eafb17746",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\security\\security-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8696057c87baf2e80e0e3f8bd39a52a3689e8746c978fd2c13f1538a6894cc157a869a901d5603f0d5b31ad2224056d844b9ca97de4968b29c1aed48af9ed151",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\update\\update-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d4d91dd58d6d96ddb918bc968fc1e9924af220a38436c88f6ce673d2de9d93c33090b9ef6f47499f7ff40b242cac7ab79e0fd54f00d612d0c95876ac0a5e0985",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\visualization\\neural-hdr-visualization.jsx",
+      "isLeaf": true
+    },
+    {
+      "hash": "a82430c2967f80d0767b20ff742a501f74541bbb93cbc8bc2a611e34f8ef6f0648a16b457939aa2307c2e1fb00e65f5a43395bc0bf8509946b5d60b8fb8486b6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\HypersonicProtection.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "09a1a9a834c6b6e4de10e1e16224f36875cc59e7293ca12b0995d1b1fee8e2d7718ca6cf24c3f521caea93bf0ee33fd56b3c5b902e9c4ff893a5139ddfc8a3da",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\PerceptionNullifier.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "4847d83075c7848abdadf243643ad770482a88a4114587935bb42d242c06e3d75c93417098e26715835495f0c2844c1dff2d8ee96b31c1efded7e6aa22f94108",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\QuantumFieldDistortion.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "7e3c9eac659f5bb0ec8908ebf445123c6917f488ea73f73cfc9641ee6bf39c920ea937bf0771367c5b22f8b29ef9e2a650eeac9eb9cf0cfe161d3b2618bc9458",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\SelectiveTargeting.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "4d8366da6f765dc43b9ad690661e678e663f83e33997e0981fb4c10f32d9d8099368e6da1090b0cafb59dfb6c6679a86aded4e82b6d32a648703f177f1e5e7aa",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\VoidBladeHDR.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "60aca61823effec3a1c60eec8bb8ca782ec3ca2070c2b5f58b18bc7b3c8350a882b69aaa3d3e449309560cd67dacf66cf23db05a440e2a7618d7fb96034636e9",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\cli\\generate-docs.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "99588746c4f91e9a18c21e6c4c8b1e83a12a6307e7fa86e75d470e2e8dbd270ef35fa875a9a3004ae702b20f2fadd24677fcd8f7eab1dc2237eef123bf74b2c6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config\\external-docs-defaults.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9b591814c44eb3b7ec06838ba4096828f1725d2d40c9f740c917e8343124d754ba86c3d0f129b57a8ea21f35ba225b36b8ff4a228c25997a5a6934d13148a226",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config\\external-docs-schema.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "73a7502f3e07e2e63e4d7fe3d99ab5a891e510c5a09c890f8056b17512f0f706f25967ff5502ec550cacd1716c246550f7a9d172f9b88e96f1b7ba8d622b5787",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b98130d365587da52052937235c2eaf7ec3d8d8de813b49441b68038f488a9b3449afa14488207628ab50cdb559b7548572909fdba35ad60fca6f334933968ae",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\defaults\\schema.json",
+      "isLeaf": true
+    },
+    {
+      "hash": "d63610f338e00fee5e5e2eac486ce58f6930784da603d00785821837e71ce87ec78001da54969d387faf7e2734191cc88bc9d39d627d0d1c7f5cdead2f337c3e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\doc-generator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bb149ce0fffb43a5b6568b8869023d28411ca6f44480a586efc789e07dc2cba599662c35fe2751eefcd26788d4b0bfc827e26a986aa6574239280e5594d08146",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\documentation-generator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c9ab6fc6e4aa567f4d8e7d090ee3b9ed80127cff6aabdc8c7d7fc609c49dee33b579eb95e0c516c773077306132847a14edc7887b94fe7bd3ffb413a8f550da5",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\example-registry.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9d7d426c482178d7891a064f8c1e2bb2be838aca3e04df2666f273aa4a4d1f1272d638b82c63a467be0ff698a840a9bf4884f788a43e5b1410587a741b17b141",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\example-system.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d0b3b449a763b23b117d26b702c493e29074aebbba219c286a078541ba4727d7fc632b24ebc47d0243641d40145c0eb8815e908039df1bdfbfc297f4143d3a65",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\external-docs.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "35064f0290166b4cb71a69653e81ee2a781722420d92e5084e054cba6a4f3e7055cb4e75ce7b353da6eb814db910d5a158bde1f6d9a143657721ec3e0c7bc27a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\base-formatter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c72dede35c18d9d7279c7a446530bf16ba53a4ed844000d0eebed5ba0aca1375cc9d83bc43950b74c93fc19d3e740287de2bac833502d786563853624de47dcd",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\html-formatter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "15e87cebbd2eb36b87588ff502165c822e655902b30ca70a669ee344b712d9f9ed95bb3ab91d46eba16943cb08a2da3e18c912d5a980dfad14760176a236c639",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\index.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bb622dcc2d68308b0019674ca3a0a518f99088850109480b901a1f98aea331cfc03007a689cebc4c993f3b0adf603969c585b7f216a102464f270f03014c03ca",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\json-formatter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bed0003ccffd7b0be7877d2ab25a60079904d3b2a4c769d91f522d243648c7f4f96bc9d321499a1711870d9c4857a917533749e4658cb0cc6d739610ef37a9f4",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\markdown-formatter.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "768119a9c84b0752d3f2b2e8062c5228575abe8b187bc4dc588f500c1e199351892c76ef2a09144b40f55e82604e731da9596f19fb05d1897cdd30938c85973b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\guide-generator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8ddf0430dba7a3e3cd65afa628860b50a68a6859bb9658479a5c0a4b56df8bc011bdce67b53f5935910381bb7f4ec70c9de5e3ce4dec14f24ff45ee9627c96f0",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\jsdoc.config.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "13c3eca8ff5c44c98e6d33d38fc9655adefa8cef833484149534d1ff95f4a699404fab11fa2d1744ebec24d9a00838f62f313bcac5df4cbe3eae853eb7ac3d41",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\jsdoc.config.json",
+      "isLeaf": true
+    },
+    {
+      "hash": "7983293d7266eea94d635f280f2a1af561cbb3324d42425cc0091a1738d050320d7649d66af40d5faa2f315568b7dbd4bfc050eb74ef8074c5096ea0f3d7c06d",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\metrics\\health-metrics.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d644ea391ef63879f3153c24e6ec47360165dfa59d8851998a1c94f8abda057e3674cc10c858c3d913a096cd42cb70cfeefc0cf5cdb33f5b49a494720b34e2a1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\preview\\preview-server.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "76c7d83900f99ecb138fbe1b0030a16464997b6bad2017646ddd03d20d9ef5635ac7b01e1308dcc8c53f2a9af84cc19420029a380f744dcf60e9cf0442f967ce",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\scripts\\search.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "3fa4a97886303827bf7b260a3d2c4aa8233d91cc31792cf258db1e357a02bae221d0e17602e118ce28f160daac19be6e84c7988f23451a9465cad4efc70af8d4",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\template-engine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f4a2f249dd4e4591411f08722954e2c001dc58ddad8b3e8bab892385905221092c76baf34a35ff57a16f04fe55fcf15ce751c603660dbfffa58eab5b6665170a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\testing\\doc-tester.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "553e622204f56c19f8566a718085de25e30cc8d14520e8b000680c8356cb79ed5cb8d1b88988291543dc65841ec7f6b6b53d0f4eef8ae848fa7158cf713c43dc",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\tracking\\api-tracker.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8cc7ad67750fde190bb5186fe9a0e9735ed6e114d48e72c7401837e0fdf4806d5f0a745a8c7f76a4a2c59e7d13fe1906a24ae73f9f553219c2b82dc8a871aaa6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\typescript-parser.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9eef9bc9df74511c0ee54eebfd1c09bd9c11257bde000bbfcfb88151e4e27500d93ef2adaaac456068cf5c212849f532f5ba3e493d59615463fc20c242237b69",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\usage-guides.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "1832e58e92d7eb37d0a2eefad4b45b57037b7a1d05baeeada4224a04fd640dab6a2150267dada0f6d5196e16d36377f4d5f3e5b565aa8695f86df89f80e72050",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\validation\\validator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "3187b22187998f449b367f84718d7fc627691db2df5a9c30c21eaada3b784ee123795542b1321d5ae7a91fdb2919624bf91054440b83b4e7d526c7992ee88065",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\version\\version.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "b5ee5de24995c40731028852c516fed84403f86ae757ba34a5defcbaab4980a3c4a800f58d17a8c1dbff9928d30398786620ad7a3b5992e362c45edc963faa29",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\nanobot.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "19862fffdf107cf1a411b40540507ce0e52b5c86e79fe77f96f619df73ca0628fc2c4ec7fd470d135756534064831e67b200f0326d6bd0dcd79a157cd4011a75",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\swarm-controller.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f3606db9c0609161d485b34b630b10ba45e7c2e4c9a4c4661ef69e2ba7d906981b81d3cc23a3220d16a0c9cd124b4b2fb03eb6a7a74973e561b5d2babf1f70ea",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\swarm-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f4106eb80863ea41c8c66600d33dfbea2765b28fdf721081be96b3e2e4268cf59005d5ea73fb16dfe35a9ce941cb170d0c42f34d9c8cafe2b5a82b12c85c5180",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\CrystallineStorage.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "65cfb9469afd9ee910e55cfe2a83e663341c5603db9661c8de1d68de79527340cec191619bd91eccd591d6ac00153bba44076017aa3b37328c9a228af783060b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\ExpertiseEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d2317cac046d608314dc7b9133b6be522526f61c065c8e3f0178a2c34d1784cb9ea7af70af9a56b664b0384f8f5e258f7cabb339c18cbb5bb0ec7fa21d6e0b88",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\KnowledgeCrystallizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6a5fdb04cd5430711979b8200c2ae4ff4c1461850f0cc49eaec108edbfcf4d2be0431e3c3b574f81ce859a231718628aaa2c58970d5eff5a5d3a521da81ed480",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\optimizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "3dd0baa9a353943801ecac3f77c472809762b5c389b4c3c4a57fe8d6b40cf2741016b3001e4eec02854677e94f95c0321fbc6323c78b11269d3079269d3f8fc6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\performance-analyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "7008637612140b204ae98faa3903c0ba65690722a3e4f836069a938b797c35033fbf134c42237855e9b83f35491a2ab96d12224712a44115438ba8b3d161712c",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\performance-monitor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a235d5fc11d88e80a0d2439304d8379ca8930a7d35533214247647e696f30cfd03dddf4b45dd9f6b369eac13bbc661292bc8800e46d2bce2bc50f8425cc09e52",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\optimization-profiles.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "40501e8ec69e8808745266a3bf8d3ee6fa5d764224431f79ddcbf409a96968c9ab331062725a14322829e3820c7cd6015aa87669b02e9ef14ce62e049c27f2d6",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\optimizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6a8426f381fa563dcbf3c659929fc4c60f426b8da08ee5f2226cb3227cd6065e90c60f36c4094b1a994d74d892a626743f43581fb7d78f7cc1f83a2abf30fb60",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\performance-analyzer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "4447a01f3b572900f554f5838be54bf236df1cd8241586551fa6a15e6443f36b2f9349adcc08e09e62740c9859e2e3c2ab9c23bdb807b76229be204e42edd39f",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\performance-monitor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a59ba236ce608f0f29d84481668a5601728e076654371d978fb397af636246a24fdbfb78ea32e073e1e295c2a13773956ed7b9b1d3b818918d69cab58fa68f77",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\quantum-entropy-generator.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "8478e17e312135556a5e0dcbbb2e1b8fc9fb4ce6b78c95181a3ffe101fb590429f2d1f2a0c9706da78032dec65c170a17e55ff051a00dc977a413bd28fe3542e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\secure-task-execution.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "0948b7cdb5a1c6a2e26ab35616749fd3296ab31e921d79e17df0d2c3dcd4bd17a37def820171dd31e3ae44003cf6f9b2e9b17f0bd68803bc40d249e398eb685d",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\vanishing-key-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "69a9b5ddd49bace7b40efb91ed8d580ded67161eba1683af77b48a98860b4eceb2d4c0050354da13217a3fefbc349e89b46f294d4326af99d59eb903955bfaae",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\consciousness-component.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "bf556471ff9fec47d606fc29da3e94cff2c021ddd0d754c08778d3916ee3ca47f9aa385e3809fb3001a25a93ccd2cec17d6a4a94093c4b4eb9eec90872afb796",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\quantum-component.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c831a63fe3baf21503d2846b0e7341dfc222170afc7c935bfaec2f16188815eff919bdb7925dece5cbf1fdffcaa3ef39da4bcf363d12618ad757c219eff3514a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\swarm-component.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f9402c5ca048a77474b62862cf52a40d07cdb915eb8d47cb99e57785d820062eb853adbc5c40f6cf79b0d3421b3b9a50f6c7a6abf1a7e35e9488459c8f05b4cb",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\system-component.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c57aaefbfe1e83079aa2cfeb1d9a1d34079a575afac8d9c9907c652c7805dac22198985a0c6fe56f38212a9f44751818b3eeb73dfd59e515c913e6e2186edece",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\thermal-component.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f6866f658bcbc1ebeccb4be7ada39185e468f8903ad89d812afef23eb9d7ba3b3c217c18262065b65a82b1daefe84d9877716916444e4853152df725cff1867a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\ControlPanel.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "e971d418b6975e6a879fa0dcbbefd1d4ab50fad360ddaed916e97702d278374031380df1819ed7bdb9f84e14011b796f46b4fc76d01bced12a60b19967f72f62",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\DashboardManager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9c21e1f1a87ceb39ae10fd032b8a083224ff2a1269a2079da13c2cf066a4d32993119e13c1527727bea333ff52b5cd866d6d547bc34c7306171163030a69b4e2",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\MetricsVisualizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a027f636bc71b4a602a98548580caffd7235d7f55515ef4a9cd1d6185e62cda191a5740a53864df8b9401fe6ad1533e7abd670d4535d362b1c3ef693b7e2350e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\SystemMonitor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "041b637ee993c4e8a9a610a1f6b10b1c758a316784c22e91f14843f7f0c0dad400219ab3f795b3ba4eb919e979796ba5666ae28a15215c01b8cc7d695b7a049c",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "0a14dfadb8b172f0592cbb7dd442a2cae2b5a2a647f22279c01e1201a173e6386911fa8e200304e3f11da5576182b689ec230a3ab217d04f0bec3ef34c7460b8",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\base-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "41a9dbbd3eeadeb71314282b6852ccd51ff0df39a6854f76c14b35e303783a43c6d04f3486897312514a8192e166468c25159eb66465f5a04d76785340bd2f31",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\ConsciousnessStateVisualizer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d78e16a0b47b3a9eae90f23a2e969aa97901b9cdec89acabff8ccb6f62224a324cd60b1f2f928ff99e8220ef406c0aed632c38da3b98301b6c2d2f1053b4557a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\dashboard-manager.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "9a6b0c2ef31555b0f0adeaeb0cfa92b2d0119b44c4440804b851872436f2028abcae42ab10e988ba126c42bc33782dd793fe13ef9203c383b5f8d6aa255c88d9",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\InteractiveAnalysisDashboard.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "69a038fb3f4ddef92d517493a0d7f0fa762961b9a188debd77d0bc03ae0bd8f43dc1d0b69d7e82afe5ff1ff18cba410bffca365ffd50cf8d5c707a1ddce63e93",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\MultidimensionalDataRenderer.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "20421d3e5507018d7f864506228a72d1d9411fe0807c02028c8d356d8440b5a56eea53963f86f74e7f888cf29e4af358548905074733ecc032d8fe0758a3ba9b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\QuantumSecurityMonitor.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "6d256271158ade01a850d923dfd47dec19649bae5f6a6c5c86dedc393e328bd290f2bb877774f9b416694e636d7bef6bbc7866144812f9c0bd2a51223cb19afc",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\SwarmVisualizationEngine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "fdd3c55a3a8ebe8aab6b3b8703537b1f787551d2cd0f2a7ef01b4ee31d4ac6381c31d78c7f836ed88226903acf2130badbbd29a5b9bdeda1b5d2acc334a7d26e",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\consciousness-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "c25eba5d651f3afa776cfb97af3cdba4ccd866a920f8f6aa2a25d6e9f27e09e288bda86279db4f0ac35f8dd76b015f88198537e9286c40b13652cd0abb31a6e1",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\quantum-security-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "81123b084737ae1ba401791a4c75dedbae9c65324e456330d9f472672aa7987a7f0cf8a70228611458aba9bf1f8c1207533d6b873c7bbd1785b43a4864606bfa",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\quantum-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "d726267a037e04c36c860ef60a2954ae997784e1d873fb7cbf2e481f7fb4fcbfa3ca4f0476a8c791229a61e5c2c68c824c5bd3c8c38879e5e57639004e90718b",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\swarm-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f723159fe89cd175d7dbd32371fe4b89088763cb81976152c44c4d444cf3980075bae056fa84c23f7c41758f53f75c914dc9d7d4e30f80186611c90f5ddc118a",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\thermal-view.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "a689e04d2e6a010239b5dfde177c44ab0d69aa5f423a264dd948eb4c79676373aedf002f2edc6fe370c3a27cd3ee565c760ed4c09c17bd34a7e614e180737cb7",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\visualization-engine.js",
+      "isLeaf": true
+    },
+    {
+      "hash": "f3ff7bcb0224a6277bac8ccb4a76fb43a3cbc8df6f352fb0de3a87c995e6fc1087a2e4bdfb4e6602dcd392e98cda760ce5c78a947f219caa1876b608be9ed221",
+      "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\web-interface.js",
+      "isLeaf": true
+    }
+  ],
+  "levels": [
+    [
+      {
+        "hash": "fddb6e2ba5fbdfc8e1696ebe4648396a3061f9bd66bd8737ea74f0084542dde2daaab12d00d64e0f1c55731c8556201dbf275533d3f7b8b4ecc68e86ce384d58",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\ConceptualSwarmDeployer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "69029c45a8dc2a88b4b51fdbea0a35f89e1a4d3ff13069dc94338807fbfd20b5b4adb75aef62c41a7c06bde8ac99af03456b68163d796a41e87cdc62aea65a53",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\DocumentIngestionModule.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8fec8b7669164ecae34f5853f78050e676e557a0b95dd7217bdc72898d6d25abf702e04a26160ac62f544eccb0594ebcf19cda356a1d9d74626d7f45168e5319",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\KnowledgeExtractionEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "057367babd28208f68c5f79a07888d3dff6bd7a70413720bf8b2f86afb3086897e2ee6229c4e17aee2843d36cce3acddb5dd79567db18188ee6eead1303554d5",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\analyzer\\QuantumDocumentAnalyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\api-server.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6f1167640a0ea0cca0a7e563ff80aa8ae6ee36b7fbcc9b8c572b2c2f5cc15ee070f599ff737610cbd87afbff346bb3b2b4208f9343c854a66d68f482df5f33d8",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\event-bus.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\integration.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b427fe91d3430b203c022ca5360a0cf38bc4baf75acd7e088285e1899abfd03763c5b7f0e8ad124e3498cf17d62bea9bffb1247e026a9e1579e6514f5964692a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\metrics-collector.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "fb36e781fc5f280a0a9461af8acd4bfebe0ed140eadc0785863ef8122da16b45565fef94547b4fb10014fa8042c2c956b361a8f8ba83dae320303c798503e975",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\middleware\\biometric-auth.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "e65eaf8def34bab6a0ff659b50084ad5aeccb5b6ef336f6d631e5257772bf0a798f44d756e46caca158f805bee870281c8a0d0ee1654c93c8450d3b6d44b794a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\middleware\\token-auth.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c08274df4a8dd065b04ca02899811adcf931105aa5cc72c1841c0254ac4b6999a9c1ee00d767cd2ed9a7132582066c552769192f7e3dce4a30640c81c28b82c0",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\nhdr-api.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\api\\websocket-server.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "27f18b08beea844fa93097db1dbd4e837d7618b301cb18a47ea79168f5caa46dfd13317b03875c6ceb9fce71888370d451c569d250283dab00963f453480c3ac",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\ConsciousnessMapper.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "7e52e6aa208c000fdd72faa41cfddb210b417fb5805c610c13bd50926f52356401c126829be8b3f0ba5873819e137fc925e3b38d1eceaeef9ddbc5f405065e79",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\DreamAnalyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f9b92794af4653b72d773d85a008fccfa286a2e85ed7f8024b48e2c0f2b5b1c7d94280da307297e2933e51138b711a6a590a74609bec734b54098d0c99f3d709",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\applications\\QuantumOptimizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b40cdadb8026391d2d63d35d99ad4bd95a2648e894655396eeaa72135ae173d5b95ce2fe0d33647f103e1bba251183c96292ec7ee876bf0713004e8d214d13df",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmark-suite.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8968d01d74dd0c456095ef5242244c59d3f025bbef1becf2971731da187b1c259715aa2ccbca61e124410b6257acb14b44ad46dc9ee3f9f2373de94566c97f97",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\consciousness-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "159913581d3affd352768d8bae49da8b8ecfc34eb0ceae118599c203604b228296431ab91912650767bf35980e2dddbcd488f29f0e0c7f77d3bb511655535495",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\integration-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "e3178b25e41d50c99117674c4df3c351874d7dfed0e95916e5c697e91d6713e9435bb221b376e65ddae730da0387f3126ed54aa5f76d22b26bb7a6aac158866e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\memory-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "ad2142eae052176f17292e7a2e119816e2233ba6aca827009dff3d9aeedcbded58235f2080f30429bd1514e824d17cd4fbf6104166ecb9f68a8d35b2b6342ae1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\neural-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "0b3d093876c7ab813a73008eed7daf5f704f1eeaf2d7317bac6fc5e9200b71fc97c4dc42a30eb9501da1219a289bc68827951c0950e0cb49fa898cbd7e0758fc",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\quantum-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d72a98eb3f3a11cb1a281904d18982c2f045b375ff208991d3a20d49ed92afa06f63de7a87344f855198acbed18fdbda1cc63f29bdaad048646ed68ed449bc63",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\security-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "cd16d93a93e33d3aaac43b9430efde0507f16807fedeaffe6154563d2a8773fcf193f7f862640d243b30123cb93f51ebe6bfe692bdcc46f11eeb0ff228487603",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\benchmark\\benchmarks\\thermal-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "2fa336b5ce60d8beb411ec3bb1a16119e8d113eee15fc1990634c45c92d228b135d1380a4a07f4e02fc5efd37d09f3029cbf3f5955c93480df7050bfd9b1fcd1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\cli\\execute-hdr-protocol.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "2aff0cacfd70b528a5b891c54dc2584caf0a7b2a116238a74e3417f442a3217c0531e2b8d09ba7add003b8a170104fca7dc565c48db6543b762cedb7e3c05f51",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\cli\\nhdr-cli.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "17a0104baf8366bb1defad1d7d42fa07859a5916e15b974f50844f73a248fe9e70db6e6078f07b23637dd4a3f2574c151bc71d8e180c2b16c4039d54d8e24862",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\consciousness-layer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "ffe49167af2096cd9471fa4c8c2ba0c1493b365d5ce9b2d513505d74b5e34f9e5cdab77a90538b4f2716c2e0352e351acae0dc648c8992e6aae55b9ec64ace49",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\dimensional-mapping.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a65db7cba171ae7cd77cf0acb3daac475facf5f60b8be8a101f8770927df154e9f5a1363b472620a46ae4afa9169b078a384615b923622270b75651f75311cc3",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\emergence-engine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bbf479fbd9b34e5e420a294f55bb0222deb817346cb32d74895cf4bc2456ac261b0ce10529b6f803929d22eab73b6f53f0dbf6d940424680a505579f8fccdb54",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\quantum-entanglement.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b98d0aee774a17dbfb36e19b071eb6731b4d379970c58ae0e5ca8fc077f3812b129aaecf61101e1e794fb458b10253d25c7767abc9beb2ae299e491a66964087",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\consciousness\\state-preservation.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "2af4912f474f67b49ee15811f3c30b6bbd7e35aecbe5f52a5ba5433e0f83a7a3e8732e3b4bfb8be333c7548b3973de1dc82c1cdabd50ce44ed11265d949fc535",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\benchmarking\\benchmarking-suite.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "cb6dfec81cb16f947989f5399be0305db046f70cba0f30236f7be32425af04447ad8c77d76974d804874f7974602913d0ffba0242e8fe4cb119b45781451c454",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\CommandRouter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "243bda8fa64ffd5353b0d8f06f82030962e397718ef280cfb6ced34d510f4a03cf9d4f002feffd64bda8285da5fa0ee1d262a10cb8cd1851dda7496f39122cff",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\ConfigurationManager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6827f5bd05077973911245f63a0f96009a2326b60fed848e4326d6e8117fe98947d2015733413b23464e2f6b9307e6cb84fb2975c093502b94431dd239470dbb",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\HDREmpireCommander.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "fef068c5c0bca86245bde549d4ffac2c81048302276140c032f81898572754da0f9518ac2c16aa1a8d818b4bb7241e533f3e8a442e6cb21c60fd7fd92c265754",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\HDRMonitoringDashboard.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b75a85f1a5f19a7da2afc3a14fa6ae264b37dd8e4c9bc65c45e09d221f52157fd85f678775ee1b3543eb93c19a80cd9929b06392b715139cf811520b7ab214bb",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\SystemMonitor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "78e6623d57f09b40802c0b807f391456456f1ad4b1a868029f525cca538299f7b6cb9311e61d0ae6e2c4fb875b4a40c500475d3980f7322979a34edc3d72055b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\command-interface\\SystemRegistry.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "58d9b376198d5d4640ef39213aa548fe64096b3072b8743532d84730014f5fb5e22140cec236d2ac0ca0979af81492e7413b3b89cf832c73f43c2cd6a13aa07a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\backup-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "efee03cad7abc0d5f117eeed044ff3b60cbdcfaa1707c325ed0c1d0b83474a90dfa9849879841cc473bff5d9d7bf878fe3eeabe9f904c7e8c0d0df7e2169209b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\configuration-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "0f051a2962bcd03a8b5b5d5263b1ec0e809a9a0824701bdb9a2c46ffac52f4598dcfb0715bec43a6586f2daabe1f70b80622044a024a3d4db463d55d5b4ddb53",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\deployment-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "113576b6070708cc5dcb62fa4b96e765380f339290c9804b72e5af97dfc97b550672abe082b174c1a8afab7f488dbd10228fe2ca8c11176c48d143241791db11",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\deployment\\update-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "346a8748999270f2392314f9abd2206d5963e80ef333cbe014ea1d626b88969fbe96e07b453e28bfe06612bdfa339a5baf6f80c9a41cf12793189b97d8d1072f",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\CreativityAmplifier.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "fa6b46f3c2f755eaad68ac6b06262d71d237e7344956518bf23ad6b104f61a30213e8dffdd5ac7efc0ba770e166b31f87089ce7f9900064560bb738eafa8bc71",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamHDR.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c554222ed62d58d527593ee745ffe730c2a1a850685a6f9139c5d1c7be2e0b855e50e69a04141d6a3e13b5a7215bef606c04a4d150161b7976bec6b3323dc65c",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamPatternAnalyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "19a6177bfbd2233c69e7b250ccb17b0bd2df2f9cf41ef05e96c9c02951bc384226827de51caeaf4b88cf6bb15627c42311aac5f793597eed46cce80469063941",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamScapeGenerator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "243e38077325a73fd58e6587392d90297da6a9333d75a6399e1bc240c7d4b18ccc35d8f18afced6b861702b414404b0243781c7a829a83cb61a25f9988c888ba",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\DreamStateManager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "5a45c49d268492790c5963c39ae8df19beb325b3306cd93e7ad518e855600b30a03e56dc03ec13d7e1355de3f7772437fa3ef298588b5e1c339bb349e3203b9e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\IntuitionEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d4a2809912b5165a39b1f051b5902658f797a02ad48a8f88f9326e875a94047103556f398a4c667f53a98c1728233a0640961417e680db19a554189043f4005d",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\NeuralDreamEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c68c373a47ae87fd7011d69c540f7e7093b86549876490002ff825fd3907c58a840f66c12d1d973c6e962f56218d7d69eee3485b97aaeb4d6114a57bad50c9e6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\PatternRecognizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "90704122ac0375fcef7c3dafaf61bd32ad3a650cbb999e9664915c1d64fae4b258e2028ccb45bdf9706c6fe3c7f5d22c44a5d98be65f9ce455210d349f6bfc22",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\dream-hdr\\SubconsciousPatternEncoder.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "cc30bce717a982c8c31f6cfdc1cb5f9b0b27613a8dc385874c9d784a90b0172da3042d35883408ca58522560ba04289bb2d80610534e0da6ba161e5da333972c",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\environment\\environment-detector.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9ff249e9a9c842a72460500f782a3929c832d6c65599af7ac9591a5e29489c40b68b6c04c35452fc9b562c659f9e9986b8be3ba4ba985b16aa38605e85836e5a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\HDREmpireProtocolOrchestrator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "ee64f9fc88d034a1cb9b977bfce1bb790c6354ef48c8b2f90c28f16082a0cd6514b27363f19b78ccfc871ba736386316796f56d19fb58f75b88f5d140da7721e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\api-server.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "feb3a4650b02fb9466412f6d637719fce44ff8d56ce099d8fa40d4fde64479dabbda410dc883304d396516143a69654573b27086af01809fe2b3e10e1b7ed64e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\data\\DimensionalDataStructures.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9217aed8513b59fe69b75f1c4201a7b2025b9fd5529ec3ace920d33659ad92954504b3ed08f953a74a7d4c4434717843857da65103b9908e9130de65b752f4ba",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\event-bus.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d1b1f85d57e9a359c6fdf2dde651062f6ff80d0ec7d092eeff0fd548a857096c59497bf40ef6516ae7be759307645c0186e53c1c5716948d9e578c79dcb32851",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\EventBridge.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8529f95f72cda1c63395161162b06b33c60f9180d47b6e761c6977236e84b229accbabbbb8310b56f6af5aca6f9c6cf59ad8f2ccaf25685c5224dae005bf4511",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\integration-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8febb10ffaf04526990ebcb2c13e80c14a233cd18281a135321620274891b0c8dca81b22a9c8003a4fa5cd975367c9acee62b2c9f37c1e7ce2ab2916fa8d679d",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\metrics-collector.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "cb05f7ff988bd3004178655df982da899f1cf32d74bfc52b59520eef5c560f91d5c4ec26792a64f8d1a215f9d2aa119a935ef2b0912f96fa85f949227a035ce1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\protocols\\ConsciousnessStateTransferProtocol.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "7ff96b5f44221fcde8cb71a46b756e6b951b92749082cf3c40ae75c941b1c12f042179c48b5c5881258a5a36c5a5362ae254f76252dc45c7b3a54772342048bf",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\security\\QuantumSecureChannel.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "5b92aa848d8eedf6d1543a8ac3dea979dea5b091bd816caa9d5bb5125db585b74a5905ad572146547b7989f96ef69155658ba09c041aa55e0d35d8a183180be0",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\StateTranslator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "fd17f7ddbed2dda26fa15892d538040266b750a0f1701b3c3324978329a4050f4b825d9afee3a1efb877c3ca606a16694d446becf38d844842dd4e53b98422fc",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\swarm\\SwarmConsciousnessManager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "05508256e8a8fd057abc36bd3a465584dc129d4cc041bc1211f649acb3e444c544526b6dbc23dcc234f04adad96067fc95cf6c73d1b80b83072a0ba76a5a057d",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\SystemIntegrator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d21bdf14ac50a09c3a5965a7bcae07593d6b597c4de9aa97da01573eba031e514819f5e79faf416f6a58b3df035ceed1a0f5687ca7e1aa697de360e278ad1a53",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\task\\TaskDistributionEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "79bc459817ea172f9922472efcaa693e7f485315b0f37382606c59d5774614c97c947aced3e41299c6045a97aad991f2a1b8cae78fc14277b1df13f9c78a4201",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\UnifiedController.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "74edfe5246c466347e68c09d98f3b71aad97afb5ca9659cdff73dfdb01c8e5470963bbd0f60bc89a797571bef927dc3ddbe47b286ce8e2a54322438bc159f1b9",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\integration\\websocket-server.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b96e4ae814cd71aa44cff735ba0fd2c5443f50f2fa889d2ecf9b35036712073f6ad7fb750e12885917591c8e28f27007f3e4b3be712f81d778e6b84883f56bed",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\DocumentationSwarmDeployer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "780f7844f68929d38a681b834962f2380901015bf1418b6269604791e22cbeb24b47dcf5ecb09dc0df0c2d1a7cff7ce661dcebee0d33991009e1a5209892eb43",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\nano-swarm-hdr.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "571a80934324edfacf065513373da4d32aab9e860886a2a890a9eca4ab8c53d1ca08ae7d07280a12582762b717ee8501caead0d3d208303b5f0de209d202ee21",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\ns-hdr-enhanced.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "5503cdabf28366bbfce57150141235f771dc4bcdc253546e1f190be8012674624d15e5bd86c01c1423f52fdfc5ca28b131e3f60a9de378e7dc5a0c30b1efa602",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\nano-swarm\\ns-hdr.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bd219f41bd6d2357bae5f98d58d848f46c296b98ae39d947ea44d350c8b7a81c92250e6b535cf6a86352b686a521769467e1df7e88ebd68ebc036e75f2de2f7b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\neural-hdr.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "e27431dcd6e36f19fc75d68858b0469ea807606a49b9368769e2747e0872d15cfb879a70485e7bd8fd95747ed16a3024bac1d5088a0b42e6044a1fd8b38a6ce8",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\optimization\\platform-optimization-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "775a40d89faa25ff2f660c7f008b787cd80ed52b83fdc4818e6c1a2ed1d86e0a2c9b23d178bbe7f9225e6668f967274f950b793ecfe5284b9c397ccb317e7557",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\load-tester.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "4ca4cb1fa43e1ef99905dab0bc9efedbf5fd91bdb9b7d1839a12cbd1021ae236794b1378f4ab7273c3191a08f7008ae8f23957d4119c0285c73cbcd8b8636302",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\optimization-engine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "aac805aaa18263c6b1d66368eae3355f70cb6d4a81f585dc84db7fb4fab981cd21d53a171b8e9e20be5dc160308fec6f7db01acd3ed4be5b7079f7e39830a067",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\performance\\performance-analyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "dcd60b0e7dd89481f99148f08f02c714cce9d64a92ead0c04e9583644b6f988730f01c19891f34cd708ee6be890d3401205c438109ae6a2b0821995093296f27",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\math-verification-protocol.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "07a82d46f9672d0aca96adec71c1e0878575c13d1351c5ea6bda405e7a66cf58ca7858aa4681371a379eeb610c6ef8a56ba1b434dd96a733753e7f5d907e2948",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\quantum-processor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "89d405ca5fc9f76319f40e773ff0f98d737d5c450050f24d06a41db4d95ebf73c914936d6f18e5854aae5a176d5702316eea02a084703cebc03f467cad55a35b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum\\quantum-security-benchmark.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "95c97df93bc95ea30e12517357a95e5e9cd889ef14706dfa1c5012ca41d4e1d62a579ee9304019aa4799cf1fffd5d2383855195ea3fe2d34428c9158e2028d18",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\DecisionPathway.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "400c2a427407973d895e066d64b8061cd0f2d2b6c4c89755056116a6a9a9696058b9f3c66bca200f12cbfbbde502affcf77404c43abf0595cfe2bc1409ba2458",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\DecisionTreeExplorer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a19e53ded26ca578b5b4da448e77d18df76ed9610fa8a948d377d898840c96f7f0575769a2f5c90ba6fe88c7377d978493abeb6e9f17e9e0863ec6cb8e2e6a11",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\FutureExplorer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6de21fb221da1a89d00418bceb808c0ba4512ff51e66095e2289df3496790b1b445329916760098238dd50f7852295ee1fcd0de7325a5796f016f8c51d365c57",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\OutcomeOptimizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "981f66f3d05a9460bec78563cd5e38894aa8697965722fa7bc5c4976c6ca56d936c542827b61dad81e084c1a671f1a574e8aa305369bc4308b2b94bbd9800b36",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\ProbabilityStateManager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "27f9353444373b648c9db5cc2d8b3b358056f8beea8722b39564067066762d2b81a81b7d32126d4a6a5a84d32fc32b4c8f7c68226cdc20cefd91025dcce32a4a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\quantum-hdr\\QuantumHDR.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "df109b52cf96f140ebb23cf59cf3c72f6e2d27a73b3a906829b79de8d16f49571f2d68adfa6af1165fd87633864dac14111eb856fc4d9402c985bbb8d1b5f4a0",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\DimensionalConverter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "0a669f69c0cd26ed82a6e467be591987df9624da20208f9cc979795e613c3462e26fe5e37874f6a5d9160261f67dba885b2ef1d9584df27f2e2384288d79c532",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\NavigableDimensions.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "28ed0f25ba8dba9d80fdb0724f801c0f4c57bf6fe82e810cbc80e7afab452ca548ae9341c711c129099cc6289dd14b59e3439f5fb93de8c277dc142024d22b50",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\RealityHDR.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "e25cdb6e675e928f7c1cd96cae04e2df46acc0f4f41352f518849bb2a5e491ec5ff209198df26e1c1827e1c9e76fc4c41f60be2ece4a84fd08e4607e5a2d94b1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\RealityImporter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d8321d366e326dab4976fb0365e25be0045086a2b36acb5ca3e6803a8040a366ad42189c9523190a6207d6f1240016d7b86ee25c66528a74fb916b21a6a6bcba",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\reality-hdr\\SpatialCompressor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "349883faa353fc01c5843f60b217b2fe8108454ff9b72299ad8ed284f5d7b420aef6e998ad8877cbe103c7e8c114c01011f306aa7e9222122309a201ce295d44",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\security\\BlockchainTimestampVerification.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "39aaa5afd972c96ab69938ccc1443fccd3d1c0b8fd4e26baa2cf0175b85b8727e5bb36e9c2cfdc78d252ff70820bd5cdc9076c947ebedcefd385148eafb17746",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\security\\security-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8696057c87baf2e80e0e3f8bd39a52a3689e8746c978fd2c13f1538a6894cc157a869a901d5603f0d5b31ad2224056d844b9ca97de4968b29c1aed48af9ed151",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\update\\update-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d4d91dd58d6d96ddb918bc968fc1e9924af220a38436c88f6ce673d2de9d93c33090b9ef6f47499f7ff40b242cac7ab79e0fd54f00d612d0c95876ac0a5e0985",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\visualization\\neural-hdr-visualization.jsx",
+        "isLeaf": true
+      },
+      {
+        "hash": "a82430c2967f80d0767b20ff742a501f74541bbb93cbc8bc2a611e34f8ef6f0648a16b457939aa2307c2e1fb00e65f5a43395bc0bf8509946b5d60b8fb8486b6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\HypersonicProtection.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "09a1a9a834c6b6e4de10e1e16224f36875cc59e7293ca12b0995d1b1fee8e2d7718ca6cf24c3f521caea93bf0ee33fd56b3c5b902e9c4ff893a5139ddfc8a3da",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\PerceptionNullifier.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "4847d83075c7848abdadf243643ad770482a88a4114587935bb42d242c06e3d75c93417098e26715835495f0c2844c1dff2d8ee96b31c1efded7e6aa22f94108",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\QuantumFieldDistortion.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "7e3c9eac659f5bb0ec8908ebf445123c6917f488ea73f73cfc9641ee6bf39c920ea937bf0771367c5b22f8b29ef9e2a650eeac9eb9cf0cfe161d3b2618bc9458",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\SelectiveTargeting.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "4d8366da6f765dc43b9ad690661e678e663f83e33997e0981fb4c10f32d9d8099368e6da1090b0cafb59dfb6c6679a86aded4e82b6d32a648703f177f1e5e7aa",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\core\\void-blade-hdr\\VoidBladeHDR.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "60aca61823effec3a1c60eec8bb8ca782ec3ca2070c2b5f58b18bc7b3c8350a882b69aaa3d3e449309560cd67dacf66cf23db05a440e2a7618d7fb96034636e9",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\cli\\generate-docs.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "99588746c4f91e9a18c21e6c4c8b1e83a12a6307e7fa86e75d470e2e8dbd270ef35fa875a9a3004ae702b20f2fadd24677fcd8f7eab1dc2237eef123bf74b2c6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config\\external-docs-defaults.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9b591814c44eb3b7ec06838ba4096828f1725d2d40c9f740c917e8343124d754ba86c3d0f129b57a8ea21f35ba225b36b8ff4a228c25997a5a6934d13148a226",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config\\external-docs-schema.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "73a7502f3e07e2e63e4d7fe3d99ab5a891e510c5a09c890f8056b17512f0f706f25967ff5502ec550cacd1716c246550f7a9d172f9b88e96f1b7ba8d622b5787",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\config-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b98130d365587da52052937235c2eaf7ec3d8d8de813b49441b68038f488a9b3449afa14488207628ab50cdb559b7548572909fdba35ad60fca6f334933968ae",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\defaults\\schema.json",
+        "isLeaf": true
+      },
+      {
+        "hash": "d63610f338e00fee5e5e2eac486ce58f6930784da603d00785821837e71ce87ec78001da54969d387faf7e2734191cc88bc9d39d627d0d1c7f5cdead2f337c3e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\doc-generator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bb149ce0fffb43a5b6568b8869023d28411ca6f44480a586efc789e07dc2cba599662c35fe2751eefcd26788d4b0bfc827e26a986aa6574239280e5594d08146",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\documentation-generator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c9ab6fc6e4aa567f4d8e7d090ee3b9ed80127cff6aabdc8c7d7fc609c49dee33b579eb95e0c516c773077306132847a14edc7887b94fe7bd3ffb413a8f550da5",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\example-registry.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9d7d426c482178d7891a064f8c1e2bb2be838aca3e04df2666f273aa4a4d1f1272d638b82c63a467be0ff698a840a9bf4884f788a43e5b1410587a741b17b141",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\example-system.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d0b3b449a763b23b117d26b702c493e29074aebbba219c286a078541ba4727d7fc632b24ebc47d0243641d40145c0eb8815e908039df1bdfbfc297f4143d3a65",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\external-docs.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "35064f0290166b4cb71a69653e81ee2a781722420d92e5084e054cba6a4f3e7055cb4e75ce7b353da6eb814db910d5a158bde1f6d9a143657721ec3e0c7bc27a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\base-formatter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c72dede35c18d9d7279c7a446530bf16ba53a4ed844000d0eebed5ba0aca1375cc9d83bc43950b74c93fc19d3e740287de2bac833502d786563853624de47dcd",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\html-formatter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "15e87cebbd2eb36b87588ff502165c822e655902b30ca70a669ee344b712d9f9ed95bb3ab91d46eba16943cb08a2da3e18c912d5a980dfad14760176a236c639",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\index.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bb622dcc2d68308b0019674ca3a0a518f99088850109480b901a1f98aea331cfc03007a689cebc4c993f3b0adf603969c585b7f216a102464f270f03014c03ca",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\json-formatter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bed0003ccffd7b0be7877d2ab25a60079904d3b2a4c769d91f522d243648c7f4f96bc9d321499a1711870d9c4857a917533749e4658cb0cc6d739610ef37a9f4",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\formatters\\markdown-formatter.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "768119a9c84b0752d3f2b2e8062c5228575abe8b187bc4dc588f500c1e199351892c76ef2a09144b40f55e82604e731da9596f19fb05d1897cdd30938c85973b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\guide-generator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8ddf0430dba7a3e3cd65afa628860b50a68a6859bb9658479a5c0a4b56df8bc011bdce67b53f5935910381bb7f4ec70c9de5e3ce4dec14f24ff45ee9627c96f0",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\jsdoc.config.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "13c3eca8ff5c44c98e6d33d38fc9655adefa8cef833484149534d1ff95f4a699404fab11fa2d1744ebec24d9a00838f62f313bcac5df4cbe3eae853eb7ac3d41",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\jsdoc.config.json",
+        "isLeaf": true
+      },
+      {
+        "hash": "7983293d7266eea94d635f280f2a1af561cbb3324d42425cc0091a1738d050320d7649d66af40d5faa2f315568b7dbd4bfc050eb74ef8074c5096ea0f3d7c06d",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\metrics\\health-metrics.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d644ea391ef63879f3153c24e6ec47360165dfa59d8851998a1c94f8abda057e3674cc10c858c3d913a096cd42cb70cfeefc0cf5cdb33f5b49a494720b34e2a1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\preview\\preview-server.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "76c7d83900f99ecb138fbe1b0030a16464997b6bad2017646ddd03d20d9ef5635ac7b01e1308dcc8c53f2a9af84cc19420029a380f744dcf60e9cf0442f967ce",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\scripts\\search.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "3fa4a97886303827bf7b260a3d2c4aa8233d91cc31792cf258db1e357a02bae221d0e17602e118ce28f160daac19be6e84c7988f23451a9465cad4efc70af8d4",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\template-engine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f4a2f249dd4e4591411f08722954e2c001dc58ddad8b3e8bab892385905221092c76baf34a35ff57a16f04fe55fcf15ce751c603660dbfffa58eab5b6665170a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\testing\\doc-tester.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "553e622204f56c19f8566a718085de25e30cc8d14520e8b000680c8356cb79ed5cb8d1b88988291543dc65841ec7f6b6b53d0f4eef8ae848fa7158cf713c43dc",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\tracking\\api-tracker.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8cc7ad67750fde190bb5186fe9a0e9735ed6e114d48e72c7401837e0fdf4806d5f0a745a8c7f76a4a2c59e7d13fe1906a24ae73f9f553219c2b82dc8a871aaa6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\typescript-parser.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9eef9bc9df74511c0ee54eebfd1c09bd9c11257bde000bbfcfb88151e4e27500d93ef2adaaac456068cf5c212849f532f5ba3e493d59615463fc20c242237b69",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\usage-guides.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "1832e58e92d7eb37d0a2eefad4b45b57037b7a1d05baeeada4224a04fd640dab6a2150267dada0f6d5196e16d36377f4d5f3e5b565aa8695f86df89f80e72050",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\validation\\validator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "3187b22187998f449b367f84718d7fc627691db2df5a9c30c21eaada3b784ee123795542b1321d5ae7a91fdb2919624bf91054440b83b4e7d526c7992ee88065",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\docs\\version\\version.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "b5ee5de24995c40731028852c516fed84403f86ae757ba34a5defcbaab4980a3c4a800f58d17a8c1dbff9928d30398786620ad7a3b5992e362c45edc963faa29",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\nanobot.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "19862fffdf107cf1a411b40540507ce0e52b5c86e79fe77f96f619df73ca0628fc2c4ec7fd470d135756534064831e67b200f0326d6bd0dcd79a157cd4011a75",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\swarm-controller.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f3606db9c0609161d485b34b630b10ba45e7c2e4c9a4c4661ef69e2ba7d906981b81d3cc23a3220d16a0c9cd124b4b2fb03eb6a7a74973e561b5d2babf1f70ea",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\nanobot\\swarm-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f4106eb80863ea41c8c66600d33dfbea2765b28fdf721081be96b3e2e4268cf59005d5ea73fb16dfe35a9ce941cb170d0c42f34d9c8cafe2b5a82b12c85c5180",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\CrystallineStorage.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "65cfb9469afd9ee910e55cfe2a83e663341c5603db9661c8de1d68de79527340cec191619bd91eccd591d6ac00153bba44076017aa3b37328c9a228af783060b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\ExpertiseEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d2317cac046d608314dc7b9133b6be522526f61c065c8e3f0178a2c34d1784cb9ea7af70af9a56b664b0384f8f5e258f7cabb339c18cbb5bb0ec7fa21d6e0b88",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ohdr\\KnowledgeCrystallizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6a5fdb04cd5430711979b8200c2ae4ff4c1461850f0cc49eaec108edbfcf4d2be0431e3c3b574f81ce859a231718628aaa2c58970d5eff5a5d3a521da81ed480",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\optimizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "3dd0baa9a353943801ecac3f77c472809762b5c389b4c3c4a57fe8d6b40cf2741016b3001e4eec02854677e94f95c0321fbc6323c78b11269d3079269d3f8fc6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\performance-analyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "7008637612140b204ae98faa3903c0ba65690722a3e4f836069a938b797c35033fbf134c42237855e9b83f35491a2ab96d12224712a44115438ba8b3d161712c",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\optimization\\performance-monitor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a235d5fc11d88e80a0d2439304d8379ca8930a7d35533214247647e696f30cfd03dddf4b45dd9f6b369eac13bbc661292bc8800e46d2bce2bc50f8425cc09e52",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\optimization-profiles.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "40501e8ec69e8808745266a3bf8d3ee6fa5d764224431f79ddcbf409a96968c9ab331062725a14322829e3820c7cd6015aa87669b02e9ef14ce62e049c27f2d6",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\optimizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6a8426f381fa563dcbf3c659929fc4c60f426b8da08ee5f2226cb3227cd6065e90c60f36c4094b1a994d74d892a626743f43581fb7d78f7cc1f83a2abf30fb60",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\performance-analyzer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "4447a01f3b572900f554f5838be54bf236df1cd8241586551fa6a15e6443f36b2f9349adcc08e09e62740c9859e2e3c2ab9c23bdb807b76229be204e42edd39f",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\performance\\performance-monitor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a59ba236ce608f0f29d84481668a5601728e076654371d978fb397af636246a24fdbfb78ea32e073e1e295c2a13773956ed7b9b1d3b818918d69cab58fa68f77",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\quantum-entropy-generator.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "8478e17e312135556a5e0dcbbb2e1b8fc9fb4ce6b78c95181a3ffe101fb590429f2d1f2a0c9706da78032dec65c170a17e55ff051a00dc977a413bd28fe3542e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\secure-task-execution.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "0948b7cdb5a1c6a2e26ab35616749fd3296ab31e921d79e17df0d2c3dcd4bd17a37def820171dd31e3ae44003cf6f9b2e9b17f0bd68803bc40d249e398eb685d",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\quantum\\vanishing-key-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "69a9b5ddd49bace7b40efb91ed8d580ded67161eba1683af77b48a98860b4eceb2d4c0050354da13217a3fefbc349e89b46f294d4326af99d59eb903955bfaae",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\consciousness-component.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "bf556471ff9fec47d606fc29da3e94cff2c021ddd0d754c08778d3916ee3ca47f9aa385e3809fb3001a25a93ccd2cec17d6a4a94093c4b4eb9eec90872afb796",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\quantum-component.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c831a63fe3baf21503d2846b0e7341dfc222170afc7c935bfaec2f16188815eff919bdb7925dece5cbf1fdffcaa3ef39da4bcf363d12618ad757c219eff3514a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\swarm-component.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f9402c5ca048a77474b62862cf52a40d07cdb915eb8d47cb99e57785d820062eb853adbc5c40f6cf79b0d3421b3b9a50f6c7a6abf1a7e35e9488459c8f05b4cb",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\system-component.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c57aaefbfe1e83079aa2cfeb1d9a1d34079a575afac8d9c9907c652c7805dac22198985a0c6fe56f38212a9f44751818b3eeb73dfd59e515c913e6e2186edece",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\components\\thermal-component.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f6866f658bcbc1ebeccb4be7ada39185e468f8903ad89d812afef23eb9d7ba3b3c217c18262065b65a82b1daefe84d9877716916444e4853152df725cff1867a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\ControlPanel.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "e971d418b6975e6a879fa0dcbbefd1d4ab50fad360ddaed916e97702d278374031380df1819ed7bdb9f84e14011b796f46b4fc76d01bced12a60b19967f72f62",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\DashboardManager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9c21e1f1a87ceb39ae10fd032b8a083224ff2a1269a2079da13c2cf066a4d32993119e13c1527727bea333ff52b5cd866d6d547bc34c7306171163030a69b4e2",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\MetricsVisualizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a027f636bc71b4a602a98548580caffd7235d7f55515ef4a9cd1d6185e62cda191a5740a53864df8b9401fe6ad1533e7abd670d4535d362b1c3ef693b7e2350e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard\\SystemMonitor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "041b637ee993c4e8a9a610a1f6b10b1c758a316784c22e91f14843f7f0c0dad400219ab3f795b3ba4eb919e979796ba5666ae28a15215c01b8cc7d695b7a049c",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\ui\\dashboard.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "0a14dfadb8b172f0592cbb7dd442a2cae2b5a2a647f22279c01e1201a173e6386911fa8e200304e3f11da5576182b689ec230a3ab217d04f0bec3ef34c7460b8",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\base-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "41a9dbbd3eeadeb71314282b6852ccd51ff0df39a6854f76c14b35e303783a43c6d04f3486897312514a8192e166468c25159eb66465f5a04d76785340bd2f31",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\ConsciousnessStateVisualizer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d78e16a0b47b3a9eae90f23a2e969aa97901b9cdec89acabff8ccb6f62224a324cd60b1f2f928ff99e8220ef406c0aed632c38da3b98301b6c2d2f1053b4557a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\dashboard-manager.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "9a6b0c2ef31555b0f0adeaeb0cfa92b2d0119b44c4440804b851872436f2028abcae42ab10e988ba126c42bc33782dd793fe13ef9203c383b5f8d6aa255c88d9",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\InteractiveAnalysisDashboard.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "69a038fb3f4ddef92d517493a0d7f0fa762961b9a188debd77d0bc03ae0bd8f43dc1d0b69d7e82afe5ff1ff18cba410bffca365ffd50cf8d5c707a1ddce63e93",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\MultidimensionalDataRenderer.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "20421d3e5507018d7f864506228a72d1d9411fe0807c02028c8d356d8440b5a56eea53963f86f74e7f888cf29e4af358548905074733ecc032d8fe0758a3ba9b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\QuantumSecurityMonitor.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "6d256271158ade01a850d923dfd47dec19649bae5f6a6c5c86dedc393e328bd290f2bb877774f9b416694e636d7bef6bbc7866144812f9c0bd2a51223cb19afc",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\SwarmVisualizationEngine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "fdd3c55a3a8ebe8aab6b3b8703537b1f787551d2cd0f2a7ef01b4ee31d4ac6381c31d78c7f836ed88226903acf2130badbbd29a5b9bdeda1b5d2acc334a7d26e",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\consciousness-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "c25eba5d651f3afa776cfb97af3cdba4ccd866a920f8f6aa2a25d6e9f27e09e288bda86279db4f0ac35f8dd76b015f88198537e9286c40b13652cd0abb31a6e1",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\quantum-security-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "81123b084737ae1ba401791a4c75dedbae9c65324e456330d9f472672aa7987a7f0cf8a70228611458aba9bf1f8c1207533d6b873c7bbd1785b43a4864606bfa",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\quantum-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "d726267a037e04c36c860ef60a2954ae997784e1d873fb7cbf2e481f7fb4fcbfa3ca4f0476a8c791229a61e5c2c68c824c5bd3c8c38879e5e57639004e90718b",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\swarm-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f723159fe89cd175d7dbd32371fe4b89088763cb81976152c44c4d444cf3980075bae056fa84c23f7c41758f53f75c914dc9d7d4e30f80186611c90f5ddc118a",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\views\\thermal-view.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "a689e04d2e6a010239b5dfde177c44ab0d69aa5f423a264dd948eb4c79676373aedf002f2edc6fe370c3a27cd3ee565c760ed4c09c17bd34a7e614e180737cb7",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\visualization-engine.js",
+        "isLeaf": true
+      },
+      {
+        "hash": "f3ff7bcb0224a6277bac8ccb4a76fb43a3cbc8df6f352fb0de3a87c995e6fc1087a2e4bdfb4e6602dcd392e98cda760ce5c78a947f219caa1876b608be9ed221",
+        "filePath": "C:\\Users\\sgbil\\N-HDR\\src\\visualization\\web-interface.js",
+        "isLeaf": true
+      }
+    ],
+    [
+      {
+        "hash": "1f3d2f98e6e3fe0cc209689a9e2ff176504815e3b1b61d1f3dcc5994f5efcd34374c3c280fb70c778486e6f51c6590223313b1b4fd02760dcf03c1114e9b4195",
+        "left": "fddb6e2ba5fbdfc8e1696ebe4648396a3061f9bd66bd8737ea74f0084542dde2daaab12d00d64e0f1c55731c8556201dbf275533d3f7b8b4ecc68e86ce384d58",
+        "right": "69029c45a8dc2a88b4b51fdbea0a35f89e1a4d3ff13069dc94338807fbfd20b5b4adb75aef62c41a7c06bde8ac99af03456b68163d796a41e87cdc62aea65a53",
+        "isLeaf": false
+      },
+      {
+        "hash": "6eb50631447d4206f45a1b28c120cb605f660ac5b03bc87950b0293b00b26e637ff51430ed77d5de5c12cfb6197eb66ac1a70d6334e9aaedbcff32bdeda833e5",
+        "left": "8fec8b7669164ecae34f5853f78050e676e557a0b95dd7217bdc72898d6d25abf702e04a26160ac62f544eccb0594ebcf19cda356a1d9d74626d7f45168e5319",
+        "right": "057367babd28208f68c5f79a07888d3dff6bd7a70413720bf8b2f86afb3086897e2ee6229c4e17aee2843d36cce3acddb5dd79567db18188ee6eead1303554d5",
+        "isLeaf": false
+      },
+      {
+        "hash": "080afc9a1f563cc1de1493d352f244b11ae38677092eae52e735a7e7168d699a822b94583a51dfc45fa79cb6a5ec044e875b3e17e8f1f894891dea63b5181e53",
+        "left": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "right": "6f1167640a0ea0cca0a7e563ff80aa8ae6ee36b7fbcc9b8c572b2c2f5cc15ee070f599ff737610cbd87afbff346bb3b2b4208f9343c854a66d68f482df5f33d8",
+        "isLeaf": false
+      },
+      {
+        "hash": "ff532c8239acf2130a647fe477de874dd7ed415d44808627595b8d2e634fbb3dd397d0390750d6d8a4f331ebbc29a65ba6a00da8728f90dd2ea0ae7cf777579f",
+        "left": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "right": "b427fe91d3430b203c022ca5360a0cf38bc4baf75acd7e088285e1899abfd03763c5b7f0e8ad124e3498cf17d62bea9bffb1247e026a9e1579e6514f5964692a",
+        "isLeaf": false
+      },
+      {
+        "hash": "8590554f58bc9dd0974fb9f98e768310f70990f8cc5d534f5405f5863d727df9dbb5b1f5ddd2457f9085ddf1ac455313e8bdf25956f8b0b2718e93afd8fc5bb5",
+        "left": "fb36e781fc5f280a0a9461af8acd4bfebe0ed140eadc0785863ef8122da16b45565fef94547b4fb10014fa8042c2c956b361a8f8ba83dae320303c798503e975",
+        "right": "e65eaf8def34bab6a0ff659b50084ad5aeccb5b6ef336f6d631e5257772bf0a798f44d756e46caca158f805bee870281c8a0d0ee1654c93c8450d3b6d44b794a",
+        "isLeaf": false
+      },
+      {
+        "hash": "4d42bf0b7a66b5ff02136cdda3c8ac0fda797d85fe02397c8f3990da24f514abd87a62a01653cb36979c10f6fe8c62f62ab339c96f44e05ffa2ce580d1dd325b",
+        "left": "c08274df4a8dd065b04ca02899811adcf931105aa5cc72c1841c0254ac4b6999a9c1ee00d767cd2ed9a7132582066c552769192f7e3dce4a30640c81c28b82c0",
+        "right": "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26",
+        "isLeaf": false
+      },
+      {
+        "hash": "49c3bd941903af5f945f2a63c0bcfddeb6de33214535cf5b1f22be9e4dbb26439c35c10063e6eab00fcabee4cf5194fbfa3952e10d98fcd007c71df3565c15b1",
+        "left": "27f18b08beea844fa93097db1dbd4e837d7618b301cb18a47ea79168f5caa46dfd13317b03875c6ceb9fce71888370d451c569d250283dab00963f453480c3ac",
+        "right": "7e52e6aa208c000fdd72faa41cfddb210b417fb5805c610c13bd50926f52356401c126829be8b3f0ba5873819e137fc925e3b38d1eceaeef9ddbc5f405065e79",
+        "isLeaf": false
+      },
+      {
+        "hash": "3cecf06729b820773f54f97e2395a7b9a5f2c2a24dcc547828f382515cb7108cfce2a6bf2f615e7048ead943d06ec92d282d3689c1029758dcf6ad0a85d0d936",
+        "left": "f9b92794af4653b72d773d85a008fccfa286a2e85ed7f8024b48e2c0f2b5b1c7d94280da307297e2933e51138b711a6a590a74609bec734b54098d0c99f3d709",
+        "right": "b40cdadb8026391d2d63d35d99ad4bd95a2648e894655396eeaa72135ae173d5b95ce2fe0d33647f103e1bba251183c96292ec7ee876bf0713004e8d214d13df",
+        "isLeaf": false
+      },
+      {
+        "hash": "72d392be0769a3f78719e8e91fa2c53640dbc55c042b3e24c7441546075caea56b53869d4de02bc1fb088d9424c70e13611424354160d2bac4b9939e4e59be22",
+        "left": "8968d01d74dd0c456095ef5242244c59d3f025bbef1becf2971731da187b1c259715aa2ccbca61e124410b6257acb14b44ad46dc9ee3f9f2373de94566c97f97",
+        "right": "159913581d3affd352768d8bae49da8b8ecfc34eb0ceae118599c203604b228296431ab91912650767bf35980e2dddbcd488f29f0e0c7f77d3bb511655535495",
+        "isLeaf": false
+      },
+      {
+        "hash": "8efa4930a7af461e098474a698792a54a9d2d1bd1905d68d2384cedebcd39dd83db41f6f55441051cf5e58f36417637c3eccf12270c1245520df1e86459d70aa",
+        "left": "e3178b25e41d50c99117674c4df3c351874d7dfed0e95916e5c697e91d6713e9435bb221b376e65ddae730da0387f3126ed54aa5f76d22b26bb7a6aac158866e",
+        "right": "ad2142eae052176f17292e7a2e119816e2233ba6aca827009dff3d9aeedcbded58235f2080f30429bd1514e824d17cd4fbf6104166ecb9f68a8d35b2b6342ae1",
+        "isLeaf": false
+      },
+      {
+        "hash": "3ab852ea41c6c5828d317c0008ab410f0faadc025773dbfb2a99b83b6b702cdd96555ebabc3417fa700058b0100e8579b8cd4ea1830939b06eb062be8992f06a",
+        "left": "0b3d093876c7ab813a73008eed7daf5f704f1eeaf2d7317bac6fc5e9200b71fc97c4dc42a30eb9501da1219a289bc68827951c0950e0cb49fa898cbd7e0758fc",
+        "right": "d72a98eb3f3a11cb1a281904d18982c2f045b375ff208991d3a20d49ed92afa06f63de7a87344f855198acbed18fdbda1cc63f29bdaad048646ed68ed449bc63",
+        "isLeaf": false
+      },
+      {
+        "hash": "26517db16e51b0e34f513a305477a2539d0f992aa3c9ee256d330e1125cf7a99130518d99a26b32f29902888b7a8c84f69c7d800ee2d1dd1890eb05a63786a09",
+        "left": "cd16d93a93e33d3aaac43b9430efde0507f16807fedeaffe6154563d2a8773fcf193f7f862640d243b30123cb93f51ebe6bfe692bdcc46f11eeb0ff228487603",
+        "right": "2fa336b5ce60d8beb411ec3bb1a16119e8d113eee15fc1990634c45c92d228b135d1380a4a07f4e02fc5efd37d09f3029cbf3f5955c93480df7050bfd9b1fcd1",
+        "isLeaf": false
+      },
+      {
+        "hash": "a22063f7439e2ca6a9241be0d568447036f3ce6373c7373fb6d15e95335b758be19c1ff9bf66be6f1ef6c128070935df8324ef5a06652864fdeed55a72b060c6",
+        "left": "2aff0cacfd70b528a5b891c54dc2584caf0a7b2a116238a74e3417f442a3217c0531e2b8d09ba7add003b8a170104fca7dc565c48db6543b762cedb7e3c05f51",
+        "right": "17a0104baf8366bb1defad1d7d42fa07859a5916e15b974f50844f73a248fe9e70db6e6078f07b23637dd4a3f2574c151bc71d8e180c2b16c4039d54d8e24862",
+        "isLeaf": false
+      },
+      {
+        "hash": "8b764091d6abd105f8ef8948eee5c7b739901559c755fc16a2931adb1401ddf6f6ea32f50cb5bf7649cdc337c4af5dca4ba6b1436f14355654d97c78bab55d1c",
+        "left": "ffe49167af2096cd9471fa4c8c2ba0c1493b365d5ce9b2d513505d74b5e34f9e5cdab77a90538b4f2716c2e0352e351acae0dc648c8992e6aae55b9ec64ace49",
+        "right": "a65db7cba171ae7cd77cf0acb3daac475facf5f60b8be8a101f8770927df154e9f5a1363b472620a46ae4afa9169b078a384615b923622270b75651f75311cc3",
+        "isLeaf": false
+      },
+      {
+        "hash": "2281452b09c6a82067f57f8722d63c11817cc52f372aa2acd5c3192853ce9be3bc06010676013b70305fe7d8cacee7bea500a7f3abfae8ebcddcf406b4513b17",
+        "left": "bbf479fbd9b34e5e420a294f55bb0222deb817346cb32d74895cf4bc2456ac261b0ce10529b6f803929d22eab73b6f53f0dbf6d940424680a505579f8fccdb54",
+        "right": "b98d0aee774a17dbfb36e19b071eb6731b4d379970c58ae0e5ca8fc077f3812b129aaecf61101e1e794fb458b10253d25c7767abc9beb2ae299e491a66964087",
+        "isLeaf": false
+      },
+      {
+        "hash": "6c9908c52681b2f9eef66670b09da8290ed0face956e561e9a2a83c797a9a84d4ba8091be65a0156026e0c0d6cbcafd52b7aa170748c6f29c233383a6038143e",
+        "left": "2af4912f474f67b49ee15811f3c30b6bbd7e35aecbe5f52a5ba5433e0f83a7a3e8732e3b4bfb8be333c7548b3973de1dc82c1cdabd50ce44ed11265d949fc535",
+        "right": "cb6dfec81cb16f947989f5399be0305db046f70cba0f30236f7be32425af04447ad8c77d76974d804874f7974602913d0ffba0242e8fe4cb119b45781451c454",
+        "isLeaf": false
+      },
+      {
+        "hash": "e8a018457248c143e64a95b12cb093b574d57147176cee9b151dcecfa7db78cef8b3e483b71cd7d972d084ceaa1bf0c582908d295bffcfb4188e0f944a77b755",
+        "left": "243bda8fa64ffd5353b0d8f06f82030962e397718ef280cfb6ced34d510f4a03cf9d4f002feffd64bda8285da5fa0ee1d262a10cb8cd1851dda7496f39122cff",
+        "right": "6827f5bd05077973911245f63a0f96009a2326b60fed848e4326d6e8117fe98947d2015733413b23464e2f6b9307e6cb84fb2975c093502b94431dd239470dbb",
+        "isLeaf": false
+      },
+      {
+        "hash": "a73c863ec33ec4d135ede78531b2eac49ba58aa49fd1b26c555b32dcb7ff6a01fa96f1c6a8639616312bf5644dea4a1c1c39304329ab95f2fe34dff538bda677",
+        "left": "fef068c5c0bca86245bde549d4ffac2c81048302276140c032f81898572754da0f9518ac2c16aa1a8d818b4bb7241e533f3e8a442e6cb21c60fd7fd92c265754",
+        "right": "b75a85f1a5f19a7da2afc3a14fa6ae264b37dd8e4c9bc65c45e09d221f52157fd85f678775ee1b3543eb93c19a80cd9929b06392b715139cf811520b7ab214bb",
+        "isLeaf": false
+      },
+      {
+        "hash": "3950f2e6686e0679d47c671405693ea18f7f42383c273730614dac9851d0901ab51f522e6d83c909885418a6d10ee490ac376448634629904a0724482b11f8ca",
+        "left": "78e6623d57f09b40802c0b807f391456456f1ad4b1a868029f525cca538299f7b6cb9311e61d0ae6e2c4fb875b4a40c500475d3980f7322979a34edc3d72055b",
+        "right": "58d9b376198d5d4640ef39213aa548fe64096b3072b8743532d84730014f5fb5e22140cec236d2ac0ca0979af81492e7413b3b89cf832c73f43c2cd6a13aa07a",
+        "isLeaf": false
+      },
+      {
+        "hash": "ed67324227060cf433836bfc7aaeae78a4bf4fcb0dd6b885c1b1109f24d2d624693ef4c50f4dc06cb7d5515cfd6fd383ad6d3605749586350cfe3375d11e88f6",
+        "left": "efee03cad7abc0d5f117eeed044ff3b60cbdcfaa1707c325ed0c1d0b83474a90dfa9849879841cc473bff5d9d7bf878fe3eeabe9f904c7e8c0d0df7e2169209b",
+        "right": "0f051a2962bcd03a8b5b5d5263b1ec0e809a9a0824701bdb9a2c46ffac52f4598dcfb0715bec43a6586f2daabe1f70b80622044a024a3d4db463d55d5b4ddb53",
+        "isLeaf": false
+      },
+      {
+        "hash": "7ed7d721118cc10032a792ca506a2c77f01b016894628a5b29fd113aac9a003b865196c0563732c67d832cd28b7416946f4477520a6d074aae7a5e8f0f1fc975",
+        "left": "113576b6070708cc5dcb62fa4b96e765380f339290c9804b72e5af97dfc97b550672abe082b174c1a8afab7f488dbd10228fe2ca8c11176c48d143241791db11",
+        "right": "346a8748999270f2392314f9abd2206d5963e80ef333cbe014ea1d626b88969fbe96e07b453e28bfe06612bdfa339a5baf6f80c9a41cf12793189b97d8d1072f",
+        "isLeaf": false
+      },
+      {
+        "hash": "7c8fdf67e9f3b8e4f282631a5ccba6967efa536a056f44e5e478f002dc602ae9b2829276080e08fe2f8e5510213f4d7193b4feef7be6fc12ea27b66f7924547e",
+        "left": "fa6b46f3c2f755eaad68ac6b06262d71d237e7344956518bf23ad6b104f61a30213e8dffdd5ac7efc0ba770e166b31f87089ce7f9900064560bb738eafa8bc71",
+        "right": "c554222ed62d58d527593ee745ffe730c2a1a850685a6f9139c5d1c7be2e0b855e50e69a04141d6a3e13b5a7215bef606c04a4d150161b7976bec6b3323dc65c",
+        "isLeaf": false
+      },
+      {
+        "hash": "b72946b7eb5279ea09e07776ff35311a7d8f9a07ec443ef086b435b2021f86898f8b53ed0ba8f35604156884fdf0bda591c8d0278b68acad63a236969cd37bcc",
+        "left": "19a6177bfbd2233c69e7b250ccb17b0bd2df2f9cf41ef05e96c9c02951bc384226827de51caeaf4b88cf6bb15627c42311aac5f793597eed46cce80469063941",
+        "right": "243e38077325a73fd58e6587392d90297da6a9333d75a6399e1bc240c7d4b18ccc35d8f18afced6b861702b414404b0243781c7a829a83cb61a25f9988c888ba",
+        "isLeaf": false
+      },
+      {
+        "hash": "1b53f6a78be031c09da2d2541ece9a3fcb40452408ca42f9ebcdce43d97f762f013deaa0531c1b6e4aa5085b8a27b57eb31b983170b4decc21c8fc0017e276fb",
+        "left": "5a45c49d268492790c5963c39ae8df19beb325b3306cd93e7ad518e855600b30a03e56dc03ec13d7e1355de3f7772437fa3ef298588b5e1c339bb349e3203b9e",
+        "right": "d4a2809912b5165a39b1f051b5902658f797a02ad48a8f88f9326e875a94047103556f398a4c667f53a98c1728233a0640961417e680db19a554189043f4005d",
+        "isLeaf": false
+      },
+      {
+        "hash": "6391a1b853dc5433dd58174c98f4d8210862a112b67f3db9d4ce88c739d806e1c40caeba69eb15d1d96371c2f0d0b31d07c5b78c13aebfcf230623fceed7141a",
+        "left": "c68c373a47ae87fd7011d69c540f7e7093b86549876490002ff825fd3907c58a840f66c12d1d973c6e962f56218d7d69eee3485b97aaeb4d6114a57bad50c9e6",
+        "right": "90704122ac0375fcef7c3dafaf61bd32ad3a650cbb999e9664915c1d64fae4b258e2028ccb45bdf9706c6fe3c7f5d22c44a5d98be65f9ce455210d349f6bfc22",
+        "isLeaf": false
+      },
+      {
+        "hash": "b576c4db971970256f5dac8c37cf23e62039ce7a39e04a0abb416348aaefa5270dc70b9e297967a08db0244fea81778c29abf4619983ce4095a5e6f3b4350910",
+        "left": "cc30bce717a982c8c31f6cfdc1cb5f9b0b27613a8dc385874c9d784a90b0172da3042d35883408ca58522560ba04289bb2d80610534e0da6ba161e5da333972c",
+        "right": "9ff249e9a9c842a72460500f782a3929c832d6c65599af7ac9591a5e29489c40b68b6c04c35452fc9b562c659f9e9986b8be3ba4ba985b16aa38605e85836e5a",
+        "isLeaf": false
+      },
+      {
+        "hash": "534185593256d94ac78c9dbb7028347436d130426b300feb26938b8da08bb35b93eba3e9f52a32c1ba4c4937ec3b3245143c383bd85afbba9949dc6b10a8f02b",
+        "left": "ee64f9fc88d034a1cb9b977bfce1bb790c6354ef48c8b2f90c28f16082a0cd6514b27363f19b78ccfc871ba736386316796f56d19fb58f75b88f5d140da7721e",
+        "right": "feb3a4650b02fb9466412f6d637719fce44ff8d56ce099d8fa40d4fde64479dabbda410dc883304d396516143a69654573b27086af01809fe2b3e10e1b7ed64e",
+        "isLeaf": false
+      },
+      {
+        "hash": "f2ef33edaf0027903b66e5120601a4ffeda18ff1b184ca1509082331aec8548bdd69a39beb70e5b5e513022ff136b08940f6b402aab9f1d1681f5250e2e23e29",
+        "left": "9217aed8513b59fe69b75f1c4201a7b2025b9fd5529ec3ace920d33659ad92954504b3ed08f953a74a7d4c4434717843857da65103b9908e9130de65b752f4ba",
+        "right": "d1b1f85d57e9a359c6fdf2dde651062f6ff80d0ec7d092eeff0fd548a857096c59497bf40ef6516ae7be759307645c0186e53c1c5716948d9e578c79dcb32851",
+        "isLeaf": false
+      },
+      {
+        "hash": "41ebf22085e617ee0039316c898bb0b0109a488d8518cbc5185f175cb2559e558a1706b4ea7d6bcf6bc4a557b55f2d30283a3ae1f721a79139a98ba73418c067",
+        "left": "8529f95f72cda1c63395161162b06b33c60f9180d47b6e761c6977236e84b229accbabbbb8310b56f6af5aca6f9c6cf59ad8f2ccaf25685c5224dae005bf4511",
+        "right": "8febb10ffaf04526990ebcb2c13e80c14a233cd18281a135321620274891b0c8dca81b22a9c8003a4fa5cd975367c9acee62b2c9f37c1e7ce2ab2916fa8d679d",
+        "isLeaf": false
+      },
+      {
+        "hash": "251ef041f6c2723214f4cb95dc5395556f2fc545435fa262871c23ce5c734aaac181fc172ab07f9bfb1a9a81f3b3afb2d649613c54e0b67bdd2b55f922829c2d",
+        "left": "cb05f7ff988bd3004178655df982da899f1cf32d74bfc52b59520eef5c560f91d5c4ec26792a64f8d1a215f9d2aa119a935ef2b0912f96fa85f949227a035ce1",
+        "right": "7ff96b5f44221fcde8cb71a46b756e6b951b92749082cf3c40ae75c941b1c12f042179c48b5c5881258a5a36c5a5362ae254f76252dc45c7b3a54772342048bf",
+        "isLeaf": false
+      },
+      {
+        "hash": "5373d836ec2885b3ca6d1b29888c801c26322a05cef80be9a48980af80b2cc60600668ae5fc4392459f4892e3dc52c46ea7e475f469afad3f36dfdd926e6ab15",
+        "left": "5b92aa848d8eedf6d1543a8ac3dea979dea5b091bd816caa9d5bb5125db585b74a5905ad572146547b7989f96ef69155658ba09c041aa55e0d35d8a183180be0",
+        "right": "fd17f7ddbed2dda26fa15892d538040266b750a0f1701b3c3324978329a4050f4b825d9afee3a1efb877c3ca606a16694d446becf38d844842dd4e53b98422fc",
+        "isLeaf": false
+      },
+      {
+        "hash": "8fb1be421688154223e948a3de2fccfa5dad1ce820bd264fbc23ba72f9ce8eb3d5f6e52bd329e118a8ca2e285c640f008cddd80448260779cb326fd875cd0c52",
+        "left": "05508256e8a8fd057abc36bd3a465584dc129d4cc041bc1211f649acb3e444c544526b6dbc23dcc234f04adad96067fc95cf6c73d1b80b83072a0ba76a5a057d",
+        "right": "d21bdf14ac50a09c3a5965a7bcae07593d6b597c4de9aa97da01573eba031e514819f5e79faf416f6a58b3df035ceed1a0f5687ca7e1aa697de360e278ad1a53",
+        "isLeaf": false
+      },
+      {
+        "hash": "61d4b12e2baf0f83419f019b367d2e6650f80e317775f1212f9c2130b01417d097e28bbb268d1d1e978818aa1a58d19c39708a35270ec0a0ae8e3d7930a0cc1a",
+        "left": "79bc459817ea172f9922472efcaa693e7f485315b0f37382606c59d5774614c97c947aced3e41299c6045a97aad991f2a1b8cae78fc14277b1df13f9c78a4201",
+        "right": "74edfe5246c466347e68c09d98f3b71aad97afb5ca9659cdff73dfdb01c8e5470963bbd0f60bc89a797571bef927dc3ddbe47b286ce8e2a54322438bc159f1b9",
+        "isLeaf": false
+      },
+      {
+        "hash": "d4bcd1e3c4b06ce66f6b7d8ff846feb495e60950b0f4231f13fd200a77ed17129818883cf37d0dbfeda81f0b7a41b743624a4c84315eee0638e5ca6676a191f5",
+        "left": "b96e4ae814cd71aa44cff735ba0fd2c5443f50f2fa889d2ecf9b35036712073f6ad7fb750e12885917591c8e28f27007f3e4b3be712f81d778e6b84883f56bed",
+        "right": "780f7844f68929d38a681b834962f2380901015bf1418b6269604791e22cbeb24b47dcf5ecb09dc0df0c2d1a7cff7ce661dcebee0d33991009e1a5209892eb43",
+        "isLeaf": false
+      },
+      {
+        "hash": "0e3d827052419838acc0c6e44bbab862caf0eecfdc7d3fffd83710260631bf50fb5710c39e33c3ad22d34cf79245d785738e27c7083b26c22ec31db33ecbf936",
+        "left": "571a80934324edfacf065513373da4d32aab9e860886a2a890a9eca4ab8c53d1ca08ae7d07280a12582762b717ee8501caead0d3d208303b5f0de209d202ee21",
+        "right": "5503cdabf28366bbfce57150141235f771dc4bcdc253546e1f190be8012674624d15e5bd86c01c1423f52fdfc5ca28b131e3f60a9de378e7dc5a0c30b1efa602",
+        "isLeaf": false
+      },
+      {
+        "hash": "30e83e337e5bcad132e3e6c1128761973a8acd33788063286d0f84cec298096f4e4581d54015c3bb3f817d7e84ee699fd280695ad58c625aa34bb19672688247",
+        "left": "bd219f41bd6d2357bae5f98d58d848f46c296b98ae39d947ea44d350c8b7a81c92250e6b535cf6a86352b686a521769467e1df7e88ebd68ebc036e75f2de2f7b",
+        "right": "e27431dcd6e36f19fc75d68858b0469ea807606a49b9368769e2747e0872d15cfb879a70485e7bd8fd95747ed16a3024bac1d5088a0b42e6044a1fd8b38a6ce8",
+        "isLeaf": false
+      },
+      {
+        "hash": "287a062033b7c1358933c07b0412aa5031fac121ada6b9947bc7478278ecdc15b449807596bad4598278dbac71d64a4475bb7621dd06bcf72a6550160d2f6ccd",
+        "left": "775a40d89faa25ff2f660c7f008b787cd80ed52b83fdc4818e6c1a2ed1d86e0a2c9b23d178bbe7f9225e6668f967274f950b793ecfe5284b9c397ccb317e7557",
+        "right": "4ca4cb1fa43e1ef99905dab0bc9efedbf5fd91bdb9b7d1839a12cbd1021ae236794b1378f4ab7273c3191a08f7008ae8f23957d4119c0285c73cbcd8b8636302",
+        "isLeaf": false
+      },
+      {
+        "hash": "6968669bd8c27cb25e48f80843e5223d6c533fa64e16d8768740dc37bf4d5dbb2f7a6895491c6d41b6bee247a9797edb4be34e62328ef500b547ca502ae54b4f",
+        "left": "aac805aaa18263c6b1d66368eae3355f70cb6d4a81f585dc84db7fb4fab981cd21d53a171b8e9e20be5dc160308fec6f7db01acd3ed4be5b7079f7e39830a067",
+        "right": "dcd60b0e7dd89481f99148f08f02c714cce9d64a92ead0c04e9583644b6f988730f01c19891f34cd708ee6be890d3401205c438109ae6a2b0821995093296f27",
+        "isLeaf": false
+      },
+      {
+        "hash": "04a8b925f7f60a671167082f0142fd970edef1c0be01c54e64564b7db97f2a38c917092dbe33c9781fca56c67d939ef8c901412935adabcf85d2507921fce826",
+        "left": "07a82d46f9672d0aca96adec71c1e0878575c13d1351c5ea6bda405e7a66cf58ca7858aa4681371a379eeb610c6ef8a56ba1b434dd96a733753e7f5d907e2948",
+        "right": "89d405ca5fc9f76319f40e773ff0f98d737d5c450050f24d06a41db4d95ebf73c914936d6f18e5854aae5a176d5702316eea02a084703cebc03f467cad55a35b",
+        "isLeaf": false
+      },
+      {
+        "hash": "c68c17cca57827ebead7a6b190d137338b136e5c2e122a3f74efc30eb732c997dcf5058bf2814160c0547a1491209b997853239656702651f3d8b00bee61124f",
+        "left": "95c97df93bc95ea30e12517357a95e5e9cd889ef14706dfa1c5012ca41d4e1d62a579ee9304019aa4799cf1fffd5d2383855195ea3fe2d34428c9158e2028d18",
+        "right": "400c2a427407973d895e066d64b8061cd0f2d2b6c4c89755056116a6a9a9696058b9f3c66bca200f12cbfbbde502affcf77404c43abf0595cfe2bc1409ba2458",
+        "isLeaf": false
+      },
+      {
+        "hash": "07aff9b491d9d8840e9e4483d4e5b6422357b180d0a6a0519ee3a63890365110cb0b49e5d7bc9a9713afbf4c21e58e3cd2c675946af8e5cc12556e70f08d3573",
+        "left": "a19e53ded26ca578b5b4da448e77d18df76ed9610fa8a948d377d898840c96f7f0575769a2f5c90ba6fe88c7377d978493abeb6e9f17e9e0863ec6cb8e2e6a11",
+        "right": "6de21fb221da1a89d00418bceb808c0ba4512ff51e66095e2289df3496790b1b445329916760098238dd50f7852295ee1fcd0de7325a5796f016f8c51d365c57",
+        "isLeaf": false
+      },
+      {
+        "hash": "b946b6014040a6b507673330b3a2696dddaaf7cee9118f72a700174e6393ba1dcbc599ee21f653e819bed66b164f7f6ff10b3e97813dfa210f873e960ed8bd3b",
+        "left": "981f66f3d05a9460bec78563cd5e38894aa8697965722fa7bc5c4976c6ca56d936c542827b61dad81e084c1a671f1a574e8aa305369bc4308b2b94bbd9800b36",
+        "right": "27f9353444373b648c9db5cc2d8b3b358056f8beea8722b39564067066762d2b81a81b7d32126d4a6a5a84d32fc32b4c8f7c68226cdc20cefd91025dcce32a4a",
+        "isLeaf": false
+      },
+      {
+        "hash": "cf43f1bdac7051ca1c1515d00ff7ee3f56d58ee2f2f862dbd184daea8a5c78f6d76b4b21494b982d57854402578153908b2ecfad0e2f04d7e425eff86ec9a54d",
+        "left": "df109b52cf96f140ebb23cf59cf3c72f6e2d27a73b3a906829b79de8d16f49571f2d68adfa6af1165fd87633864dac14111eb856fc4d9402c985bbb8d1b5f4a0",
+        "right": "0a669f69c0cd26ed82a6e467be591987df9624da20208f9cc979795e613c3462e26fe5e37874f6a5d9160261f67dba885b2ef1d9584df27f2e2384288d79c532",
+        "isLeaf": false
+      },
+      {
+        "hash": "70518700b948f5d19974d99e4626c9ef5d79425241b59b7f9bfff5b718f58c08b08c13a11baf1ac5d4abfc1fb675bb6756102bab907c07324b97e236c36a9466",
+        "left": "28ed0f25ba8dba9d80fdb0724f801c0f4c57bf6fe82e810cbc80e7afab452ca548ae9341c711c129099cc6289dd14b59e3439f5fb93de8c277dc142024d22b50",
+        "right": "e25cdb6e675e928f7c1cd96cae04e2df46acc0f4f41352f518849bb2a5e491ec5ff209198df26e1c1827e1c9e76fc4c41f60be2ece4a84fd08e4607e5a2d94b1",
+        "isLeaf": false
+      },
+      {
+        "hash": "dee8dc05497c1795dcb3bd872dfdd5b16a3593959984d5d803c4f972840f3db025ca1f1f8f9a537ed5660fb3e11d0909ed144c7fcb6a2853b3c4f40ac7c0b06b",
+        "left": "d8321d366e326dab4976fb0365e25be0045086a2b36acb5ca3e6803a8040a366ad42189c9523190a6207d6f1240016d7b86ee25c66528a74fb916b21a6a6bcba",
+        "right": "349883faa353fc01c5843f60b217b2fe8108454ff9b72299ad8ed284f5d7b420aef6e998ad8877cbe103c7e8c114c01011f306aa7e9222122309a201ce295d44",
+        "isLeaf": false
+      },
+      {
+        "hash": "7944ae4495f7450747b3280512741ad69d29469c05f00fc5b0972da767e80652502d89fe9aa83ee56c46220d85034c5c00603a3d501d3f2e9b692c68e2ed28e7",
+        "left": "39aaa5afd972c96ab69938ccc1443fccd3d1c0b8fd4e26baa2cf0175b85b8727e5bb36e9c2cfdc78d252ff70820bd5cdc9076c947ebedcefd385148eafb17746",
+        "right": "8696057c87baf2e80e0e3f8bd39a52a3689e8746c978fd2c13f1538a6894cc157a869a901d5603f0d5b31ad2224056d844b9ca97de4968b29c1aed48af9ed151",
+        "isLeaf": false
+      },
+      {
+        "hash": "130b7669c2d19165e757d87091c7a8b637ca67abf5f561460ed3f7f1c18a277ea9dda2406f993c09b75d9ec0e8f7cfd43813dcdf08cd35246c39d70b25255b49",
+        "left": "d4d91dd58d6d96ddb918bc968fc1e9924af220a38436c88f6ce673d2de9d93c33090b9ef6f47499f7ff40b242cac7ab79e0fd54f00d612d0c95876ac0a5e0985",
+        "right": "a82430c2967f80d0767b20ff742a501f74541bbb93cbc8bc2a611e34f8ef6f0648a16b457939aa2307c2e1fb00e65f5a43395bc0bf8509946b5d60b8fb8486b6",
+        "isLeaf": false
+      },
+      {
+        "hash": "195080ca543f690ed028bf54cecd7963f396bdb0908473659ff8d4f2aa5e8ea690c4d92d83b9ecf70ebe5dea2395e0b9b763a057ee156d7428563e3b88a55e62",
+        "left": "09a1a9a834c6b6e4de10e1e16224f36875cc59e7293ca12b0995d1b1fee8e2d7718ca6cf24c3f521caea93bf0ee33fd56b3c5b902e9c4ff893a5139ddfc8a3da",
+        "right": "4847d83075c7848abdadf243643ad770482a88a4114587935bb42d242c06e3d75c93417098e26715835495f0c2844c1dff2d8ee96b31c1efded7e6aa22f94108",
+        "isLeaf": false
+      },
+      {
+        "hash": "6d97632a3421c5ee977205df43a2bbfab69f276f11ed35a87d98e26f194b2eb6206f59fa7a25519b5f5e3bbab0bb839d5ca010c215cde331ef74f75849fdca87",
+        "left": "7e3c9eac659f5bb0ec8908ebf445123c6917f488ea73f73cfc9641ee6bf39c920ea937bf0771367c5b22f8b29ef9e2a650eeac9eb9cf0cfe161d3b2618bc9458",
+        "right": "4d8366da6f765dc43b9ad690661e678e663f83e33997e0981fb4c10f32d9d8099368e6da1090b0cafb59dfb6c6679a86aded4e82b6d32a648703f177f1e5e7aa",
+        "isLeaf": false
+      },
+      {
+        "hash": "2afa3d67f8e3e13e56c30314168451493a05b8c22575a66f6bf095e659661163e7b943eb605aa2a21ebeb67eeb98638d747ab839cef518d64c4606689dc12905",
+        "left": "60aca61823effec3a1c60eec8bb8ca782ec3ca2070c2b5f58b18bc7b3c8350a882b69aaa3d3e449309560cd67dacf66cf23db05a440e2a7618d7fb96034636e9",
+        "right": "99588746c4f91e9a18c21e6c4c8b1e83a12a6307e7fa86e75d470e2e8dbd270ef35fa875a9a3004ae702b20f2fadd24677fcd8f7eab1dc2237eef123bf74b2c6",
+        "isLeaf": false
+      },
+      {
+        "hash": "2a1296c83ffa628036034860f71b90abd5b2d6f841f9e24d3426273552b125a8b973586ca576a9256f31fc7cea0692a267ee476325ee4c4ab61d213a7018f699",
+        "left": "9b591814c44eb3b7ec06838ba4096828f1725d2d40c9f740c917e8343124d754ba86c3d0f129b57a8ea21f35ba225b36b8ff4a228c25997a5a6934d13148a226",
+        "right": "73a7502f3e07e2e63e4d7fe3d99ab5a891e510c5a09c890f8056b17512f0f706f25967ff5502ec550cacd1716c246550f7a9d172f9b88e96f1b7ba8d622b5787",
+        "isLeaf": false
+      },
+      {
+        "hash": "fee94c09bb3291272a7752ef1e04cd42559788b3b8a845bb459974ed49a9eb811b3b9e3d92ca19fff3d906c0ecd53a212db37f93f10cf3087f35795184f8109c",
+        "left": "b98130d365587da52052937235c2eaf7ec3d8d8de813b49441b68038f488a9b3449afa14488207628ab50cdb559b7548572909fdba35ad60fca6f334933968ae",
+        "right": "d63610f338e00fee5e5e2eac486ce58f6930784da603d00785821837e71ce87ec78001da54969d387faf7e2734191cc88bc9d39d627d0d1c7f5cdead2f337c3e",
+        "isLeaf": false
+      },
+      {
+        "hash": "5440ae76bec573a3199d57fe0d83ae44db7c95c449e41d6ab09b8155b84eeb80bba4ea4af2bb46fe624c06068ddcd7aa78d57d6f54dd659f1d43f50f410b5f8c",
+        "left": "bb149ce0fffb43a5b6568b8869023d28411ca6f44480a586efc789e07dc2cba599662c35fe2751eefcd26788d4b0bfc827e26a986aa6574239280e5594d08146",
+        "right": "c9ab6fc6e4aa567f4d8e7d090ee3b9ed80127cff6aabdc8c7d7fc609c49dee33b579eb95e0c516c773077306132847a14edc7887b94fe7bd3ffb413a8f550da5",
+        "isLeaf": false
+      },
+      {
+        "hash": "1d58189989a9d7e12265c68733333c4c5e54f139cf0ee8322071495e30e93dca7813b713032b3c84d0b7e91f0cb36a701caf695dc909d48a5c91df48beff6b4a",
+        "left": "9d7d426c482178d7891a064f8c1e2bb2be838aca3e04df2666f273aa4a4d1f1272d638b82c63a467be0ff698a840a9bf4884f788a43e5b1410587a741b17b141",
+        "right": "d0b3b449a763b23b117d26b702c493e29074aebbba219c286a078541ba4727d7fc632b24ebc47d0243641d40145c0eb8815e908039df1bdfbfc297f4143d3a65",
+        "isLeaf": false
+      },
+      {
+        "hash": "a5bd2ee6c898c08e0113eb712b9770b6f96729d277be2cfb030e551e83ecc2043e5c25e4af6f1806df36709b7cc0d3637698a18c2837cc60e092a85880bb1c81",
+        "left": "35064f0290166b4cb71a69653e81ee2a781722420d92e5084e054cba6a4f3e7055cb4e75ce7b353da6eb814db910d5a158bde1f6d9a143657721ec3e0c7bc27a",
+        "right": "c72dede35c18d9d7279c7a446530bf16ba53a4ed844000d0eebed5ba0aca1375cc9d83bc43950b74c93fc19d3e740287de2bac833502d786563853624de47dcd",
+        "isLeaf": false
+      },
+      {
+        "hash": "22c979f06cd1ec2ada96f9b8b3be6063d9abcd03cb1f08b1dea66147097c8e9ea335a5485f9dd279641822e82b979738bd97cd14788caae8f571ca8dbc932140",
+        "left": "15e87cebbd2eb36b87588ff502165c822e655902b30ca70a669ee344b712d9f9ed95bb3ab91d46eba16943cb08a2da3e18c912d5a980dfad14760176a236c639",
+        "right": "bb622dcc2d68308b0019674ca3a0a518f99088850109480b901a1f98aea331cfc03007a689cebc4c993f3b0adf603969c585b7f216a102464f270f03014c03ca",
+        "isLeaf": false
+      },
+      {
+        "hash": "1c8f441761e10cdff7fa4fbdb3db18f4710a8ebf72c600597bd8185929953ae960e58e4748e9ce7e3560ada129093caaa9988b940a611a098de79ef05c359ba9",
+        "left": "bed0003ccffd7b0be7877d2ab25a60079904d3b2a4c769d91f522d243648c7f4f96bc9d321499a1711870d9c4857a917533749e4658cb0cc6d739610ef37a9f4",
+        "right": "768119a9c84b0752d3f2b2e8062c5228575abe8b187bc4dc588f500c1e199351892c76ef2a09144b40f55e82604e731da9596f19fb05d1897cdd30938c85973b",
+        "isLeaf": false
+      },
+      {
+        "hash": "d226ba8586fd7089c0b169e6bad8a6740e14d1cb13f1e9f90742335ef74370ca267047efde53ce53d4b54e1786b1c1737b30175652a9cda2f2ff0b24ee443d1a",
+        "left": "8ddf0430dba7a3e3cd65afa628860b50a68a6859bb9658479a5c0a4b56df8bc011bdce67b53f5935910381bb7f4ec70c9de5e3ce4dec14f24ff45ee9627c96f0",
+        "right": "13c3eca8ff5c44c98e6d33d38fc9655adefa8cef833484149534d1ff95f4a699404fab11fa2d1744ebec24d9a00838f62f313bcac5df4cbe3eae853eb7ac3d41",
+        "isLeaf": false
+      },
+      {
+        "hash": "3adeb50d3628a09493cb41c70438f0945544de87e005c29016ecf5982d51a153fd184248db9912c7a31e2836c311c02358e37a7367fc320078361d21c0ee0afc",
+        "left": "7983293d7266eea94d635f280f2a1af561cbb3324d42425cc0091a1738d050320d7649d66af40d5faa2f315568b7dbd4bfc050eb74ef8074c5096ea0f3d7c06d",
+        "right": "d644ea391ef63879f3153c24e6ec47360165dfa59d8851998a1c94f8abda057e3674cc10c858c3d913a096cd42cb70cfeefc0cf5cdb33f5b49a494720b34e2a1",
+        "isLeaf": false
+      },
+      {
+        "hash": "635aba35af4600438f8132da8ac569090426016475515908be4d7e7a8828c21132307549f62ca10d0b59c320779aae6ce0f4cefea95bd529c0aec1c45a6de7fd",
+        "left": "76c7d83900f99ecb138fbe1b0030a16464997b6bad2017646ddd03d20d9ef5635ac7b01e1308dcc8c53f2a9af84cc19420029a380f744dcf60e9cf0442f967ce",
+        "right": "3fa4a97886303827bf7b260a3d2c4aa8233d91cc31792cf258db1e357a02bae221d0e17602e118ce28f160daac19be6e84c7988f23451a9465cad4efc70af8d4",
+        "isLeaf": false
+      },
+      {
+        "hash": "acfdd35f108cbc31863e95805484be54998de8a2952c0f272d108efd78c059957f51903f63ce37b14579beceb8bac9c11c03174cf013ecbadef3f3d6628799c0",
+        "left": "f4a2f249dd4e4591411f08722954e2c001dc58ddad8b3e8bab892385905221092c76baf34a35ff57a16f04fe55fcf15ce751c603660dbfffa58eab5b6665170a",
+        "right": "553e622204f56c19f8566a718085de25e30cc8d14520e8b000680c8356cb79ed5cb8d1b88988291543dc65841ec7f6b6b53d0f4eef8ae848fa7158cf713c43dc",
+        "isLeaf": false
+      },
+      {
+        "hash": "13eb93977427ff66b66b07e6a761259197debd3c186b7a934f7ae6e0781a2f27d6467536f312a385db1fafff8204a96ccde609a6472a9419f0a8840e43709f8f",
+        "left": "8cc7ad67750fde190bb5186fe9a0e9735ed6e114d48e72c7401837e0fdf4806d5f0a745a8c7f76a4a2c59e7d13fe1906a24ae73f9f553219c2b82dc8a871aaa6",
+        "right": "9eef9bc9df74511c0ee54eebfd1c09bd9c11257bde000bbfcfb88151e4e27500d93ef2adaaac456068cf5c212849f532f5ba3e493d59615463fc20c242237b69",
+        "isLeaf": false
+      },
+      {
+        "hash": "81a99452508cac82b4b7b8f7c29192fce5dea9c03bdf02fc206170042447046ee04cf75f95373c2285e0626107abef99c8b9484b93cb9fd582a92540f4aafcf6",
+        "left": "1832e58e92d7eb37d0a2eefad4b45b57037b7a1d05baeeada4224a04fd640dab6a2150267dada0f6d5196e16d36377f4d5f3e5b565aa8695f86df89f80e72050",
+        "right": "3187b22187998f449b367f84718d7fc627691db2df5a9c30c21eaada3b784ee123795542b1321d5ae7a91fdb2919624bf91054440b83b4e7d526c7992ee88065",
+        "isLeaf": false
+      },
+      {
+        "hash": "3ae52ae09ebf502e41debcc6fc154551abc2523607403d1ab60e8d64b7c6516d628248b275c65210efdca6ec5976043c0a033cd914cf80bcd1f175fa19e32068",
+        "left": "b5ee5de24995c40731028852c516fed84403f86ae757ba34a5defcbaab4980a3c4a800f58d17a8c1dbff9928d30398786620ad7a3b5992e362c45edc963faa29",
+        "right": "19862fffdf107cf1a411b40540507ce0e52b5c86e79fe77f96f619df73ca0628fc2c4ec7fd470d135756534064831e67b200f0326d6bd0dcd79a157cd4011a75",
+        "isLeaf": false
+      },
+      {
+        "hash": "4c4c0b13369668c5317223a2dad0ef6e85f90090934d2c9b150c8673e8dae9a4ecf4dd0b91e3d251fbd025b9f3b3f9bb9b714373d60cd4fc6e0ef53cd1ee0544",
+        "left": "f3606db9c0609161d485b34b630b10ba45e7c2e4c9a4c4661ef69e2ba7d906981b81d3cc23a3220d16a0c9cd124b4b2fb03eb6a7a74973e561b5d2babf1f70ea",
+        "right": "f4106eb80863ea41c8c66600d33dfbea2765b28fdf721081be96b3e2e4268cf59005d5ea73fb16dfe35a9ce941cb170d0c42f34d9c8cafe2b5a82b12c85c5180",
+        "isLeaf": false
+      },
+      {
+        "hash": "2007675b38318f27138555d6c6fcdbccea3b43af5962d5afa69036de8153403c792ed2b4cfe4cd3fb11bda60bfc9c80d6f1ab37cfc05f731e913d5a2e6068a86",
+        "left": "65cfb9469afd9ee910e55cfe2a83e663341c5603db9661c8de1d68de79527340cec191619bd91eccd591d6ac00153bba44076017aa3b37328c9a228af783060b",
+        "right": "d2317cac046d608314dc7b9133b6be522526f61c065c8e3f0178a2c34d1784cb9ea7af70af9a56b664b0384f8f5e258f7cabb339c18cbb5bb0ec7fa21d6e0b88",
+        "isLeaf": false
+      },
+      {
+        "hash": "f43613a8575096d9ac82e95f8fcf79851b21a1f291abf18c841c587010c0147efecb64eaae8d3e79ce38f6cc1664d7ddf3b1096d6db4da39a02ce1327ec4a7c6",
+        "left": "6a5fdb04cd5430711979b8200c2ae4ff4c1461850f0cc49eaec108edbfcf4d2be0431e3c3b574f81ce859a231718628aaa2c58970d5eff5a5d3a521da81ed480",
+        "right": "3dd0baa9a353943801ecac3f77c472809762b5c389b4c3c4a57fe8d6b40cf2741016b3001e4eec02854677e94f95c0321fbc6323c78b11269d3079269d3f8fc6",
+        "isLeaf": false
+      },
+      {
+        "hash": "d666504386f935f09a26351d3aefc459863d40305c36f5f6a67fad45241a34cf0d83727b56765e10664755e0fe47b259ade71eb2cfd5c854a1cd6c137001ac60",
+        "left": "7008637612140b204ae98faa3903c0ba65690722a3e4f836069a938b797c35033fbf134c42237855e9b83f35491a2ab96d12224712a44115438ba8b3d161712c",
+        "right": "a235d5fc11d88e80a0d2439304d8379ca8930a7d35533214247647e696f30cfd03dddf4b45dd9f6b369eac13bbc661292bc8800e46d2bce2bc50f8425cc09e52",
+        "isLeaf": false
+      },
+      {
+        "hash": "cbd6337576e6837439a4ce7e7a7790d07e7c94fe87457d94ebaeef88826b61a1d09e4602617e994bdcfb893f7e3243a56b1afb7e2e150d38dcb161dd579a42fd",
+        "left": "40501e8ec69e8808745266a3bf8d3ee6fa5d764224431f79ddcbf409a96968c9ab331062725a14322829e3820c7cd6015aa87669b02e9ef14ce62e049c27f2d6",
+        "right": "6a8426f381fa563dcbf3c659929fc4c60f426b8da08ee5f2226cb3227cd6065e90c60f36c4094b1a994d74d892a626743f43581fb7d78f7cc1f83a2abf30fb60",
+        "isLeaf": false
+      },
+      {
+        "hash": "1a551c67acffffea9c95af31730f0db23b90d7a95c275f9486578186316477c6d88c46573d821b3f2c2d46573be33f31a0268e061c5a4e6f91d643111d914f46",
+        "left": "4447a01f3b572900f554f5838be54bf236df1cd8241586551fa6a15e6443f36b2f9349adcc08e09e62740c9859e2e3c2ab9c23bdb807b76229be204e42edd39f",
+        "right": "a59ba236ce608f0f29d84481668a5601728e076654371d978fb397af636246a24fdbfb78ea32e073e1e295c2a13773956ed7b9b1d3b818918d69cab58fa68f77",
+        "isLeaf": false
+      },
+      {
+        "hash": "486553156f3978150626195252c29be90753c7425fcb302bb85ba6fd695fb1bf87141ca76a101a12360af6b983ba5c794054e7d8baa97f97e8fbce3814336de9",
+        "left": "8478e17e312135556a5e0dcbbb2e1b8fc9fb4ce6b78c95181a3ffe101fb590429f2d1f2a0c9706da78032dec65c170a17e55ff051a00dc977a413bd28fe3542e",
+        "right": "0948b7cdb5a1c6a2e26ab35616749fd3296ab31e921d79e17df0d2c3dcd4bd17a37def820171dd31e3ae44003cf6f9b2e9b17f0bd68803bc40d249e398eb685d",
+        "isLeaf": false
+      },
+      {
+        "hash": "1d64a2b3dbc1bf5f2e8137d912dd0a9c45860f941102b630b13f08f2bad7d4ded9bdd17c02ecf51b0e99923c3778ac6b293b1315f9263594fbf78c716674fa7c",
+        "left": "69a9b5ddd49bace7b40efb91ed8d580ded67161eba1683af77b48a98860b4eceb2d4c0050354da13217a3fefbc349e89b46f294d4326af99d59eb903955bfaae",
+        "right": "bf556471ff9fec47d606fc29da3e94cff2c021ddd0d754c08778d3916ee3ca47f9aa385e3809fb3001a25a93ccd2cec17d6a4a94093c4b4eb9eec90872afb796",
+        "isLeaf": false
+      },
+      {
+        "hash": "4dae3531233e1b0d953696778f412f24e6bce037ce969261abbff432496304ba6830cbd9636b71a96dac832e5a56aa1fd18c88e6e2b31d88ee6246a93f7fd8d8",
+        "left": "c831a63fe3baf21503d2846b0e7341dfc222170afc7c935bfaec2f16188815eff919bdb7925dece5cbf1fdffcaa3ef39da4bcf363d12618ad757c219eff3514a",
+        "right": "f9402c5ca048a77474b62862cf52a40d07cdb915eb8d47cb99e57785d820062eb853adbc5c40f6cf79b0d3421b3b9a50f6c7a6abf1a7e35e9488459c8f05b4cb",
+        "isLeaf": false
+      },
+      {
+        "hash": "0bf74f4a51e9e215a5a6ab44eaa2497a8e648c515b6cf96c4d7c1722dd56bcd60efc46f91ad4d87db6e3f157d1728b216ddc7cbf4d237a94136e1620d1a90d2e",
+        "left": "c57aaefbfe1e83079aa2cfeb1d9a1d34079a575afac8d9c9907c652c7805dac22198985a0c6fe56f38212a9f44751818b3eeb73dfd59e515c913e6e2186edece",
+        "right": "f6866f658bcbc1ebeccb4be7ada39185e468f8903ad89d812afef23eb9d7ba3b3c217c18262065b65a82b1daefe84d9877716916444e4853152df725cff1867a",
+        "isLeaf": false
+      },
+      {
+        "hash": "fb92215c00d6f3ce61fe06b060f7613026940b7fd3d0a6616f7a525bf394c654b869d340327249d0ab24e7a13649c92a0be417c877956d644b35d9b637536f80",
+        "left": "e971d418b6975e6a879fa0dcbbefd1d4ab50fad360ddaed916e97702d278374031380df1819ed7bdb9f84e14011b796f46b4fc76d01bced12a60b19967f72f62",
+        "right": "9c21e1f1a87ceb39ae10fd032b8a083224ff2a1269a2079da13c2cf066a4d32993119e13c1527727bea333ff52b5cd866d6d547bc34c7306171163030a69b4e2",
+        "isLeaf": false
+      },
+      {
+        "hash": "963f8dae22b71771c5377568e566f7070e5ec3e6c3d9ef2ecd2601548d3763f3bf61bf2e262803b994333a5a090437279f59baed03ac3c0bea47de2ee741b1f4",
+        "left": "a027f636bc71b4a602a98548580caffd7235d7f55515ef4a9cd1d6185e62cda191a5740a53864df8b9401fe6ad1533e7abd670d4535d362b1c3ef693b7e2350e",
+        "right": "041b637ee993c4e8a9a610a1f6b10b1c758a316784c22e91f14843f7f0c0dad400219ab3f795b3ba4eb919e979796ba5666ae28a15215c01b8cc7d695b7a049c",
+        "isLeaf": false
+      },
+      {
+        "hash": "a33434228a85ab3dd16052097a64da987864281ca142c2a4f421cba18ade019734d03983ff170bb552381e93d14196a5b681d74ee9088a79a8a3172696228d39",
+        "left": "0a14dfadb8b172f0592cbb7dd442a2cae2b5a2a647f22279c01e1201a173e6386911fa8e200304e3f11da5576182b689ec230a3ab217d04f0bec3ef34c7460b8",
+        "right": "41a9dbbd3eeadeb71314282b6852ccd51ff0df39a6854f76c14b35e303783a43c6d04f3486897312514a8192e166468c25159eb66465f5a04d76785340bd2f31",
+        "isLeaf": false
+      },
+      {
+        "hash": "e2f4ca3a9178fd83497d5b1e8e2bad2c68408862586291402c58a590a7b12496c699c05ab141acd503621cd1a7a414e06e020eefc8b6eafd547fcc25791f9d5a",
+        "left": "d78e16a0b47b3a9eae90f23a2e969aa97901b9cdec89acabff8ccb6f62224a324cd60b1f2f928ff99e8220ef406c0aed632c38da3b98301b6c2d2f1053b4557a",
+        "right": "9a6b0c2ef31555b0f0adeaeb0cfa92b2d0119b44c4440804b851872436f2028abcae42ab10e988ba126c42bc33782dd793fe13ef9203c383b5f8d6aa255c88d9",
+        "isLeaf": false
+      },
+      {
+        "hash": "cad5079f72e4658b0acda2ea7265bc4cf52a974a211c77a44b4c985c78270371ac36736b3be990c0500fc136e68d35c35bc5b3229b7723e5ffcd1c16c9c49983",
+        "left": "69a038fb3f4ddef92d517493a0d7f0fa762961b9a188debd77d0bc03ae0bd8f43dc1d0b69d7e82afe5ff1ff18cba410bffca365ffd50cf8d5c707a1ddce63e93",
+        "right": "20421d3e5507018d7f864506228a72d1d9411fe0807c02028c8d356d8440b5a56eea53963f86f74e7f888cf29e4af358548905074733ecc032d8fe0758a3ba9b",
+        "isLeaf": false
+      },
+      {
+        "hash": "c0bca239626232a0036c7c2867cac2d12190c63ee372e9bf780230cff0865486ff6322230dfd005860c7aa6659fd04c26e952b40443cd8ee914a183f83bb7cad",
+        "left": "6d256271158ade01a850d923dfd47dec19649bae5f6a6c5c86dedc393e328bd290f2bb877774f9b416694e636d7bef6bbc7866144812f9c0bd2a51223cb19afc",
+        "right": "fdd3c55a3a8ebe8aab6b3b8703537b1f787551d2cd0f2a7ef01b4ee31d4ac6381c31d78c7f836ed88226903acf2130badbbd29a5b9bdeda1b5d2acc334a7d26e",
+        "isLeaf": false
+      },
+      {
+        "hash": "fb3763cd001400e0450df5c166408dbaac08a2544fbb3ae1aedc7c2b1cc8b8dba1059ce1bc4855fc889dbfd16abcc3565c86b417406899c4d12a86f3145b67a6",
+        "left": "c25eba5d651f3afa776cfb97af3cdba4ccd866a920f8f6aa2a25d6e9f27e09e288bda86279db4f0ac35f8dd76b015f88198537e9286c40b13652cd0abb31a6e1",
+        "right": "81123b084737ae1ba401791a4c75dedbae9c65324e456330d9f472672aa7987a7f0cf8a70228611458aba9bf1f8c1207533d6b873c7bbd1785b43a4864606bfa",
+        "isLeaf": false
+      },
+      {
+        "hash": "d4f2109535c30e2f94259819fc39f69ad38d412aecc29891285601602fd6e25e27ca09dac118511b67b65ce083fe6fe9f4363660e24aad2eeb013337a31c6def",
+        "left": "d726267a037e04c36c860ef60a2954ae997784e1d873fb7cbf2e481f7fb4fcbfa3ca4f0476a8c791229a61e5c2c68c824c5bd3c8c38879e5e57639004e90718b",
+        "right": "f723159fe89cd175d7dbd32371fe4b89088763cb81976152c44c4d444cf3980075bae056fa84c23f7c41758f53f75c914dc9d7d4e30f80186611c90f5ddc118a",
+        "isLeaf": false
+      },
+      {
+        "hash": "8bfd0b4431cf11ebf0bbf7e9cb820a14758c8ac5d0563bdedaf8032bd0efb4ad49cad784a680165207dd0b0e6da546984a3c716cde3b245aa9be05ee1df0e8b3",
+        "left": "a689e04d2e6a010239b5dfde177c44ab0d69aa5f423a264dd948eb4c79676373aedf002f2edc6fe370c3a27cd3ee565c760ed4c09c17bd34a7e614e180737cb7",
+        "right": "f3ff7bcb0224a6277bac8ccb4a76fb43a3cbc8df6f352fb0de3a87c995e6fc1087a2e4bdfb4e6602dcd392e98cda760ce5c78a947f219caa1876b608be9ed221",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "95963cc25f6944d15f896a14e731a203bc6ae98a39676ffe70416ed39a14a576e13eebe0182d244e1d47492d42710593f9bc0ed2d7bc1066942005b4e87ab801",
+        "left": "1f3d2f98e6e3fe0cc209689a9e2ff176504815e3b1b61d1f3dcc5994f5efcd34374c3c280fb70c778486e6f51c6590223313b1b4fd02760dcf03c1114e9b4195",
+        "right": "6eb50631447d4206f45a1b28c120cb605f660ac5b03bc87950b0293b00b26e637ff51430ed77d5de5c12cfb6197eb66ac1a70d6334e9aaedbcff32bdeda833e5",
+        "isLeaf": false
+      },
+      {
+        "hash": "deb6cdcbcc24106f25f552f40a0d1d79cf682eae2dbb6af2a7d9c0bb80c81290a2ae9e8d6a94e6e9d0bc7d04bc18d5c1431d886b74c2346e90078f24ee0a9649",
+        "left": "080afc9a1f563cc1de1493d352f244b11ae38677092eae52e735a7e7168d699a822b94583a51dfc45fa79cb6a5ec044e875b3e17e8f1f894891dea63b5181e53",
+        "right": "ff532c8239acf2130a647fe477de874dd7ed415d44808627595b8d2e634fbb3dd397d0390750d6d8a4f331ebbc29a65ba6a00da8728f90dd2ea0ae7cf777579f",
+        "isLeaf": false
+      },
+      {
+        "hash": "e332197906ed54e51a8c01c82ab56ad788212baa29b84427279b2fb64fecdce08626bf70b160fa45414a600951458127055837961c560e8d5677d3a88484b009",
+        "left": "8590554f58bc9dd0974fb9f98e768310f70990f8cc5d534f5405f5863d727df9dbb5b1f5ddd2457f9085ddf1ac455313e8bdf25956f8b0b2718e93afd8fc5bb5",
+        "right": "4d42bf0b7a66b5ff02136cdda3c8ac0fda797d85fe02397c8f3990da24f514abd87a62a01653cb36979c10f6fe8c62f62ab339c96f44e05ffa2ce580d1dd325b",
+        "isLeaf": false
+      },
+      {
+        "hash": "e907dcfa6f664a267a66a75ec9b49890884a71f2aa131036957e0f135f809e20f34c8297abe7cea0a094fe4d2179f7e68dae8cccdb64572978b4fb8ddfb43b29",
+        "left": "49c3bd941903af5f945f2a63c0bcfddeb6de33214535cf5b1f22be9e4dbb26439c35c10063e6eab00fcabee4cf5194fbfa3952e10d98fcd007c71df3565c15b1",
+        "right": "3cecf06729b820773f54f97e2395a7b9a5f2c2a24dcc547828f382515cb7108cfce2a6bf2f615e7048ead943d06ec92d282d3689c1029758dcf6ad0a85d0d936",
+        "isLeaf": false
+      },
+      {
+        "hash": "77fa1c09e6a1a8f9318138be7feb1d2079fc7cb0bfc498c4e83009fe719291dff85bde0fd1def7bd1117c3747059f47521e7b62f79647f92a0453767acd2ea34",
+        "left": "72d392be0769a3f78719e8e91fa2c53640dbc55c042b3e24c7441546075caea56b53869d4de02bc1fb088d9424c70e13611424354160d2bac4b9939e4e59be22",
+        "right": "8efa4930a7af461e098474a698792a54a9d2d1bd1905d68d2384cedebcd39dd83db41f6f55441051cf5e58f36417637c3eccf12270c1245520df1e86459d70aa",
+        "isLeaf": false
+      },
+      {
+        "hash": "fbe83a77c621c3b3fc47412ce40bbc8dba8693b098f53c771064f45d944099be5c6d69cc021a2ad5c1e78cae5f91ed66a2a830277d2f2620e6459b511e8ae1b7",
+        "left": "3ab852ea41c6c5828d317c0008ab410f0faadc025773dbfb2a99b83b6b702cdd96555ebabc3417fa700058b0100e8579b8cd4ea1830939b06eb062be8992f06a",
+        "right": "26517db16e51b0e34f513a305477a2539d0f992aa3c9ee256d330e1125cf7a99130518d99a26b32f29902888b7a8c84f69c7d800ee2d1dd1890eb05a63786a09",
+        "isLeaf": false
+      },
+      {
+        "hash": "5025729bd837dd75bba2c371e55eb322df16197cded64dd7cef3709f247d6b4320e35e4447a80dd493d13406b85c4fe6fb86567eb92c9411c86c0d6a0271ebd6",
+        "left": "a22063f7439e2ca6a9241be0d568447036f3ce6373c7373fb6d15e95335b758be19c1ff9bf66be6f1ef6c128070935df8324ef5a06652864fdeed55a72b060c6",
+        "right": "8b764091d6abd105f8ef8948eee5c7b739901559c755fc16a2931adb1401ddf6f6ea32f50cb5bf7649cdc337c4af5dca4ba6b1436f14355654d97c78bab55d1c",
+        "isLeaf": false
+      },
+      {
+        "hash": "3218399cea108af3765341c338e2a0d5f8feb7c08cdf2b7cd3b46a5a9d0f26471c573011348d797533c3e92ea289741504b07acd98a0783f0971128845a3a56b",
+        "left": "2281452b09c6a82067f57f8722d63c11817cc52f372aa2acd5c3192853ce9be3bc06010676013b70305fe7d8cacee7bea500a7f3abfae8ebcddcf406b4513b17",
+        "right": "6c9908c52681b2f9eef66670b09da8290ed0face956e561e9a2a83c797a9a84d4ba8091be65a0156026e0c0d6cbcafd52b7aa170748c6f29c233383a6038143e",
+        "isLeaf": false
+      },
+      {
+        "hash": "269a6739976850f92446b8245772c859362a48bac5dd8263de0afaed42d0d84a42455c607a02c6b24304391de72832b2c4f390ccc53584d4833bb8ac4ffb3e3e",
+        "left": "e8a018457248c143e64a95b12cb093b574d57147176cee9b151dcecfa7db78cef8b3e483b71cd7d972d084ceaa1bf0c582908d295bffcfb4188e0f944a77b755",
+        "right": "a73c863ec33ec4d135ede78531b2eac49ba58aa49fd1b26c555b32dcb7ff6a01fa96f1c6a8639616312bf5644dea4a1c1c39304329ab95f2fe34dff538bda677",
+        "isLeaf": false
+      },
+      {
+        "hash": "c20d557afc6821cfa734bd8a2e8d342c703cddd81d86ff15b272da2502aed78d47e0c53d65e55dd596d8bc542409b00a4f357658193ff632e2d0b477dfdbb4cf",
+        "left": "3950f2e6686e0679d47c671405693ea18f7f42383c273730614dac9851d0901ab51f522e6d83c909885418a6d10ee490ac376448634629904a0724482b11f8ca",
+        "right": "ed67324227060cf433836bfc7aaeae78a4bf4fcb0dd6b885c1b1109f24d2d624693ef4c50f4dc06cb7d5515cfd6fd383ad6d3605749586350cfe3375d11e88f6",
+        "isLeaf": false
+      },
+      {
+        "hash": "d72d219414b47176b58923e66df4100a1cf5d398a9528188df17bcd70fe0cbba62454ad7f2546ccf2b1dffbb0dcdec0c9839d0ccd4b81ed0b33c9359d08deae6",
+        "left": "7ed7d721118cc10032a792ca506a2c77f01b016894628a5b29fd113aac9a003b865196c0563732c67d832cd28b7416946f4477520a6d074aae7a5e8f0f1fc975",
+        "right": "7c8fdf67e9f3b8e4f282631a5ccba6967efa536a056f44e5e478f002dc602ae9b2829276080e08fe2f8e5510213f4d7193b4feef7be6fc12ea27b66f7924547e",
+        "isLeaf": false
+      },
+      {
+        "hash": "2a4ed4cf9c1093a5f7fede2e1b1309611ad16a24274875f2d665b2cfa714e2c1c31a6d66062ec2df0099cf61a39d59e11cadc707b3df60a57555b6583c6e48ca",
+        "left": "b72946b7eb5279ea09e07776ff35311a7d8f9a07ec443ef086b435b2021f86898f8b53ed0ba8f35604156884fdf0bda591c8d0278b68acad63a236969cd37bcc",
+        "right": "1b53f6a78be031c09da2d2541ece9a3fcb40452408ca42f9ebcdce43d97f762f013deaa0531c1b6e4aa5085b8a27b57eb31b983170b4decc21c8fc0017e276fb",
+        "isLeaf": false
+      },
+      {
+        "hash": "372484ba21bd47c3d691667fd5700a1eca77fe77ec992041a1d2c963a5cf6aad07853dca3f9d0c296f563a95abe247c175b2b64f3ef039f6375fecd351156f1b",
+        "left": "6391a1b853dc5433dd58174c98f4d8210862a112b67f3db9d4ce88c739d806e1c40caeba69eb15d1d96371c2f0d0b31d07c5b78c13aebfcf230623fceed7141a",
+        "right": "b576c4db971970256f5dac8c37cf23e62039ce7a39e04a0abb416348aaefa5270dc70b9e297967a08db0244fea81778c29abf4619983ce4095a5e6f3b4350910",
+        "isLeaf": false
+      },
+      {
+        "hash": "755e2b866fe30fcbc7f542bef30aea13c4099e66ddd252ef4ad1fc0a5846242faf92c211d24e131152437623010306e6e598b28a889e5c9aa7c3bf7a4cc0657e",
+        "left": "534185593256d94ac78c9dbb7028347436d130426b300feb26938b8da08bb35b93eba3e9f52a32c1ba4c4937ec3b3245143c383bd85afbba9949dc6b10a8f02b",
+        "right": "f2ef33edaf0027903b66e5120601a4ffeda18ff1b184ca1509082331aec8548bdd69a39beb70e5b5e513022ff136b08940f6b402aab9f1d1681f5250e2e23e29",
+        "isLeaf": false
+      },
+      {
+        "hash": "bfcdd1fedc35e918a554ebf1aecf108c9c9392360abd3e4049e98d4941797bc6d6a8afda2c6a8a4fce45f1b042c6847c4d50668dfe244c2f1df65b34c655d593",
+        "left": "41ebf22085e617ee0039316c898bb0b0109a488d8518cbc5185f175cb2559e558a1706b4ea7d6bcf6bc4a557b55f2d30283a3ae1f721a79139a98ba73418c067",
+        "right": "251ef041f6c2723214f4cb95dc5395556f2fc545435fa262871c23ce5c734aaac181fc172ab07f9bfb1a9a81f3b3afb2d649613c54e0b67bdd2b55f922829c2d",
+        "isLeaf": false
+      },
+      {
+        "hash": "5228c087e779cccee508215c7dda5a69ac992fd9192f34ecf4e27e121072a963b26ff11a4ff5805f3cf3cfb9454636381d942b0c704afb7f58eb4b43c97b8236",
+        "left": "5373d836ec2885b3ca6d1b29888c801c26322a05cef80be9a48980af80b2cc60600668ae5fc4392459f4892e3dc52c46ea7e475f469afad3f36dfdd926e6ab15",
+        "right": "8fb1be421688154223e948a3de2fccfa5dad1ce820bd264fbc23ba72f9ce8eb3d5f6e52bd329e118a8ca2e285c640f008cddd80448260779cb326fd875cd0c52",
+        "isLeaf": false
+      },
+      {
+        "hash": "1a5b4053626c92b62bb1eba5f0e594f6a4cef38c31a7f0f2d455bd74e48a9d32cbabc78052a74e4a6e5ba74f546bc96d3f0dec51c3492d23de4807cb9335b35c",
+        "left": "61d4b12e2baf0f83419f019b367d2e6650f80e317775f1212f9c2130b01417d097e28bbb268d1d1e978818aa1a58d19c39708a35270ec0a0ae8e3d7930a0cc1a",
+        "right": "d4bcd1e3c4b06ce66f6b7d8ff846feb495e60950b0f4231f13fd200a77ed17129818883cf37d0dbfeda81f0b7a41b743624a4c84315eee0638e5ca6676a191f5",
+        "isLeaf": false
+      },
+      {
+        "hash": "6f1ad90910056e4d2b90ef19dece8930675752868a02e361ab82b8481c7efab05be89dfd8230301991e46a80b175312bf99bb774823fd84bf76f9b61121d460d",
+        "left": "0e3d827052419838acc0c6e44bbab862caf0eecfdc7d3fffd83710260631bf50fb5710c39e33c3ad22d34cf79245d785738e27c7083b26c22ec31db33ecbf936",
+        "right": "30e83e337e5bcad132e3e6c1128761973a8acd33788063286d0f84cec298096f4e4581d54015c3bb3f817d7e84ee699fd280695ad58c625aa34bb19672688247",
+        "isLeaf": false
+      },
+      {
+        "hash": "2606153aeb7175e863b394fdf4b936b5ea54f962ad56a1e9ee0b82cd8f5eb32034a5a0c757742c9d12f91d1654dc67058aa5827e07352d10ab40f17f13a1b62f",
+        "left": "287a062033b7c1358933c07b0412aa5031fac121ada6b9947bc7478278ecdc15b449807596bad4598278dbac71d64a4475bb7621dd06bcf72a6550160d2f6ccd",
+        "right": "6968669bd8c27cb25e48f80843e5223d6c533fa64e16d8768740dc37bf4d5dbb2f7a6895491c6d41b6bee247a9797edb4be34e62328ef500b547ca502ae54b4f",
+        "isLeaf": false
+      },
+      {
+        "hash": "f84d426b236bd05a5e9b85dcdb60ae3598b305dc9e06b4a8f64544b57a66c2f8bd66fac7186e069125a45c928e5a164fb3845ee5b7a0bc3cedb0f8146d309839",
+        "left": "04a8b925f7f60a671167082f0142fd970edef1c0be01c54e64564b7db97f2a38c917092dbe33c9781fca56c67d939ef8c901412935adabcf85d2507921fce826",
+        "right": "c68c17cca57827ebead7a6b190d137338b136e5c2e122a3f74efc30eb732c997dcf5058bf2814160c0547a1491209b997853239656702651f3d8b00bee61124f",
+        "isLeaf": false
+      },
+      {
+        "hash": "15c4f7693c96467092066b81d715e28fa4fcadcec35ec90cd8370a832e1f30d8b50dc0756502053d0e7c82f54a564660a16c4be5a1425d1c6fff5494d0e6ef8c",
+        "left": "07aff9b491d9d8840e9e4483d4e5b6422357b180d0a6a0519ee3a63890365110cb0b49e5d7bc9a9713afbf4c21e58e3cd2c675946af8e5cc12556e70f08d3573",
+        "right": "b946b6014040a6b507673330b3a2696dddaaf7cee9118f72a700174e6393ba1dcbc599ee21f653e819bed66b164f7f6ff10b3e97813dfa210f873e960ed8bd3b",
+        "isLeaf": false
+      },
+      {
+        "hash": "dfdd20a9c1f65ed2503ccbcd83af7daf05b875e38bce56c98bbec01bc7a4ccbda391fc4409864174840661749fd7e776f61cf64ef1254fe48990d788da473ae4",
+        "left": "cf43f1bdac7051ca1c1515d00ff7ee3f56d58ee2f2f862dbd184daea8a5c78f6d76b4b21494b982d57854402578153908b2ecfad0e2f04d7e425eff86ec9a54d",
+        "right": "70518700b948f5d19974d99e4626c9ef5d79425241b59b7f9bfff5b718f58c08b08c13a11baf1ac5d4abfc1fb675bb6756102bab907c07324b97e236c36a9466",
+        "isLeaf": false
+      },
+      {
+        "hash": "75ef3ab8f3594b5df45525f5ce043f304bf2590db662402fe7c058d3be1ae64231ff932dc69e03b7909bfc0b75c07d08b2bbdafa775e28a402917a057f1120b3",
+        "left": "dee8dc05497c1795dcb3bd872dfdd5b16a3593959984d5d803c4f972840f3db025ca1f1f8f9a537ed5660fb3e11d0909ed144c7fcb6a2853b3c4f40ac7c0b06b",
+        "right": "7944ae4495f7450747b3280512741ad69d29469c05f00fc5b0972da767e80652502d89fe9aa83ee56c46220d85034c5c00603a3d501d3f2e9b692c68e2ed28e7",
+        "isLeaf": false
+      },
+      {
+        "hash": "b230bc76f68bed0bd17d77162f3f53486c2fe4315520b68a1868299a5ce1d827f47db88d9cd0d2fcfb37981a22bb15033d7019891e9af068adbd246a884ff285",
+        "left": "130b7669c2d19165e757d87091c7a8b637ca67abf5f561460ed3f7f1c18a277ea9dda2406f993c09b75d9ec0e8f7cfd43813dcdf08cd35246c39d70b25255b49",
+        "right": "195080ca543f690ed028bf54cecd7963f396bdb0908473659ff8d4f2aa5e8ea690c4d92d83b9ecf70ebe5dea2395e0b9b763a057ee156d7428563e3b88a55e62",
+        "isLeaf": false
+      },
+      {
+        "hash": "fb6a145daac7c51d2108919a6070cc216d38f7ae6c76f7499dfbfc8630e5325b6a9d7ad36f961bacb53f52d30aef1035d624c81d38eff2931dc0168e5226a742",
+        "left": "6d97632a3421c5ee977205df43a2bbfab69f276f11ed35a87d98e26f194b2eb6206f59fa7a25519b5f5e3bbab0bb839d5ca010c215cde331ef74f75849fdca87",
+        "right": "2afa3d67f8e3e13e56c30314168451493a05b8c22575a66f6bf095e659661163e7b943eb605aa2a21ebeb67eeb98638d747ab839cef518d64c4606689dc12905",
+        "isLeaf": false
+      },
+      {
+        "hash": "f459dbb2a139eefdc59f08667f7d7a67cc705b2df000eb20896614dbc3f13dad96dec83d56a921484a5849fa3b7a4e520485b0465d691d9f93f05d1df939dc10",
+        "left": "2a1296c83ffa628036034860f71b90abd5b2d6f841f9e24d3426273552b125a8b973586ca576a9256f31fc7cea0692a267ee476325ee4c4ab61d213a7018f699",
+        "right": "fee94c09bb3291272a7752ef1e04cd42559788b3b8a845bb459974ed49a9eb811b3b9e3d92ca19fff3d906c0ecd53a212db37f93f10cf3087f35795184f8109c",
+        "isLeaf": false
+      },
+      {
+        "hash": "806d93578adb5463b387cdd492eac6d10f99b942ed898cc8fffda05d05c665d80645d169d2d34475596e056bf7b32568f0171abab48eb9a843e39758884cd63d",
+        "left": "5440ae76bec573a3199d57fe0d83ae44db7c95c449e41d6ab09b8155b84eeb80bba4ea4af2bb46fe624c06068ddcd7aa78d57d6f54dd659f1d43f50f410b5f8c",
+        "right": "1d58189989a9d7e12265c68733333c4c5e54f139cf0ee8322071495e30e93dca7813b713032b3c84d0b7e91f0cb36a701caf695dc909d48a5c91df48beff6b4a",
+        "isLeaf": false
+      },
+      {
+        "hash": "93113102da3701c37275171bdf09626a286dddc7930e1b5e84794647093e11ccb745337906532f58afb32888f397b4947b89c5302564eada83e34eb74878675e",
+        "left": "a5bd2ee6c898c08e0113eb712b9770b6f96729d277be2cfb030e551e83ecc2043e5c25e4af6f1806df36709b7cc0d3637698a18c2837cc60e092a85880bb1c81",
+        "right": "22c979f06cd1ec2ada96f9b8b3be6063d9abcd03cb1f08b1dea66147097c8e9ea335a5485f9dd279641822e82b979738bd97cd14788caae8f571ca8dbc932140",
+        "isLeaf": false
+      },
+      {
+        "hash": "115731c813f26f3cc82703294bfe994a200ea1c24690e2c424c2271add99968390204d5f86eb6f06786fdd9fa5aea16e95043c6d1af946a2f5209c64e9175d87",
+        "left": "1c8f441761e10cdff7fa4fbdb3db18f4710a8ebf72c600597bd8185929953ae960e58e4748e9ce7e3560ada129093caaa9988b940a611a098de79ef05c359ba9",
+        "right": "d226ba8586fd7089c0b169e6bad8a6740e14d1cb13f1e9f90742335ef74370ca267047efde53ce53d4b54e1786b1c1737b30175652a9cda2f2ff0b24ee443d1a",
+        "isLeaf": false
+      },
+      {
+        "hash": "e68ad97bb7f5217c7805ed794b95caf5f7fb4f794236d60f9c92b87d232bbc3129033be4e643b0a601ae2d96b8dd2d37aa8fea60c21cb941df32983654b21a75",
+        "left": "3adeb50d3628a09493cb41c70438f0945544de87e005c29016ecf5982d51a153fd184248db9912c7a31e2836c311c02358e37a7367fc320078361d21c0ee0afc",
+        "right": "635aba35af4600438f8132da8ac569090426016475515908be4d7e7a8828c21132307549f62ca10d0b59c320779aae6ce0f4cefea95bd529c0aec1c45a6de7fd",
+        "isLeaf": false
+      },
+      {
+        "hash": "9d09f415408f7f7be34f9acb131ba546019c00afb15fe125be71660217039e8f026d31907da57e8f9e524eb9649b7a560dec6f3ecd1d61823cf3a5241768705f",
+        "left": "acfdd35f108cbc31863e95805484be54998de8a2952c0f272d108efd78c059957f51903f63ce37b14579beceb8bac9c11c03174cf013ecbadef3f3d6628799c0",
+        "right": "13eb93977427ff66b66b07e6a761259197debd3c186b7a934f7ae6e0781a2f27d6467536f312a385db1fafff8204a96ccde609a6472a9419f0a8840e43709f8f",
+        "isLeaf": false
+      },
+      {
+        "hash": "dbf59bde903a97e5c906173e1e6db8b2be54eecafdac6c19e43c32ebb326e3ac6114c953d4cff84f2e6965bf7fa3f4adbe25ebbdca4e47e9611cfc79c723ecad",
+        "left": "81a99452508cac82b4b7b8f7c29192fce5dea9c03bdf02fc206170042447046ee04cf75f95373c2285e0626107abef99c8b9484b93cb9fd582a92540f4aafcf6",
+        "right": "3ae52ae09ebf502e41debcc6fc154551abc2523607403d1ab60e8d64b7c6516d628248b275c65210efdca6ec5976043c0a033cd914cf80bcd1f175fa19e32068",
+        "isLeaf": false
+      },
+      {
+        "hash": "64a9c17cb2061fa5b406c2a0d21db1bd29ead139cff69f77cca788c9456e111f0d7382b10be418583658cc7e3bc6082e6280bb47ad88c9437332e9b623442979",
+        "left": "4c4c0b13369668c5317223a2dad0ef6e85f90090934d2c9b150c8673e8dae9a4ecf4dd0b91e3d251fbd025b9f3b3f9bb9b714373d60cd4fc6e0ef53cd1ee0544",
+        "right": "2007675b38318f27138555d6c6fcdbccea3b43af5962d5afa69036de8153403c792ed2b4cfe4cd3fb11bda60bfc9c80d6f1ab37cfc05f731e913d5a2e6068a86",
+        "isLeaf": false
+      },
+      {
+        "hash": "e9a11a1c7c90bc79dda34d667588f562f080f2a6facf13afb15a37bd420f763b9b0e51f1a2b267b687cc102c09ef8d1b00e4e36c81080a9ad475f6d9a2cd1d06",
+        "left": "f43613a8575096d9ac82e95f8fcf79851b21a1f291abf18c841c587010c0147efecb64eaae8d3e79ce38f6cc1664d7ddf3b1096d6db4da39a02ce1327ec4a7c6",
+        "right": "d666504386f935f09a26351d3aefc459863d40305c36f5f6a67fad45241a34cf0d83727b56765e10664755e0fe47b259ade71eb2cfd5c854a1cd6c137001ac60",
+        "isLeaf": false
+      },
+      {
+        "hash": "2cc58ade53f3d7260b840af4444251ddb2a1c290ef8cf29018f6bcbe4bad94b43abfab923c520c8768d9db03bf0267114ddd5068e1b866ca42d5418094860476",
+        "left": "cbd6337576e6837439a4ce7e7a7790d07e7c94fe87457d94ebaeef88826b61a1d09e4602617e994bdcfb893f7e3243a56b1afb7e2e150d38dcb161dd579a42fd",
+        "right": "1a551c67acffffea9c95af31730f0db23b90d7a95c275f9486578186316477c6d88c46573d821b3f2c2d46573be33f31a0268e061c5a4e6f91d643111d914f46",
+        "isLeaf": false
+      },
+      {
+        "hash": "115a937ecd9083b6e14d5621d7bf7631d56d876907c921521b4a75b82995522660c482fbe30f3b3063979863ecfd9876f53fc24366d566869b5cac31b8eebda3",
+        "left": "486553156f3978150626195252c29be90753c7425fcb302bb85ba6fd695fb1bf87141ca76a101a12360af6b983ba5c794054e7d8baa97f97e8fbce3814336de9",
+        "right": "1d64a2b3dbc1bf5f2e8137d912dd0a9c45860f941102b630b13f08f2bad7d4ded9bdd17c02ecf51b0e99923c3778ac6b293b1315f9263594fbf78c716674fa7c",
+        "isLeaf": false
+      },
+      {
+        "hash": "e495f292165d450e0e08d3e14d3da2154f9ed7a735af2160f6836497198c5e60d88099748829d0c7c93cfc39f11716e311485d859e8e9763d7c0ff92626873b5",
+        "left": "4dae3531233e1b0d953696778f412f24e6bce037ce969261abbff432496304ba6830cbd9636b71a96dac832e5a56aa1fd18c88e6e2b31d88ee6246a93f7fd8d8",
+        "right": "0bf74f4a51e9e215a5a6ab44eaa2497a8e648c515b6cf96c4d7c1722dd56bcd60efc46f91ad4d87db6e3f157d1728b216ddc7cbf4d237a94136e1620d1a90d2e",
+        "isLeaf": false
+      },
+      {
+        "hash": "01a6241510dc921b631c80b943c8e7f16b78a33d4f096a863592b2cbba87e96349d952fbd087f366fd941b2264755f7b883254b1346c171509ccd781dda7f748",
+        "left": "fb92215c00d6f3ce61fe06b060f7613026940b7fd3d0a6616f7a525bf394c654b869d340327249d0ab24e7a13649c92a0be417c877956d644b35d9b637536f80",
+        "right": "963f8dae22b71771c5377568e566f7070e5ec3e6c3d9ef2ecd2601548d3763f3bf61bf2e262803b994333a5a090437279f59baed03ac3c0bea47de2ee741b1f4",
+        "isLeaf": false
+      },
+      {
+        "hash": "04768f448d21df908982e58e85aec0695e3b5626e6abd6c850f5e874b70cd8456e7f1dc769c3d473d91fd2f8d1b7f08908559dff0f352b1abd7c368253c255c2",
+        "left": "a33434228a85ab3dd16052097a64da987864281ca142c2a4f421cba18ade019734d03983ff170bb552381e93d14196a5b681d74ee9088a79a8a3172696228d39",
+        "right": "e2f4ca3a9178fd83497d5b1e8e2bad2c68408862586291402c58a590a7b12496c699c05ab141acd503621cd1a7a414e06e020eefc8b6eafd547fcc25791f9d5a",
+        "isLeaf": false
+      },
+      {
+        "hash": "d5ff65a473bed38a5feb1d75f691a614680f3149dc3cf0abf5ff225a98ad8b79fd55a0375d1588c777cad7b3f887ccf4de83ecbf054e0d67e3af54ff7661818e",
+        "left": "cad5079f72e4658b0acda2ea7265bc4cf52a974a211c77a44b4c985c78270371ac36736b3be990c0500fc136e68d35c35bc5b3229b7723e5ffcd1c16c9c49983",
+        "right": "c0bca239626232a0036c7c2867cac2d12190c63ee372e9bf780230cff0865486ff6322230dfd005860c7aa6659fd04c26e952b40443cd8ee914a183f83bb7cad",
+        "isLeaf": false
+      },
+      {
+        "hash": "abf668437c89c8af52ec1033ecd59fd161ce8459cbb9f111ea994acc6d0e728a1ed6f134d3e711ea08063221c40fa9b4d69f1f92ad277ddcb59ad402ab09d45e",
+        "left": "fb3763cd001400e0450df5c166408dbaac08a2544fbb3ae1aedc7c2b1cc8b8dba1059ce1bc4855fc889dbfd16abcc3565c86b417406899c4d12a86f3145b67a6",
+        "right": "d4f2109535c30e2f94259819fc39f69ad38d412aecc29891285601602fd6e25e27ca09dac118511b67b65ce083fe6fe9f4363660e24aad2eeb013337a31c6def",
+        "isLeaf": false
+      },
+      {
+        "hash": "b8ff8aaea06b7344bb701caf0cd4ee980a616599adbc8f08e3758289964eb919e00b8cbae724c26c37d19f61d6396dfc7c5cb2bcf374da78d74e3f61faad41fb",
+        "left": "8bfd0b4431cf11ebf0bbf7e9cb820a14758c8ac5d0563bdedaf8032bd0efb4ad49cad784a680165207dd0b0e6da546984a3c716cde3b245aa9be05ee1df0e8b3",
+        "right": "8bfd0b4431cf11ebf0bbf7e9cb820a14758c8ac5d0563bdedaf8032bd0efb4ad49cad784a680165207dd0b0e6da546984a3c716cde3b245aa9be05ee1df0e8b3",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "9a0f1289010b0329bbd87359aa2300a901b1ac2aa6f1f55dfc129699d819a8f093f4a3df05ab12d701ff7701469e458afa4d046e761bb23b98ea4b73045daa1f",
+        "left": "95963cc25f6944d15f896a14e731a203bc6ae98a39676ffe70416ed39a14a576e13eebe0182d244e1d47492d42710593f9bc0ed2d7bc1066942005b4e87ab801",
+        "right": "deb6cdcbcc24106f25f552f40a0d1d79cf682eae2dbb6af2a7d9c0bb80c81290a2ae9e8d6a94e6e9d0bc7d04bc18d5c1431d886b74c2346e90078f24ee0a9649",
+        "isLeaf": false
+      },
+      {
+        "hash": "c316c08025e472a903636058d1978a74f413789d28c06c95b3f89b65ab164adc11f49a2df3ac8ef49bc1e9f6efa92f5e0ce8c962f8772f0272fc8980386188bb",
+        "left": "e332197906ed54e51a8c01c82ab56ad788212baa29b84427279b2fb64fecdce08626bf70b160fa45414a600951458127055837961c560e8d5677d3a88484b009",
+        "right": "e907dcfa6f664a267a66a75ec9b49890884a71f2aa131036957e0f135f809e20f34c8297abe7cea0a094fe4d2179f7e68dae8cccdb64572978b4fb8ddfb43b29",
+        "isLeaf": false
+      },
+      {
+        "hash": "acf3dcc34976a456a23abe21bbbe2ac48daa8ce6865fc86e4f183b52e4f1540a3bfbb612e01cbc5f15b2fcc3d9a624704270969e49759356e98d40bc3b7214f6",
+        "left": "77fa1c09e6a1a8f9318138be7feb1d2079fc7cb0bfc498c4e83009fe719291dff85bde0fd1def7bd1117c3747059f47521e7b62f79647f92a0453767acd2ea34",
+        "right": "fbe83a77c621c3b3fc47412ce40bbc8dba8693b098f53c771064f45d944099be5c6d69cc021a2ad5c1e78cae5f91ed66a2a830277d2f2620e6459b511e8ae1b7",
+        "isLeaf": false
+      },
+      {
+        "hash": "ffc1b7637af68deb46578e96b3df75225c021ffcac13d744bb032dc83e8b7c915b752aade7509e4171f33b599ff13d0ee07395de694d8e66c115adc3946f257b",
+        "left": "5025729bd837dd75bba2c371e55eb322df16197cded64dd7cef3709f247d6b4320e35e4447a80dd493d13406b85c4fe6fb86567eb92c9411c86c0d6a0271ebd6",
+        "right": "3218399cea108af3765341c338e2a0d5f8feb7c08cdf2b7cd3b46a5a9d0f26471c573011348d797533c3e92ea289741504b07acd98a0783f0971128845a3a56b",
+        "isLeaf": false
+      },
+      {
+        "hash": "3f74795858ca2be2a880654557aa623d6ab101108e74df90c7c47fceacfe717d60f89becb8cecd52a391e60963e02a6458d85e9f385d579d0bf72a07825bbddc",
+        "left": "269a6739976850f92446b8245772c859362a48bac5dd8263de0afaed42d0d84a42455c607a02c6b24304391de72832b2c4f390ccc53584d4833bb8ac4ffb3e3e",
+        "right": "c20d557afc6821cfa734bd8a2e8d342c703cddd81d86ff15b272da2502aed78d47e0c53d65e55dd596d8bc542409b00a4f357658193ff632e2d0b477dfdbb4cf",
+        "isLeaf": false
+      },
+      {
+        "hash": "ae49ae407d4295c4f2839764138e11398cfe1dc78f920bafc899e33b2cb75e37d2f53c29da57bfb370d66f0d07d2b8a4f9da159baa50aba9a437cf349a1c5ce3",
+        "left": "d72d219414b47176b58923e66df4100a1cf5d398a9528188df17bcd70fe0cbba62454ad7f2546ccf2b1dffbb0dcdec0c9839d0ccd4b81ed0b33c9359d08deae6",
+        "right": "2a4ed4cf9c1093a5f7fede2e1b1309611ad16a24274875f2d665b2cfa714e2c1c31a6d66062ec2df0099cf61a39d59e11cadc707b3df60a57555b6583c6e48ca",
+        "isLeaf": false
+      },
+      {
+        "hash": "8a2ec2b1c2f1054a05103e2845f91bd8ac8d424743dcb9bb1a005f035e892e0b72a3ebd8cfb902703cb519f56997567f337d2a5d731306f568a522154e1884e8",
+        "left": "372484ba21bd47c3d691667fd5700a1eca77fe77ec992041a1d2c963a5cf6aad07853dca3f9d0c296f563a95abe247c175b2b64f3ef039f6375fecd351156f1b",
+        "right": "755e2b866fe30fcbc7f542bef30aea13c4099e66ddd252ef4ad1fc0a5846242faf92c211d24e131152437623010306e6e598b28a889e5c9aa7c3bf7a4cc0657e",
+        "isLeaf": false
+      },
+      {
+        "hash": "75533b90b7f1675a26966a3d78ba2746f6adefe9c46ed690e1f1aba30b4f9a868ed41865874016d1cc499076a27a6812cc59182df1c38ddf926bdf318cde9865",
+        "left": "bfcdd1fedc35e918a554ebf1aecf108c9c9392360abd3e4049e98d4941797bc6d6a8afda2c6a8a4fce45f1b042c6847c4d50668dfe244c2f1df65b34c655d593",
+        "right": "5228c087e779cccee508215c7dda5a69ac992fd9192f34ecf4e27e121072a963b26ff11a4ff5805f3cf3cfb9454636381d942b0c704afb7f58eb4b43c97b8236",
+        "isLeaf": false
+      },
+      {
+        "hash": "f577d39c8cbfd509e9860156df35fa3ad05677500c3899ad0cfd7f32af168abbce69fa3339fcb82b814a5b171b6bea5d6694d44ce11b6c4a6a2c336b7e90287f",
+        "left": "1a5b4053626c92b62bb1eba5f0e594f6a4cef38c31a7f0f2d455bd74e48a9d32cbabc78052a74e4a6e5ba74f546bc96d3f0dec51c3492d23de4807cb9335b35c",
+        "right": "6f1ad90910056e4d2b90ef19dece8930675752868a02e361ab82b8481c7efab05be89dfd8230301991e46a80b175312bf99bb774823fd84bf76f9b61121d460d",
+        "isLeaf": false
+      },
+      {
+        "hash": "951e15238084ff70c4e95c617152b62712be1b3c78cfe42069c4822bea37043d436dc5347926f837ce10f98b662ebb04cbe2c7cf1747e23b52b14523f3027d34",
+        "left": "2606153aeb7175e863b394fdf4b936b5ea54f962ad56a1e9ee0b82cd8f5eb32034a5a0c757742c9d12f91d1654dc67058aa5827e07352d10ab40f17f13a1b62f",
+        "right": "f84d426b236bd05a5e9b85dcdb60ae3598b305dc9e06b4a8f64544b57a66c2f8bd66fac7186e069125a45c928e5a164fb3845ee5b7a0bc3cedb0f8146d309839",
+        "isLeaf": false
+      },
+      {
+        "hash": "ca5668024f3044c24986e12e7964b0d946382ebdac9d42a54e695901670776d2722862eaa414ed373c9500bacbf8430c215dde2e51d8365a28aeeae322ac0498",
+        "left": "15c4f7693c96467092066b81d715e28fa4fcadcec35ec90cd8370a832e1f30d8b50dc0756502053d0e7c82f54a564660a16c4be5a1425d1c6fff5494d0e6ef8c",
+        "right": "dfdd20a9c1f65ed2503ccbcd83af7daf05b875e38bce56c98bbec01bc7a4ccbda391fc4409864174840661749fd7e776f61cf64ef1254fe48990d788da473ae4",
+        "isLeaf": false
+      },
+      {
+        "hash": "90a7e8bab751c020e2d0c7196b157e6504998b076542de8818fa2c04f89e9d72b98289d473ea53633cbbec8ce0a4ca7946d71c9ab54b0f4ab54cddf165382111",
+        "left": "75ef3ab8f3594b5df45525f5ce043f304bf2590db662402fe7c058d3be1ae64231ff932dc69e03b7909bfc0b75c07d08b2bbdafa775e28a402917a057f1120b3",
+        "right": "b230bc76f68bed0bd17d77162f3f53486c2fe4315520b68a1868299a5ce1d827f47db88d9cd0d2fcfb37981a22bb15033d7019891e9af068adbd246a884ff285",
+        "isLeaf": false
+      },
+      {
+        "hash": "d73b9308b228cd52b213066597bac111890b281c18ceaede9be10a8f26aa9587e4d6ede7da673b44e2a7cf9fe530be66513c4ef77ac0b8f9a816d7c1d1cbca2b",
+        "left": "fb6a145daac7c51d2108919a6070cc216d38f7ae6c76f7499dfbfc8630e5325b6a9d7ad36f961bacb53f52d30aef1035d624c81d38eff2931dc0168e5226a742",
+        "right": "f459dbb2a139eefdc59f08667f7d7a67cc705b2df000eb20896614dbc3f13dad96dec83d56a921484a5849fa3b7a4e520485b0465d691d9f93f05d1df939dc10",
+        "isLeaf": false
+      },
+      {
+        "hash": "8d932cfd17a35492c04b3553003e95dd1da48f586bc6ef348eedec9bd4cbbd56ec5e159381d69aebd92d5098db2c41abe44871f0240340088314aeb6b59a7b2c",
+        "left": "806d93578adb5463b387cdd492eac6d10f99b942ed898cc8fffda05d05c665d80645d169d2d34475596e056bf7b32568f0171abab48eb9a843e39758884cd63d",
+        "right": "93113102da3701c37275171bdf09626a286dddc7930e1b5e84794647093e11ccb745337906532f58afb32888f397b4947b89c5302564eada83e34eb74878675e",
+        "isLeaf": false
+      },
+      {
+        "hash": "3139c84c3e45ff86d9c7234675f9e58583a64adb266cae131ec3f8b21b87eb8ea2737f4757ebafd6e22a9a1705ce7033de9083164ac89912380296173c56fc97",
+        "left": "115731c813f26f3cc82703294bfe994a200ea1c24690e2c424c2271add99968390204d5f86eb6f06786fdd9fa5aea16e95043c6d1af946a2f5209c64e9175d87",
+        "right": "e68ad97bb7f5217c7805ed794b95caf5f7fb4f794236d60f9c92b87d232bbc3129033be4e643b0a601ae2d96b8dd2d37aa8fea60c21cb941df32983654b21a75",
+        "isLeaf": false
+      },
+      {
+        "hash": "86f0a848c57a475f969e91d591e0e7a1fa1c5a7deb13ee3f70cd97708b791c6342a516708f88c66713db583e3a991c8015b35cf9157ce9aec818a1ce38e9e797",
+        "left": "9d09f415408f7f7be34f9acb131ba546019c00afb15fe125be71660217039e8f026d31907da57e8f9e524eb9649b7a560dec6f3ecd1d61823cf3a5241768705f",
+        "right": "dbf59bde903a97e5c906173e1e6db8b2be54eecafdac6c19e43c32ebb326e3ac6114c953d4cff84f2e6965bf7fa3f4adbe25ebbdca4e47e9611cfc79c723ecad",
+        "isLeaf": false
+      },
+      {
+        "hash": "40298933e4243cbdefa060309a41a623e56c579b90a4ae73ed6373fbedc49830b6997a6e66ad47706952705f7979a3d8d4b0bb61a9f0bbe0ad37fd2d9ee7c5d8",
+        "left": "64a9c17cb2061fa5b406c2a0d21db1bd29ead139cff69f77cca788c9456e111f0d7382b10be418583658cc7e3bc6082e6280bb47ad88c9437332e9b623442979",
+        "right": "e9a11a1c7c90bc79dda34d667588f562f080f2a6facf13afb15a37bd420f763b9b0e51f1a2b267b687cc102c09ef8d1b00e4e36c81080a9ad475f6d9a2cd1d06",
+        "isLeaf": false
+      },
+      {
+        "hash": "6fbac6e01a399bfa28a86e7c7e328fc4ab62ec7c50bd27e35887f14ba2fe40ea8111d78018e9ace0e03280bfcad3585a7aa632f01156f4667635f845af11e557",
+        "left": "2cc58ade53f3d7260b840af4444251ddb2a1c290ef8cf29018f6bcbe4bad94b43abfab923c520c8768d9db03bf0267114ddd5068e1b866ca42d5418094860476",
+        "right": "115a937ecd9083b6e14d5621d7bf7631d56d876907c921521b4a75b82995522660c482fbe30f3b3063979863ecfd9876f53fc24366d566869b5cac31b8eebda3",
+        "isLeaf": false
+      },
+      {
+        "hash": "6eb3b557aa51a929d31eb219a5bda6067b1c0fc59d261de58f2c2da7e94acc3b2f573a2c50c143b993558283af39dcc508ea0319317cf2015f09c28d842ed353",
+        "left": "e495f292165d450e0e08d3e14d3da2154f9ed7a735af2160f6836497198c5e60d88099748829d0c7c93cfc39f11716e311485d859e8e9763d7c0ff92626873b5",
+        "right": "01a6241510dc921b631c80b943c8e7f16b78a33d4f096a863592b2cbba87e96349d952fbd087f366fd941b2264755f7b883254b1346c171509ccd781dda7f748",
+        "isLeaf": false
+      },
+      {
+        "hash": "520562a5e05af6682fc681800bf1ac4b6bf97845a5e0391b215b351d5a63d99a4ec7c10594c6f23ce7bbaed4ab7e0361af77091ac369a7de433c8ad9c09cd7ec",
+        "left": "04768f448d21df908982e58e85aec0695e3b5626e6abd6c850f5e874b70cd8456e7f1dc769c3d473d91fd2f8d1b7f08908559dff0f352b1abd7c368253c255c2",
+        "right": "d5ff65a473bed38a5feb1d75f691a614680f3149dc3cf0abf5ff225a98ad8b79fd55a0375d1588c777cad7b3f887ccf4de83ecbf054e0d67e3af54ff7661818e",
+        "isLeaf": false
+      },
+      {
+        "hash": "4dec0aa6a7f640d60c33b5487f7d4811fc3ecc72140a05688735a70f6f5f86b4758e678c64f3be0ac09c20b9dc1c308feec58c6cd92da8f916ba4a116e9bad0d",
+        "left": "abf668437c89c8af52ec1033ecd59fd161ce8459cbb9f111ea994acc6d0e728a1ed6f134d3e711ea08063221c40fa9b4d69f1f92ad277ddcb59ad402ab09d45e",
+        "right": "b8ff8aaea06b7344bb701caf0cd4ee980a616599adbc8f08e3758289964eb919e00b8cbae724c26c37d19f61d6396dfc7c5cb2bcf374da78d74e3f61faad41fb",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "400220057dc531aac9ea9d714ca9010432bada943c3ade12865dd5eb9fb6d0e93650ed1aa2d15f87f9faa085a72864f4b5ea323ab2f433f03a58eb3e46e08e59",
+        "left": "9a0f1289010b0329bbd87359aa2300a901b1ac2aa6f1f55dfc129699d819a8f093f4a3df05ab12d701ff7701469e458afa4d046e761bb23b98ea4b73045daa1f",
+        "right": "c316c08025e472a903636058d1978a74f413789d28c06c95b3f89b65ab164adc11f49a2df3ac8ef49bc1e9f6efa92f5e0ce8c962f8772f0272fc8980386188bb",
+        "isLeaf": false
+      },
+      {
+        "hash": "c95f2a9dec5d8f32e74d91aac8928ca45333f3313da7645fe6f8d23a1d5fbfd6783f065098cc92b49f19f749900189a962dc2f43a08372c23ba7ab30c7fec4fd",
+        "left": "acf3dcc34976a456a23abe21bbbe2ac48daa8ce6865fc86e4f183b52e4f1540a3bfbb612e01cbc5f15b2fcc3d9a624704270969e49759356e98d40bc3b7214f6",
+        "right": "ffc1b7637af68deb46578e96b3df75225c021ffcac13d744bb032dc83e8b7c915b752aade7509e4171f33b599ff13d0ee07395de694d8e66c115adc3946f257b",
+        "isLeaf": false
+      },
+      {
+        "hash": "47bd490e3180a9ac039b7afb13891ec259d2803cdd7ceca5820c1fb036469c13c99d9a8cee0a00ef130497a30ce928efa2bc2974a14452a47cff35149f6a64de",
+        "left": "3f74795858ca2be2a880654557aa623d6ab101108e74df90c7c47fceacfe717d60f89becb8cecd52a391e60963e02a6458d85e9f385d579d0bf72a07825bbddc",
+        "right": "ae49ae407d4295c4f2839764138e11398cfe1dc78f920bafc899e33b2cb75e37d2f53c29da57bfb370d66f0d07d2b8a4f9da159baa50aba9a437cf349a1c5ce3",
+        "isLeaf": false
+      },
+      {
+        "hash": "0b04345a8999164ff3237c39472b5e051158c893b0b5a33d286cccde190f849e01498d23c096a1b69cb26783759cef5408b85a1e78c0d25e1e0f63ef445fd9f0",
+        "left": "8a2ec2b1c2f1054a05103e2845f91bd8ac8d424743dcb9bb1a005f035e892e0b72a3ebd8cfb902703cb519f56997567f337d2a5d731306f568a522154e1884e8",
+        "right": "75533b90b7f1675a26966a3d78ba2746f6adefe9c46ed690e1f1aba30b4f9a868ed41865874016d1cc499076a27a6812cc59182df1c38ddf926bdf318cde9865",
+        "isLeaf": false
+      },
+      {
+        "hash": "16e06bba5817fca1a2e224cdf610f207b70b7c13a6830ec1feb391a4a3d608374105df6fa82bfc14a95402af67731be835b455b4c00d8aefd1f2817136638a39",
+        "left": "f577d39c8cbfd509e9860156df35fa3ad05677500c3899ad0cfd7f32af168abbce69fa3339fcb82b814a5b171b6bea5d6694d44ce11b6c4a6a2c336b7e90287f",
+        "right": "951e15238084ff70c4e95c617152b62712be1b3c78cfe42069c4822bea37043d436dc5347926f837ce10f98b662ebb04cbe2c7cf1747e23b52b14523f3027d34",
+        "isLeaf": false
+      },
+      {
+        "hash": "082a71d00d8d56dd4b770baae7127eef72f2e785c6d46bc1b710b28c6954cb94729d0458f97cf3d967778bcf14e18cd02de2ef443cc8a165b488378fb39dced4",
+        "left": "ca5668024f3044c24986e12e7964b0d946382ebdac9d42a54e695901670776d2722862eaa414ed373c9500bacbf8430c215dde2e51d8365a28aeeae322ac0498",
+        "right": "90a7e8bab751c020e2d0c7196b157e6504998b076542de8818fa2c04f89e9d72b98289d473ea53633cbbec8ce0a4ca7946d71c9ab54b0f4ab54cddf165382111",
+        "isLeaf": false
+      },
+      {
+        "hash": "e44c40d7de5d80feb107d3cb2af7b668044ffc5d1616aaba8d05476d3371880ab30678219dffb3a1c4dfc0b637b2e0811a53d5877a15c9298c1257babc18f3a5",
+        "left": "d73b9308b228cd52b213066597bac111890b281c18ceaede9be10a8f26aa9587e4d6ede7da673b44e2a7cf9fe530be66513c4ef77ac0b8f9a816d7c1d1cbca2b",
+        "right": "8d932cfd17a35492c04b3553003e95dd1da48f586bc6ef348eedec9bd4cbbd56ec5e159381d69aebd92d5098db2c41abe44871f0240340088314aeb6b59a7b2c",
+        "isLeaf": false
+      },
+      {
+        "hash": "b1452ba9dd956091a560a16044630fd3ec081638e1f629fe875d5af9e0e1d03bd8a9d75099298f3f07a2de77a34a7999c4d79741ae8d0bfcc73b0329a3e30fce",
+        "left": "3139c84c3e45ff86d9c7234675f9e58583a64adb266cae131ec3f8b21b87eb8ea2737f4757ebafd6e22a9a1705ce7033de9083164ac89912380296173c56fc97",
+        "right": "86f0a848c57a475f969e91d591e0e7a1fa1c5a7deb13ee3f70cd97708b791c6342a516708f88c66713db583e3a991c8015b35cf9157ce9aec818a1ce38e9e797",
+        "isLeaf": false
+      },
+      {
+        "hash": "c4efd22ae52822b24413afcbd9a4d8b2b6089c865da566d29eb884c513ce86157057f2d02f6cc47c14f4f35f1519c10bdb2e6297b79622b4d78bfaca54687d4d",
+        "left": "40298933e4243cbdefa060309a41a623e56c579b90a4ae73ed6373fbedc49830b6997a6e66ad47706952705f7979a3d8d4b0bb61a9f0bbe0ad37fd2d9ee7c5d8",
+        "right": "6fbac6e01a399bfa28a86e7c7e328fc4ab62ec7c50bd27e35887f14ba2fe40ea8111d78018e9ace0e03280bfcad3585a7aa632f01156f4667635f845af11e557",
+        "isLeaf": false
+      },
+      {
+        "hash": "2ca8a2ae683b3caddaa4539d9cb33cb2e6190738f1633e81a406f510896f32a6ec4353d61770c23ba91a4778a0efb797a333cc89e18d56347120d16e8c86b545",
+        "left": "6eb3b557aa51a929d31eb219a5bda6067b1c0fc59d261de58f2c2da7e94acc3b2f573a2c50c143b993558283af39dcc508ea0319317cf2015f09c28d842ed353",
+        "right": "520562a5e05af6682fc681800bf1ac4b6bf97845a5e0391b215b351d5a63d99a4ec7c10594c6f23ce7bbaed4ab7e0361af77091ac369a7de433c8ad9c09cd7ec",
+        "isLeaf": false
+      },
+      {
+        "hash": "e7cf505e7ff115825d682eb62dbaf241fb5ef2e70162b62c301f448cda09b33edb060e6838d70dfec389642d2ae447c4a91b9a678036660638b502e8e7f7f905",
+        "left": "4dec0aa6a7f640d60c33b5487f7d4811fc3ecc72140a05688735a70f6f5f86b4758e678c64f3be0ac09c20b9dc1c308feec58c6cd92da8f916ba4a116e9bad0d",
+        "right": "4dec0aa6a7f640d60c33b5487f7d4811fc3ecc72140a05688735a70f6f5f86b4758e678c64f3be0ac09c20b9dc1c308feec58c6cd92da8f916ba4a116e9bad0d",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "241208fdf6682f5a5fc78189c4f7aca2af59697895c83b72ee113d9900ea11ea18cfadc4b8b4d05ab186801c8d8df1a60853b8efb32e4e62055b5647a8b39770",
+        "left": "400220057dc531aac9ea9d714ca9010432bada943c3ade12865dd5eb9fb6d0e93650ed1aa2d15f87f9faa085a72864f4b5ea323ab2f433f03a58eb3e46e08e59",
+        "right": "c95f2a9dec5d8f32e74d91aac8928ca45333f3313da7645fe6f8d23a1d5fbfd6783f065098cc92b49f19f749900189a962dc2f43a08372c23ba7ab30c7fec4fd",
+        "isLeaf": false
+      },
+      {
+        "hash": "242cc93b20250b8675f69bdc5afa1365c1d6a8cc24730fdc7ea29e729c968a60e250addb1c8d7436383e0b9be58ecef6e0aa5d6d46a78e2521eb0dfc3070dbac",
+        "left": "47bd490e3180a9ac039b7afb13891ec259d2803cdd7ceca5820c1fb036469c13c99d9a8cee0a00ef130497a30ce928efa2bc2974a14452a47cff35149f6a64de",
+        "right": "0b04345a8999164ff3237c39472b5e051158c893b0b5a33d286cccde190f849e01498d23c096a1b69cb26783759cef5408b85a1e78c0d25e1e0f63ef445fd9f0",
+        "isLeaf": false
+      },
+      {
+        "hash": "55e09f4baf805e2056f928ff30ede45a91709172c2ccccf4581586b0a8f558cdfac2da8fc7a699d361bdeaf464e42f446635c8c5e0fe9c3529df85ab114696a7",
+        "left": "16e06bba5817fca1a2e224cdf610f207b70b7c13a6830ec1feb391a4a3d608374105df6fa82bfc14a95402af67731be835b455b4c00d8aefd1f2817136638a39",
+        "right": "082a71d00d8d56dd4b770baae7127eef72f2e785c6d46bc1b710b28c6954cb94729d0458f97cf3d967778bcf14e18cd02de2ef443cc8a165b488378fb39dced4",
+        "isLeaf": false
+      },
+      {
+        "hash": "7e55d772bce1d0bc598c714d5cf62deddab04b8dcc91f24d88cfc44dff1b64a15db3ed0b41b62f0b44543845d572ae6dbe143887c88802e8ae073ac2e3122abf",
+        "left": "e44c40d7de5d80feb107d3cb2af7b668044ffc5d1616aaba8d05476d3371880ab30678219dffb3a1c4dfc0b637b2e0811a53d5877a15c9298c1257babc18f3a5",
+        "right": "b1452ba9dd956091a560a16044630fd3ec081638e1f629fe875d5af9e0e1d03bd8a9d75099298f3f07a2de77a34a7999c4d79741ae8d0bfcc73b0329a3e30fce",
+        "isLeaf": false
+      },
+      {
+        "hash": "6775f32b8ef51c3aaea2578c6eba7a6b47413d9decf28a2c3b714bb60266c4b75897d93eb7e36ef8ace15c4949ee831477201b94193111db3a3c788517a7b55e",
+        "left": "c4efd22ae52822b24413afcbd9a4d8b2b6089c865da566d29eb884c513ce86157057f2d02f6cc47c14f4f35f1519c10bdb2e6297b79622b4d78bfaca54687d4d",
+        "right": "2ca8a2ae683b3caddaa4539d9cb33cb2e6190738f1633e81a406f510896f32a6ec4353d61770c23ba91a4778a0efb797a333cc89e18d56347120d16e8c86b545",
+        "isLeaf": false
+      },
+      {
+        "hash": "d737e3647492cff53e8093622a4e830b02e2e9a07b2d891bf24b560d36840afa4fc90e3b7a02c564efe21955cad86364bc9f0dc41b5d2fa5475782873075984f",
+        "left": "e7cf505e7ff115825d682eb62dbaf241fb5ef2e70162b62c301f448cda09b33edb060e6838d70dfec389642d2ae447c4a91b9a678036660638b502e8e7f7f905",
+        "right": "e7cf505e7ff115825d682eb62dbaf241fb5ef2e70162b62c301f448cda09b33edb060e6838d70dfec389642d2ae447c4a91b9a678036660638b502e8e7f7f905",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "5fdee0d565bf9283746a20d8c0378f731c024d6f51b4f43ab0355c8fa688757c4c621aebc5bfee807cdc6bbc0643ff9bbe6f7a7bde77ca5298b91b1390543038",
+        "left": "241208fdf6682f5a5fc78189c4f7aca2af59697895c83b72ee113d9900ea11ea18cfadc4b8b4d05ab186801c8d8df1a60853b8efb32e4e62055b5647a8b39770",
+        "right": "242cc93b20250b8675f69bdc5afa1365c1d6a8cc24730fdc7ea29e729c968a60e250addb1c8d7436383e0b9be58ecef6e0aa5d6d46a78e2521eb0dfc3070dbac",
+        "isLeaf": false
+      },
+      {
+        "hash": "f9530ca2fd1aa026821fc9245bec214f7de06793ccf1aab3062566fa38904e10117763ea95444065979f5bb6e20fd3adfe6e47d109a0f8ece8a3ed213fabb62a",
+        "left": "55e09f4baf805e2056f928ff30ede45a91709172c2ccccf4581586b0a8f558cdfac2da8fc7a699d361bdeaf464e42f446635c8c5e0fe9c3529df85ab114696a7",
+        "right": "7e55d772bce1d0bc598c714d5cf62deddab04b8dcc91f24d88cfc44dff1b64a15db3ed0b41b62f0b44543845d572ae6dbe143887c88802e8ae073ac2e3122abf",
+        "isLeaf": false
+      },
+      {
+        "hash": "d5a66df5f820f197fa4670e090741f224aa46e8d01dad3179c2693417d3b190cab69a990be2d14feb8427487320089725d72fc97fc8ae3a778801db4c3e0913a",
+        "left": "6775f32b8ef51c3aaea2578c6eba7a6b47413d9decf28a2c3b714bb60266c4b75897d93eb7e36ef8ace15c4949ee831477201b94193111db3a3c788517a7b55e",
+        "right": "d737e3647492cff53e8093622a4e830b02e2e9a07b2d891bf24b560d36840afa4fc90e3b7a02c564efe21955cad86364bc9f0dc41b5d2fa5475782873075984f",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "ad68abe57d41ac74579992d23c12ebee7378ee3e7215ed32f601d1f57013c69183ad8d91515a7669a74eeaa52564ebe223e7b83cc79c55d7a697a20774f7efa5",
+        "left": "5fdee0d565bf9283746a20d8c0378f731c024d6f51b4f43ab0355c8fa688757c4c621aebc5bfee807cdc6bbc0643ff9bbe6f7a7bde77ca5298b91b1390543038",
+        "right": "f9530ca2fd1aa026821fc9245bec214f7de06793ccf1aab3062566fa38904e10117763ea95444065979f5bb6e20fd3adfe6e47d109a0f8ece8a3ed213fabb62a",
+        "isLeaf": false
+      },
+      {
+        "hash": "62dfd5ec904c53dad04699e0d2ebf6187b3b2446cc2713266d7267ecf74a7b21ced6e5da43f35f4db2e4a501d0c331eefb39b5e099cd85c8fded6bc8a5797a7a",
+        "left": "d5a66df5f820f197fa4670e090741f224aa46e8d01dad3179c2693417d3b190cab69a990be2d14feb8427487320089725d72fc97fc8ae3a778801db4c3e0913a",
+        "right": "d5a66df5f820f197fa4670e090741f224aa46e8d01dad3179c2693417d3b190cab69a990be2d14feb8427487320089725d72fc97fc8ae3a778801db4c3e0913a",
+        "isLeaf": false
+      }
+    ],
+    [
+      {
+        "hash": "1a3e08465e988154ed3aa5742eac101bde98886d122bc4e7844948f058f45acccc715cf29485005ad3da71e55b74767f47ac3bababf170163b8e3295d359e1a1",
+        "left": "ad68abe57d41ac74579992d23c12ebee7378ee3e7215ed32f601d1f57013c69183ad8d91515a7669a74eeaa52564ebe223e7b83cc79c55d7a697a20774f7efa5",
+        "right": "62dfd5ec904c53dad04699e0d2ebf6187b3b2446cc2713266d7267ecf74a7b21ced6e5da43f35f4db2e4a501d0c331eefb39b5e099cd85c8fded6bc8a5797a7a",
+        "isLeaf": false
+      }
+    ]
+  ],
+  "root": "1a3e08465e988154ed3aa5742eac101bde98886d122bc4e7844948f058f45acccc715cf29485005ad3da71e55b74767f47ac3bababf170163b8e3295d359e1a1",
+  "created": 1759340006271,
+  "author": "Stephen Bilodeau",
+  "generated": "2025-10-01T17:33:26.281Z",
+  "copyright": "© 2025 Stephen Bilodeau"
+}

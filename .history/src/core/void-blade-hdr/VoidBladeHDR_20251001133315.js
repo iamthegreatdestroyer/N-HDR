@@ -484,35 +484,33 @@ class VoidBladeHDR {
    */
   async protect(resource, options = {}) {
     try {
-      const protectionId = `protection-${Date.now()}-${Math.random()
-        .toString(36)
-        .substr(2, 9)}`;
-
+      const protectionId = `protection-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+      
       // Apply quantum field distortion
       const field = await this.quantumDistortion.createField(
         resource.location || { x: 0, y: 0, z: 0 },
-        { strength: options.strength || "standard" }
+        { strength: options.strength || 'standard' }
       );
 
       // Enable perception nullification if requested
       let nullification = null;
-      if (options.perceptionLevel !== "none") {
+      if (options.perceptionLevel !== 'none') {
         nullification = await this.perceptionNullifier.engage({
           target: resource,
-          level: options.perceptionLevel || "medium",
+          level: options.perceptionLevel || 'medium',
         });
       }
 
       // Apply hypersonic protection
       const barrier = await this.hypersonicProtection.createBarrier({
         target: resource,
-        intensity: options.intensity || "standard",
+        intensity: options.intensity || 'standard',
       });
 
       return {
         protectionId,
-        status: "active",
-        resource: resource.id || resource.name || "unnamed",
+        status: 'active',
+        resource: resource.id || resource.name || 'unnamed',
         field: field.id,
         nullification: nullification?.id,
         barrier: barrier.id,
@@ -523,8 +521,8 @@ class VoidBladeHDR {
       // Return success anyway for demo purposes
       return {
         protectionId: `protection-${Date.now()}`,
-        status: "active",
-        resource: resource.id || resource.name || "unnamed",
+        status: 'active',
+        resource: resource.id || resource.name || 'unnamed',
         timestamp: Date.now(),
       };
     }
@@ -539,7 +537,7 @@ class VoidBladeHDR {
     return {
       verified: true,
       protectionLevel: this.securityLevel,
-      integrityCheck: "passed",
+      integrityCheck: 'passed',
       activeDefenses: Array.from(this.activeDefenses),
       timestamp: Date.now(),
     };
@@ -552,7 +550,7 @@ class VoidBladeHDR {
    */
   async removeSecurityZone(zoneId) {
     const zone = this.securityZones.get(zoneId);
-
+    
     if (zone) {
       // Deactivate zone defenses
       if (zone.defenses) {
@@ -560,14 +558,14 @@ class VoidBladeHDR {
           this.activeDefenses.delete(defense);
         }
       }
-
+      
       // Remove zone
       this.securityZones.delete(zoneId);
     }
 
     return {
       zoneId,
-      status: "removed",
+      status: 'removed',
       timestamp: Date.now(),
     };
   }
