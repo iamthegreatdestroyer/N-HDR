@@ -7,43 +7,36 @@ The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary syste
 ### Core Systems
 
 1. **Neural-HDR (N-HDR)** (`src/core/neural-hdr/`)
-
    - AI consciousness state preservation and transfer
    - Multi-dimensional consciousness layer management
    - Integrates with all other HDR systems
 
 2. **Nano-Swarm HDR (NS-HDR)** (`src/core/nano-swarm/`)
-
    - Self-replicating quantum task execution
    - Path-of-least-resistance processing optimization
    - Swarm entity lifecycle management
 
 3. **Omniscient-HDR (O-HDR)** (`src/core/omniscient-hdr/`)
-
    - Knowledge domain crystallization
    - Expertise extraction and preservation
    - Accelerated knowledge acquisition
 
 4. **Reality-HDR (R-HDR)** (`src/core/reality-hdr/`)
-
    - Physical space compression
    - Multi-dimensional navigable spaces
    - Reality transformation algorithms
 
 5. **Quantum-HDR (Q-HDR)** (`src/core/quantum-hdr/`)
-
    - Probability state superposition
    - Decision pathway exploration
    - Future state navigation
 
 6. **Dream-HDR (D-HDR)** (`src/core/dream-hdr/`)
-
    - Creativity pattern encoding
    - Subconscious process modeling
    - Non-linear logic processing
 
 7. **Void-Blade HDR (VB-HDR)** (`src/core/void-blade-hdr/`)
-
    - Quantum-secured protection
    - Hypersonic security mechanisms
    - Selective targeting and threat assessment
@@ -60,7 +53,6 @@ The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary syste
 - System-wide configuration is managed in `config/hdr-config.js`
 - System-specific configurations in respective `config/{system}-config.js` files
 - Key settings structure:
-
 ```js
   {
     systems: {
@@ -91,10 +83,10 @@ IP Protection
 All files must include the standard copyright header:
 javascript/*
  * HDR Empire Framework - [Component Name]
- *
+ * 
  * Copyright (c) 2025 Stephen Bilodeau
  * All rights reserved - Patent Pending
- *
+ * 
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
  * or modification of this file or its contents is prohibited.
@@ -253,4 +245,3 @@ Security level
 
 Intellectual Property Notice
 All code changes must preserve the patent-pending status and copyright notices. The HDR Empire Framework is proprietary and confidential to Stephen Bilodeau and protected by multiple patent applications. Any unauthorized use, modification, or distribution is strictly prohibited.
-```
