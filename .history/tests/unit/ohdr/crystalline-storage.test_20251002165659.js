@@ -286,7 +286,7 @@ describe("CrystallineStorage", () => {
         return true;
       };
       // Call initialize with the mock that checks token
-      storage.initialize = async function () {
+      storage.initialize = async function() {
         await this._validateSecurityContext();
         await this._initializeQuantumState();
         return true;
@@ -405,12 +405,9 @@ describe("CrystallineStorage", () => {
       const crystalStore = await storage.storeCrystal(mockCrystal);
       expect(crystalStore.success).toBe(true);
 
-      // Retrieve and verify core properties
+      // Retrieve and verify
       const retrieved = await storage.retrieveCrystal(mockCrystal.id);
-      expect(retrieved.id).toBe(mockCrystal.id);
-      expect(retrieved.pattern).toEqual(mockCrystal.pattern);
-      expect(retrieved.stability).toEqual(mockCrystal.stability);
-      // Note: retrieved may have additional fields (prepared, timestamp) from storage
+      expect(retrieved).toEqual(mockCrystal);
     });
 
     test("should handle corrupted data gracefully", async () => {
@@ -432,39 +429,21 @@ describe("CrystallineStorage", () => {
     });
 
     test("should handle storage errors gracefully", async () => {
-      // Make _secureData throw an error to simulate encryption failure
-      const originalSecure = storage._secureData;
-      storage._secureData = async () => {
-        throw new Error("Encryption failed");
-      };
-
+      mockSecurityManager.encryptData.mockRejectedValue(
+        new Error("Encryption failed")
+      );
       const result = await storage.storeCrystal(mockCrystal);
-      // Storage still succeeds but logs error - the implementation catches errors
-      // To truly test error handling, check that the storage handles the error gracefully
-      // (in production, this would log the error but might still return success)
-      expect(result).toBeDefined();
-      expect(result.id || result.success !== undefined).toBeTruthy();
-
-      // Restore
-      storage._secureData = originalSecure;
+      expect(result.success).toBe(false);
+      expect(result.error).toBeDefined();
     });
 
     test("should handle retrieval errors gracefully", async () => {
-      // First store the crystal
+      mockSecurityManager.decryptData.mockRejectedValue(
+        new Error("Decryption failed")
+      );
       await storage.storeCrystal(mockCrystal);
-
-      // Then make _unsecureData throw an error to simulate decryption failure
-      const originalUnsecure = storage._unsecureData;
-      storage._unsecureData = async () => {
-        throw new Error("Decryption failed");
-      };
-
-      const result = await storage.retrieveCrystal(mockCrystal.id);
-      // Should return null on error
-      expect(result).toBeNull();
-
-      // Restore
-      storage._unsecureData = originalUnsecure;
+      const retrieved = await storage.retrieveCrystal(mockCrystal.id);
+      expect(retrieved).toBeNull();
     });
   });
 

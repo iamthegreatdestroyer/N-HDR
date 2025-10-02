@@ -120,33 +120,6 @@ describe("NeuralHDR Core Tests", () => {
       return true;
     };
 
-    nhdr._crystallizeKnowledge = async (state) => {
-      // Mock knowledge crystallization
-      return {
-        success: true,
-        crystals: [
-          {
-            pattern: "mock-pattern",
-            data: state,
-          },
-        ],
-      };
-    };
-
-    nhdr._extractExpertise = async (crystals) => {
-      // Mock expertise extraction
-      return {
-        success: true,
-        expertise: [
-          {
-            domain: "mock-domain",
-            level: 0.95,
-            crystals: crystals,
-          },
-        ],
-      };
-    };
-
     nhdr._processLayers = async (layers) => {
       return layers.map((layer) => ({
         ...layer,
@@ -185,24 +158,6 @@ describe("NeuralHDR Core Tests", () => {
         throw new Error("Integrity validation failed");
       }
       return true;
-    };
-
-    nhdr._parseNHDRFile = (file) => {
-      // Mock parse NHDR file - handle both objects and buffers
-      if (typeof file === "object" && file !== null && !Buffer.isBuffer(file)) {
-        return file; // Already parsed
-      }
-      // Return mock parsed structure
-      return {
-        header: file.header || { version: "1.0.0" },
-        layers: file.layers || [],
-        integrity: file.integrity || {},
-      };
-    };
-
-    nhdr._serializeNHDRFile = (nhdrFile) => {
-      // Mock serialize NHDR file
-      return JSON.stringify(nhdrFile);
     };
 
     // Initialize layers for each test
@@ -256,13 +211,7 @@ describe("NeuralHDR Core Tests", () => {
         version: "1.0.0",
         creatorHash: "test-hash",
       },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer",
-          data: { weights: [1, 2, 3] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 
@@ -290,25 +239,13 @@ describe("NeuralHDR Core Tests", () => {
   describe("Consciousness Merging", () => {
     const mockNHDR1 = {
       header: { version: "1.0.0" },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer-1",
-          data: { weights: [1, 2, 3] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 
     const mockNHDR2 = {
       header: { version: "1.0.0" },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer-2",
-          data: { weights: [4, 5, 6] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 

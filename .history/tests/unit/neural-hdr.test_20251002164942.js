@@ -189,7 +189,7 @@ describe("NeuralHDR Core Tests", () => {
 
     nhdr._parseNHDRFile = (file) => {
       // Mock parse NHDR file - handle both objects and buffers
-      if (typeof file === "object" && file !== null && !Buffer.isBuffer(file)) {
+      if (typeof file === 'object' && file !== null && !Buffer.isBuffer(file)) {
         return file; // Already parsed
       }
       // Return mock parsed structure

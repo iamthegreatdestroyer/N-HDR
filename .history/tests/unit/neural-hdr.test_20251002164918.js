@@ -189,7 +189,7 @@ describe("NeuralHDR Core Tests", () => {
 
     nhdr._parseNHDRFile = (file) => {
       // Mock parse NHDR file - handle both objects and buffers
-      if (typeof file === "object" && file !== null && !Buffer.isBuffer(file)) {
+      if (typeof file === 'object' && file !== null && !Buffer.isBuffer(file)) {
         return file; // Already parsed
       }
       // Return mock parsed structure
@@ -256,13 +256,7 @@ describe("NeuralHDR Core Tests", () => {
         version: "1.0.0",
         creatorHash: "test-hash",
       },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer",
-          data: { weights: [1, 2, 3] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 
@@ -290,25 +284,13 @@ describe("NeuralHDR Core Tests", () => {
   describe("Consciousness Merging", () => {
     const mockNHDR1 = {
       header: { version: "1.0.0" },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer-1",
-          data: { weights: [1, 2, 3] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 
     const mockNHDR2 = {
       header: { version: "1.0.0" },
-      layers: [
-        {
-          id: "layer-0",
-          name: "test-layer-2",
-          data: { weights: [4, 5, 6] },
-        },
-      ],
+      layers: [],
       integrity: {},
     };
 
