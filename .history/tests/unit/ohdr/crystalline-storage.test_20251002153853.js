@@ -168,14 +168,13 @@ describe("CrystallineStorage", () => {
 
     storage._retrieveWithRedundancy = async (id, type) => {
       // Return best copy from redundant storage
-      const store =
-        type === "crystal" ? storage.crystalStore : storage.expertiseStore;
+      const store = type === "crystal" ? storage.crystalStore : storage.expertiseStore;
       const stored = store?.get(id);
-
+      
       if (!stored) {
         throw new Error(`${type} not found: ${id}`);
       }
-
+      
       // Return the secured data from best copy
       return stored.data;
     };

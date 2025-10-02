@@ -158,91 +158,62 @@ describe("CrystallineStorage", () => {
     };
 
     // Phase 5 Addition: Missing retrieval workflow methods
-    storage._validateRequest = async (id, type) => {
-      // Validate request (id and type parameters)
-      if (!id || typeof id !== "string") {
-        throw new Error(`Invalid ${type} request: missing or invalid id`);
+    storage._validateRequest = async (request) => {
+      // Validate request structure
+      if (!request || !request.id) {
+        throw new Error("Invalid request: missing id");
       }
       return true;
     };
 
     storage._retrieveWithRedundancy = async (id, type) => {
-      // Return best copy from redundant storage
-      const store =
-        type === "crystal" ? storage.crystalStore : storage.expertiseStore;
+      // Return redundant copies of data
+      const redundancy = config.ohdr.storageRedundancy || 3;
+      const store = type === "crystal" ? storage.crystalStore : storage.expertiseStore;
       const stored = store?.get(id);
-
-      if (!stored) {
-        throw new Error(`${type} not found: ${id}`);
-      }
-
-      // Return the secured data from best copy
-      return stored.data;
+      if (!stored) return null;
+      
+      return Array(redundancy).fill().map((_, i) => ({
+        id: id,
+        copy: i + 1,
+        data: stored.data,
+        integrity: 0.95 + (i * 0.01),
+        location: `location-${i}`,
+      }));
     };
 
     storage._unsecureData = async (secured) => {
       // Return unencrypted/decompressed data
-      // The secured data has the original data nested inside
-      if (!secured) return null;
-      // Unwrap security layers to return original prepared data
-      return secured.data || secured;
+      if (!secured || !secured.data) return secured;
+      return { ...secured.data, secured: false };
     };
 
-    storage._reconstructCrystal = async (unsecured) => {
-      // Reconstruct crystal from unsecured data
-      if (!unsecured) {
-        throw new Error("No data provided for reconstruction");
+    storage._reconstructCrystal = async (fragments) => {
+      // Reconstruct crystal from fragments
+      if (!fragments || fragments.length === 0) {
+        throw new Error("No fragments provided");
       }
-      // Return the original crystal structure
-      return unsecured;
-    };
-
-    storage._reconstructExpertise = async (unsecured) => {
-      // Reconstruct expertise from unsecured data
-      if (!unsecured) {
-        throw new Error("No data provided for reconstruction");
-      }
-      // Return the original expertise structure
-      return unsecured;
-    };
-
-    storage._validateCopy = async (copy) => {
-      // Validate redundant copy
       return {
-        valid: true,
-        integrity: 0.98,
-        data: copy.data,
+        id: fragments[0].id,
+        reconstructed: true,
+        fragments: fragments.length,
+        integrity: Math.min(...fragments.map(f => f.integrity || 0.95)),
+        data: fragments[0].data,
       };
     };
 
-    storage._verifySignature = async (data, signature) => {
-      // Verify quantum signature
-      return signature === "quantum-signature";
-    };
-
-    storage._decompressData = async (data) => {
-      // Decompress data
-      return data;
-    };
-
-    storage._compressData = async (data) => {
-      // Compress data
-      return data;
-    };
-
-    storage._extractDimensions = async (crystal) => {
-      // Extract crystal dimensions for indexing
-      return ["cognitive"];
-    };
-
-    storage._extractDomains = async (expertise) => {
-      // Extract expertise domains for indexing
-      return ["quantum-physics"];
-    };
-
-    storage._extractSignatures = async (data) => {
-      // Extract quantum signatures
-      return ["quantum-signature"];
+    storage._reconstructExpertise = async (fragments) => {
+      // Reconstruct expertise from fragments
+      if (!fragments || fragments.length === 0) {
+        throw new Error("No fragments provided");
+      }
+      return {
+        id: fragments[0].id,
+        reconstructed: true,
+        fragments: fragments.length,
+        integrity: Math.min(...fragments.map(f => f.integrity || 0.95)),
+        data: fragments[0].data,
+      };
     };
 
     storage._calculateStorageEfficiency = () => {

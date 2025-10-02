@@ -42,7 +42,7 @@ describe("NeuralHDR Core Tests", () => {
         encryptionType: "quantum-aes-256",
       }),
       decryptLayer: async (layer) => ({
-        ...(layer.data || layer),
+        ...layer.data || layer,
         decrypted: true,
       }),
       detectTampering: async (data) => true,
@@ -120,7 +120,7 @@ describe("NeuralHDR Core Tests", () => {
     };
 
     nhdr._processLayers = async (layers) => {
-      return layers.map((layer) => ({
+      return layers.map(layer => ({
         ...layer,
         processed: true,
       }));
