@@ -68,16 +68,8 @@ describe("KnowledgeCrystallizer", () => {
     // Mock private methods for crystallization process
     crystallizer._extractPatterns = async (state) => {
       const patterns = new Map();
-      patterns.set("pattern-1", {
-        id: "pattern-1",
-        complexity: 0.9,
-        significance: 0.95,
-      });
-      patterns.set("pattern-2", {
-        id: "pattern-2",
-        complexity: 0.85,
-        significance: 0.9,
-      });
+      patterns.set("pattern-1", { id: "pattern-1", complexity: 0.9, significance: 0.95 });
+      patterns.set("pattern-2", { id: "pattern-2", complexity: 0.85, significance: 0.9 });
       return patterns;
     };
 
@@ -105,9 +97,7 @@ describe("KnowledgeCrystallizer", () => {
     crystallizer._validateAndStore = async (crystals) => {
       crystallizer.crystalPatterns = new Map();
       for (const crystal of crystals) {
-        if (
-          crystal.pattern.significance >= config.ohdr.crystallizationThreshold
-        ) {
+        if (crystal.pattern.significance >= config.ohdr.crystallizationThreshold) {
           crystallizer.crystalPatterns.set(crystal.id, crystal);
         }
       }

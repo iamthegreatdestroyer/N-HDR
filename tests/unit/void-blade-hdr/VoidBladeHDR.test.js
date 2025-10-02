@@ -100,20 +100,20 @@ describe("VoidBladeHDR", () => {
   describe("protectResource()", () => {
     test("should protect resource with specified level", async () => {
       const resource = { id: "sensitive-data", type: "database" };
-      const protected = await voidBladeHDR.protectResource(resource, "maximum");
+      const protectedResource = await voidBladeHDR.protectResource(resource, "maximum");
 
-      expect(protected).toBeDefined();
-      expect(protected.protectionLevel).toBe("maximum");
-      expect(protected.encrypted).toBe(true);
+      expect(protectedResource).toBeDefined();
+      expect(protectedResource.protectionLevel).toBe("maximum");
+      expect(protectedResource.encrypted).toBe(true);
     });
 
     test("should apply quantum encryption at high levels", async () => {
       const resource = { id: "top-secret" };
-      const protected = await voidBladeHDR.protectResource(
+      const protectedResource = await voidBladeHDR.protectResource(
         resource,
         "quantum-fortress"
       );
-      expect(protected.quantumEncrypted).toBe(true);
+      expect(protectedResource.quantumEncrypted).toBe(true);
     });
   });
 
@@ -146,8 +146,8 @@ describe("VoidBladeHDR", () => {
   describe("verifyProtection()", () => {
     test("should verify resource protection status", async () => {
       const resource = { id: "test-resource" };
-      const protected = await voidBladeHDR.protectResource(resource, "high");
-      const verification = await voidBladeHDR.verifyProtection(protected);
+      const protectedResource = await voidBladeHDR.protectResource(resource, "high");
+      const verification = await voidBladeHDR.verifyProtection(protectedResource);
 
       expect(verification).toBeDefined();
       expect(verification.verified).toBe(true);
@@ -158,17 +158,17 @@ describe("VoidBladeHDR", () => {
   describe("Encryption Tests", () => {
     test("should use AES-256-GCM encryption", async () => {
       const resource = { data: "sensitive" };
-      const protected = await voidBladeHDR.protectResource(resource, "high");
-      expect(protected.encryptionAlgorithm).toBe("AES-256-GCM");
+      const protectedResource = await voidBladeHDR.protectResource(resource, "high");
+      expect(protectedResource.encryptionAlgorithm).toBe("AES-256-GCM");
     });
 
     test("should be quantum-resistant at highest levels", async () => {
       const resource = { data: "classified" };
-      const protected = await voidBladeHDR.protectResource(
+      const protectedResource = await voidBladeHDR.protectResource(
         resource,
         "quantum-fortress"
       );
-      expect(protected.quantumResistant).toBe(true);
+      expect(protectedResource.quantumResistant).toBe(true);
     });
   });
 
