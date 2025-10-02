@@ -13,7 +13,9 @@
  * or modification of this file or its contents is prohibited.
  */
 
-import { QuantumAccelerator } from "../../../src/core/nano-swarm/nano-swarm-hdr.js";
+import {
+  QuantumAccelerator,
+} from "../../../src/core/nano-swarm/nano-swarm-hdr.js";
 
 describe("QuantumAccelerator", () => {
   let quantumAccelerator;

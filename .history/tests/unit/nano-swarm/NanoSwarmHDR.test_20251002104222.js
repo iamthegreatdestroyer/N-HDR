@@ -27,6 +27,10 @@ describe("NanoSwarmHDR", () => {
     nanoSwarmHDR = new NanoSwarmHDR(mockConfig);
   });
 
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   describe("Constructor", () => {
     test("should initialize with default configuration", () => {
       const defaultSystem = new NanoSwarmHDR();

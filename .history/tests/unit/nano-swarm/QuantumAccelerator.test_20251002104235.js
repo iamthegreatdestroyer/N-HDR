@@ -1,9 +1,5 @@
 /**
- * HDR Empire   beforeEach(() => {
-    quantumAccelerator = new QuantumAccelerator(6);
-  });
-
-  describe("Constructor", () => { - Quantum Accelerator Test Suite
+ * HDR Empire Framework - Quantum Accelerator Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
  * All rights reserved - Patent Pending
@@ -13,7 +9,9 @@
  * or modification of this file or its contents is prohibited.
  */
 
-import { QuantumAccelerator } from "../../../src/core/nano-swarm/nano-swarm-hdr.js";
+import {
+  QuantumAccelerator,
+} from "../../../src/core/nano-swarm/nano-swarm-hdr.js";
 
 describe("QuantumAccelerator", () => {
   let quantumAccelerator;

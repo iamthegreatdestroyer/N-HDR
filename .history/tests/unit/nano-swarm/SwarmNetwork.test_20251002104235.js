@@ -1,9 +1,5 @@
 /**
- * HDR Empir  beforeEach(() => {
-    swarmNetwork = new SwarmNetwork(1000000);
-  });
-
-  describe("Constructor", () => {rk - Swarm Network Test Suite
+ * HDR Empire Framework - Swarm Network Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
  * All rights reserved - Patent Pending

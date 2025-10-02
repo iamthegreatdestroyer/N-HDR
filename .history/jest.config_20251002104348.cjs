@@ -26,9 +26,6 @@ module.exports = {
   // The test environment that will be used for testing
   testEnvironment: "node",
 
-  // Inject Jest globals
-  injectGlobals: true,
-
   // The glob patterns Jest uses to detect test files
   testMatch: ["**/tests/**/*.test.[jt]s?(x)", "**/tests/**/*.spec.[jt]s?(x)"],
 

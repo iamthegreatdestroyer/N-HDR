@@ -249,10 +249,4 @@ class NanoBot {
 
 // ... rest of the implementation (SwarmManager, SwarmController) ...
 
-export {
-  NanoBot,
-  SwarmManager,
-  SwarmController,
-  ThermalManager,
-  QuantumEntropyGenerator,
-};
+export { NanoBot, SwarmManager, SwarmController, ThermalManager, QuantumEntropyGenerator };

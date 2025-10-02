@@ -26,8 +26,11 @@ module.exports = {
   // The test environment that will be used for testing
   testEnvironment: "node",
 
-  // Inject Jest globals
-  injectGlobals: true,
+  // Use preset for ES modules
+  preset: undefined,
+
+  // Extension to treat as ESM
+  extensionsToTreatAsEsm: [".js"],
 
   // The glob patterns Jest uses to detect test files
   testMatch: ["**/tests/**/*.test.[jt]s?(x)", "**/tests/**/*.spec.[jt]s?(x)"],

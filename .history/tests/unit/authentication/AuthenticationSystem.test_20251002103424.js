@@ -68,9 +68,7 @@ describe("AuthenticationSystem", () => {
         }
 
         const user = {
-          id: `user-${Date.now()}-${Math.random()
-            .toString(36)
-            .substring(2, 9)}`,
+          id: `user-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
           username,
           password, // In production, this would be hashed
           roles: Array.isArray(roles) ? roles : [roles],
@@ -109,9 +107,7 @@ describe("AuthenticationSystem", () => {
       }
 
       _generateToken(user) {
-        return `hdr-token-${user.id}-${Date.now()}-${Math.random()
-          .toString(36)
-          .substring(2, 9)}`;
+        return `hdr-token-${user.id}-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
       }
     };
   });
