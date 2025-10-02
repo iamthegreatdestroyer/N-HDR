@@ -22,53 +22,6 @@ describe("RealityHDR", () => {
       compressionRatio: 1000,
       dimensionalLayers: 7,
     });
-
-    // Mock the component methods to return proper structures
-    if (realityHDR.realityImporter) {
-      const originalProcess = realityHDR.realityImporter.process;
-      realityHDR.realityImporter.process = async (spaceData) => ({
-        dimensions: spaceData.dimensions,
-        volume: spaceData.volume,
-        scanData: spaceData.scanData,
-        quantumSignature: "mock-quantum-signature-" + Date.now(),
-        integrity: 0.95,
-        resolution: spaceData.resolution || { x: 0.1, y: 0.1, z: 0.1 },
-      });
-    }
-
-    if (realityHDR.spatialCompressor) {
-      realityHDR.spatialCompressor.compress = async (spaceData, ratio) => ({
-        volume: spaceData.volume / ratio,
-        dimensions: spaceData.dimensions,
-        compressionRatio: ratio,
-        compressedData: spaceData.scanData,
-        spaceData: {
-          volume: spaceData.volume / ratio,
-          dimensions: spaceData.dimensions,
-        },
-      });
-    }
-
-    if (realityHDR.dimensionalConverter) {
-      realityHDR.dimensionalConverter.convert = async (
-        compressedSpace,
-        layers
-      ) => ({
-        ...compressedSpace,
-        dimensionalLayers: layers,
-        converted: true,
-      });
-    }
-
-    if (realityHDR.navigableDimensions) {
-      realityHDR.navigableDimensions.navigate = async (coordinates) => {
-        if (!coordinates) throw new Error("Invalid coordinates");
-        return {
-          position: coordinates,
-          navigationSuccess: true,
-        };
-      };
-    }
   });
 
   describe("Constructor", () => {

@@ -54,12 +54,9 @@ describe("System Performance", () => {
       nanoSwarm.cleanup = async () => ({ cleaned: true });
     }
     if (!nanoSwarm.initializeNetwork) {
-      nanoSwarm.initializeNetwork = async (swarm) => ({
-        network: "initialized",
-        swarm,
-      });
+      nanoSwarm.initializeNetwork = async (swarm) => ({ network: 'initialized', swarm });
     }
-
+    
     if (!neuralHdr.initialize) {
       neuralHdr.initialize = async () => ({ initialized: true });
     }

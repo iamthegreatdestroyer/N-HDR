@@ -22,53 +22,6 @@ describe("RealityHDR", () => {
       compressionRatio: 1000,
       dimensionalLayers: 7,
     });
-
-    // Mock the component methods to return proper structures
-    if (realityHDR.realityImporter) {
-      const originalProcess = realityHDR.realityImporter.process;
-      realityHDR.realityImporter.process = async (spaceData) => ({
-        dimensions: spaceData.dimensions,
-        volume: spaceData.volume,
-        scanData: spaceData.scanData,
-        quantumSignature: "mock-quantum-signature-" + Date.now(),
-        integrity: 0.95,
-        resolution: spaceData.resolution || { x: 0.1, y: 0.1, z: 0.1 },
-      });
-    }
-
-    if (realityHDR.spatialCompressor) {
-      realityHDR.spatialCompressor.compress = async (spaceData, ratio) => ({
-        volume: spaceData.volume / ratio,
-        dimensions: spaceData.dimensions,
-        compressionRatio: ratio,
-        compressedData: spaceData.scanData,
-        spaceData: {
-          volume: spaceData.volume / ratio,
-          dimensions: spaceData.dimensions,
-        },
-      });
-    }
-
-    if (realityHDR.dimensionalConverter) {
-      realityHDR.dimensionalConverter.convert = async (
-        compressedSpace,
-        layers
-      ) => ({
-        ...compressedSpace,
-        dimensionalLayers: layers,
-        converted: true,
-      });
-    }
-
-    if (realityHDR.navigableDimensions) {
-      realityHDR.navigableDimensions.navigate = async (coordinates) => {
-        if (!coordinates) throw new Error("Invalid coordinates");
-        return {
-          position: coordinates,
-          navigationSuccess: true,
-        };
-      };
-    }
   });
 
   describe("Constructor", () => {
@@ -174,12 +127,7 @@ describe("RealityHDR", () => {
 
   describe("integrateWithNeuralHDR()", () => {
     beforeEach(async () => {
-      await realityHDR.importSpace({
-        volume: 1000,
-        dimensions: { x: 10, y: 10, z: 10 },
-        scanData: [{ x: 0, y: 0, z: 0, intensity: 0.5 }],
-        resolution: 1.0,
-      });
+      await realityHDR.importSpace({ volume: 1000, dimensions: {} });
     });
 
     test("should integrate with neural state", async () => {
@@ -205,8 +153,6 @@ describe("RealityHDR", () => {
       const largeSpace = {
         volume: 100000,
         dimensions: { x: 100, y: 100, z: 100 },
-        scanData: [{ x: 0, y: 0, z: 0, intensity: 0.5 }],
-        resolution: 1.0,
       };
 
       await realityHDR.importSpace(largeSpace);

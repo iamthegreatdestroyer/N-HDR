@@ -129,13 +129,8 @@ class DreamHDR {
     }
 
     try {
-      // First recognize patterns before processing intuition
-      const recognizedPatterns = await this.patternRecognizer.analyze(
-        dreamState.patterns
-      );
-
       const intuitionResults = await this.intuitionEngine.analyze(
-        recognizedPatterns.patterns,
+        dreamState.patterns,
         dreamState.creativity
       );
 

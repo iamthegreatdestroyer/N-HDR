@@ -7,7 +7,7 @@
  */
 
 import NeuralHDR from "../../src/core/neural-hdr.js";
-import { NanoSwarmHDR } from "../../src/core/nano-swarm/nano-swarm-hdr.js";
+import { NanoSwarmHDR } from "../../src/core/nano-swarm/ns-hdr-enhanced.js";
 import {
   createMockConsciousnessState,
   createMockNanoSwarm,
@@ -45,30 +45,6 @@ describe("System Performance", () => {
 
     nanoSwarm = new NanoSwarmHDR(config.acceleration);
     neuralHdr = new NeuralHDR(config);
-
-    // Mock missing methods
-    if (!nanoSwarm.initialize) {
-      nanoSwarm.initialize = async () => ({ initialized: true });
-    }
-    if (!nanoSwarm.cleanup) {
-      nanoSwarm.cleanup = async () => ({ cleaned: true });
-    }
-    if (!nanoSwarm.initializeNetwork) {
-      nanoSwarm.initializeNetwork = async (swarm) => ({
-        network: "initialized",
-        swarm,
-      });
-    }
-
-    if (!neuralHdr.initialize) {
-      neuralHdr.initialize = async () => ({ initialized: true });
-    }
-    if (!neuralHdr.cleanup) {
-      neuralHdr.cleanup = async () => ({ cleaned: true });
-    }
-    if (!neuralHdr.processState) {
-      neuralHdr.processState = async (state) => ({ processed: true, state });
-    }
 
     await Promise.all([nanoSwarm.initialize(), neuralHdr.initialize()]);
 

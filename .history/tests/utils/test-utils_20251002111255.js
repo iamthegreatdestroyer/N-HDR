@@ -6,8 +6,8 @@
  * Test Utilities
  */
 
-import * as tf from "@tensorflow/tfjs";
-import crypto from "crypto";
+const tf = require("@tensorflow/tfjs");
+const crypto = require("crypto");
 
 /**
  * Generate random quantum state for testing

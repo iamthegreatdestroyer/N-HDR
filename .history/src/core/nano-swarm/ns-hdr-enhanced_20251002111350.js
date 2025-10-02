@@ -249,4 +249,8 @@ class NanoBot {
 
 // Note: SwarmManager and SwarmController are in nano-swarm-hdr.js
 
-export { NanoBot, ThermalManager, QuantumEntropyGenerator };
+export {
+  NanoBot,
+  ThermalManager,
+  QuantumEntropyGenerator,
+};
