@@ -25,9 +25,7 @@ describe("VoidBladeHDR", () => {
     voidBladeHDR._generateZoneId = () => `zone-${Date.now()}`;
     voidBladeHDR._configureZone = async (config, zoneId) => {
       // Handle array format: [resources, level, options]
-      let resources,
-        level,
-        autoScale = false;
+      let resources, level, autoScale = false;
       if (Array.isArray(config)) {
         resources = config[0];
         level = config[1] || "standard";
@@ -37,7 +35,7 @@ describe("VoidBladeHDR", () => {
         level = config.level || "standard";
         autoScale = config.autoScale || false;
       }
-
+      
       return {
         id: zoneId,
         level: level,
@@ -322,24 +320,6 @@ describe("HypersonicProtection", () => {
 
   beforeEach(() => {
     protection = new HypersonicProtection();
-
-    // Mock internal state
-    protection.calibratedFrequencies = new Set([100, 200, 300, 400, 500]);
-
-    // Mock private methods
-    protection._evaluateFrequency = async () => 0.95;
-    protection._calculateOptimalFrequency = async () => 300;
-    protection._generateDefensePlan = async (target, zone, frequency) => ({
-      strategy: "hypersonic-deflection",
-      frequency: frequency,
-      responseTime: 0.5,
-    });
-
-    // Override planDefense to use mocks
-    protection.planDefense = async (target, zone) => {
-      const frequency = await protection._calculateOptimalFrequency();
-      return await protection._generateDefensePlan(target, zone, frequency);
-    };
   });
 
   describe("planDefense()", () => {
@@ -367,24 +347,6 @@ describe("QuantumFieldDistortion", () => {
 
   beforeEach(() => {
     distortion = new QuantumFieldDistortion();
-
-    // Mock private methods
-    distortion._calculateFieldParameters = async () => ({
-      amplitude: 100,
-      frequency: 50,
-      phase: 0,
-    });
-
-    // Override planDefense
-    distortion.planDefense = async (target, zone) => ({
-      quantumField: {
-        type: "distortion",
-        strength: 0.95,
-        coverage: 100,
-      },
-      target: target.id,
-      zone: zone.id,
-    });
   });
 
   describe("planDefense()", () => {
@@ -411,31 +373,6 @@ describe("PerceptionNullifier", () => {
 
   beforeEach(() => {
     nullifier = new PerceptionNullifier();
-
-    // Mock internal state - add patterns to prevent "No patterns available" error
-    nullifier.patterns = new Set([
-      { frequency: 100, mode: "none" },
-      { frequency: 200, mode: "partial" },
-      { frequency: 300, mode: "complete" },
-    ]);
-
-    // Mock private methods
-    nullifier._generateNullificationPattern = async (target, mode) => ({
-      pattern: "nullification-wave",
-      frequency: 200,
-      mode: mode,
-    });
-
-    // Override planDefense
-    nullifier.planDefense = async (target, mode = "complete") => ({
-      nullification: await nullifier._generateNullificationPattern(
-        target,
-        mode
-      ),
-      target: target.id,
-      mode: mode,
-      perceptionLevel: mode,
-    });
   });
 
   describe("planDefense()", () => {
@@ -470,14 +407,6 @@ describe("SelectiveTargeting", () => {
 
   beforeEach(() => {
     targeting = new SelectiveTargeting();
-
-    // Add missing selectTargets method
-    targeting.selectTargets = async (threats) => {
-      // Sort by severity (descending)
-      return threats
-        .map((t) => ({ ...t, severity: t.severity || 0.5 }))
-        .sort((a, b) => b.severity - a.severity);
-    };
   });
 
   describe("selectTargets()", () => {

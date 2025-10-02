@@ -434,7 +434,6 @@ describe("PerceptionNullifier", () => {
       ),
       target: target.id,
       mode: mode,
-      perceptionLevel: mode,
     });
   });
 
