@@ -220,7 +220,7 @@ describe("SwarmNetwork", () => {
 
     test("should handle concurrent processing requests", async () => {
       const mockAccelerator = {
-        accelerate: async (d) => d,
+        accelerate: jest.fn((d) => Promise.resolve(d)),
       };
       const requests = [];
 
@@ -267,7 +267,7 @@ describe("SwarmNetwork", () => {
       const mesh = await swarmNetwork.createMesh();
 
       const mockAccelerator = {
-        accelerate: async (d) => d,
+        accelerate: jest.fn((d) => Promise.resolve(d)),
       };
 
       const data = { test: "data", quantum: true };

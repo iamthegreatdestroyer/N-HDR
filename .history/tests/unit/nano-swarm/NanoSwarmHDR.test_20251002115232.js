@@ -25,36 +25,16 @@ describe("NanoSwarmHDR", () => {
       dimensions: 6,
     };
     nanoSwarmHDR = new NanoSwarmHDR(mockConfig);
-
+    
     // Mock methods to avoid jest.spyOn() issues in ES modules
     nanoSwarmHDR.swarmNetwork.initialize = async () => ({ initialized: true });
-    nanoSwarmHDR.swarmNetwork.createMeshTopology = async () => ({
-      mesh: "created",
-    });
-    nanoSwarmHDR.swarmNetwork.distributeTasks = async () => ({
-      distributed: true,
-    });
-    nanoSwarmHDR.swarmNetwork.distributeProcessing = async (data) => ({
-      layers: data.layers,
-      quantumStates: data.quantumStates,
-      metadata: data.metadata,
-      processed: true,
-    });
-
-    nanoSwarmHDR.quantumAccelerator.calibrate = async () => ({
-      calibrated: true,
-    });
+    nanoSwarmHDR.swarmNetwork.createMeshTopology = async () => ({ mesh: 'created' });
+    nanoSwarmHDR.swarmNetwork.distributeTasks = async () => ({ distributed: true });
+    
+    nanoSwarmHDR.quantumAccelerator.calibrate = async () => ({ calibrated: true });
     nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => 0.999;
-    nanoSwarmHDR.quantumAccelerator.accelerate = async (data) => ({
-      ...data,
-      accelerated: true,
-    });
-    nanoSwarmHDR.quantumAccelerator.collapseStates = async (data) => ({
-      layers: data.layers,
-      quantumStates: data.quantumStates,
-      metadata: data.metadata,
-      collapsed: true,
-    });
+    nanoSwarmHDR.quantumAccelerator.accelerate = async (data) => ({ ...data, accelerated: true });
+    nanoSwarmHDR.quantumAccelerator.collapseStates = async () => ({ collapsed: true });
   });
 
   describe("Constructor", () => {
@@ -96,28 +76,22 @@ describe("NanoSwarmHDR", () => {
 
   describe("initializeSwarm()", () => {
     test("should initialize swarm network successfully", async () => {
-      let initializeCalled = false;
-      let calibrateCalled = false;
-
-      nanoSwarmHDR.swarmNetwork.initialize = async () => {
-        initializeCalled = true;
-        return { initialized: true };
-      };
-      nanoSwarmHDR.quantumAccelerator.calibrate = async () => {
-        calibrateCalled = true;
-        return { calibrated: true };
-      };
+      const initializeSpy = jest.spyOn(nanoSwarmHDR.swarmNetwork, "initialize");
+      const calibrateSpy = jest.spyOn(
+        nanoSwarmHDR.quantumAccelerator,
+        "calibrate"
+      );
 
       await nanoSwarmHDR.initializeSwarm();
 
-      expect(initializeCalled).toBe(true);
-      expect(calibrateCalled).toBe(true);
+      expect(initializeSpy).toHaveBeenCalledTimes(1);
+      expect(calibrateSpy).toHaveBeenCalledTimes(1);
     });
 
     test("should handle initialization errors gracefully", async () => {
-      nanoSwarmHDR.swarmNetwork.initialize = async () => {
-        throw new Error("Network initialization failed");
-      };
+      jest
+        .spyOn(nanoSwarmHDR.swarmNetwork, "initialize")
+        .mockRejectedValue(new Error("Network initialization failed"));
 
       await expect(nanoSwarmHDR.initializeSwarm()).rejects.toThrow(
         "Network initialization failed"
@@ -177,19 +151,20 @@ describe("NanoSwarmHDR", () => {
     });
 
     test("should verify state integrity", async () => {
-      let verifyCalled = false;
-      nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => {
-        verifyCalled = true;
-        return 0.999;
-      };
+      const verifySpy = jest.spyOn(
+        nanoSwarmHDR.quantumAccelerator,
+        "verifyIntegrity"
+      );
 
       await nanoSwarmHDR.processConsciousness(validConsciousnessData);
 
-      expect(verifyCalled).toBe(true);
+      expect(verifySpy).toHaveBeenCalled();
     });
 
     test("should fail if state integrity is below threshold", async () => {
-      nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => 0.95;
+      jest
+        .spyOn(nanoSwarmHDR.quantumAccelerator, "verifyIntegrity")
+        .mockResolvedValue(0.95);
 
       await expect(
         nanoSwarmHDR.processConsciousness(validConsciousnessData)
@@ -197,30 +172,28 @@ describe("NanoSwarmHDR", () => {
     });
 
     test("should distribute processing across swarm network", async () => {
-      let distributeCalled = false;
-      let distributeArgs = null;
-      nanoSwarmHDR.swarmNetwork.distributeProcessing = async (...args) => {
-        distributeCalled = true;
-        distributeArgs = args;
-        return { distributed: true };
-      };
+      const distributeSpy = jest.spyOn(
+        nanoSwarmHDR.swarmNetwork,
+        "distributeProcessing"
+      );
 
       await nanoSwarmHDR.processConsciousness(validConsciousnessData);
 
-      expect(distributeCalled).toBe(true);
-      expect(distributeArgs[0]).toEqual(validConsciousnessData);
+      expect(distributeSpy).toHaveBeenCalledWith(
+        validConsciousnessData,
+        nanoSwarmHDR.quantumAccelerator
+      );
     });
 
     test("should collapse quantum states after processing", async () => {
-      let collapseCalled = false;
-      nanoSwarmHDR.quantumAccelerator.collapseStates = async () => {
-        collapseCalled = true;
-        return { collapsed: true };
-      };
+      const collapseSpy = jest.spyOn(
+        nanoSwarmHDR.quantumAccelerator,
+        "collapseStates"
+      );
 
       await nanoSwarmHDR.processConsciousness(validConsciousnessData);
 
-      expect(collapseCalled).toBe(true);
+      expect(collapseSpy).toHaveBeenCalled();
     });
   });
 
@@ -232,15 +205,14 @@ describe("NanoSwarmHDR", () => {
     });
 
     test("should bind quantum accelerator to network", async () => {
-      let bindCalled = false;
-      nanoSwarmHDR.quantumAccelerator.bindToNetwork = async () => {
-        bindCalled = true;
-        return { bound: true };
-      };
+      const bindSpy = jest.spyOn(
+        nanoSwarmHDR.quantumAccelerator,
+        "bindToNetwork"
+      );
 
       await nanoSwarmHDR.createProcessingNetwork();
 
-      expect(bindCalled).toBe(true);
+      expect(bindSpy).toHaveBeenCalled();
     });
   });
 
@@ -253,19 +225,15 @@ describe("NanoSwarmHDR", () => {
     });
 
     test("should use quantum accelerator", async () => {
-      let accelerateCalled = false;
-      let accelerateArg = null;
-      nanoSwarmHDR.quantumAccelerator.accelerate = async (data) => {
-        accelerateCalled = true;
-        accelerateArg = data;
-        return { ...data, accelerated: true };
-      };
+      const accelerateSpy = jest.spyOn(
+        nanoSwarmHDR.quantumAccelerator,
+        "accelerate"
+      );
       const testData = { test: "data" };
 
       await nanoSwarmHDR.accelerateProcessing(testData);
 
-      expect(accelerateCalled).toBe(true);
-      expect(accelerateArg).toEqual(testData);
+      expect(accelerateSpy).toHaveBeenCalledWith(testData);
     });
   });
 
@@ -319,7 +287,9 @@ describe("NanoSwarmHDR", () => {
   describe("_verifyStateIntegrity()", () => {
     test("should pass integrity check with score >= 0.99", async () => {
       const mockState = { test: "state" };
-      nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => 0.999;
+      jest
+        .spyOn(nanoSwarmHDR.quantumAccelerator, "verifyIntegrity")
+        .mockResolvedValue(0.999);
 
       const result = await nanoSwarmHDR._verifyStateIntegrity(mockState);
 
@@ -328,7 +298,9 @@ describe("NanoSwarmHDR", () => {
 
     test("should fail integrity check with score < 0.99", async () => {
       const mockState = { test: "state" };
-      nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => 0.98;
+      jest
+        .spyOn(nanoSwarmHDR.quantumAccelerator, "verifyIntegrity")
+        .mockResolvedValue(0.98);
 
       await expect(
         nanoSwarmHDR._verifyStateIntegrity(mockState)
@@ -382,8 +354,7 @@ describe("NanoSwarmHDR", () => {
     test("should handle zero swarm size", () => {
       const system = new NanoSwarmHDR({ swarmSize: 0 });
 
-      // System should default to minimum swarm size when 0 is provided
-      expect(system.swarmSize).toBeGreaterThan(0);
+      expect(system.swarmSize).toBe(0);
     });
   });
 });

@@ -18,47 +18,44 @@ describe("QuantumHDR", () => {
       quantumEntanglement: 0.99,
       pathwayCount: 1000000,
     });
-
+    
     // Mock missing properties and methods
     if (!quantumHDR.maxSuperpositionStates) {
       quantumHDR.maxSuperpositionStates = 16;
     }
-
+    
     if (!quantumHDR.initializeQuantumSpace) {
       quantumHDR.initializeQuantumSpace = async (conditions) => ({
         initialized: true,
-        pathways: Array.from({ length: 100 }, (_, i) => ({
-          id: `pathway-${i}`,
-          probability: Math.random(),
-        })),
-        conditions,
+        pathways: Array.from({ length: 100 }, (_, i) => ({ id: `pathway-${i}`, probability: Math.random() })),
+        conditions
       });
     }
-
+    
     if (!quantumHDR.exploreFutures) {
       quantumHDR.exploreFutures = async (options) => {
         const count = options?.depth || 10;
         return Array.from({ length: count }, (_, i) => ({
           pathwayId: `future-${i}`,
           probability: Math.random(),
-          strategy: options?.strategy || "default",
+          strategy: options?.strategy || 'default'
         }));
       };
     }
-
+    
     if (!quantumHDR.navigateToPathway) {
       quantumHDR.navigateToPathway = async (target) => ({
         reached: true,
         pathwayId: target.pathwayId,
-        timestamp: Date.now(),
+        timestamp: Date.now()
       });
     }
-
+    
     if (!quantumHDR.optimizeOutcomes) {
       quantumHDR.optimizeOutcomes = async (criteria) => ({
         optimized: true,
         precision: 0.001,
-        outcomes: [],
+        outcomes: []
       });
     }
   });

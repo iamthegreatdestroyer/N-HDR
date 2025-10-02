@@ -25,35 +25,26 @@ describe("NanoSwarmHDR", () => {
       dimensions: 6,
     };
     nanoSwarmHDR = new NanoSwarmHDR(mockConfig);
-
+    
     // Mock methods to avoid jest.spyOn() issues in ES modules
     nanoSwarmHDR.swarmNetwork.initialize = async () => ({ initialized: true });
-    nanoSwarmHDR.swarmNetwork.createMeshTopology = async () => ({
-      mesh: "created",
-    });
-    nanoSwarmHDR.swarmNetwork.distributeTasks = async () => ({
-      distributed: true,
-    });
+    nanoSwarmHDR.swarmNetwork.createMeshTopology = async () => ({ mesh: 'created' });
+    nanoSwarmHDR.swarmNetwork.distributeTasks = async () => ({ distributed: true });
     nanoSwarmHDR.swarmNetwork.distributeProcessing = async (data) => ({
       layers: data.layers,
       quantumStates: data.quantumStates,
       metadata: data.metadata,
-      processed: true,
+      processed: true
     });
-
-    nanoSwarmHDR.quantumAccelerator.calibrate = async () => ({
-      calibrated: true,
-    });
+    
+    nanoSwarmHDR.quantumAccelerator.calibrate = async () => ({ calibrated: true });
     nanoSwarmHDR.quantumAccelerator.verifyIntegrity = async () => 0.999;
-    nanoSwarmHDR.quantumAccelerator.accelerate = async (data) => ({
-      ...data,
-      accelerated: true,
-    });
+    nanoSwarmHDR.quantumAccelerator.accelerate = async (data) => ({ ...data, accelerated: true });
     nanoSwarmHDR.quantumAccelerator.collapseStates = async (data) => ({
       layers: data.layers,
       quantumStates: data.quantumStates,
       metadata: data.metadata,
-      collapsed: true,
+      collapsed: true
     });
   });
 
@@ -98,7 +89,7 @@ describe("NanoSwarmHDR", () => {
     test("should initialize swarm network successfully", async () => {
       let initializeCalled = false;
       let calibrateCalled = false;
-
+      
       nanoSwarmHDR.swarmNetwork.initialize = async () => {
         initializeCalled = true;
         return { initialized: true };
