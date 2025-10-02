@@ -36,8 +36,6 @@ describe("ExpertiseEngine", () => {
       id: "crystal-1",
       pattern: {
         dimension: "cognitive",
-        significance: 0.95,
-        domain: "quantum-mechanics",
         data: {
           /* ... */
         },
@@ -52,8 +50,6 @@ describe("ExpertiseEngine", () => {
       id: "crystal-2",
       pattern: {
         dimension: "memory",
-        significance: 0.88,
-        domain: "neural-networks",
         data: {
           /* ... */
         },
@@ -295,9 +291,9 @@ describe("ExpertiseEngine", () => {
     });
 
     test("should handle quantum processing errors", async () => {
-      expertiseEngine.quantumProcessor.generateSignature = async () => {
-        throw new Error("Quantum error");
-      };
+      mockQuantumProcessor.generateSignature.mockRejectedValue(
+        new Error("Quantum error")
+      );
       const result = await expertiseEngine.extractExpertise(mockCrystals);
       expect(result.success).toBe(false);
       expect(result.error).toContain("Quantum error");

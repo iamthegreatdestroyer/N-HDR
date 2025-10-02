@@ -69,98 +69,56 @@ describe("CrystallineStorage", () => {
     };
 
     // Mock private methods for storage operations
-    storage._validateCrystal = async (crystal) => {
-      if (!crystal || !crystal.id) {
-        throw new Error("Invalid crystal: missing id");
+    storage._validateInput = async (data) => {
+      if (!data || !data.id) {
+        throw new Error("Invalid input: missing id");
       }
       return true;
     };
 
-    storage._validateExpertise = async (expertise) => {
-      if (!expertise || !expertise.id) {
-        throw new Error("Invalid expertise: missing id");
-      }
-      return true;
-    };
-
-    storage._prepareCrystal = async (crystal) => {
+    storage._compressData = async (data) => {
       return {
-        ...crystal,
-        prepared: true,
-        timestamp: Date.now(),
+        compressed: true,
+        original: data,
+        ratio: config.ohdr.compressionRatio,
+        size: JSON.stringify(data).length / config.ohdr.compressionRatio,
       };
     };
 
-    storage._prepareExpertise = async (expertise) => {
+    storage._encryptStorage = async (data) => {
       return {
-        ...expertise,
-        prepared: true,
-        timestamp: Date.now(),
-      };
-    };
-
-    storage._secureData = async (data) => {
-      return {
-        data: data,
         encrypted: true,
+        data: data,
         quantum: true,
-        signature: "quantum-signature",
       };
     };
 
-    storage._storeWithRedundancy = async (secured, type) => {
-      const stored = {
-        id: secured.data.id,
-        data: secured,
-        type: type,
-        copies: [],
+    storage._storePattern = async (pattern) => {
+      storage.patterns = storage.patterns || new Map();
+      storage.patterns.set(pattern.id, pattern);
+      return {
+        success: true,
+        id: pattern.id,
+        stored: true,
       };
-      // Create redundant copies
-      const redundancy = config.ohdr.storageRedundancy || 3;
-      for (let i = 0; i < redundancy; i++) {
-        stored.copies.push({
-          copy: i + 1,
-          data: secured,
-          location: `location-${i}`,
-        });
-      }
-      return stored;
     };
 
-    storage._indexCrystal = async (stored) => {
-      storage.crystalStore = storage.crystalStore || new Map();
-      storage.crystalStore.set(stored.id, stored);
-      return true;
+    storage._retrievePattern = async (id) => {
+      storage.patterns = storage.patterns || new Map();
+      return storage.patterns.get(id) || null;
     };
 
-    storage._indexExpertise = async (stored) => {
-      storage.expertiseStore = storage.expertiseStore || new Map();
-      storage.expertiseStore.set(stored.id, stored);
-      return true;
-    };
-
-    storage._verifyIntegrity = async (stored) => {
-      return 0.98;
-    };
-
-    storage._retrieveCrystal = async (id) => {
-      storage.crystalStore = storage.crystalStore || new Map();
-      const stored = storage.crystalStore.get(id);
-      if (!stored) return null;
-      return stored.data.data; // unwrap the security layers
-    };
-
-    storage._retrieveExpertise = async (id) => {
-      storage.expertiseStore = storage.expertiseStore || new Map();
-      const stored = storage.expertiseStore.get(id);
-      if (!stored) return null;
-      return stored.data.data; // unwrap the security layers
+    storage._validateIntegrity = async (stored) => {
+      return {
+        integrity: 0.98,
+        verified: true,
+        quantumSecured: true,
+      };
     };
 
     storage._calculateStorageEfficiency = () => {
-      const totalStored =
-        (storage.crystalStore?.size || 0) + (storage.expertiseStore?.size || 0);
-      if (totalStored === 0) return 1.0;
+      storage.patterns = storage.patterns || new Map();
+      if (storage.patterns.size === 0) return 1.0;
       return 0.95;
     };
 
@@ -185,10 +143,14 @@ describe("CrystallineStorage", () => {
     test("should initialize successfully", async () => {
       const result = await storage.initialize();
       expect(result).toBe(true);
+      expect(mockSecurityManager.getOperationToken).toHaveBeenCalledWith(
+        "storage"
+      );
+      expect(mockQuantumProcessor.initializeState).toHaveBeenCalled();
     });
 
     test("should fail initialization with invalid security token", async () => {
-      storage.security.validateToken = async () => false;
+      mockSecurityManager.validateToken.mockResolvedValue(false);
       await expect(storage.initialize()).rejects.toThrow(
         "Invalid security context"
       );
@@ -215,7 +177,8 @@ describe("CrystallineStorage", () => {
 
     test("should maintain quantum security during storage", async () => {
       await storage.storeCrystal(mockCrystal);
-      // Security is maintained through encryption and quantum signatures
+      expect(mockSecurityManager.encryptData).toHaveBeenCalled();
+      expect(mockQuantumProcessor.generateSignature).toHaveBeenCalled();
     });
   });
 
@@ -239,7 +202,8 @@ describe("CrystallineStorage", () => {
 
     test("should maintain quantum security during storage", async () => {
       await storage.storeExpertise(mockExpertise);
-      // Security is maintained through encryption and quantum signatures
+      expect(mockSecurityManager.encryptData).toHaveBeenCalled();
+      expect(mockQuantumProcessor.generateSignature).toHaveBeenCalled();
     });
   });
 

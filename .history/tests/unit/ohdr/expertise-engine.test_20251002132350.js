@@ -4,14 +4,7 @@
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * This file is part of the Neural-HDR (N-HDR) system, a component of the HDR Empire
- * technolog    test("should handle quantum processing errors", async () => {
-      expertiseEngine.quantumProcessor.generateSignature = async () => {
-        throw new Error("Quantum error");
-      };
-      const result = await expertiseEngine.extractExpertise(mockCrystals);
-      expect(result.success).toBe(false);
-      expect(result.error).toBeDefined();
-    }); Unauthorized reproduction, distribution, or disclosure of this
+ * technology suite. Unauthorized reproduction, distribution, or disclosure of this
  * software in whole or in part is strictly prohibited. All intellectual property
  * rights, including patent-pending technologies, are reserved.
  *
@@ -36,8 +29,6 @@ describe("ExpertiseEngine", () => {
       id: "crystal-1",
       pattern: {
         dimension: "cognitive",
-        significance: 0.95,
-        domain: "quantum-mechanics",
         data: {
           /* ... */
         },
@@ -52,8 +43,6 @@ describe("ExpertiseEngine", () => {
       id: "crystal-2",
       pattern: {
         dimension: "memory",
-        significance: 0.88,
-        domain: "neural-networks",
         data: {
           /* ... */
         },
@@ -83,109 +72,24 @@ describe("ExpertiseEngine", () => {
       generateSignature: async () => ({ signature: "quantum-signature" }),
       calculateCorrelation: async () => 0.85,
     };
+    QuantumProcessor.mockImplementation(() => mockQuantumProcessor);
 
-    // Mock private methods for expertise extraction workflow
-    expertiseEngine._validateCrystals = async (crystals) => {
-      if (!crystals || !Array.isArray(crystals) || crystals.length === 0) {
-        throw new Error("Invalid crystal input");
-      }
-      return true;
-    };
-
-    expertiseEngine._extractPatterns = async (crystals) => {
-      const patterns = new Map();
-      crystals.forEach((crystal, index) => {
-        if (crystal.pattern.significance >= config.ohdr.expertiseThreshold) {
-          patterns.set(`pattern-${index}`, {
-            id: `pattern-${index}`,
-            data: crystal.pattern,
-            significance: crystal.pattern.significance,
-            domain: crystal.pattern.domain || "general",
-          });
-        }
-      });
-      return patterns;
-    };
-
-    expertiseEngine._analyzeDomains = async (patterns) => {
-      const domains = new Map();
-      for (const [id, pattern] of patterns) {
-        const domainName = pattern.domain || "general";
-        if (!domains.has(domainName)) {
-          domains.set(domainName, {
-            name: domainName,
-            patterns: [],
-            confidence: 0.95,
-          });
-        }
-        domains.get(domainName).patterns.push(pattern);
-      }
-      return domains;
-    };
-
-    expertiseEngine._synthesizeExpertise = async (patterns, domains) => {
-      const expertise = [];
-      for (const [id, pattern] of patterns) {
-        const domain = domains.get(pattern.domain || "general");
-        expertise.push({
-          id: id,
-          pattern: pattern.data,
-          domain: {
-            name: domain.name,
-            confidence: domain.confidence,
-          },
-          structure: {
-            depth: pattern.significance * 0.9,
-            integration: 0.92,
-          },
-          coherence: 0.92,
-          connections: [],
-        });
-      }
-      // Sort by coherence
-      return expertise.sort((a, b) => b.coherence - a.coherence);
-    };
-
-    expertiseEngine._validateAndStore = async (expertise) => {
-      expertiseEngine.knowledgeBase = new Map();
-      for (const exp of expertise) {
-        if (exp.structure.integration >= config.ohdr.synthesisThreshold) {
-          expertiseEngine.knowledgeBase.set(exp.id, exp);
-        }
-      }
-      return true;
-    };
-
-    expertiseEngine._calculateOverallCoherence = (expertise) => {
-      if (!expertise || !expertise.length) return 0;
-      const sum = expertise.reduce((acc, exp) => acc + exp.coherence, 0);
-      return sum / expertise.length;
-    };
-
-    expertiseEngine._validateSecurityContext = async (token) => {
-      return token === "mock-token";
-    };
-
-    expertiseEngine._initializeQuantumState = async () => {
-      return await expertiseEngine.quantumProcessor.initializeState();
-    };
-
-    expertiseEngine._setupEnvironment = async () => {
-      return await expertiseEngine.quantumProcessor.setupEnvironment();
-    };
-
-    // Initialize knowledge base
-    expertiseEngine.knowledgeBase = new Map();
+    // Create expertise engine instance
+    expertiseEngine = new ExpertiseEngine();
   });
 
   describe("Initialization", () => {
     test("should initialize successfully", async () => {
       const result = await expertiseEngine.initialize();
       expect(result).toBe(true);
+      expect(mockSecurityManager.getOperationToken).toHaveBeenCalledWith(
+        "expertise"
+      );
+      expect(mockQuantumProcessor.initializeState).toHaveBeenCalled();
     });
 
     test("should fail initialization with invalid security token", async () => {
-      expertiseEngine.security.validateToken = async () => false;
+      mockSecurityManager.validateToken.mockResolvedValue(false);
       await expect(expertiseEngine.initialize()).rejects.toThrow(
         "Invalid security context"
       );
@@ -218,7 +122,8 @@ describe("ExpertiseEngine", () => {
 
     test("should maintain quantum security during extraction", async () => {
       await expertiseEngine.extractExpertise(mockCrystals);
-      // Security is maintained through validated tokens and quantum signatures
+      expect(mockQuantumProcessor.generateSignature).toHaveBeenCalled();
+      expect(mockSecurityManager.validateToken).toHaveBeenCalled();
     });
   });
 
@@ -295,9 +200,9 @@ describe("ExpertiseEngine", () => {
     });
 
     test("should handle quantum processing errors", async () => {
-      expertiseEngine.quantumProcessor.generateSignature = async () => {
-        throw new Error("Quantum error");
-      };
+      mockQuantumProcessor.generateSignature.mockRejectedValue(
+        new Error("Quantum error")
+      );
       const result = await expertiseEngine.extractExpertise(mockCrystals);
       expect(result.success).toBe(false);
       expect(result.error).toContain("Quantum error");

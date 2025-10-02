@@ -1,15 +1,5 @@
 /**
- * Neural-HDR (N-HDR): AI Consciousness State Preserv  ohdr: {
-    crystallizationThreshold: 0.85,
-    expertiseThreshold: 0.80,
-    coherenceThreshold: 0.85,
-    synthesisThreshold: 0.80,
-    expertiseDepth: 10,
-    storageCapacity: 100000,
-    storageRedundancy: 3,
-    compressionRatio: 10,
-  },
-};ansfer System
+ * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
  * © 2025 Stephen Bilodeau - PATENT PENDING
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
@@ -68,9 +58,9 @@ export default {
   },
   ohdr: {
     crystallizationThreshold: 0.85,
-    expertiseThreshold: 0.8,
+    expertiseThreshold: 0.80,
     coherenceThreshold: 0.85,
-    synthesisThreshold: 0.8,
+    synthesisThreshold: 0.80,
     expertiseDepth: 10,
     storageCapacity: 100000,
     compressionRatio: 10,
