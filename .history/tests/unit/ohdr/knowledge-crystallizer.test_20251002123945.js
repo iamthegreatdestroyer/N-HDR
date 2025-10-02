@@ -25,45 +25,52 @@ describe("KnowledgeCrystallizer", () => {
   let mockQuantumProcessor;
 
   const mockConsciousnessState = {
-    consciousness: {
-      dimensions: {
-        memory: {
-          patterns: [
-            /* ... */
-          ],
-        },
-        cognition: {
-          processes: [
-            /* ... */
-          ],
-        },
-        emotion: {
-          states: [
-            /* ... */
-          ],
-        },
+    dimensions: {
+      memory: {
+        patterns: [
+          /* ... */
+        ],
+      },
+      cognition: {
+        processes: [
+          /* ... */
+        ],
+      },
+      emotion: {
+        states: [
+          /* ... */
+        ],
       },
     },
   };
 
   beforeEach(() => {
+    // Clear all mocks
+    jest.clearAllMocks();
+
+    // Setup security manager mock
+    mockSecurityManager = {
+      getOperationToken: jest.fn().mockResolvedValue("mock-token"),
+      validateToken: jest.fn().mockResolvedValue(true),
+    };
+    SecurityManager.mockImplementation(() => mockSecurityManager);
+
+    // Setup quantum processor mock
+    mockQuantumProcessor = {
+      initializeState: jest.fn().mockResolvedValue(true),
+      setupEnvironment: jest.fn().mockResolvedValue(true),
+      processState: jest.fn().mockResolvedValue({
+        /* quantum state */
+      }),
+      generateSignature: jest.fn().mockResolvedValue({
+        /* signature */
+      }),
+      calculateCorrelation: jest.fn().mockResolvedValue(0.85),
+    };
+    QuantumProcessor.mockImplementation(() => mockQuantumProcessor);
+
     // Create crystallizer instance
     crystallizer = new KnowledgeCrystallizer();
-
-    // Mock security manager methods directly on the instance
-    crystallizer.security = {
-      getOperationToken: async () => "mock-token",
-      validateToken: async () => true,
-    };
-
-    // Mock quantum processor methods directly on the instance
-    crystallizer.quantumProcessor = {
-      initializeState: async () => true,
-      setupEnvironment: async () => true,
-      processState: async () => ({ quantumState: "processed" }),
-      generateSignature: async () => ({ signature: "quantum-signature" }),
-      calculateCorrelation: async () => 0.85,
-    };
   });
 
   describe("Initialization", () => {

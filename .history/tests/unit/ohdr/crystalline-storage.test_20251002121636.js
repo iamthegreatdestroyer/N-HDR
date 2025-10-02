@@ -20,8 +20,8 @@ import QuantumProcessor from "../../../src/core/quantum/quantum-processor.js";
 import config from "../../../config/nhdr-config.js";
 
 // Mock dependencies
-jest.mock("../../../src/core/security/security-manager.js");
-jest.mock("../../../src/core/quantum/quantum-processor.js");
+jest.mock("../../src/core/security/security-manager");
+jest.mock("../../src/core/quantum/quantum-processor");
 
 describe("CrystallineStorage", () => {
   let storage;

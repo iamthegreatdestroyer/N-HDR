@@ -25,23 +25,21 @@ describe("KnowledgeCrystallizer", () => {
   let mockQuantumProcessor;
 
   const mockConsciousnessState = {
-    consciousness: {
-      dimensions: {
-        memory: {
-          patterns: [
-            /* ... */
-          ],
-        },
-        cognition: {
-          processes: [
-            /* ... */
-          ],
-        },
-        emotion: {
-          states: [
-            /* ... */
-          ],
-        },
+    dimensions: {
+      memory: {
+        patterns: [
+          /* ... */
+        ],
+      },
+      cognition: {
+        processes: [
+          /* ... */
+        ],
+      },
+      emotion: {
+        states: [
+          /* ... */
+        ],
       },
     },
   };

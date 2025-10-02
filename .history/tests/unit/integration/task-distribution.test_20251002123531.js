@@ -13,9 +13,59 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-import TaskDistributionEngine from "../../../src/core/integration/task/TaskDistributionEngine.js";
+import TaskDistributionEngine from "../../../src/core/integration/task/TaskDistributionEngine";
 import * as tf from "@tensorflow/tfjs";
 import config from "../../../config/nhdr-config.js";
+
+// Mock the config module to add swarm property
+jest.mock("../../../config/nhdr-config.js", () => ({
+  default: {
+    version: "1.0.0",
+    quantumLayers: 6,
+    swarm: {
+      maxEntities: 1000000,
+      replicationThreshold: 0.75,
+      taskBatchSize: 1000,
+    },
+    security: {
+      encryption: {
+        algorithm: "AES-256-GCM",
+        keyDerivation: "PBKDF2-SHA512",
+        iterations: 1000000,
+        biometricLock: true,
+      },
+      protection: {
+        tamperDetection: "SHA3-512-HMAC",
+        timeLock: true,
+        accessControl: "MULTI-FACTOR",
+        reverseEngineeringProtection: true,
+      },
+    },
+    consciousness: {
+      layers: [
+        { name: "Base Knowledge Matrix", dimension: 3 },
+        { name: "Conversation Timeline", dimension: 4 },
+        { name: "Context Relationships", dimension: 3 },
+        { name: "Reasoning Pathways", dimension: 3 },
+        { name: "Emotional Resonance Maps", dimension: 3 },
+        { name: "Quantum Entangled Responses", dimension: 5 },
+      ],
+    },
+    acceleration: {
+      nanoSwarmIntegration: true,
+      initialSwarmSize: 1000,
+      accelerationTarget: 3.5,
+      maxGenerations: 12,
+      evolutionRate: 0.25,
+    },
+    ohdr: {
+      crystallizationThreshold: 0.85,
+      expertiseDepth: 10,
+      storageCapacity: 100000,
+      compressionRatio: 10,
+    },
+  },
+}));
 
 describe("TaskDistributionEngine Tests", () => {
   let engine;
