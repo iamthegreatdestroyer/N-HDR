@@ -13,69 +13,40 @@
  * HDR Empire - Pioneering the Future of AI Consciousness
  */
 
-// Mock TensorFlow at the module level using jest.unstable_mockModule
-import { jest } from "@jest/globals";
-
-// Create TensorFlow mock before any imports that use it
-await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
-  tensor: (values, shape) => {
-    const tensor = {
-      data: values,
-      shape: shape || [values.length],
-      dispose: () => {},
-      arraySync: () => values,
-      sum: () => ({
-        arraySync: () => values.reduce((a, b) => a + b, 0),
-      }),
-      mul: (other) => ({
-        data: values,
-        shape: tensor.shape,
-        dispose: () => {},
-        add: (another) => ({
-          data: values,
-          shape: tensor.shape,
-          dispose: () => {},
-        }),
-      }),
-      expandDims: () => ({
-        data: values,
-        shape: [1, values.length],
-        dispose: () => {},
-        arraySync: () => [values],
-      }),
-    };
-    return tensor;
-  },
-  scalar: (value) => ({
-    data: value,
-    shape: [],
-    dispose: () => {},
-    arraySync: () => value,
-  }),
-  tidy: (fn) => fn(),
-  add: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a + b : a,
-    dispose: () => {},
-  }),
-  mul: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a * b : a,
-    dispose: () => {},
-  }),
-  dispose: () => {},
-}));
-
-const TaskDistributionEngine = (
-  await import("../../../src/core/integration/task/TaskDistributionEngine.js")
-).default;
-const config = (await import("../../../config/nhdr-config.js")).default;
+import TaskDistributionEngine from "../../../src/core/integration/task/TaskDistributionEngine.js";
+import { initializeTensorFlowMock } from "../../utils/tensorflow-mock.js";
+import { preservingMock } from "../../utils/preserving-mock.js";
+import config from "../../../config/nhdr-config.js";
 
 describe("TaskDistributionEngine Tests", () => {
   let engine;
   let mockComplexity;
 
+  // Initialize TensorFlow mock before all tests
+  beforeAll(() => {
+    initializeTensorFlowMock();
+  });
+
   beforeEach(() => {
     engine = new TaskDistributionEngine();
-
+    
+    // Apply preservingMock pattern to dependencies if they exist
+    if (engine.nanoSwarm) {
+      preservingMock(engine.nanoSwarm, {
+        distributeProcessing: async (tasks) => {
+          return tasks.map(task => ({ ...task, processed: true }));
+        },
+        getNodeStatus: async () => ({ available: 1000, total: 1000000 })
+      });
+    }
+    
+    if (engine.security) {
+      preservingMock(engine.security, {
+        validateOperation: async () => true,
+        encryptTask: async (task) => ({ ...task, encrypted: true })
+      });
+    }
+    
     mockComplexity = {
       computationalLoad: 0.75,
       memoryRequirements: 0.6,
@@ -135,8 +106,7 @@ describe("TaskDistributionEngine Tests", () => {
         config.swarm.maxEntities
       );
       expect(matrix).toBeDefined();
-      // TensorFlow mock provides tensor objects
-      expect(typeof matrix).toBe("object");
+      expect(matrix instanceof tf.Tensor).toBe(true);
     });
   });
 
@@ -171,20 +141,18 @@ describe("TaskDistributionEngine Tests", () => {
 
   describe("Resource Management", () => {
     test("should calculate resource requirements accurately", () => {
-      const complexity = { data: [0.5, 0.6, 0.7], shape: [3] };
+      const complexity = tf.tensor([0.5, 0.6, 0.7]);
       const requirements = engine._calculateResourceRequirements(complexity);
       expect(requirements.shape).toEqual(complexity.shape);
+      tf.dispose([complexity, requirements]);
     });
 
     test("should determine optimal entity count", () => {
-      const requirements = {
-        data: [1, 1, 1],
-        shape: [3],
-        sum: () => ({ arraySync: () => 3 }),
-      };
+      const requirements = tf.tensor([1, 1, 1]);
       const count = engine._determineOptimalEntityCount(requirements);
       expect(count).toBeGreaterThan(0);
       expect(count).toBeLessThanOrEqual(engine.maxEntities);
+      tf.dispose(requirements);
     });
   });
 

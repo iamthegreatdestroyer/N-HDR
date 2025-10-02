@@ -14,10 +14,10 @@
  */
 
 // Mock TensorFlow at the module level using jest.unstable_mockModule
-import { jest } from "@jest/globals";
+import { jest } from '@jest/globals';
 
 // Create TensorFlow mock before any imports that use it
-await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
+await jest.unstable_mockModule('@tensorflow/tfjs', () => ({
   tensor: (values, shape) => {
     const tensor = {
       data: values,
@@ -25,7 +25,7 @@ await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
       dispose: () => {},
       arraySync: () => values,
       sum: () => ({
-        arraySync: () => values.reduce((a, b) => a + b, 0),
+        arraySync: () => values.reduce((a, b) => a + b, 0)
       }),
       mul: (other) => ({
         data: values,
@@ -34,15 +34,15 @@ await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
         add: (another) => ({
           data: values,
           shape: tensor.shape,
-          dispose: () => {},
-        }),
+          dispose: () => {}
+        })
       }),
       expandDims: () => ({
         data: values,
         shape: [1, values.length],
         dispose: () => {},
-        arraySync: () => [values],
-      }),
+        arraySync: () => [values]
+      })
     };
     return tensor;
   },
@@ -50,23 +50,21 @@ await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
     data: value,
     shape: [],
     dispose: () => {},
-    arraySync: () => value,
+    arraySync: () => value
   }),
   tidy: (fn) => fn(),
   add: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a + b : a,
-    dispose: () => {},
+    data: typeof a === 'number' && typeof b === 'number' ? a + b : a,
+    dispose: () => {}
   }),
   mul: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a * b : a,
-    dispose: () => {},
+    data: typeof a === 'number' && typeof b === 'number' ? a * b : a,
+    dispose: () => {}
   }),
-  dispose: () => {},
+  dispose: () => {}
 }));
 
-const TaskDistributionEngine = (
-  await import("../../../src/core/integration/task/TaskDistributionEngine.js")
-).default;
+const TaskDistributionEngine = (await import("../../../src/core/integration/task/TaskDistributionEngine.js")).default;
 const config = (await import("../../../config/nhdr-config.js")).default;
 
 describe("TaskDistributionEngine Tests", () => {
@@ -75,7 +73,7 @@ describe("TaskDistributionEngine Tests", () => {
 
   beforeEach(() => {
     engine = new TaskDistributionEngine();
-
+    
     mockComplexity = {
       computationalLoad: 0.75,
       memoryRequirements: 0.6,
@@ -136,7 +134,7 @@ describe("TaskDistributionEngine Tests", () => {
       );
       expect(matrix).toBeDefined();
       // TensorFlow mock provides tensor objects
-      expect(typeof matrix).toBe("object");
+      expect(typeof matrix).toBe('object');
     });
   });
 
@@ -177,11 +175,7 @@ describe("TaskDistributionEngine Tests", () => {
     });
 
     test("should determine optimal entity count", () => {
-      const requirements = {
-        data: [1, 1, 1],
-        shape: [3],
-        sum: () => ({ arraySync: () => 3 }),
-      };
+      const requirements = { data: [1, 1, 1], shape: [3], sum: () => ({ arraySync: () => 3 }) };
       const count = engine._determineOptimalEntityCount(requirements);
       expect(count).toBeGreaterThan(0);
       expect(count).toBeLessThanOrEqual(engine.maxEntities);

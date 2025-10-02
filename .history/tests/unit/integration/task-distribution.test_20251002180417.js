@@ -14,59 +14,38 @@
  */
 
 // Mock TensorFlow at the module level using jest.unstable_mockModule
-import { jest } from "@jest/globals";
+import { jest } from '@jest/globals';
 
 // Create TensorFlow mock before any imports that use it
-await jest.unstable_mockModule("@tensorflow/tfjs", () => ({
-  tensor: (values, shape) => {
-    const tensor = {
-      data: values,
-      shape: shape || [values.length],
-      dispose: () => {},
-      arraySync: () => values,
-      sum: () => ({
-        arraySync: () => values.reduce((a, b) => a + b, 0),
-      }),
-      mul: (other) => ({
-        data: values,
-        shape: tensor.shape,
-        dispose: () => {},
-        add: (another) => ({
-          data: values,
-          shape: tensor.shape,
-          dispose: () => {},
-        }),
-      }),
-      expandDims: () => ({
-        data: values,
-        shape: [1, values.length],
-        dispose: () => {},
-        arraySync: () => [values],
-      }),
-    };
-    return tensor;
-  },
+await jest.unstable_mockModule('@tensorflow/tfjs', () => ({
+  tensor: (values, shape) => ({
+    data: values,
+    shape: shape || [values.length],
+    dispose: () => {},
+    arraySync: () => values,
+    sum: () => ({
+      arraySync: () => values.reduce((a, b) => a + b, 0)
+    })
+  }),
   scalar: (value) => ({
     data: value,
     shape: [],
     dispose: () => {},
-    arraySync: () => value,
+    arraySync: () => value
   }),
   tidy: (fn) => fn(),
   add: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a + b : a,
-    dispose: () => {},
+    data: typeof a === 'number' && typeof b === 'number' ? a + b : a,
+    dispose: () => {}
   }),
   mul: (a, b) => ({
-    data: typeof a === "number" && typeof b === "number" ? a * b : a,
-    dispose: () => {},
+    data: typeof a === 'number' && typeof b === 'number' ? a * b : a,
+    dispose: () => {}
   }),
-  dispose: () => {},
+  dispose: () => {}
 }));
 
-const TaskDistributionEngine = (
-  await import("../../../src/core/integration/task/TaskDistributionEngine.js")
-).default;
+const TaskDistributionEngine = (await import("../../../src/core/integration/task/TaskDistributionEngine.js")).default;
 const config = (await import("../../../config/nhdr-config.js")).default;
 
 describe("TaskDistributionEngine Tests", () => {
@@ -75,7 +54,24 @@ describe("TaskDistributionEngine Tests", () => {
 
   beforeEach(() => {
     engine = new TaskDistributionEngine();
-
+    
+    // Apply preservingMock pattern to dependencies if they exist
+    if (engine.nanoSwarm) {
+      preservingMock(engine.nanoSwarm, {
+        distributeProcessing: async (tasks) => {
+          return tasks.map(task => ({ ...task, processed: true }));
+        },
+        getNodeStatus: async () => ({ available: 1000, total: 1000000 })
+      });
+    }
+    
+    if (engine.security) {
+      preservingMock(engine.security, {
+        validateOperation: async () => true,
+        encryptTask: async (task) => ({ ...task, encrypted: true })
+      });
+    }
+    
     mockComplexity = {
       computationalLoad: 0.75,
       memoryRequirements: 0.6,
@@ -136,7 +132,7 @@ describe("TaskDistributionEngine Tests", () => {
       );
       expect(matrix).toBeDefined();
       // TensorFlow mock provides tensor objects
-      expect(typeof matrix).toBe("object");
+      expect(typeof matrix).toBe('object');
     });
   });
 
@@ -171,20 +167,18 @@ describe("TaskDistributionEngine Tests", () => {
 
   describe("Resource Management", () => {
     test("should calculate resource requirements accurately", () => {
-      const complexity = { data: [0.5, 0.6, 0.7], shape: [3] };
+      const complexity = global.tf.tensor([0.5, 0.6, 0.7]);
       const requirements = engine._calculateResourceRequirements(complexity);
       expect(requirements.shape).toEqual(complexity.shape);
+      global.tf.dispose([complexity, requirements]);
     });
 
     test("should determine optimal entity count", () => {
-      const requirements = {
-        data: [1, 1, 1],
-        shape: [3],
-        sum: () => ({ arraySync: () => 3 }),
-      };
+      const requirements = global.tf.tensor([1, 1, 1]);
       const count = engine._determineOptimalEntityCount(requirements);
       expect(count).toBeGreaterThan(0);
       expect(count).toBeLessThanOrEqual(engine.maxEntities);
+      global.tf.dispose(requirements);
     });
   });
 

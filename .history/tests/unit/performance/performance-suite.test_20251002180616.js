@@ -140,12 +140,8 @@ describe("CodeSplitting", () => {
       await codeSplitting.lazyLoad("TestComponent");
       const duration = Date.now() - start;
       // Using custom performance matcher for semantic assertion
-      expect(duration).toBeMeasurement({ min: 0, max: 500, unit: "ms" });
-      expect(duration).toBePerformant({
-        threshold: 500,
-        baseline: 1000,
-        unit: "ms",
-      });
+      expect(duration).toBeMeasurement({ min: 0, max: 500, unit: 'ms' });
+      expect(duration).toBePerformant({ threshold: 500, baseline: 1000, unit: 'ms' });
     });
   });
 });
@@ -227,11 +223,7 @@ describe("PerformanceBenchmark", () => {
       });
 
       // Using custom performance matcher for range validation
-      expect(result.duration).toBeMeasurement({
-        min: 90,
-        max: 150,
-        unit: "ms",
-      });
+      expect(result.duration).toBeMeasurement({ min: 90, max: 150, unit: 'ms' });
       expect(result.duration).toBeWithinPercentOf(100, 50); // 50% tolerance around 100ms
     });
   });
