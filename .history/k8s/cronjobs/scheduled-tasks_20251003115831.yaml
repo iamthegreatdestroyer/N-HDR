@@ -1,0 +1,495 @@
+# HDR Empire Framework - Kubernetes CronJobs for Scheduled Automation
+# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hdr-automation
+  namespace: hdr-production
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: hdr-automation-role
+  namespace: hdr-production
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "pods/log", "services", "secrets", "configmaps", "persistentvolumeclaims"]
+    verbs: ["get", "list", "watch", "delete"]
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  - apiGroups: ["apps"]
+    resources: ["deployments", "replicasets", "statefulsets"]
+    verbs: ["get", "list", "watch", "patch", "update"]
+  - apiGroups: ["autoscaling"]
+    resources: ["horizontalpodautoscalers"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["batch"]
+    resources: ["jobs", "cronjobs"]
+    verbs: ["get", "list", "watch", "create"]
+  - apiGroups: ["networking.k8s.io"]
+    resources: ["ingresses"]
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: hdr-automation-rolebinding
+  namespace: hdr-production
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: hdr-automation-role
+subjects:
+  - kind: ServiceAccount
+    name: hdr-automation
+    namespace: hdr-production
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: hdr-automation-cluster-role
+rules:
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["metrics.k8s.io"]
+    resources: ["pods", "nodes"]
+    verbs: ["get", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: hdr-automation-cluster-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: hdr-automation-cluster-role
+subjects:
+  - kind: ServiceAccount
+    name: hdr-automation
+    namespace: hdr-production
+---
+# Self-Healing CronJob - Runs every 5 minutes
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: self-healing
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: self-healing
+spec:
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: self-healing
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: self-healing
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  # Download and execute self-healing script
+                  kubectl exec -n hdr-production deployment/hdr-empire -- /scripts/self-healing.sh --once
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+                - name: CHECK_INTERVAL
+                  value: "300"
+                - name: SLACK_WEBHOOK_URL
+                  valueFrom:
+                    secretKeyRef:
+                      name: hdr-secrets
+                      key: slack-webhook-url
+                      optional: true
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 128Mi
+                limits:
+                  cpu: 200m
+                  memory: 256Mi
+---
+# Daily Backup CronJob - Runs at 2 AM UTC
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: daily-backup
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: backup
+spec:
+  schedule: "0 2 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 7
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: backup
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: backup
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  #!/bin/bash
+                  set -euo pipefail
+                  
+                  TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+                  BACKUP_DIR="/backups/$TIMESTAMP"
+                  
+                  echo "Creating backup at $BACKUP_DIR..."
+                  mkdir -p "$BACKUP_DIR"
+                  
+                  # Backup deployments
+                  kubectl get deployment -n hdr-production -o yaml > "$BACKUP_DIR/deployments.yaml"
+                  
+                  # Backup services
+                  kubectl get service -n hdr-production -o yaml > "$BACKUP_DIR/services.yaml"
+                  
+                  # Backup configmaps
+                  kubectl get configmap -n hdr-production -o yaml > "$BACKUP_DIR/configmaps.yaml"
+                  
+                  # Backup ingress
+                  kubectl get ingress -n hdr-production -o yaml > "$BACKUP_DIR/ingress.yaml"
+                  
+                  # Backup HPA
+                  kubectl get hpa -n hdr-production -o yaml > "$BACKUP_DIR/hpa.yaml"
+                  
+                  # Create manifest
+                  cat > "$BACKUP_DIR/manifest.txt" << EOF
+                  Backup Date: $(date)
+                  Namespace: hdr-production
+                  Deployments: $(kubectl get deployment -n hdr-production --no-headers | wc -l)
+                  Services: $(kubectl get service -n hdr-production --no-headers | wc -l)
+                  Pods: $(kubectl get pods -n hdr-production --no-headers | wc -l)
+                  EOF
+                  
+                  echo "Backup completed successfully"
+                  
+                  # Cleanup old backups (keep last 30 days)
+                  find /backups -type d -mtime +30 -exec rm -rf {} + || true
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+              volumeMounts:
+                - name: backup-storage
+                  mountPath: /backups
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 128Mi
+                limits:
+                  cpu: 200m
+                  memory: 256Mi
+          volumes:
+            - name: backup-storage
+              persistentVolumeClaim:
+                claimName: hdr-backup-pvc
+---
+# Cost Optimization CronJob - Runs every Monday at 9 AM UTC
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cost-optimization
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: cost-optimization
+spec:
+  schedule: "0 9 * * 1"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 4
+  failedJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: cost-optimization
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: cost-optimization
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  # Download and execute cost optimization script
+                  kubectl exec -n hdr-production deployment/hdr-empire -- /scripts/cost-optimization.sh --analyze
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+              volumeMounts:
+                - name: reports-storage
+                  mountPath: /reports
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 256Mi
+                limits:
+                  cpu: 200m
+                  memory: 512Mi
+          volumes:
+            - name: reports-storage
+              persistentVolumeClaim:
+                claimName: hdr-reports-pvc
+---
+# Certificate Check CronJob - Runs daily at 3 AM UTC
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cert-check
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: cert-check
+spec:
+  schedule: "0 3 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 7
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: cert-check
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: cert-check
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  #!/bin/bash
+                  set -euo pipefail
+                  
+                  echo "Checking TLS certificates..."
+                  
+                  # Get all TLS secrets
+                  SECRETS=$(kubectl get secrets -n hdr-production -o json | jq -r '.items[] | select(.type=="kubernetes.io/tls") | .metadata.name')
+                  
+                  WARNING_DAYS=30
+                  CRITICAL_DAYS=7
+                  
+                  for SECRET in $SECRETS; do
+                    echo "Checking certificate: $SECRET"
+                    
+                    # Extract certificate
+                    kubectl get secret "$SECRET" -n hdr-production -o jsonpath='{.data.tls\.crt}' | base64 -d > /tmp/cert.crt
+                    
+                    # Check expiry
+                    EXPIRY=$(openssl x509 -in /tmp/cert.crt -noout -enddate | cut -d= -f2)
+                    EXPIRY_EPOCH=$(date -d "$EXPIRY" +%s)
+                    NOW_EPOCH=$(date +%s)
+                    DAYS_LEFT=$(( ($EXPIRY_EPOCH - $NOW_EPOCH) / 86400 ))
+                    
+                    echo "Certificate expires in $DAYS_LEFT days"
+                    
+                    if [ "$DAYS_LEFT" -lt "$CRITICAL_DAYS" ]; then
+                      echo "CRITICAL: Certificate $SECRET expires in $DAYS_LEFT days!"
+                      # Send alert (if Slack webhook configured)
+                    elif [ "$DAYS_LEFT" -lt "$WARNING_DAYS" ]; then
+                      echo "WARNING: Certificate $SECRET expires in $DAYS_LEFT days"
+                    fi
+                  done
+                  
+                  echo "Certificate check completed"
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+                - name: SLACK_WEBHOOK_URL
+                  valueFrom:
+                    secretKeyRef:
+                      name: hdr-secrets
+                      key: slack-webhook-url
+                      optional: true
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 64Mi
+                limits:
+                  cpu: 100m
+                  memory: 128Mi
+---
+# Log Cleanup CronJob - Runs daily at 1 AM UTC
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: log-cleanup
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: log-cleanup
+spec:
+  schedule: "0 1 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: log-cleanup
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: log-cleanup
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  #!/bin/bash
+                  set -euo pipefail
+                  
+                  echo "Starting log cleanup..."
+                  
+                  # Cleanup old log files (older than 7 days)
+                  LOG_RETENTION_DAYS=7
+                  
+                  # Get all pods
+                  PODS=$(kubectl get pods -n hdr-production -o jsonpath='{.items[*].metadata.name}')
+                  
+                  for POD in $PODS; do
+                    echo "Cleaning logs for pod: $POD"
+                    
+                    # Execute cleanup in pod
+                    kubectl exec "$POD" -n hdr-production -- sh -c "
+                      find /var/log -type f -name '*.log' -mtime +$LOG_RETENTION_DAYS -delete 2>/dev/null || true
+                      find /var/log -type f -name '*.log.*' -mtime +$LOG_RETENTION_DAYS -delete 2>/dev/null || true
+                    " || echo "Could not cleanup logs for $POD"
+                  done
+                  
+                  echo "Log cleanup completed"
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+                - name: LOG_RETENTION_DAYS
+                  value: "7"
+              resources:
+                requests:
+                  cpu: 50m
+                  memory: 64Mi
+                limits:
+                  cpu: 100m
+                  memory: 128Mi
+---
+# Database Cleanup CronJob - Runs every Sunday at 4 AM UTC
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: database-cleanup
+  namespace: hdr-production
+  labels:
+    app: hdr-automation
+    component: database-cleanup
+spec:
+  schedule: "0 4 * * 0"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 4
+  failedJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: hdr-automation
+            component: database-cleanup
+        spec:
+          serviceAccountName: hdr-automation
+          restartPolicy: OnFailure
+          containers:
+            - name: database-cleanup
+              image: bitnami/kubectl:latest
+              command:
+                - /bin/bash
+                - -c
+                - |
+                  #!/bin/bash
+                  set -euo pipefail
+                  
+                  echo "Starting database cleanup..."
+                  
+                  # Execute database cleanup tasks
+                  kubectl exec -n hdr-production deployment/hdr-empire -- node -e "
+                    const { performDatabaseCleanup } = require('./src/utils/database-cleanup');
+                    performDatabaseCleanup().then(() => {
+                      console.log('Database cleanup completed');
+                      process.exit(0);
+                    }).catch(err => {
+                      console.error('Database cleanup failed:', err);
+                      process.exit(1);
+                    });
+                  "
+              env:
+                - name: NAMESPACE
+                  value: "hdr-production"
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 256Mi
+                limits:
+                  cpu: 200m
+                  memory: 512Mi
+---
+# PersistentVolumeClaim for backups
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hdr-backup-pvc
+  namespace: hdr-production
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: standard
+---
+# PersistentVolumeClaim for reports
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hdr-reports-pvc
+  namespace: hdr-production
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard

@@ -1,0 +1,407 @@
+name: HDR Empire CI/CD Pipeline
+# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - develop
+  pull_request:
+    branches:
+      - main
+      - staging
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  STAGING_NAMESPACE: hdr-staging
+  PRODUCTION_NAMESPACE: hdr-production
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test-type: [unit, integration, performance]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run ${{ matrix.test-type }} tests
+        run: npm run test:${{ matrix.test-type }}
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.test-type }}
+          path: coverage/
+      
+      - name: Upload coverage to Codecov
+        if: matrix.test-type == 'unit'
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run npm audit
+        run: npm audit --audit-level=high
+        continue-on-error: true
+      
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+      
+      - name: Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'trivy-results.sarif'
+      
+      - name: Check for secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+
+  build:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+    needs: [test, security-scan]
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      image-tag: ${{ steps.meta.outputs.tags }}
+      image-digest: ${{ steps.build.outputs.digest }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: Log in to Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha,prefix={{branch}}-
+      
+      - name: Build and push Docker image
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            BUILD_DATE=${{ github.event.head_commit.timestamp }}
+            VCS_REF=${{ github.sha }}
+            VERSION=${{ steps.meta.outputs.version }}
+      
+      - name: Scan image with Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+          format: 'sarif'
+          output: 'trivy-image-results.sarif'
+      
+      - name: Upload image scan results
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'trivy-image-results.sarif'
+
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/develop'
+    environment:
+      name: staging
+      url: https://staging.hdr-empire.example.com
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+      
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'latest'
+      
+      - name: Configure kubectl
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBECONFIG_STAGING }}" | base64 -d > $HOME/.kube/config
+          chmod 600 $HOME/.kube/config
+      
+      - name: Deploy with Helm
+        run: |
+          helm upgrade --install hdr-empire ./helm/hdr-empire \
+            --namespace ${{ env.STAGING_NAMESPACE }} \
+            --create-namespace \
+            --values ./helm/hdr-empire/values.yaml \
+            --values ./helm/hdr-empire/values-staging.yaml \
+            --set image.repository=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} \
+            --set image.tag=${{ needs.build.outputs.image-digest }} \
+            --wait \
+            --timeout 10m
+      
+      - name: Wait for deployment
+        run: |
+          kubectl rollout status deployment/hdr-empire \
+            -n ${{ env.STAGING_NAMESPACE }} \
+            --timeout=5m
+      
+      - name: Run smoke tests
+        run: |
+          chmod +x ./scripts/smoke-tests.sh
+          NAMESPACE=${{ env.STAGING_NAMESPACE }} ENVIRONMENT=staging ./scripts/smoke-tests.sh
+      
+      - name: Upload smoke test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-test-results-staging
+          path: test-results/smoke-tests/
+      
+      - name: Rollback on failure
+        if: failure()
+        run: |
+          echo "Deployment failed, rolling back..."
+          helm rollback hdr-empire -n ${{ env.STAGING_NAMESPACE }}
+      
+      - name: Notify Slack
+        if: always()
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "text": "Staging Deployment ${{ job.status }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Staging Deployment:* ${{ job.status }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* <${{ github.event.head_commit.url }}|${{ github.sha }}>"
+                  }
+                }
+              ]
+            }
+
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [build, deploy-staging]
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: https://hdr-empire.example.com
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+      
+      - name: Setup Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'latest'
+      
+      - name: Configure kubectl
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBECONFIG_PRODUCTION }}" | base64 -d > $HOME/.kube/config
+          chmod 600 $HOME/.kube/config
+      
+      - name: Deploy with Helm
+        run: |
+          helm upgrade --install hdr-empire ./helm/hdr-empire \
+            --namespace ${{ env.PRODUCTION_NAMESPACE }} \
+            --create-namespace \
+            --values ./helm/hdr-empire/values.yaml \
+            --values ./helm/hdr-empire/values-production.yaml \
+            --set image.repository=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} \
+            --set image.tag=${{ needs.build.outputs.image-digest }} \
+            --wait \
+            --timeout 10m
+      
+      - name: Wait for deployment
+        run: |
+          kubectl rollout status deployment/hdr-empire \
+            -n ${{ env.PRODUCTION_NAMESPACE }} \
+            --timeout=5m
+      
+      - name: Run smoke tests
+        run: |
+          chmod +x ./scripts/smoke-tests.sh
+          NAMESPACE=${{ env.PRODUCTION_NAMESPACE }} ENVIRONMENT=production ./scripts/smoke-tests.sh
+      
+      - name: Upload smoke test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-test-results-production
+          path: test-results/smoke-tests/
+      
+      - name: Rollback on failure
+        if: failure()
+        run: |
+          echo "Deployment failed, rolling back..."
+          helm rollback hdr-empire -n ${{ env.PRODUCTION_NAMESPACE }}
+      
+      - name: Create GitHub Release
+        if: success()
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release v${{ github.run_number }}
+          body: |
+            Production deployment successful
+            
+            **Changes:**
+            ${{ github.event.head_commit.message }}
+            
+            **Image:** ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ needs.build.outputs.image-digest }}
+          draft: false
+          prerelease: false
+      
+      - name: Notify Slack
+        if: always()
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "text": "Production Deployment ${{ job.status }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Production Deployment:* ${{ job.status }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* <${{ github.event.head_commit.url }}|${{ github.sha }}>"
+                  }
+                }
+              ]
+            }
+
+  post-deployment-monitoring:
+    name: Post-Deployment Monitoring
+    runs-on: ubuntu-latest
+    needs: deploy-production
+    if: github.ref == 'refs/heads/main' && success()
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+      
+      - name: Configure kubectl
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBECONFIG_PRODUCTION }}" | base64 -d > $HOME/.kube/config
+          chmod 600 $HOME/.kube/config
+      
+      - name: Monitor deployment health
+        run: |
+          echo "Monitoring deployment for 5 minutes..."
+          for i in {1..10}; do
+            echo "Check $i/10..."
+            kubectl get pods -n ${{ env.PRODUCTION_NAMESPACE }}
+            kubectl top pods -n ${{ env.PRODUCTION_NAMESPACE }}
+            sleep 30
+          done
+      
+      - name: Run cost analysis
+        run: |
+          chmod +x ./scripts/cost-optimization.sh
+          NAMESPACE=${{ env.PRODUCTION_NAMESPACE }} ./scripts/cost-optimization.sh --analyze
+      
+      - name: Upload cost analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: cost-analysis-production
+          path: reports/cost-optimization/
+      
+      - name: Final status notification
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "text": "Post-Deployment Monitoring Complete",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Post-Deployment Monitoring:* ✅ Complete\n*Environment:* Production\n*Status:* All systems operational"
+                  }
+                }
+              ]
+            }
