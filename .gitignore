@@ -1,7 +1,46 @@
-node_modules
+# HDR Empire Framework - Git Ignore
+# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+
+# Dependencies
+node_modules/
+
+# Environment
 .env
-dist
-coverage
-.DS_Store
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Testing
+coverage/
+test-results/
+*.test.js.snap
+
+# Logs
 *.log
-node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# HDR-specific directories
+scripts/secrets/
+reports/
+backups/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
