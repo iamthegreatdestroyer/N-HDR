@@ -1,0 +1,22 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: hdr-empire
+  namespace: hdr-production
+spec:
+  hosts:
+    - "hdr-empire.example.com"
+  gateways:
+    - hdr-gateway
+  http:
+    - route:
+        - destination:
+            host: hdr-empire
+            port:
+              number: 80
+            subset: v1
+          weight: 100
+      retries:
+        attempts: 3
+        perTryTimeout: 2s
+        retryOn: gateway-error,connect-failure,refused-stream

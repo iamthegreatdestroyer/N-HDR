@@ -1,0 +1,119 @@
+# Default values for hdr-empire
+replicaCount: 3
+
+image:
+  repository: ghcr.io/your-org/hdr-empire
+  pullPolicy: Always
+  tag: "latest"
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "3000"
+  prometheus.io/path: "/metrics"
+
+podSecurityContext:
+  runAsNonRoot: true
+  seccompProfile:
+    type: RuntimeDefault
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop: [ALL]
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 3000
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: hdr-empire.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: hdr-empire-tls
+      hosts:
+        - hdr-empire.example.com
+
+resources:
+  limits:
+    cpu: 2000m
+    memory: 2Gi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 70
+  targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity:
+  podAntiAffinity:
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        podAffinityTerm:
+          labelSelector:
+            matchLabels:
+              app.kubernetes.io/name: hdr-empire
+          topologyKey: kubernetes.io/hostname
+
+config:
+  env:
+    NODE_ENV: "production"
+    PORT: "3000"
+    LOG_LEVEL: "info"
+    PROMETHEUS_ENABLED: "true"
+    GRAFANA_ENABLED: "true"
+    CACHE_ENABLED: "true"
+    CACHE_L1_SIZE: "1000"
+    CACHE_L1_TTL: "60000"
+    CACHE_L2_TTL: "3600000"
+
+secrets:
+  redis:
+    password: "" # Set via --set secrets.redis.password=xyz
+  jwt:
+    secret: "" # Set via --set secrets.jwt.secret=xyz
+  encryption:
+    key: "" # Set via --set secrets.encryption.key=xyz
+
+redis:
+  enabled: true
+  auth:
+    enabled: true
+    password: "${REDIS_PASSWORD}" # Will use value from secrets.redis.password
+  architecture: standalone
+  master:
+    persistence:
+      enabled: true
+      size: 10Gi
+
+prometheus:
+  enabled: true
+  alertmanager:
+    enabled: true
+  server:
+    persistentVolume:
+      enabled: true
+      size: 10Gi
