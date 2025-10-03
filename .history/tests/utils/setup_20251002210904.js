@@ -18,3 +18,4 @@ registerPerformanceMatchers();
 console.log("✓ HDR Empire Framework test environment initialized");
 console.log("✓ Custom performance matchers registered");
 console.log("✓ TensorFlow mock configured via moduleNameMapper");
+

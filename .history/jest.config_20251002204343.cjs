@@ -64,6 +64,6 @@ module.exports = {
 
   // A map from regular expressions to module names or to arrays of module names
   moduleNameMapper: {
-    "^@tensorflow/tfjs$": "<rootDir>/tests/__mocks__/@tensorflow/tfjs.js",
+    '^@tensorflow/tfjs$': '<rootDir>/tests/__mocks__/@tensorflow/tfjs.js'
   },
 };

@@ -14,7 +14,11 @@ import { registerPerformanceMatchers } from "./custom-matchers.js";
 // Register custom performance matchers globally
 registerPerformanceMatchers();
 
+// Configure TensorFlow mock for all tests
+// Jest will automatically use the mock from tests/__mocks__/@tensorflow/tfjs.js
+jest.mock('@tensorflow/tfjs');
+
 // Additional global setup can be added here
 console.log("✓ HDR Empire Framework test environment initialized");
 console.log("✓ Custom performance matchers registered");
-console.log("✓ TensorFlow mock configured via moduleNameMapper");
+console.log("✓ TensorFlow mock configured");
