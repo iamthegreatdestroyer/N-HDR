@@ -1,0 +1,571 @@
+
+> n-hdr@1.0.0 test
+> node --experimental-vm-modules node_modules/jest/bin/jest.js --config=jest.config.cjs tests/integration/phase10-combined.test.js --verbose
+
+  console.log
+    Γ£ô HDR Empire Framework test environment initialized
+
+      at tests/utils/setup.js:18:9
+
+  console.log
+    Γ£ô Custom performance matchers registered
+
+      at tests/utils/setup.js:19:9
+
+  console.log
+    Γ£ô TensorFlow mock configured via moduleNameMapper
+
+      at tests/utils/setup.js:20:9
+
+{"level":30,"time":1770958124386,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124387,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124387,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124388,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124393,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124393,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124393,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124393,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124395,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124395,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124395,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124395,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770958124397-frm9qi"}
+{"level":30,"time":1770958124397,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958124397-frm9qi] GENESIS: Breeding agent"}
+{"level":50,"time":1770958124398,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","workflowId":"workflow-1770958124397-frm9qi","error":"this.genesis.breed is not a function","msg":"Workflow execution failed"}
+{"level":30,"time":1770958124412,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124412,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124412,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124412,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124414,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124414,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124414,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124414,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124416,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124416,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124416,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124416,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124417,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124417,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124418,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124418,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124419,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124419,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124420,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124420,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124421,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124422,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124422,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124422,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124424,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124424,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124424,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124424,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124426,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124426,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124426,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124426,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958124427,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958124427,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958124427,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958124428,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+(node:38052) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770958129433-74mged"}
+{"level":30,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958129433-74mged] GENESIS: Breeding agent"}
+{"level":50,"time":1770958129433,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","workflowId":"workflow-1770958129433-74mged","error":"this.genesis.breed is not a function","msg":"Workflow execution failed"}
+{"level":30,"time":1770958129434,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129434,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129435,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129435,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129436,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129436,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129436,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129436,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129437,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129437,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129437,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129437,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770958129473-7fuxvb"}
+{"level":30,"time":1770958129473,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958129473-7fuxvb] GENESIS: Breeding agent"}
+{"level":50,"time":1770958129474,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","workflowId":"workflow-1770958129473-7fuxvb","error":"this.genesis.breed is not a function","msg":"Workflow execution failed"}
+{"level":30,"time":1770958129474,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129474,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129474,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129474,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129475,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129475,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129475,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129475,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129480,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129480,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129480,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129480,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129481,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: invalid"}
+{"level":30,"time":1770958129483,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129483,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129483,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129483,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129484,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129485,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129485,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129485,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129485,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129486,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129486,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129486,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129486,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958129486,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Updating configuration"}
+{"level":30,"time":1770958129487,"pid":38052,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958129487,"pid":38052,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958129487,"pid":38052,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958129487,"pid":38052,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+FAIL tests/integration/phase10-combined.test.js (5.545 s)
+  Phase 10.5: Combined System Integration
+    Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR
+      ├ù generates agent with GENESIS (5 ms)
+      ├ù predicts GENESIS agent outcome with ORACLE (2 ms)
+      ├ù generates consequence variations with D-HDR (1 ms)
+      ├ù full orchestrated workflow end-to-end (2 ms)
+    Multi-Agent Ecosystem
+      ├ù breeds population and evaluates with ORACLE (2 ms)
+      ├ù selects best agent from ecosystem (1 ms)
+      ├ù analyzes diversity in population (1 ms)
+    Agent Card Publication & Discovery
+      ├ù creates agent card for GENESIS agent (1 ms)
+      ├ù publishes agent card to registry (1 ms)
+      ├ù discovers agents by specialization (2 ms)
+    Event Emission & Coordination
+      ├ù emits agent:bred event (1 ms)
+      ├ù emits prediction:made event (1 ms)
+      ├ù emits consequence:explored event (5004 ms)
+      ├ù coordinates workflow with event sequencing (1 ms)
+    Performance & Scalability
+      ├ù breeds large population efficiently (1 ms)
+      ├ù predicts on population without timeouts (1 ms)
+      ΓêÜ handles concurrent D-HDR explorations (37 ms)
+      ├ù measures end-to-end orchestration latency (1 ms)
+    Error Handling & Recovery
+      ├ù handles invalid agent data gracefully (1 ms)
+      ΓêÜ recovers from D-HDR generation failures (5 ms)
+      ├ù validates agent cards on publication (2 ms)
+      ├ù implements circuit breaker for ORACLE (1 ms)
+    Monitoring & Observability
+      ├ù tracks system health (1 ms)
+      ├ù collects metrics for all components (1 ms)
+      ├ù logs significant events (1 ms)
+    Configuration & Extension
+      ├ù allows runtime configuration changes (1 ms)
+      ├ù supports custom hooks/plugins
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR ΓÇ║ generates agent with GENESIS
+
+    TypeError: genesis.breed is not a function
+
+      46 |   describe("Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR", () => {
+      47 |     test("generates agent with GENESIS", () => {
+    > 48 |       const agent = genesis.breed({
+         |                             ^
+      49 |         baseAgent: { analyticalPower: 0.5, creativity: 0.6 },
+      50 |         targetFitness: 0.85,
+      51 |       });
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:48:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR ΓÇ║ predicts GENESIS agent outcome with ORACLE
+
+    TypeError: genesis.breed is not a function
+
+      58 |
+      59 |     test("predicts GENESIS agent outcome with ORACLE", () => {
+    > 60 |       const agent = genesis.breed({
+         |                             ^
+      61 |         baseAgent: { analyticalPower: 0.5, creativity: 0.6 },
+      62 |       });
+      63 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:60:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR ΓÇ║ generates consequence variations with D-HDR
+
+    TypeError: genesis.breed is not a function
+
+      73 |
+      74 |     test("generates consequence variations with D-HDR", () => {
+    > 75 |       const agent = genesis.breed({
+         |                             ^
+      76 |         baseAgent: { analyticalPower: 0.5, creativity: 0.6 },
+      77 |       });
+      78 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:75:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR ΓÇ║ full orchestrated workflow end-to-end
+
+    TypeError: this.genesis.breed is not a function
+
+      80 |       if (this.genesis && workflowSpec.task === "breed_and_analyze_agent") {
+      81 |         logger.info(`[${workflowId}] GENESIS: Breeding agent`);
+    > 82 |         const agent = this.genesis.breed({
+         |                                    ^
+      83 |           baseAgent: workflowSpec.baseAgent || {
+      84 |             analyticalPower: 0.5,
+      85 |             creativity: 0.6,
+
+      at HDRIntegrationOrchestrator.breed [as executeWorkflow] (src/hdr-orchestrator.js:82:36)
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:95:41)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ breeds population and evaluates with ORACLE
+
+    TypeError: genesis.breedPopulation is not a function
+
+      110 |   describe("Multi-Agent Ecosystem", () => {
+      111 |     test("breeds population and evaluates with ORACLE", () => {
+    > 112 |       const population = genesis.breedPopulation(5);
+          |                                  ^
+      113 |
+      114 |       expect(population.length).toBe(5);
+      115 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:112:34)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ selects best agent from ecosystem
+
+    TypeError: genesis.breedPopulation is not a function
+
+      124 |
+      125 |     test("selects best agent from ecosystem", () => {
+    > 126 |       const population = genesis.breedPopulation(10);
+          |                                  ^
+      127 |
+      128 |       const predictions = population.map((agent) => ({
+      129 |         agent,
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:126:34)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ analyzes diversity in population
+
+    TypeError: genesis.breedPopulation is not a function
+
+      143 |
+      144 |     test("analyzes diversity in population", () => {
+    > 145 |       const population = genesis.breedPopulation(20);
+          |                                  ^
+      146 |
+      147 |       const diversity = genesis.getPopulationDiversity(population);
+      148 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:145:34)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Agent Card Publication & Discovery ΓÇ║ creates agent card for GENESIS agent
+
+    TypeError: genesis.breed is not a function
+
+      155 |   describe("Agent Card Publication & Discovery", () => {
+      156 |     test("creates agent card for GENESIS agent", () => {
+    > 157 |       const agent = genesis.breed({
+          |                             ^
+      158 |         baseAgent: { analyticalPower: 0.6, creativity: 0.7 },
+      159 |       });
+      160 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:157:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Agent Card Publication & Discovery ΓÇ║ publishes agent card to registry
+
+    TypeError: genesis.breed is not a function
+
+      168 |
+      169 |     test("publishes agent card to registry", () => {
+    > 170 |       const agent = genesis.breed({
+          |                             ^
+      171 |         baseAgent: { analyticalPower: 0.6 },
+      172 |       });
+      173 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:170:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Agent Card Publication & Discovery ΓÇ║ discovers agents by specialization
+
+    TypeError: genesis.breedPopulation is not a function
+
+      183 |     test("discovers agents by specialization", () => {
+      184 |       // Create and publish multiple agents
+    > 185 |       const agents = genesis.breedPopulation(5);
+          |                              ^
+      186 |
+      187 |       const cards = agents.map((agent) =>
+      188 |         AgentCardFactory.createGenesisCard(agent, "stdio://genesis"),
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:185:30)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits agent:bred event
+
+    TypeError: genesis.breed is not a function
+
+      208 |       });
+      209 |
+    > 210 |       genesis.breed({ baseAgent: { analyticalPower: 0.5 } });
+          |               ^
+      211 |     });
+      212 |
+      213 |     test("emits prediction:made event", (done) => {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:210:15)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits prediction:made event
+
+    TypeError: genesis.breed is not a function
+
+      212 |
+      213 |     test("emits prediction:made event", (done) => {
+    > 214 |       const agent = genesis.breed({ baseAgent: { analyticalPower: 0.5 } });
+          |                             ^
+      215 |
+      216 |       orchestrator.on("prediction:made", (data) => {
+      217 |         expect(data.agentId).toBe(agent.id);
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:214:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits consequence:explored event
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      223 |     });
+      224 |
+    > 225 |     test("emits consequence:explored event", (done) => {
+          |     ^
+      226 |       orchestrator.on("consequence:explored", (data) => {
+      227 |         expect(data.decision).toBeDefined();
+      228 |         expect(data.variants).toBeGreaterThan(0);
+
+      at tests/integration/phase10-combined.test.js:225:5
+      at tests/integration/phase10-combined.test.js:202:3
+      at tests/integration/phase10-combined.test.js:15:1
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ coordinates workflow with event sequencing
+
+    TypeError: this.genesis.breed is not a function
+
+      80 |       if (this.genesis && workflowSpec.task === "breed_and_analyze_agent") {
+      81 |         logger.info(`[${workflowId}] GENESIS: Breeding agent`);
+    > 82 |         const agent = this.genesis.breed({
+         |                                    ^
+      83 |           baseAgent: workflowSpec.baseAgent || {
+      84 |             analyticalPower: 0.5,
+      85 |             creativity: 0.6,
+
+      at HDRIntegrationOrchestrator.breed [as executeWorkflow] (src/hdr-orchestrator.js:82:36)
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:242:26)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Performance & Scalability ΓÇ║ breeds large population efficiently
+
+    TypeError: genesis.breedPopulation is not a function
+
+      255 |       const startTime = Date.now();
+      256 |
+    > 257 |       const population = genesis.breedPopulation(100);
+          |                                  ^
+      258 |
+      259 |       const elapsed = Date.now() - startTime;
+      260 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:257:34)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Performance & Scalability ΓÇ║ predicts on population without timeouts
+
+    TypeError: genesis.breedPopulation is not a function
+
+      264 |
+      265 |     test("predicts on population without timeouts", async () => {
+    > 266 |       const population = genesis.breedPopulation(50);
+          |                                  ^
+      267 |
+      268 |       const startTime = Date.now();
+      269 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:266:34)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Performance & Scalability ΓÇ║ measures end-to-end orchestration latency
+
+    TypeError: this.genesis.breed is not a function
+
+      80 |       if (this.genesis && workflowSpec.task === "breed_and_analyze_agent") {
+      81 |         logger.info(`[${workflowId}] GENESIS: Breeding agent`);
+    > 82 |         const agent = this.genesis.breed({
+         |                                    ^
+      83 |           baseAgent: workflowSpec.baseAgent || {
+      84 |             analyticalPower: 0.5,
+      85 |             creativity: 0.6,
+
+      at HDRIntegrationOrchestrator.breed [as executeWorkflow] (src/hdr-orchestrator.js:82:36)
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:308:28)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Error Handling & Recovery ΓÇ║ handles invalid agent data gracefully
+
+    TypeError: oracle.predictAgentOutcome is not a function
+
+      327 |       };
+      328 |
+    > 329 |       const prediction = oracle.predictAgentOutcome(invalidAgent, {});
+          |                                 ^
+      330 |
+      331 |       expect(prediction.error).toBeDefined();
+      332 |       expect(prediction.fallback_prediction).toBeDefined();
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:329:33)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Error Handling & Recovery ΓÇ║ validates agent cards on publication
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "rejected"
+    Received: undefined
+
+      352 |       const result = orchestrator.publishAgentCard(invalidCard);
+      353 |
+    > 354 |       expect(result.status).toBe("rejected");
+          |                             ^
+      355 |       expect(result.validation_errors).toBeDefined();
+      356 |     });
+      357 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:354:29)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Error Handling & Recovery ΓÇ║ implements circuit breaker for ORACLE
+
+    TypeError: oracle.setCircuitBreakerThreshold is not a function
+
+      357 |
+      358 |     test("implements circuit breaker for ORACLE", () => {
+    > 359 |       oracle.setCircuitBreakerThreshold(3);
+          |              ^
+      360 |
+      361 |       let failures = 0;
+      362 |       for (let i = 0; i < 5; i++) {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:359:14)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Monitoring & Observability ΓÇ║ tracks system health
+
+    TypeError: genesis.breed is not a function
+
+      377 |   describe("Monitoring & Observability", () => {
+      378 |     test("tracks system health", () => {
+    > 379 |       genesis.breed({ baseAgent: { analyticalPower: 0.5 } });
+          |               ^
+      380 |       oracle.predictAgentOutcome({ fitnessScore: 0.7 }, {});
+      381 |       diffusion.predictOutcome("action", {});
+      382 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:379:15)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Monitoring & Observability ΓÇ║ collects metrics for all components
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      392 |       const metrics = orchestrator.collectMetrics();
+      393 |
+    > 394 |       expect(metrics.genesis).toBeDefined();
+          |                               ^
+      395 |       expect(metrics.oracle).toBeDefined();
+      396 |       expect(metrics.diffusion).toBeDefined();
+      397 |       expect(metrics.integration).toBeDefined();
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:394:31)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Monitoring & Observability ΓÇ║ logs significant events
+
+    TypeError: genesis.breed is not a function
+
+      415 |       });
+      416 |
+    > 417 |       genesis.breed({ baseAgent: { analyticalPower: 0.5 } });
+          |               ^
+      418 |       oracle.predictAgentOutcome({ fitnessScore: 0.7 }, {});
+      419 |       diffusion.predictOutcome("action", {});
+      420 |     });
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:417:15)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Configuration & Extension ΓÇ║ allows runtime configuration changes
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0.25
+    Received: 0.15
+
+      430 |       orchestrator.updateConfiguration(newConfig);
+      431 |
+    > 432 |       expect(genesis.config.mutationRate).toBe(0.25);
+          |                                           ^
+      433 |       expect(oracle.config.modelSize).toBe("large");
+      434 |     });
+      435 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:432:43)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Configuration & Extension ΓÇ║ supports custom hooks/plugins
+
+    ReferenceError: jest is not defined
+
+      437 |       const plugin = {
+      438 |         name: "test-plugin",
+    > 439 |         onAgentBred: jest.fn(),
+          |                      ^
+      440 |         onPredictionMade: jest.fn(),
+      441 |       };
+      442 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:439:22)
+
+----------------------|---------|----------|---------|---------|---------------------------------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                           
+----------------------|---------|----------|---------|---------|---------------------------------------------
+All files             |   24.44 |    18.31 |   25.17 |   25.18 |                                             
+ src                  |   42.52 |    26.15 |   41.66 |   44.57 |                                             
+  hdr-orchestrator.js |   42.52 |    26.15 |   41.66 |   44.57 | 90-140,161,177-229,288-297                  
+ src/agent-card       |    3.38 |     3.22 |       0 |    3.44 |                                             
+  schema.js           |    3.38 |     3.22 |       0 |    3.44 | 378-599                                     
+ src/d-hdr            |   79.69 |    55.26 |   77.41 |    80.8 |                                             
+  diffusion-core.js   |   79.69 |    55.26 |   77.41 |    80.8 | 137-141,160-162,319-340,419,432-443,539-556 
+ src/genesis-hdr      |    9.18 |     7.61 |   10.81 |    9.67 |                                             
+  genesis-core.js     |    9.18 |     7.61 |   10.81 |    9.67 | 25-128,145-181,198-279,299-411,453-662      
+ src/oracle-hdr       |    4.59 |      7.4 |    5.12 |    5.05 |                                             
+  oracle-core.js      |    4.59 |      7.4 |    5.12 |    5.05 | 23-162,185-243,278-540                      
+ tests/utils          |    6.66 |     3.84 |    9.09 |    6.66 |                                             
+  custom-matchers.js  |    6.66 |     3.84 |    9.09 |    6.66 | 28-171                                      
+----------------------|---------|----------|---------|---------|---------------------------------------------
+
+=============================== Coverage summary ===============================
+Statements   : 24.44% ( 175/716 )
+Branches     : 18.31% ( 76/415 )
+Functions    : 25.17% ( 36/143 )
+Lines        : 25.18% ( 170/675 )
+================================================================================
+Test Suites: 1 failed, 1 total
+Tests:       25 failed, 2 passed, 27 total
+Snapshots:   0 total
+Time:        6.126 s
+Ran all test suites matching tests/integration/phase10-combined.test.js.

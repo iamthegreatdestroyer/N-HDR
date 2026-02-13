@@ -1,0 +1,174 @@
+
+> n-hdr@1.0.0 test
+> node --experimental-vm-modules node_modules/jest/bin/jest.js --config=jest.config.cjs tests/debug-breed.test.js --verbose
+
+  console.log
+    Γ£ô HDR Empire Framework test environment initialized
+
+      at tests/utils/setup.js:18:9
+
+  console.log
+    Γ£ô Custom performance matchers registered
+
+      at tests/utils/setup.js:19:9
+
+  console.log
+    Γ£ô TensorFlow mock configured via moduleNameMapper
+
+      at tests/utils/setup.js:20:9
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+{"level":30,"time":1770959374995,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+  console.log
+    genesis: GenesisHDR {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      config: {
+        populationSize: 10,
+        generationsPerEpoch: 10,
+        mutationRate: 0.15,
+        tournamentSize: 5,
+        catalogUrl: 'http://nexus-hdr:3000/catalog',
+        fitnessThreshold: 0.7
+      },
+      populationManager: PopulationManager {
+        populationSize: 10,
+        population: [],
+        generation: 0,
+        generationHistory: [],
+        nextAgentId: 0
+      },
+      fitnessEvaluator: FitnessEvaluator { taskRegistry: Map(0) {}, metricsHistory: [] },
+      mutationEngine: MutationEngine {
+        mutationRate: 0.15,
+        mutationTypes: [ 'trait', 'capability', 'strategy', 'parameter' ]
+      },
+      state: 'idle',
+      evolutionMetrics: {
+        generationCount: 0,
+        agentsCreated: 0,
+        agentsEvaluated: 0,
+        peakFitness: 0,
+        averageFitness: 0,
+        broadcastCount: 0
+      },
+      [Symbol(kCapture)]: false
+    }
+
+      at Object.<anonymous> (tests/debug-breed.test.js:15:13)
+
+  console.log
+    genesis constructor: GenesisHDR
+
+      at Object.<anonymous> (tests/debug-breed.test.js:16:13)
+
+  console.log
+    typeof genesis.breed: function
+
+      at Object.<anonymous> (tests/debug-breed.test.js:17:13)
+
+  console.log
+    genesis.breed: [Function: breed]
+
+      at Object.<anonymous> (tests/debug-breed.test.js:18:13)
+
+  console.log
+    Object.keys(genesis): [
+      '_events',
+      '_eventsCount',
+      '_maxListeners',
+      'config',
+      'populationManager',
+      'fitnessEvaluator',
+      'mutationEngine',
+      'state',
+      'evolutionMetrics'
+    ]
+
+      at Object.<anonymous> (tests/debug-breed.test.js:19:13)
+
+  console.log
+    Object.getOwnPropertyNames(genesis): [
+      '_events',
+      '_eventsCount',
+      '_maxListeners',
+      'config',
+      'populationManager',
+      'fitnessEvaluator',
+      'mutationEngine',
+      'state',
+      'evolutionMetrics'
+    ]
+
+      at Object.<anonymous> (tests/debug-breed.test.js:20:13)
+
+  console.log
+    Prototype: EventEmitter {}
+
+      at Object.<anonymous> (tests/debug-breed.test.js:22:13)
+
+  console.log
+    Prototype constructor: GenesisHDR
+
+      at Object.<anonymous> (tests/debug-breed.test.js:23:13)
+
+  console.log
+    Prototype keys: [
+      'constructor',
+      'registerBenchmark',
+      'breed',
+      'breedPopulation',
+      'getPopulationDiversity',
+      'calculateTraitDiversity',
+      'initializeEpoch',
+      'evaluatePopulation',
+      'evolveGeneration',
+      'broadcastBestAgents',
+      'runEpoch',
+      'getPopulationStats',
+      'calculateDiversity',
+      'calculateGeneticDistance',
+      'getBestAgentPhenotype'
+    ]
+
+      at Object.<anonymous> (tests/debug-breed.test.js:24:13)
+
+{"level":30,"time":1770959375017,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770959375019,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770959375021,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770959375020-fkgeub"}
+{"level":30,"time":1770959375023,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770959375024,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770959375024-bk4s4"}
+{"level":30,"time":1770959375026,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770959375027,"pid":39008,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770959375026-skdlyc"}
+(node:39008) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/debug-breed.test.js
+  DEBUG: Genesis breed method
+    ΓêÜ genesis instance exists (23 ms)
+    ΓêÜ breed method exists and is callable (1 ms)
+    ΓêÜ breed can be called directly (4 ms)
+    ΓêÜ breed method is accessible via this (2 ms)
+    ΓêÜ simulate orchestrator calling breed (2 ms)
+
+---------------------|---------|----------|---------|---------|---------------------------------------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                 
+---------------------|---------|----------|---------|---------|---------------------------------------------------
+All files            |   14.98 |    24.85 |   14.75 |   15.78 |                                                   
+ src/genesis-hdr     |   16.52 |    28.47 |      16 |   17.64 |                                                   
+  genesis-core.js    |   16.52 |    28.47 |      16 |   17.64 | 63-93,125-128,145-181,198-279,299-411,453,521-793 
+ tests/utils         |    6.66 |     3.84 |    9.09 |    6.66 |                                                   
+  custom-matchers.js |    6.66 |     3.84 |    9.09 |    6.66 | 28-171                                            
+---------------------|---------|----------|---------|---------|---------------------------------------------------
+
+=============================== Coverage summary ===============================
+Statements   : 14.98% ( 43/287 )
+Branches     : 24.85% ( 44/177 )
+Functions    : 14.75% ( 9/61 )
+Lines        : 15.78% ( 42/266 )
+================================================================================
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        1.913 s
+Ran all test suites matching tests/debug-breed.test.js.

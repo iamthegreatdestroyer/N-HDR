@@ -1,0 +1,33 @@
+
+> n-hdr@1.0.0 test
+> node --experimental-vm-modules node_modules/jest/bin/jest.js --config=jest.config.cjs tests/oracle/oracle-oracle.test.js --no-coverage
+
+  console.log
+    Γ£ô HDR Empire Framework test environment initialized
+
+      at tests/utils/setup.js:18:9
+
+  console.log
+    Γ£ô Custom performance matchers registered
+
+      at tests/utils/setup.js:19:9
+
+  console.log
+    Γ£ô TensorFlow mock configured via moduleNameMapper
+
+      at tests/utils/setup.js:20:9
+
+FAIL tests/oracle/oracle-oracle.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module 'winston' from 'src/logging/logger.js'
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.41 s
+Ran all test suites matching tests/oracle/oracle-oracle.test.js.
+(node:31060) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

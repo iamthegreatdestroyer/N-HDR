@@ -1,0 +1,689 @@
+
+> n-hdr@1.0.0 test
+> node --experimental-vm-modules node_modules/jest/bin/jest.js --config=jest.config.cjs tests/integration/phase10-combined.test.js
+
+  console.log
+    Γ£ô HDR Empire Framework test environment initialized
+
+      at tests/utils/setup.js:18:9
+
+  console.log
+    Γ£ô Custom performance matchers registered
+
+      at tests/utils/setup.js:19:9
+
+  console.log
+    Γ£ô TensorFlow mock configured via moduleNameMapper
+
+      at tests/utils/setup.js:20:9
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+{"level":30,"time":1770964767158,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767159,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767160,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767160,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767161,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767161-q7ne24m"}
+{"level":30,"time":1770964767165,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767165,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767165,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767165,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767166,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767166-p6wh4v"}
+{"level":30,"time":1770964767188,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767189,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767189,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767189,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767189,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767189-tuvcqg"}
+{"level":30,"time":1770964767220,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767220,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767221,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767221,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767222,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964767222-2av0gg"}
+{"level":30,"time":1770964767222,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964767222-2av0gg] GENESIS: Breeding agent"}
+{"level":30,"time":1770964767222,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767222-2j5gac"}
+{"level":30,"time":1770964767222,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964767222-2av0gg] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964767228,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964767222-2av0gg] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964767241,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964767222-2av0gg"}
+{"level":30,"time":1770964767244,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767244,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767244,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767244,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767245,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767245-dhtz1"}
+{"level":30,"time":1770964767245,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767245-b23hc"}
+{"level":30,"time":1770964767245,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767245-8mdukk"}
+{"level":30,"time":1770964767245,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767245-mrsby"}
+{"level":30,"time":1770964767245,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767245-yr5jhl"}
+{"level":30,"time":1770964767274,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767274,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767274,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767274,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767275,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767275-0if3ln"}
+{"level":30,"time":1770964767275,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767275-h9xzu8"}
+{"level":30,"time":1770964767275,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767275-u9hiu"}
+{"level":30,"time":1770964767275,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767275-maaazp"}
+{"level":30,"time":1770964767275,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767275-d5hrgb"}
+{"level":30,"time":1770964767276,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767276-cex4z2"}
+{"level":30,"time":1770964767276,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767276-hcenu"}
+{"level":30,"time":1770964767276,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767276-65fa1b"}
+{"level":30,"time":1770964767276,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767276-8wzyh"}
+{"level":30,"time":1770964767276,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767276-61zk5r"}
+{"level":30,"time":1770964767310,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767310,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-0p1t6y"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-fq65yc6"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-4390l"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-di08am"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-iv6l8v"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-sdz95v"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-yq34im"}
+{"level":30,"time":1770964767311,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767311-tcl8ldi"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-hwxk8k"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-he70m6"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-bmkcinl"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-lvyufq"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-q4zem"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-sbhxo"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-39msre"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-gi9yrr"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-fooguo"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-wxnp5q"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-yf0cas"}
+{"level":30,"time":1770964767312,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767312-o5asag"}
+{"level":30,"time":1770964767315,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767315,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767315,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767315,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767316,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767316-56fcae"}
+{"level":30,"time":1770964767319,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767319,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767319,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767319,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767320,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767319-xgxzr4"}
+{"level":30,"time":1770964767320,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767319-xgxzr4"}
+{"level":30,"time":1770964767320,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767319-xgxzr4"}
+{"level":30,"time":1770964767324,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767324,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767324,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767325,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767325,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767325-vqpza"}
+{"level":30,"time":1770964767325,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767325-0z8sfc"}
+{"level":30,"time":1770964767325,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767325-jp37r"}
+{"level":30,"time":1770964767325,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767325-k6xnw"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767326-li98v"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767325-vqpza"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767325-vqpza"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767325-0z8sfc"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767325-0z8sfc"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767325-jp37r"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767325-jp37r"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767325-k6xnw"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767325-k6xnw"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770964767326-li98v"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: agent-1770964767326-li98v"}
+{"level":30,"time":1770964767326,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Discovering agents"}
+{"level":30,"time":1770964767328,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964767328,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964767329,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964767329,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964767330,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964767330-5wf7wq"}
+(node:46616) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"level":30,"time":1770964772348,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964772348,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964772349,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964772349,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964772350,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964772350-f0tnpm"}
+{"level":30,"time":1770964777366,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964777366,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964777366,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964777366,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782373,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782373,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782373,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782373,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782374,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782374-girji"}
+{"level":30,"time":1770964782374,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782374-girji] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782374,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782374-02fqo"}
+{"level":30,"time":1770964782375,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782374-girji] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782385,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782374-girji] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782404,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782374-girji"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782407-7w0isk"}
+{"level":30,"time":1770964782407,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782407-wj4au8"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782407-q6voer"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-40fgdd"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-yfrr3i"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-qip07j"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-dg1vyo"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-jrb4to"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-wcw0u3"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-qok284"}
+{"level":30,"time":1770964782408,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782408-okwuik"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-jlfg0n"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-byli6n"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-qpnoag"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-58cpf"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-tmf73q"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-4aswwr"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-wmkdkn"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-xs237j"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-edrm76"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-grm68d"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-7x89z"}
+{"level":30,"time":1770964782409,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782409-g803y8"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-aw93s4"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-i7no6c"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-63ylwp"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-pqz3h"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-reysh5"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-7byqz"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-j8q1zt"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-qu87dp"}
+{"level":30,"time":1770964782410,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-sranao"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782410-enycwh"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-un4krf"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-qq1k6a"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-hhfmg"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-6t9vn"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-oe4rbz"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-tw869fd"}
+{"level":30,"time":1770964782411,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782411-w04e39"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-eb3uq"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-gk9kw"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-4zqlhd"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-664v59"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-pkbf18"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-97gaj"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-dudm9c"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-bfv6ot"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-awx0q"}
+{"level":30,"time":1770964782412,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-tdp8cl"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782412-3dze76"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-nfrnem"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-e5sfom"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-m95erg"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-28cq38"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-yne1re"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-ulx7g7"}
+{"level":30,"time":1770964782413,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782413-7d9zho"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-yxxxro"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-gujof7"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-ohhblh"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-8xfgq"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-r67c4"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-v0v9ha"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-lix1fr"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-e8s35"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-ns4wr"}
+{"level":30,"time":1770964782414,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-t700g"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782414-zdafs"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-lm28fm"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-m9tmcd"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-qprlsq"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-ff2jom"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-b3wzve"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-mrjpfwl"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-u4vds4"}
+{"level":30,"time":1770964782415,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-v492w"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782415-55gche"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-gbq22"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-gxh6u"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-imdadb"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-zs1qs9"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-o0higk"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-m2g5me"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-6hdoo5"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-j5bxq"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-7s4te"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-147b1"}
+{"level":30,"time":1770964782416,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782416-a4f9ct"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-y7lyz"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-b0vzv"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-4rkzd5"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-xfa2hj"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-7nhtm"}
+{"level":30,"time":1770964782417,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-3i66k"}
+{"level":30,"time":1770964782418,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782417-q9ekdv"}
+{"level":30,"time":1770964782418,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782418-v541i"}
+{"level":30,"time":1770964782418,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782418-9wkrw9"}
+{"level":30,"time":1770964782418,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782418-fhuc1"}
+{"level":30,"time":1770964782418,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782418-b0s1gf"}
+{"level":30,"time":1770964782421,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782421,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782421,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782422,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782422,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782422-0o3t66g"}
+{"level":30,"time":1770964782422,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782422-0mvvz7"}
+{"level":30,"time":1770964782422,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782422-u4iwqo"}
+{"level":30,"time":1770964782422,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782422-ufhzz"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-u5mc6b"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-4n2u8q"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-2eej0jj"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-to7ue"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-hvn5m"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-3kg8y"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-cdgpjt"}
+{"level":30,"time":1770964782423,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782423-twi8uf"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-mzqum"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-iblc3b"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-dqlirq"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-hpum5k"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-h3o4"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-zohskm"}
+{"level":30,"time":1770964782424,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-dxwoet"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782424-66dyt5"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-5wzfac"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-v6omn"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-ki954n"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-1i5wun"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-okts6x"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-rzrduf"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-he2kmo"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-pmnask"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-bpe8nm"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-xl4euu"}
+{"level":30,"time":1770964782425,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782425-6914fe"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-iomb1o"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-g859fe"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-lhvx6f"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-09l7id"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-k0t6cv"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-tv08a"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-8cjkps"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-arwj6"}
+{"level":30,"time":1770964782426,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782426-807z6c"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-d6j8ch"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-3pqfqp"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-myiiov"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-nqruw8"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-i62raq"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-dza6lk"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-ai9665"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-l92e9i"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-ow6zkt"}
+{"level":30,"time":1770964782427,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782427-nurkyg"}
+{"level":30,"time":1770964782756,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782756,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782756,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782757,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782862,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782862,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782863-az6va"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782863-az6va] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782863-68ue9r"}
+{"level":30,"time":1770964782863,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782863-az6va] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782872,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782863-az6va] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782881,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782863-az6va"}
+{"level":30,"time":1770964782882,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782882-fmv8no"}
+{"level":30,"time":1770964782882,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782882-fmv8no] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782882,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782882-cv9yie"}
+{"level":30,"time":1770964782882,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782882-fmv8no] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782885,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782882-fmv8no] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782895,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782882-fmv8no"}
+{"level":30,"time":1770964782895,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782895-a4w7i5"}
+{"level":30,"time":1770964782895,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782895-a4w7i5] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782895,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782895-tumcho"}
+{"level":30,"time":1770964782895,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782895-a4w7i5] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782903,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782895-a4w7i5] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782914,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782895-a4w7i5"}
+{"level":30,"time":1770964782914,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782914-h3lim5"}
+{"level":30,"time":1770964782914,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782914-h3lim5] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782914,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782914-9k8xk9"}
+{"level":30,"time":1770964782914,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782914-h3lim5] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782920,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782914-h3lim5] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782929,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782914-h3lim5"}
+{"level":30,"time":1770964782929,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770964782929-4yh17"}
+{"level":30,"time":1770964782929,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782929-4yh17] GENESIS: Breeding agent"}
+{"level":30,"time":1770964782929,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782929-qjtxwk"}
+{"level":30,"time":1770964782929,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782929-4yh17] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770964782933,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770964782929-4yh17] D-HDR: Exploring decision space"}
+{"level":30,"time":1770964782943,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770964782929-4yh17"}
+{"level":30,"time":1770964782945,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782945,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782945,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782945,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782950,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782950,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782950,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782951,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782958,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782958,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782958,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782958,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782959,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: invalid"}
+{"level":30,"time":1770964782959,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card validation failed: invalid"}
+{"level":30,"time":1770964782960,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782960,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782960,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782960,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782961,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782961,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782961,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782962,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782962,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782962-g92n6"}
+{"level":30,"time":1770964782969,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782969,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782970,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782970,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782972,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964782972,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964782972,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964782972,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964782972,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770964782972-8jyc7a"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Updating configuration"}
+{"level":30,"time":1770964787987,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Updated genesis config"}
+{"level":30,"time":1770964787988,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Updated oracle config"}
+{"level":30,"time":1770964787989,"pid":46616,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770964787989,"pid":46616,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770964787989,"pid":46616,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770964787989,"pid":46616,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+FAIL tests/integration/phase10-combined.test.js (29.081 s)
+  Phase 10.5: Combined System Integration
+    Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR
+      ΓêÜ generates agent with GENESIS (8 ms)
+      ├ù predicts GENESIS agent outcome with ORACLE (19 ms)
+      ΓêÜ generates consequence variations with D-HDR (31 ms)
+      ΓêÜ full orchestrated workflow end-to-end (22 ms)
+    Multi-Agent Ecosystem
+      ├ù breeds population and evaluates with ORACLE (30 ms)
+      ├ù selects best agent from ecosystem (35 ms)
+      ├ù analyzes diversity in population (4 ms)
+    Agent Card Publication & Discovery
+      ├ù creates agent card for GENESIS agent (2 ms)
+      ├ù publishes agent card to registry (4 ms)
+      ΓêÜ discovers agents by specialization (4 ms)
+    Event Emission & Coordination
+      ├ù emits agent:bred event (5017 ms)
+      ├ù emits prediction:made event (5017 ms)
+      ├ù emits consequence:explored event (5005 ms)
+      ΓêÜ coordinates workflow with event sequencing (34 ms)
+    Performance & Scalability
+      ΓêÜ breeds large population efficiently (14 ms)
+      ΓêÜ predicts on population without timeouts (335 ms)
+      ΓêÜ handles concurrent D-HDR explorations (105 ms)
+      ΓêÜ measures end-to-end orchestration latency (81 ms)
+    Error Handling & Recovery
+      ├ù handles invalid agent data gracefully (5 ms)
+      ΓêÜ recovers from D-HDR generation failures (7 ms)
+      ΓêÜ validates agent cards on publication (1 ms)
+      ├ù implements circuit breaker for ORACLE (1 ms)
+    Monitoring & Observability
+      ΓêÜ tracks system health (8 ms)
+      ├ù collects metrics for all components (2 ms)
+      ├ù logs significant events (5014 ms)
+    Configuration & Extension
+      ΓêÜ allows runtime configuration changes (2 ms)
+      ├ù supports custom hooks/plugins (1 ms)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Workflow: Genesis ΓåÆ Oracle ΓåÆ D-HDR ΓÇ║ predicts GENESIS agent outcome with ORACLE
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      67 |       });
+      68 |
+    > 69 |       expect(prediction.predicted_success_rate).toBeGreaterThanOrEqual(0);
+         |                                                 ^
+      70 |       expect(prediction.predicted_success_rate).toBeLessThanOrEqual(1);
+      71 |       expect(prediction.supporting_factors).toBeDefined();
+      72 |     });
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:69:49)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ breeds population and evaluates with ORACLE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      120 |       expect(
+      121 |         predictions.every((p) => p.predicted_success_rate !== undefined),
+    > 122 |       ).toBe(true);
+          |         ^
+      123 |     });
+      124 |
+      125 |     test("selects best agent from ecosystem", () => {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:122:9)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ selects best agent from ecosystem
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      139 |
+      140 |       expect(best.agent).toBeDefined();
+    > 141 |       expect(best.prediction.predicted_success_rate).toBeGreaterThanOrEqual(0);
+          |                                                      ^
+      142 |     });
+      143 |
+      144 |     test("analyzes diversity in population", () => {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:141:54)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Multi-Agent Ecosystem ΓÇ║ analyzes diversity in population
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      147 |       const diversity = genesis.getPopulationDiversity(population);
+      148 |
+    > 149 |       expect(diversity.genetic_variance).toBeGreaterThanOrEqual(0);
+          |                                          ^
+      150 |       expect(diversity.trait_distribution).toBeDefined();
+      151 |       expect(diversity.average_pairwise_distance).toBeGreaterThanOrEqual(0);
+      152 |     });
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:149:42)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Agent Card Publication & Discovery ΓÇ║ creates agent card for GENESIS agent
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0.36255153343696583
+    Received: 36.255153343696584
+
+      164 |       expect(card.specialization).toBe("evolutionary");
+      165 |       expect(card.genetic_lineage.generation).toBe(agent.generation);
+    > 166 |       expect(card.genetic_lineage.fitness_score).toBe(agent.fitnessScore);
+          |                                                  ^
+      167 |     });
+      168 |
+      169 |     test("publishes agent card to registry", () => {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:166:50)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Agent Card Publication & Discovery ΓÇ║ publishes agent card to registry
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "published"
+    Received: "rejected"
+
+      176 |       const published = orchestrator.publishAgentCard(card);
+      177 |
+    > 178 |       expect(published.status).toBe("published");
+          |                                ^
+      179 |       expect(published.registry_id).toBeDefined();
+      180 |       expect(published.published_at).toBeDefined();
+      181 |     });
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:178:32)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits agent:bred event
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      201 |
+      202 |   describe("Event Emission & Coordination", () => {
+    > 203 |     test("emits agent:bred event", (done) => {
+          |     ^
+      204 |       orchestrator.on("agent:bred", (data) => {
+      205 |         expect(data.agentId).toBeDefined();
+      206 |         expect(data.fitnessScore).toBeDefined();
+
+      at tests/integration/phase10-combined.test.js:203:5
+      at tests/integration/phase10-combined.test.js:202:3
+      at tests/integration/phase10-combined.test.js:15:1
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits prediction:made event
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      211 |     });
+      212 |
+    > 213 |     test("emits prediction:made event", (done) => {
+          |     ^
+      214 |       const agent = genesis.breed({ baseAgent: { analyticalPower: 0.5 } });
+      215 |
+      216 |       orchestrator.on("prediction:made", (data) => {
+
+      at tests/integration/phase10-combined.test.js:213:5
+      at tests/integration/phase10-combined.test.js:202:3
+      at tests/integration/phase10-combined.test.js:15:1
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Event Emission & Coordination ΓÇ║ emits consequence:explored event
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      223 |     });
+      224 |
+    > 225 |     test("emits consequence:explored event", (done) => {
+          |     ^
+      226 |       orchestrator.on("consequence:explored", (data) => {
+      227 |         expect(data.decision).toBeDefined();
+      228 |         expect(data.variants).toBeGreaterThan(0);
+
+      at tests/integration/phase10-combined.test.js:225:5
+      at tests/integration/phase10-combined.test.js:202:3
+      at tests/integration/phase10-combined.test.js:15:1
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Error Handling & Recovery ΓÇ║ handles invalid agent data gracefully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      329 |       const prediction = oracle.predictAgentOutcome(invalidAgent, {});
+      330 |
+    > 331 |       expect(prediction.error).toBeDefined();
+          |                                ^
+      332 |       expect(prediction.fallback_prediction).toBeDefined();
+      333 |     });
+      334 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:331:32)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Error Handling & Recovery ΓÇ║ implements circuit breaker for ORACLE
+
+    TypeError: oracle.setCircuitBreakerThreshold is not a function
+
+      357 |
+      358 |     test("implements circuit breaker for ORACLE", () => {
+    > 359 |       oracle.setCircuitBreakerThreshold(3);
+          |              ^
+      360 |
+      361 |       let failures = 0;
+      362 |       for (let i = 0; i < 5; i++) {
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:359:14)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Monitoring & Observability ΓÇ║ collects metrics for all components
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      392 |       const metrics = orchestrator.collectMetrics();
+      393 |
+    > 394 |       expect(metrics.genesis).toBeDefined();
+          |                               ^
+      395 |       expect(metrics.oracle).toBeDefined();
+      396 |       expect(metrics.diffusion).toBeDefined();
+      397 |       expect(metrics.integration).toBeDefined();
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:394:31)
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Monitoring & Observability ΓÇ║ logs significant events
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      404 |     });
+      405 |
+    > 406 |     test("logs significant events", (done) => {
+          |     ^
+      407 |       const logs = [];
+      408 |
+      409 |       orchestrator.on("event:logged", (log) => {
+
+      at tests/integration/phase10-combined.test.js:406:5
+      at tests/integration/phase10-combined.test.js:377:3
+      at tests/integration/phase10-combined.test.js:15:1
+
+  ΓùÅ Phase 10.5: Combined System Integration ΓÇ║ Configuration & Extension ΓÇ║ supports custom hooks/plugins
+
+    ReferenceError: jest is not defined
+
+      437 |       const plugin = {
+      438 |         name: "test-plugin",
+    > 439 |         onAgentBred: jest.fn(),
+          |                      ^
+      440 |         onPredictionMade: jest.fn(),
+      441 |       };
+      442 |
+
+      at Object.<anonymous> (tests/integration/phase10-combined.test.js:439:22)
+
+----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                 
+----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------------
+All files             |   47.26 |    43.71 |   44.72 |   47.34 |                                                                                   
+ src                  |   67.74 |    52.38 |   43.75 |      70 |                                                                                   
+  hdr-orchestrator.js |   67.74 |    52.38 |   43.75 |      70 | 142-148,163,166,169,192-221,249,295,360-364,381-409                               
+ src/agent-card       |    5.08 |    20.96 |    7.69 |    5.17 |                                                                                   
+  schema.js           |    5.08 |    20.96 |    7.69 |    5.17 | 378-544,599                                                                       
+ src/d-hdr            |   79.69 |    55.26 |   77.41 |    80.8 |                                                                                   
+  diffusion-core.js   |   79.69 |    55.26 |   77.41 |    80.8 | 137-141,160-162,319-340,419,432-443,539-556                                       
+ src/genesis-hdr      |   30.16 |    45.03 |      40 |    28.5 |                                                                                   
+  genesis-core.js     |   30.16 |    45.03 |      40 |    28.5 | 125-128,145-181,198-279,299-411,453,534,591-793                                   
+ src/oracle-hdr       |   53.97 |    47.28 |    47.5 |   54.29 |                                                                                   
+  oracle-core.js      |   53.97 |    47.28 |    47.5 |   54.29 | 23-74,185-243,278-346,388-389,391-392,417-441,515,552,567,585,588,591,594,647-673 
+ tests/utils          |    6.66 |     3.84 |    9.09 |    6.66 |                                                                                   
+  custom-matchers.js  |    6.66 |     3.84 |    9.09 |    6.66 | 28-171                                                                            
+----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------------
+
+=============================== Coverage summary ===============================
+Statements   : 47.26% ( 398/842 )
+Branches     : 43.71% ( 240/549 )
+Functions    : 44.72% ( 72/161 )
+Lines        : 47.34% ( 374/790 )
+================================================================================
+Test Suites: 1 failed, 1 total
+Tests:       14 failed, 13 passed, 27 total
+Snapshots:   0 total
+Time:        31.316 s
+Ran all test suites matching tests/integration/phase10-combined.test.js.

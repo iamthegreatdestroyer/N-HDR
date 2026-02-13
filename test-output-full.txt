@@ -1,0 +1,1321 @@
+
+> n-hdr@1.0.0 test:integration
+> jest tests/integration --config=jest.integration.config.js tests/integration/phase10-combined.test.js --no-coverage
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+FAIL tests/integration/quantum-security.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module 'chai' from 'tests/integration/quantum-security.test.js'
+
+       7 |  */
+       8 |
+    >  9 | const chai = require("chai");
+         |              ^
+      10 | const { expect } = chai;
+      11 | const { TestContext, config } = require("./test-utils");
+      12 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/quantum-security.test.js:9:14)
+
+PASS tests/integration/SystemsIntegration.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+PASS tests/integration/DeploymentIntegration.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+FAIL tests/integration/phase10-oracle.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '../src/oracle-hdr/oracle-core.js' from 'tests/integration/phase10-oracle.test.js'
+
+       6 |  */
+       7 |
+    >  8 | import {
+         | ^
+       9 |   OracleHDR,
+      10 |   ConsequenceNode,
+      11 |   RiskAssessment,
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/phase10-oracle.test.js:8:1)
+
+FAIL tests/integration/phase10-cicd.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+  ΓùÅ Phase 10.6: CI/CD Pipeline & Deployment ΓÇ║ Test Execution & Coverage ΓÇ║ runs integration tests for GENESIS
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      39 |           (t) => t.includes("genesis") || t.includes("genetic"),
+      40 |         ),
+    > 41 |       ).toBe(true);
+         |         ^
+      42 |     });
+      43 |
+      44 |     test("runs integration tests for ORACLE", () => {
+
+      at Object.toBe (tests/integration/phase10-cicd.test.js:41:9)
+
+  ΓùÅ Phase 10.6: CI/CD Pipeline & Deployment ΓÇ║ Test Execution & Coverage ΓÇ║ runs integration tests for ORACLE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      55 |           (t) => t.includes("oracle") || t.includes("prediction"),
+      56 |         ),
+    > 57 |       ).toBe(true);
+         |         ^
+      58 |     });
+      59 |
+      60 |     test("runs integration tests for D-HDR", () => {
+
+      at Object.toBe (tests/integration/phase10-cicd.test.js:57:9)
+
+PASS tests/integration/ApplicationIntegration.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+FAIL tests/integration/qdrant-knowledge.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '@qdrant/js-client-rest' from 'src/ohdr/vector-store/qdrant-knowledge-store.js'
+
+    Require stack:
+      src/ohdr/vector-store/qdrant-knowledge-store.js
+      tests/integration/qdrant-knowledge.test.js
+
+      16 |  */
+      17 |
+    > 18 | import { QdrantClient } from "@qdrant/js-client-rest";
+         | ^
+      19 | import * as tf from "@tensorflow/tfjs";
+      20 | import crypto from "crypto";
+      21 | import config from "../../../config/nhdr-config.js";
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (src/ohdr/vector-store/qdrant-knowledge-store.js:18:1)
+      at Object.require (tests/integration/qdrant-knowledge.test.js:12:1)
+
+PASS tests/integration/DashboardIntegration.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+FAIL tests/integration/phase10-genesis.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '../src/genesis-hdr/genesis-core.js' from 'tests/integration/phase10-genesis.test.js'
+
+       6 |  */
+       7 |
+    >  8 | import {
+         | ^
+       9 |   GenesisHDR,
+      10 |   AgentGenome,
+      11 |   FitnessEvaluator,
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/phase10-genesis.test.js:8:1)
+
+FAIL tests/integration/thermal-management.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module 'chai' from 'tests/integration/thermal-management.test.js'
+
+       7 |  */
+       8 |
+    >  9 | const chai = require("chai");
+         |              ^
+      10 | const { expect } = chai;
+      11 | const { TestContext, config } = require("./test-utils");
+      12 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/thermal-management.test.js:9:14)
+
+FAIL tests/integration/phase10-d-hdr-agentcard.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '../src/d-hdr/diffusion-core.js' from 'tests/integration/phase10-d-hdr-agentcard.test.js'
+
+       6 |  */
+       7 |
+    >  8 | import {
+         | ^
+       9 |   DiffusionHDR,
+      10 |   ConsequenceGenerativeModel,
+      11 |   ConsequenceEmbedding,
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/phase10-d-hdr-agentcard.test.js:8:1)
+
+FAIL tests/integration/pqc-manager.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '@noble/post-quantum/ml-kem' from 'src/security/pqc/pqc-manager.js'
+
+    Require stack:
+      src/security/pqc/pqc-manager.js
+      tests/integration/pqc-manager.test.js
+
+      10 |  */
+      11 |
+    > 12 | import { ml_kem512, ml_kem768, ml_kem1024 } from "@noble/post-quantum/ml-kem";
+         | ^
+      13 | import { ml_dsa44, ml_dsa65, ml_dsa87 } from "@noble/post-quantum/ml-dsa";
+      14 | import { randomBytes, createHash, createHmac } from "crypto";
+      15 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (src/security/pqc/pqc-manager.js:12:1)
+      at Object.require (tests/integration/pqc-manager.test.js:11:1)
+
+FAIL tests/integration/claude-flow.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ enums ΓÇ║ should have all agent roles
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |   describe("enums", () => {
+      48 |     it("should have all agent roles", () => {
+    > 49 |       expect(AgentRole.ANALYZER).toBeDefined();
+         |                                  ^
+      50 |       expect(AgentRole.EXECUTOR).toBeDefined();
+      51 |       expect(AgentRole.VALIDATOR).toBeDefined();
+      52 |       expect(AgentRole.COORDINATOR).toBeDefined();
+
+      at Object.toBeDefined (tests/integration/claude-flow.test.js:49:34)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ enums ΓÇ║ should have all task states
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      56 |     it("should have all task states", () => {
+      57 |       expect(TaskState.PENDING).toBeDefined();
+    > 58 |       expect(TaskState.RUNNING).toBeDefined();
+         |                                 ^
+      59 |       expect(TaskState.COMPLETED).toBeDefined();
+      60 |       expect(TaskState.FAILED).toBeDefined();
+      61 |     });
+
+      at Object.toBeDefined (tests/integration/claude-flow.test.js:58:33)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ enums ΓÇ║ should have all strategies
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |     it("should have all strategies", () => {
+    > 64 |       expect(Strategy.SEQUENTIAL).toBeDefined();
+         |                                   ^
+      65 |       expect(Strategy.PARALLEL).toBeDefined();
+      66 |       expect(Strategy.PIPELINE).toBeDefined();
+      67 |       expect(Strategy.CONSENSUS).toBeDefined();
+
+      at Object.toBeDefined (tests/integration/claude-flow.test.js:64:35)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ task execution ΓÇ║ should submit a task
+
+    TypeError: orchestrator.submitTask is not a function
+
+      136 |
+      137 |     it("should submit a task", () => {
+    > 138 |       const taskId = orchestrator.submitTask({
+          |                                   ^
+      139 |         payload: { input: "hello" },
+      140 |         requiredCapabilities: ["general"],
+      141 |       });
+
+      at Object.submitTask (tests/integration/claude-flow.test.js:138:35)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ task execution ΓÇ║ should execute a task and complete
+
+    TypeError: orchestrator.submitTask is not a function
+
+      146 |
+      147 |     it("should execute a task and complete", async () => {
+    > 148 |       const taskId = orchestrator.submitTask({
+          |                                   ^
+      149 |         payload: { input: "test-data" },
+      150 |         requiredCapabilities: ["general"],
+      151 |       });
+
+      at Object.submitTask (tests/integration/claude-flow.test.js:148:35)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ task execution ΓÇ║ should track metrics
+
+    TypeError: orchestrator.submitTask is not a function
+
+      160 |
+      161 |     it("should track metrics", async () => {
+    > 162 |       orchestrator.submitTask({
+          |                    ^
+      163 |         payload: { input: "m1" },
+      164 |         requiredCapabilities: ["general"],
+      165 |       });
+
+      at Object.submitTask (tests/integration/claude-flow.test.js:162:20)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ task execution ΓÇ║ should handle task failure gracefully
+
+    TypeError: orchestrator.submitTask is not a function
+
+      181 |       });
+      182 |
+    > 183 |       const taskId = orchestrator.submitTask({
+          |                                   ^
+      184 |         payload: {},
+      185 |         requiredCapabilities: ["fail"],
+      186 |       });
+
+      at Object.submitTask (tests/integration/claude-flow.test.js:183:35)
+
+  ΓùÅ Claude-Flow Orchestrator Integration ΓÇ║ events ΓÇ║ should emit task:complete event
+
+    TypeError: orchestrator.submitTask is not a function
+
+      208 |       );
+      209 |
+    > 210 |       orchestrator.submitTask({
+          |                    ^
+      211 |         payload: {},
+      212 |         requiredCapabilities: ["evt"],
+      213 |       });
+
+      at Object.submitTask (tests/integration/claude-flow.test.js:210:20)
+
+FAIL tests/integration/mcp-servers.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '@modelcontextprotocol/sdk/server/mcp.js' from 'tests/integration/mcp-servers.test.js'
+
+      12 |  */
+      13 |
+    > 14 | import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+         | ^
+      15 | import { z } from "zod";
+      16 |
+      17 | describe("MCP Server Architecture", () => {
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/mcp-servers.test.js:14:1)
+
+FAIL tests/integration/consciousness-layer.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module 'chai' from 'tests/integration/consciousness-layer.test.js'
+
+       7 |  */
+       8 |
+    >  9 | const chai = require("chai");
+         |              ^
+      10 | const { expect } = chai;
+      11 | const { TestContext, config } = require("./test-utils");
+      12 |
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/consciousness-layer.test.js:9:14)
+
+FAIL tests/integration/consciousness-transfer-flow.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '../../../src/core/integration/protocols/ConsciousnessStateTransferProtocol' from 'tests/integration/consciousness-transfer-flow.test.js'
+
+      14 |  */
+      15 |
+    > 16 | import ConsciousnessStateTransferProtocol from "../../../src/core/integration/protocols/ConsciousnessStateTransferProtocol";
+         | ^
+      17 | import QuantumSecureChannel from "../../../src/core/integration/security/QuantumSecureChannel";
+      18 | import SwarmConsciousnessManager from "../../../src/core/integration/swarm/SwarmConsciousnessManager";
+      19 | import DimensionalDataStructures from "../../../src/core/integration/data/DimensionalDataStructures";
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (tests/integration/consciousness-transfer-flow.test.js:16:1)
+
+FAIL tests/integration/echo-hdr.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ initialization ΓÇ║ should initialize successfully
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ initialization ΓÇ║ should emit ready event on init
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ initialization ΓÇ║ should be idempotent
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory storage ΓÇ║ should store a simple memory
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory storage ΓÇ║ should store with emotional context
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory storage ΓÇ║ should store with associations
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory storage ΓÇ║ should emit store event
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory storage ΓÇ║ should store structured data content
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should recall by context
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should recall by type
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should recall by context and type
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should respect limit
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should recall by ID
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ memory recall ΓÇ║ should return empty for missing context
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ temporal decay ΓÇ║ should track memory strength
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ temporal decay ΓÇ║ should return diagnostics
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ temporal decay ΓÇ║ should return null for missing ID
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ temporal decay ΓÇ║ should preserve immortal memories
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ dream consolidation ΓÇ║ should run LIGHT consolidation
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ dream consolidation ΓÇ║ should run STANDARD consolidation
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ dream consolidation ΓÇ║ should emit consolidation event
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ pruning ΓÇ║ should prune and emit event
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ export / import ΓÇ║ should round-trip export and import
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ export / import ΓÇ║ should handle empty import
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ statistics ΓÇ║ should return comprehensive stats
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ re-exported enums ΓÇ║ should export EpisodeType values
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ re-exported enums ΓÇ║ should export DecayProfile values
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ re-exported enums ΓÇ║ should export ConsolidationMode values
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+  ΓùÅ ECHO-HDR Integration ΓÇ║ re-exported enums ΓÇ║ should export version constant
+
+    TypeError: tf.sequential is not a function
+
+      363 |
+      364 |   _buildEncoder() {
+    > 365 |     const model = tf.sequential();
+          |                      ^
+      366 |     model.add(
+      367 |       tf.layers.dense({
+      368 |         inputShape: [64],
+
+      at AssociativeRecall.sequential [as _buildEncoder] (src/echo-hdr/associations/associative-recall.js:365:22)
+      at AssociativeRecall._buildEncoder [as initialize] (src/echo-hdr/associations/associative-recall.js:88:25)
+      at EchoHDRCore.initialize (src/echo-hdr/echo-hdr-core.js:108:34)
+      at Object.initialize (tests/integration/echo-hdr.test.js:26:16)
+
+FAIL tests/integration/ns-hdr.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '@qdrant/js-client-rest' from 'src/ohdr/vector-store/qdrant-knowledge-store.js'
+
+    Require stack:
+      src/ohdr/vector-store/qdrant-knowledge-store.js
+      src/ohdr/KnowledgeCrystallizer.js
+      src/core/security/security-manager.js
+      src/core/neural-hdr.js
+      tests/integration/ns-hdr.test.js
+
+      16 |  */
+      17 |
+    > 18 | import { QdrantClient } from "@qdrant/js-client-rest";
+         | ^
+      19 | import * as tf from "@tensorflow/tfjs";
+      20 | import crypto from "crypto";
+      21 | import config from "../../../config/nhdr-config.js";
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (src/ohdr/vector-store/qdrant-knowledge-store.js:18:1)
+      at Object.require (src/ohdr/KnowledgeCrystallizer.js:19:1)
+      at Object.require (src/core/security/security-manager.js:25:1)
+      at Object.require (src/core/neural-hdr.js:18:1)
+      at Object.require (tests/integration/ns-hdr.test.js:9:19)
+
+FAIL tests/integration/core-system.test.js
+  ΓùÅ Test suite failed to run
+
+    Cannot find module '@qdrant/js-client-rest' from 'src/ohdr/vector-store/qdrant-knowledge-store.js'
+
+    Require stack:
+      src/ohdr/vector-store/qdrant-knowledge-store.js
+      src/ohdr/KnowledgeCrystallizer.js
+      src/core/security/security-manager.js
+      src/core/neural-hdr.js
+      tests/integration/core-system.test.js
+
+      16 |  */
+      17 |
+    > 18 | import { QdrantClient } from "@qdrant/js-client-rest";
+         | ^
+      19 | import * as tf from "@tensorflow/tfjs";
+      20 | import crypto from "crypto";
+      21 | import config from "../../../config/nhdr-config.js";
+
+      at Resolver._throwModNotFoundError (node_modules/jest-resolve/build/index.js:863:11)
+      at Object.require (src/ohdr/vector-store/qdrant-knowledge-store.js:18:1)
+      at Object.require (src/ohdr/KnowledgeCrystallizer.js:19:1)
+      at Object.require (src/core/security/security-manager.js:25:1)
+      at Object.require (src/core/neural-hdr.js:18:1)
+      at Object.require (tests/integration/core-system.test.js:9:19)
+
+FAIL tests/integration/nhdr-api.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation, specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: S:\N-HDR\src\api\nhdr-api.js: Identifier 'express' has already been declared. (49:7)
+
+      47 | app.use(express.json({ limit: "50mb" }));
+      48 |
+    > 49 | import express from "express";
+         |        ^
+      50 | import rateLimit from "express-rate-limit";
+      51 | import biometricAuth from "./middleware/biometric-auth.js";
+      52 | import tokenAuth from "./middleware/token-auth.js";
+
+      15 |
+      16 | import request from "supertest";
+    > 17 | import app from "../../src/api/nhdr-api";
+         | ^
+      18 |
+      19 | describe("N-HDR API Tests", () => {
+      20 |   let authToken;
+
+      at constructor (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.toParseError [as raise] (node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+      at ScopeHandler.raise [as checkRedeclarationInScope] (node_modules/@babel/parser/src/util/scope.ts:164:19)
+      at ScopeHandler.checkRedeclarationInScope [as declareName] (node_modules/@babel/parser/src/util/scope.ts:118:12)
+      at Parser.declareName [as declareNameFromIdentifier] (node_modules/@babel/parser/src/parser/lval.ts:818:16)
+      at Parser.declareNameFromIdentifier [as checkIdentifier] (node_modules/@babel/parser/src/parser/lval.ts:813:12)
+      at Parser.checkIdentifier [as checkLVal] (node_modules/@babel/parser/src/parser/lval.ts:713:12)
+      at Parser.checkLVal [as finishImportSpecifier] (node_modules/@babel/parser/src/parser/statement.ts:3223:10)
+      at Parser.finishImportSpecifier [as parseImportSpecifierLocal] (node_modules/@babel/parser/src/parser/statement.ts:3210:31)
+      at Parser.parseImportSpecifierLocal [as maybeParseDefaultImportSpecifier] (node_modules/@babel/parser/src/parser/statement.ts:3395:12)
+      at Parser.maybeParseDefaultImportSpecifier [as parseImportSpecifiersAndAfter] (node_modules/@babel/parser/src/parser/statement.ts:3157:29)
+      at Parser.parseImportSpecifiersAndAfter [as parseImport] (node_modules/@babel/parser/src/parser/statement.ts:3142:17)
+      at Parser.parseImport [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.ts:642:25)
+      at Parser.parseStatementContent [as parseStatementLike] (node_modules/@babel/parser/src/parser/statement.ts:477:17)
+      at Parser.parseStatementLike [as parseModuleItem] (node_modules/@babel/parser/src/parser/statement.ts:414:17)
+      at Parser.parseModuleItem [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1438:16)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.ts:229:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.ts:93:10)
+      at parse (node_modules/@babel/parser/src/index.ts:92:38)
+      at parser (node_modules/@babel/core/src/parser/index.ts:28:19)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/src/transformation/index.ts:40:36)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/src/transform.ts:29:20)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at fn (node_modules/@babel/core/src/errors/rewrite-stack-trace.ts:99:14)
+      at transformSync (node_modules/@babel/core/src/transform.ts:66:52)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/index.js:422:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/index.js:519:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/index.js:558:19)
+      at Object.require (tests/integration/nhdr-api.test.js:17:1)
+
+FAIL tests/integration/consciousness-transfer.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation, specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: S:\N-HDR\src\api\nhdr-api.js: Identifier 'express' has already been declared. (49:7)
+
+      47 | app.use(express.json({ limit: "50mb" }));
+      48 |
+    > 49 | import express from "express";
+         |        ^
+      50 | import rateLimit from "express-rate-limit";
+      51 | import biometricAuth from "./middleware/biometric-auth.js";
+      52 | import tokenAuth from "./middleware/token-auth.js";
+
+      15 |
+      16 | import request from "supertest";
+    > 17 | import NHDRApi from "../../src/api/nhdr-api";
+         | ^
+      18 | import NeuralHDR from "../../src/core/neural-hdr";
+      19 |
+      20 | describe("Consciousness Transfer Integration Tests", () => {
+
+      at constructor (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.toParseError [as raise] (node_modules/@babel/parser/src/tokenizer/index.ts:1503:19)
+      at ScopeHandler.raise [as checkRedeclarationInScope] (node_modules/@babel/parser/src/util/scope.ts:164:19)
+      at ScopeHandler.checkRedeclarationInScope [as declareName] (node_modules/@babel/parser/src/util/scope.ts:118:12)
+      at Parser.declareName [as declareNameFromIdentifier] (node_modules/@babel/parser/src/parser/lval.ts:818:16)
+      at Parser.declareNameFromIdentifier [as checkIdentifier] (node_modules/@babel/parser/src/parser/lval.ts:813:12)
+      at Parser.checkIdentifier [as checkLVal] (node_modules/@babel/parser/src/parser/lval.ts:713:12)
+      at Parser.checkLVal [as finishImportSpecifier] (node_modules/@babel/parser/src/parser/statement.ts:3223:10)
+      at Parser.finishImportSpecifier [as parseImportSpecifierLocal] (node_modules/@babel/parser/src/parser/statement.ts:3210:31)
+      at Parser.parseImportSpecifierLocal [as maybeParseDefaultImportSpecifier] (node_modules/@babel/parser/src/parser/statement.ts:3395:12)
+      at Parser.maybeParseDefaultImportSpecifier [as parseImportSpecifiersAndAfter] (node_modules/@babel/parser/src/parser/statement.ts:3157:29)
+      at Parser.parseImportSpecifiersAndAfter [as parseImport] (node_modules/@babel/parser/src/parser/statement.ts:3142:17)
+      at Parser.parseImport [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.ts:642:25)
+      at Parser.parseStatementContent [as parseStatementLike] (node_modules/@babel/parser/src/parser/statement.ts:477:17)
+      at Parser.parseStatementLike [as parseModuleItem] (node_modules/@babel/parser/src/parser/statement.ts:414:17)
+      at Parser.parseModuleItem [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1438:16)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.ts:1412:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.ts:229:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.ts:93:10)
+      at parse (node_modules/@babel/parser/src/index.ts:92:38)
+      at parser (node_modules/@babel/core/src/parser/index.ts:28:19)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/src/transformation/normalize-file.ts:49:24)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/src/transformation/index.ts:40:36)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/src/transform.ts:29:20)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at fn (node_modules/@babel/core/src/errors/rewrite-stack-trace.ts:99:14)
+      at transformSync (node_modules/@babel/core/src/transform.ts:66:52)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/index.js:422:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/index.js:519:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/index.js:558:19)
+      at Object.require (tests/integration/consciousness-transfer.test.js:17:1)
+
+{"level":30,"time":1770958831568,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831569,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831570,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831570,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831571,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831571-8kh2yf"}
+{"level":30,"time":1770958831576,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831577,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831576-gc8njr"}
+{"level":30,"time":1770958831602,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831603,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831603-ce2ncb"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831629-0rsyhj"}
+{"level":30,"time":1770958831642,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831643,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831643-wmwyik"}
+{"level":30,"time":1770958831643,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831643-yygbc9"}
+{"level":30,"time":1770958831644,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831643-izuba4"}
+{"level":30,"time":1770958831644,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831644-1cs0rhj"}
+{"level":30,"time":1770958831644,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831644-l3kdma"}
+{"level":30,"time":1770958831669,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-nkui6"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-1rktgv"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-g2ytk"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-1myhej"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-sz1dai"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-5s8w5"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-qhjmz"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-t5nfv"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-wbta2e"}
+{"level":30,"time":1770958831670,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831670-16v4un"}
+{"level":30,"time":1770958831708,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831708-4tla45"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-fgl4es"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-s7djoo"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-ru7xgj"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-eeyq54"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-yzorjq"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-52y7g8"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-u3d7l"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-388ttf"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-s8m0be"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-j9j8tk"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-454nvg"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-5lyem"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-3tyaiv"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-rjo62n"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-y72f8m"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-fxgej"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-ym9y4"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-ydncte"}
+{"level":30,"time":1770958831709,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831709-8pir79"}
+{"level":30,"time":1770958831711,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831712,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831712-ljowqp"}
+{"level":30,"time":1770958831714,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831715,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831715-u71mzer"}
+{"level":30,"time":1770958831717,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831717-6vw93c"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831718-vnrxg"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831718-2ryww"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831718-j92qw7"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831718-3xzzzr"}
+{"level":30,"time":1770958831720,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958831721,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958831721-2i7aj"}
+{"level":30,"time":1770958831576,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831602,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831642,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831669,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831708,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831711,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831714,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831717,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831720,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958831576,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831602,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831643,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831669,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831708,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831712,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831715,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831717,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831720,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958831576,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831602,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Starting workflow: workflow-1770958831629-ocrx6i"}
+{"level":30,"time":1770958831629,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958831629-ocrx6i] GENESIS: Breeding agent"}
+{"level":30,"time":1770958831630,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958831629-ocrx6i] ORACLE: Predicting outcomes"}
+{"level":30,"time":1770958831633,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"[workflow-1770958831629-ocrx6i] D-HDR: Exploring decision space"}
+{"level":30,"time":1770958831641,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Workflow completed: workflow-1770958831629-ocrx6i"}
+{"level":30,"time":1770958831643,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831669,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831708,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831712,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831715,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831715,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831715-u71mzer"}
+{"level":30,"time":1770958831715,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831715-u71mzer"}
+{"level":30,"time":1770958831717,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831717-6vw93c"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831717-6vw93c"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831718-vnrxg"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831718-vnrxg"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831718-2ryww"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831718-2ryww"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831718-j92qw7"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831718-j92qw7"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Publishing agent card: agent-1770958831718-3xzzzr"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Agent card published: agent-1770958831718-3xzzzr"}
+{"level":30,"time":1770958831718,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"Discovering agents"}
+{"level":30,"time":1770958831720,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+FAIL tests/integration/ns-hdr-system.test.js
+  ΓùÅ Console
+
+    console.log
+      Setting up integration test environment...
+
+      at Object.log (tests/integration/setup.js:38:11)
+
+    console.log
+      NS-HDR system initialized
+
+      at SwarmController.log [as initialize] (implementation/ns-hdr-consolidated.js:312:13)
+
+    console.log
+      NS-HDR system initialized
+
+      at SwarmController.log [as initialize] (implementation/ns-hdr-consolidated.js:312:13)
+
+    console.log
+      NS-HDR system initialized
+
+      at SwarmController.log [as initialize] (implementation/ns-hdr-consolidated.js:312:13)
+
+    console.log
+      NS-HDR system initialized
+
+      at SwarmController.log [as initialize] (implementation/ns-hdr-consolidated.js:312:13)
+
+    console.log
+      Cleaning up integration test environment...
+
+      at Object.log (tests/integration/setup.js:44:11)
+
+  ΓùÅ NS-HDR System Integration ΓÇ║ Task Processing with Thermal Management ΓÇ║ should throttle under high load
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      84 |
+      85 |       clearInterval(monitor);
+    > 86 |       expect(throttled).toBe(true);
+         |                         ^
+      87 |     });
+      88 |   });
+      89 |
+
+      at Object.toBe (tests/integration/ns-hdr-system.test.js:86:25)
+
+S:\N-HDR\tests\integration\monte-carlo.test.js:66
+        const [x, y] = sample;
+                       ^
+
+[TypeError: sample is not iterable]
+
+Node.js v18.20.8
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+S:\N-HDR\tests\integration\monte-carlo.test.js:66
+        const [x, y] = sample;
+                       ^
+
+[TypeError: sample is not iterable]
+
+Node.js v18.20.8
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+{"level":30,"time":1770958861728,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"GENESIS-HDR initialized"}
+{"level":30,"time":1770958861728,"pid":42668,"hostname":"The_Plug","name":"oracle-hdr","msg":"ORACLE-HDR initialized"}
+{"level":30,"time":1770958861728,"pid":42668,"hostname":"The_Plug","name":"D-HDR-Diffusion","msg":"D-HDR Diffusion initialized"}
+{"level":30,"time":1770958861728,"pid":42668,"hostname":"The_Plug","name":"hdr-orchestrator","msg":"HDR Integration Orchestrator initialized"}
+{"level":30,"time":1770958861729,"pid":42668,"hostname":"The_Plug","name":"genesis-hdr","msg":"Bred new agent: agent-1770958861729-yo5l1a"}
