@@ -4,7 +4,7 @@
   "compressionProfile": {
     "agentId": "APEX",
     "tier": 1,
-    "targetCompressionRatio": 0.60
+    "targetCompressionRatio": 0.6
   },
   "workspace": {
     "enableDeltaUpdates": true
