@@ -1,0 +1,8 @@
+{
+  "description": "Tokens never compressed",
+  "tokens": [
+    "O(1)", "O(log n)", "O(n)",
+    "SOLID", "DRY",
+    "TODO", "FIXME"
+  ]
+}

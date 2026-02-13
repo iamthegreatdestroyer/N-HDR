@@ -1,0 +1,16 @@
+{
+  "projectName": "N-HDR",
+  "enabled": true,
+  "compressionProfile": {
+    "agentId": "APEX",
+    "tier": 1,
+    "targetCompressionRatio": 0.60
+  },
+  "workspace": {
+    "enableDeltaUpdates": true
+  },
+  "monitoring": {
+    "trackMetrics": true,
+    "reportToOmniscient": true
+  }
+}
