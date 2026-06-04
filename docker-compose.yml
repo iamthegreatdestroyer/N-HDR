@@ -1,3 +1,4 @@
+# Port range: 27xxx (N-HDR reserved)
 # HDR Empire Framework - Docker Compose Configuration
 # Copyright (c) 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
 #
@@ -22,7 +23,7 @@ services:
     container_name: hdr-empire-main
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "27000:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
@@ -65,7 +66,7 @@ services:
     container_name: hdr-empire-redis
     restart: unless-stopped
     ports:
-      - "6379:6379"
+      - "27379:6379"
     volumes:
       - redis-data:/data
     networks:
@@ -83,7 +84,7 @@ services:
     container_name: hdr-empire-postgres
     restart: unless-stopped
     ports:
-      - "5432:5432"
+      - "27432:5432"
     environment:
       - POSTGRES_DB=hdr_empire
       - POSTGRES_USER=hdr_admin
@@ -105,7 +106,7 @@ services:
     container_name: hdr-empire-prometheus
     restart: unless-stopped
     ports:
-      - "9090:9090"
+      - "27090:9090"
     volumes:
       - ./deployment/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - prometheus-data:/prometheus
@@ -123,7 +124,7 @@ services:
     container_name: hdr-empire-grafana
     restart: unless-stopped
     ports:
-      - "3001:3000"
+      - "27001:3000"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
@@ -143,8 +144,8 @@ services:
     container_name: hdr-empire-nginx
     restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
+      - "27080:80"
+      - "27443:443"
     volumes:
       - ./deployment/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./deployment/nginx/ssl:/etc/nginx/ssl:ro
