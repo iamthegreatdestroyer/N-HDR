@@ -13,6 +13,9 @@
 
 import crypto from "crypto";
 import * as tf from "@tensorflow/tfjs";
+// Canonical cosine similarity — the one reviewed implementation, shared across the
+// Sigma ecosystem. Replaces N-HDR's hand-rolled duplicate (was ~8 copies ecosystem-wide).
+import { cosineSimilarity } from "@sigma/core";
 
 // ────────────────────── Constants ──────────────────────
 
@@ -482,17 +485,10 @@ class AssociativeRecall {
   }
 
   _cosineSimilarity(a, b) {
-    let dot = 0,
-      normA = 0,
-      normB = 0;
-    const len = Math.min(a.length, b.length);
-    for (let i = 0; i < len; i++) {
-      dot += a[i] * b[i];
-      normA += a[i] * a[i];
-      normB += b[i] * b[i];
-    }
-    const denom = Math.sqrt(normA) * Math.sqrt(normB);
-    return denom > 0 ? dot / denom : 0;
+    // Delegated to @sigma/core's reviewed implementation (was a local duplicate).
+    // Semantics match for equal-length vectors — the only case N-HDR produces —
+    // and @sigma/core additionally returns 0 on length mismatch (safer).
+    return cosineSimilarity(Array.from(a), Array.from(b));
   }
 
   // ────────────────── Internal: Util ──────────────────
