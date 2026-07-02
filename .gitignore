@@ -44,3 +44,6 @@ backups/
 tmp/
 temp/
 *.tmp
+
+# VS Code Local History (editor artifact, not source)
+.history/
