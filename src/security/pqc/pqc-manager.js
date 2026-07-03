@@ -11,7 +11,7 @@
 
 import { ml_kem512, ml_kem768, ml_kem1024 } from "@noble/post-quantum/ml-kem";
 import { ml_dsa44, ml_dsa65, ml_dsa87 } from "@noble/post-quantum/ml-dsa";
-import { randomBytes, createHash, createHmac } from "crypto";
+import { createHash, createHmac } from "crypto";
 
 /**
  * Security level enumeration for PQC operations
@@ -151,7 +151,10 @@ export class PQCManager {
         // Hybrid: combine PQC shared secret with classical HKDF derivation
         const hybridSecret = this._deriveHybridKey(result.sharedSecret);
         return {
-          ciphertext: result.ciphertext,
+          // @noble/post-quantum's ml-kem returns `cipherText` (capital T);
+          // this manager's own public API uses lowercase `ciphertext`
+          // throughout, so translate the property name here.
+          ciphertext: result.cipherText,
           sharedSecret: hybridSecret,
           pqcSharedSecret: result.sharedSecret,
           hybrid: true,
@@ -159,7 +162,7 @@ export class PQCManager {
       }
 
       return {
-        ciphertext: result.ciphertext,
+        ciphertext: result.cipherText,
         sharedSecret: result.sharedSecret,
         hybrid: false,
       };
@@ -423,8 +426,14 @@ export class PQCManager {
    * @returns {Uint8Array} Hybrid derived key
    */
   _deriveHybridKey(pqcSecret) {
-    // HKDF-SHA256 extract
-    const salt = randomBytes(32);
+    // HKDF-SHA256 extract. The salt MUST be fixed, not random: this function
+    // is a symmetric combiner called independently by both the encapsulating
+    // and decapsulating side, and must derive the SAME output from the SAME
+    // pqcSecret on both sides. A random per-call salt (the previous bug here)
+    // made that structurally impossible -- the two sides could never agree on
+    // a shared key. Security relies on pqcSecret's unpredictability, not the
+    // salt's; RFC 5869 explicitly allows a fixed/well-known salt.
+    const salt = createHash("sha256").update("nhdr-pqc-hybrid-salt-v1").digest();
     const prk = createHmac("sha256", salt).update(pqcSecret).digest();
 
     // HKDF-SHA256 expand
