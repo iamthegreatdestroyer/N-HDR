@@ -13,16 +13,18 @@ Created: 2025-09-29
 HDR Empire - Pioneering the Future of AI Consciousness
 */
 
-const crypto = require("crypto-js");
-const fs = require("fs");
-const path = require("path");
-const { execSync } = require("child_process");
+import crypto from "crypto-js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Import N-HDR components
-const NHDRApi = require("../../src/api/nhdr-api").default;
-const NeuralHDR = require("../../src/core/neural-hdr").default;
-const SecurityManager =
-  require("../../src/core/security/security-manager").default;
+import NHDRApi from "../../src/api/nhdr-api.js";
+import NeuralHDR from "../../src/core/neural-hdr.js";
+import SecurityManager from "../../src/core/security/security-manager.js";
 
 // Security test vectors
 const securityTests = [
@@ -279,11 +281,8 @@ async function runSecurityTests() {
 }
 
 // Run if called directly
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   runSecurityTests().catch(console.error);
 }
 
-module.exports = {
-  runSecurityTests,
-  securityTests,
-};
+export { runSecurityTests, securityTests };
