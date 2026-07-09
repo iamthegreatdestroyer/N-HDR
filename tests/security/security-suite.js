@@ -22,7 +22,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import N-HDR components
-import NHDRApi from "../../src/api/nhdr-api.js";
+// NOTE: nhdr-api.js is imported dynamically (below, inside the api-security
+// test) rather than statically here. It currently contains a duplicated
+// module body (tracked separately as a follow-up) that throws a SyntaxError
+// on load; a static top-level import would crash this whole suite before
+// any test runs. Dynamic import isolates that failure to just the
+// api-security test so the other security tests can still run and report.
 import NeuralHDR from "../../src/core/neural-hdr.js";
 import SecurityManager from "../../src/core/security/security-manager.js";
 
@@ -176,6 +181,7 @@ const securityTests = [
     description: "Tests the API security headers and protections",
     run: async () => {
       // Start the API server
+      const { default: NHDRApi } = await import("../../src/api/nhdr-api.js");
       const nhdrApi = new NHDRApi();
       await nhdrApi.start();
 
