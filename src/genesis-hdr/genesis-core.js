@@ -426,6 +426,13 @@ class GenesisHDR extends EventEmitter {
       mutationRate: config.mutationRate || 0.15,
       tournamentSize: config.tournamentSize || 5,
       catalogUrl: config.catalogUrl || "http://nexus-hdr:3000/catalog",
+      // The NEXUS-HDR catalog service is not deployed in this environment, so
+      // real catalog delivery is OFF by default (demo mode). Enable it — and
+      // point catalogUrl at a reachable catalog — to POST evolved agents for
+      // real. When disabled, broadcastBestAgents() does NOT increment
+      // broadcastCount, so the metric never claims deliveries that didn't happen.
+      catalogBroadcastEnabled: config.catalogBroadcastEnabled ?? false,
+      catalogTimeoutMs: config.catalogTimeoutMs || 5000,
       ...config,
     };
 
@@ -665,37 +672,72 @@ class GenesisHDR extends EventEmitter {
   }
 
   /**
-   * Broadcast best agents to NEXUS-HDR catalog
+   * Broadcast best agents to the NEXUS-HDR catalog.
+   *
+   * When `config.catalogBroadcastEnabled` is true this performs a real HTTP POST
+   * of each agent card to `config.catalogUrl` and only counts a broadcast once
+   * the catalog confirms it (2xx). When disabled (default) it runs in demo mode:
+   * it emits the `agent:broadcast` event with `delivered: false` and does NOT
+   * increment `broadcastCount`, so the metric only ever reflects real deliveries.
+   *
+   * @param {number} topNCount - Number of top agents to broadcast
+   * @returns {Promise<{attempted: number, delivered: number, demo: boolean}>}
    */
   async broadcastBestAgents(topNCount = 5) {
     const topAgents = [...this.populationManager.population]
       .sort((a, b) => (b.fitness || 0) - (a.fitness || 0))
       .slice(0, topNCount);
 
-    for (const agent of topAgents) {
-      try {
-        const agentCard = {
-          id: agent.id,
-          generation: agent.generation,
-          fitness: agent.fitness,
-          phenotype: agent.getPhenotype(),
-          registeredAt: new Date(),
-          source: "genesis-hdr",
-        };
+    const demoMode = !this.config.catalogBroadcastEnabled;
+    let delivered = 0;
 
-        // TODO: POST to NEXUS-HDR catalog
-        logger.info(
-          `Broadcasting agent: ${agent.id} (fitness: ${agent.fitness.toFixed(3)})`,
+    for (const agent of topAgents) {
+      const agentCard = {
+        id: agent.id,
+        generation: agent.generation,
+        fitness: agent.fitness,
+        phenotype: agent.getPhenotype(),
+        registeredAt: new Date(),
+        source: "genesis-hdr",
+      };
+
+      if (demoMode) {
+        // Demo-only: NEXUS-HDR catalog is not deployed. Do not fake a delivery.
+        logger.debug(
+          { agentId: agent.id },
+          "Catalog broadcast disabled (demo mode); skipping real POST",
         );
+        this.emit("agent:broadcast", { ...agentCard, delivered: false, demo: true });
+        continue;
+      }
+
+      try {
+        const response = await fetch(this.config.catalogUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(agentCard),
+          signal: AbortSignal.timeout(this.config.catalogTimeoutMs),
+        });
+
+        if (!response.ok) {
+          throw new Error(`Catalog responded ${response.status}`);
+        }
+
         this.evolutionMetrics.broadcastCount++;
-        this.emit("agent:broadcast", agentCard);
+        delivered++;
+        logger.info(
+          `Broadcast agent to catalog: ${agent.id} (fitness: ${agent.fitness.toFixed(3)})`,
+        );
+        this.emit("agent:broadcast", { ...agentCard, delivered: true });
       } catch (error) {
         logger.warn(
           { agentId: agent.id, error: error.message },
-          "Failed to broadcast agent",
+          "Failed to broadcast agent to catalog",
         );
       }
     }
+
+    return { attempted: topAgents.length, delivered, demo: demoMode };
   }
 
   /**

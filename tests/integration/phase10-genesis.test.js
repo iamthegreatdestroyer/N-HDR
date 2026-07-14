@@ -291,17 +291,48 @@ describe("Phase 10.1: GENESIS-HDR - Evolutionary Agent Ecosystem", () => {
       expect(best.fitness).toBe(0.95);
     });
 
-    test("broadcasts agents with increasing accuracy", async () => {
+    test("demo mode does not fake catalog deliveries", async () => {
+      // Default config: catalog broadcast disabled (NEXUS-HDR not deployed).
       genesis.registerBenchmark("task", async (g, a) => g.analyticalPower, 1.0);
-
-      // Run epoch
       await genesis.initializeEpoch();
       await genesis.evaluatePopulation();
 
-      // Broadcast top agents
-      await genesis.broadcastBestAgents(3);
+      const result = await genesis.broadcastBestAgents(3);
 
-      expect(genesis.evolutionMetrics.broadcastCount).toBeGreaterThan(0);
+      // No real POST is made, so broadcastCount must stay honest (0).
+      expect(result.demo).toBe(true);
+      expect(result.delivered).toBe(0);
+      expect(genesis.evolutionMetrics.broadcastCount).toBe(0);
+    });
+
+    test("counts a broadcast only when the catalog confirms it", async () => {
+      const fetchMock = jest.fn().mockResolvedValue({ ok: true, status: 200 });
+      const originalFetch = global.fetch;
+      global.fetch = fetchMock;
+
+      try {
+        const liveGenesis = new GenesisHDR({
+          populationSize: 20,
+          generationsPerEpoch: 3,
+          catalogBroadcastEnabled: true,
+          catalogUrl: "http://catalog.test/catalog",
+        });
+        liveGenesis.registerBenchmark(
+          "task",
+          async (g, a) => g.analyticalPower,
+          1.0,
+        );
+        await liveGenesis.initializeEpoch();
+        await liveGenesis.evaluatePopulation();
+
+        const result = await liveGenesis.broadcastBestAgents(3);
+
+        expect(fetchMock).toHaveBeenCalledTimes(3);
+        expect(result.delivered).toBe(3);
+        expect(liveGenesis.evolutionMetrics.broadcastCount).toBe(3);
+      } finally {
+        global.fetch = originalFetch;
+      }
     });
   });
 
