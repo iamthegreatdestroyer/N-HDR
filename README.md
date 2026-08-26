@@ -2,7 +2,7 @@
 
 **Neural-HDR (N-HDR): AI Consciousness State Preservation & Multi-Dimensional Processing System**
 
-**© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED**
+**© 2025 Stephen Bilodeau - ALL RIGHTS RESERVED**
 
 ---
 
@@ -318,7 +318,7 @@ See the [Deployment Guide](docs/DEPLOYMENT-GUIDE.md) troubleshooting section for
 ### Contact
 
 **Master Architect:** Stephen Bilodeau  
-**Status:** Patent Pending  
+**Status:** Not filed  
 **Access:** Restricted to authorized users
 
 ---
