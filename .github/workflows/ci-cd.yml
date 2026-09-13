@@ -1,5 +1,5 @@
 # HDR Empire Framework - CI/CD Pipeline
-# Copyright (c) 2025-2026 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright (c) 2025-2026 Stephen Bilodeau - All Rights Reserved
 #
 # Comprehensive CI/CD workflow for testing, building, and deploying the HDR Empire Framework
 # Features: Multi-stage testing, Docker builds, Kubernetes deployment, security scanning

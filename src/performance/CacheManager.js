@@ -2,7 +2,7 @@
  * HDR Empire Framework - Advanced Cache Manager
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * Multi-tier caching system with LRU, TTL, and intelligent invalidation
  */

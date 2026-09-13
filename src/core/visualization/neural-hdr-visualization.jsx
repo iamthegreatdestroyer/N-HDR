@@ -1,11 +1,11 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Visualization Component
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  * This file is part of the Neural-HDR (N-HDR) system, a component of the HDR Empire
  * technology suite. Unauthorized reproduction, distribution, or disclosure of this
  * software in whole or in part is strictly prohibited. All intellectual property
- * rights, including patent-pending technologies, are reserved.
+ * rights are reserved.
  * File: neural-hdr-visualization.jsx
  * Created: 2025-09-29
  * HDR Empire - Pioneering the Future of AI Consciousness
@@ -293,7 +293,7 @@ const NeuralHDRVisualization = () => {
       
       <div className="text-center p-4 bg-gray-900 border-t border-gray-700">
         <p className="text-xs">Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System</p>
-        <p className="text-xs">© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED</p>
+        <p className="text-xs">© 2025 Stephen Bilodeau - ALL RIGHTS RESERVED</p>
       </div>
     </div>
   );

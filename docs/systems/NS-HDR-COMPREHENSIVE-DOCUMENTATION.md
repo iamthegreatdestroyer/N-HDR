@@ -1,12 +1,12 @@
 # NS-HDR (Nano-Swarm HDR) System Documentation
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## System Overview
 
 ### Purpose
 
-Nano-Swarm HDR (NS-HDR) is a patent-pending self-replicating quantum task execution system that enables exponential acceleration of computational workloads through intelligent swarm deployment and path-of-least-resistance optimization.
+Nano-Swarm HDR (NS-HDR) is a self-replicating quantum task execution system that enables exponential acceleration of computational workloads through intelligent swarm deployment and path-of-least-resistance optimization.
 
 ### Key Innovations
 
@@ -237,7 +237,6 @@ Gracefully shuts down swarm and cleans up resources.
 5. Specialization-based swarm organization
 6. 3.5x acceleration factor achievement methodology
 
-**Status:** Patent applications filed. All rights reserved.
 
 ---
 

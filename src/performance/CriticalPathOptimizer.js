@@ -2,7 +2,7 @@
  * HDR Empire Framework - Critical Path Optimizer
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * Optimizes critical execution paths for each HDR system
  */

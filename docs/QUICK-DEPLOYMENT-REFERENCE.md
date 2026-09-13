@@ -1,6 +1,6 @@
 # HDR Empire Framework - Quick Deployment Reference
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau**
 
 Quick reference for common deployment operations.
 

@@ -1,6 +1,6 @@
 # HDR Empire Framework - Troubleshooting Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -880,7 +880,7 @@ kubectl rollout restart deployment/ingress-nginx-controller -n ingress-nginx
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

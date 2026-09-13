@@ -1,6 +1,6 @@
 # HDR Empire Framework - Deployment Infrastructure
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau**
 
 This directory contains all deployment-related configurations, scripts, and monitoring setup for the HDR Empire Framework.
 

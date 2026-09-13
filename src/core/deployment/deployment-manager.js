@@ -1,6 +1,6 @@
 /**
  * @file Deployment Manager for N-HDR System
- * @copyright HDR Empire. Patent-pending. All rights reserved.
+ * @copyright HDR Empire. All rights reserved.
  */
 
 const fs = require("fs").promises;

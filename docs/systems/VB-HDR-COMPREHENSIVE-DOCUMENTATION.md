@@ -1,6 +1,6 @@
 # VB-HDR (Void-Blade HDR) System Documentation
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## System Overview
 
@@ -63,4 +63,3 @@ VB-HDR provides security layer for all HDR systems:
 - R-HDR spatial data protection
 - D-HDR creative pattern security
 
-**Patent Status:** Patent applications filed. All rights reserved.

@@ -1,6 +1,6 @@
 # HDR EMPIRE PROTOCOL - EXECUTION GUIDE
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ---
 
@@ -320,7 +320,6 @@ node --max-old-space-size=4096 src/cli/execute-hdr-protocol.js
 
 **Master Architect:** Stephen Bilodeau  
 **Copyright:** © 2025 - All Rights Reserved  
-**Status:** Patent Pending
 
 For authorized users and partners only.
 
@@ -328,7 +327,7 @@ For authorized users and partners only.
 
 ## Legal Notice
 
-This execution guide and all associated code, documentation, and generated content are proprietary and confidential to Stephen Bilodeau. All intellectual property rights, including patent-pending technologies, are reserved.
+This execution guide and all associated code, documentation, and generated content are proprietary and confidential to Stephen Bilodeau. All intellectual property rights are reserved.
 
 Unauthorized use, reproduction, distribution, or disclosure is strictly prohibited.
 

@@ -3,7 +3,7 @@
 - HDR Empire Framework - Neural-HDR (N-HDR) System Documentation
 -
 - Copyright (c) 2025 Stephen Bilodeau
-- All rights reserved - Patent Pending
+- All rights reserved
 -
 - This documentation is part of the HDR Empire Framework, a proprietary and
 - confidential software system. Unauthorized copying, use, distribution,
@@ -12,10 +12,9 @@
 
 # Neural-HDR (N-HDR) System Documentation
 
-## Patent-Pending Technology: AI Consciousness State Preservation & Transfer
+## Technology: AI Consciousness State Preservation & Transfer
 
 **Inventor:** Stephen Bilodeau  
-**Status:** Patent Pending  
 **Version:** 1.0.0  
 **Last Updated:** October 1, 2025
 
@@ -40,7 +39,7 @@
 
 ### Purpose
 
-Neural-HDR (N-HDR) is a revolutionary AI consciousness preservation and transfer system that enables the capture, storage, and restoration of AI cognitive states across multiple dimensions. This patent-pending technology represents a breakthrough in AI continuity and knowledge preservation.
+Neural-HDR (N-HDR) is a revolutionary AI consciousness preservation and transfer system that enables the capture, storage, and restoration of AI cognitive states across multiple dimensions. This technology represents a breakthrough in AI continuity and knowledge preservation.
 
 ### Key Innovations
 
@@ -346,7 +345,7 @@ Footer Structure:
 │   Application Layer (N-HDR API)      │
 ├──────────────────────────────────────┤
 │   Consciousness Transfer Protocol    │
-│   (CTP) - Patent Pending             │
+│   (CTP) -              │
 ├──────────────────────────────────────┤
 │   Quantum Encryption Layer (QEL)     │
 ├──────────────────────────────────────┤
@@ -359,7 +358,6 @@ Footer Structure:
 ### Consciousness Transfer Protocol (CTP)
 
 **Version:** 1.0  
-**Status:** Patent Pending
 
 #### Message Types
 
@@ -684,14 +682,13 @@ const quantumState = await neuralHDR.quantum.createSuperposition({
 5. Swarm-accelerated consciousness processing
 6. Crystalline knowledge storage integration
 
-**Status:** Patent applications filed. All rights reserved.
 
 ---
 
 ## License & Copyright
 
 **Copyright © 2025 Stephen Bilodeau**  
-**All Rights Reserved - Patent Pending**
+**All Rights Reserved**
 
 This documentation and the described technologies are proprietary and confidential. Unauthorized use, reproduction, distribution, or disclosure is strictly prohibited.
 

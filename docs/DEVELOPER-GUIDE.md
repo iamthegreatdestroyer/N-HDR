@@ -1,6 +1,6 @@
 # HDR Empire Framework - Developer Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -325,7 +325,7 @@ Each HDR system follows a consistent pattern:
  * HDR Empire Framework - System Name
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { EventEmitter } from "events";
@@ -691,7 +691,7 @@ All source files must include copyright header:
  * HDR Empire Framework - [Component Name]
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
@@ -1167,7 +1167,7 @@ Brief description of changes
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

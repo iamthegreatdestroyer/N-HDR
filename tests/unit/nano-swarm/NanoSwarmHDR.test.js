@@ -2,7 +2,7 @@
  * HDR Empire Framework - Nano-Swarm HDR Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
@@ -63,7 +63,7 @@ describe("NanoSwarmHDR", () => {
 
       expect(defaultSystem.version).toBe("1.0.0");
       expect(defaultSystem.copyright).toBe("© 2025 Stephen Bilodeau");
-      expect(defaultSystem.patentStatus).toBe("PATENT PENDING");
+      expect(defaultSystem.patentStatus).toBe("");
       expect(defaultSystem.swarmSize).toBe(1000000);
       expect(defaultSystem.dimensions).toBe(6);
     });

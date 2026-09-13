@@ -1,6 +1,6 @@
 # HDR Empire Dashboard - User Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -1079,6 +1079,6 @@ Click **Details** to view:
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For additional information, see [USER-GUIDE.md](./USER-GUIDE.md) and [HDR-SYSTEMS-REFERENCE.md](./HDR-SYSTEMS-REFERENCE.md).

@@ -1,6 +1,6 @@
 # HDR Empire Framework - Backup and Recovery Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -582,7 +582,7 @@ echo "Failover to secondary data center completed!"
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

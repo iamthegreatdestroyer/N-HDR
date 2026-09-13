@@ -1,6 +1,6 @@
 # Port range: 27xxx (N-HDR reserved)
 # HDR Empire Framework - Docker Compose Configuration
-# Copyright (c) 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright (c) 2025 Stephen Bilodeau - All Rights Reserved
 #
 # This file orchestrates the complete HDR Empire Framework stack including:
 # - N-HDR (Neural-HDR) consciousness preservation

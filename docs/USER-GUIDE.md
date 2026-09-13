@@ -3,7 +3,7 @@
 - HDR Empire Framework - User Guide
 -
 - Copyright (c) 2025 Stephen Bilodeau
-- All rights reserved - Patent Pending
+- All rights reserved
 -
 - This file is part of the HDR Empire Framework, a proprietary and
 - confidential software system. Unauthorized copying, use, distribution,
@@ -14,7 +14,7 @@
 
 ## Welcome to HDR Empire
 
-The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation with patent-pending technologies.
+The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation with technologies.
 
 ### What is HDR Empire?
 
@@ -789,7 +789,7 @@ A: With compression enabled: ~1-5MB per state. Without compression: ~50-200MB pe
 A: Yes, most features work offline. Distributed persistence and some integration features require network access.
 
 **Q: Is HDR Empire open source?**
-A: No, HDR Empire is proprietary software with patent-pending technologies. Unauthorized use is prohibited.
+A: No, HDR Empire is proprietary software with technologies. Unauthorized use is prohibited.
 
 **Q: How do I export data from HDR Empire?**
 A: Use Dashboard → Export Data or API endpoints. See [API Reference](./API-REFERENCE.md) for details.
@@ -811,6 +811,6 @@ A: `npm update` for minor versions. See release notes for major version upgrade 
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For additional support, see [OPERATIONS-MANUAL.md](./OPERATIONS-MANUAL.md) or contact support.

@@ -1,7 +1,7 @@
 # HDR EMPIRE — INNOVATION & EVOLUTION BLUEPRINT
 ## February 2026 Strategic Analysis
 
-> © 2025-2026 Stephen Bilodeau — Patent Pending — All Rights Reserved
+> © 2025-2026 Stephen Bilodeau — All Rights Reserved
 > CONFIDENTIAL — HDR Empire Framework — Proprietary Technology
 
 ---
@@ -310,4 +310,4 @@ The original HDR Empire concepts weren't hypothetical — they were prescient. M
 ---
 
 > **HDR EMPIRE — TRANSCENDING DIMENSIONAL BOUNDARIES**
-> © 2025-2026 Stephen Bilodeau — Patent Pending — All Rights Reserved
+> © 2025-2026 Stephen Bilodeau — All Rights Reserved

@@ -1,6 +1,6 @@
 #!/bin/bash
 # HDR Empire Framework - Health Check Script
-# Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+# Copyright (c) 2025 Stephen Bilodeau
 
 set -e
 

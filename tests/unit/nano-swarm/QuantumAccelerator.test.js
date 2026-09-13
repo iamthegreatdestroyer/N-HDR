@@ -6,7 +6,7 @@
   describe("Constructor", () => { - Quantum Accelerator Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,

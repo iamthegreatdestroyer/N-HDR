@@ -2,7 +2,7 @@
  * HDR Empire Framework - Quantum HDR Complete Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 describe("QuantumHDR", () => {

@@ -2,7 +2,7 @@
  * HDR Empire Framework - Blockchain Timestamp Verification System
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
@@ -373,7 +373,7 @@ class BlockchainTimestampVerification extends EventEmitter {
     const report = `# HDR Empire Framework - Blockchain Timestamp Verification Report
 
 **Copyright © ${this.config.copyrightYear} ${this.config.authorName}**  
-**All Rights Reserved - Patent Pending**
+**All Rights Reserved**
 
 ---
 
@@ -450,7 +450,7 @@ To verify the timestamp proof:
 
 This verification package establishes provable creation dates and authorship
 for the HDR Empire Framework source code. All intellectual property rights,
-including patent-pending technologies, are reserved by ${
+are reserved by ${
       this.config.authorName
     }.
 

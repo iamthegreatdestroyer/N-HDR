@@ -1,6 +1,6 @@
 # HDR Empire Framework - Scaling Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -478,7 +478,7 @@ kubectl exec -it pgbouncer-0 -n hdr-empire -- psql -h localhost -p 6432 -U pgbou
  * HDR Empire Framework - Database Sharding
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { createHash } from "crypto";
@@ -838,7 +838,7 @@ kubectl logs job/k6-load-test -n hdr-empire
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

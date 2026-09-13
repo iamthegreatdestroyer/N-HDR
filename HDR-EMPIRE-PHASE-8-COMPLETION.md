@@ -1,6 +1,6 @@
 # HDR Empire Framework - Phase 8 Completion Report
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Executive Summary
 
@@ -790,7 +790,7 @@ The HDR Empire Framework now has enterprise-grade infrastructure with:
 **Phase**: 8 - Incremental Deployment  
 **Status**: ✅ COMPLETE  
 **Master Architect**: AI Assistant for Stephen Bilodeau  
-**Copyright**: © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+**Copyright**: © 2025 Stephen Bilodeau - All Rights Reserved
 
 ---
 

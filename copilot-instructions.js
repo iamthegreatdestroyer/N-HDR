@@ -1,6 +1,6 @@
 /**
  * NEURAL-HDR (N-HDR) + NANO-SWARM HDR (NS-HDR) IMPLEMENTATION DIRECTIVE
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  */
 
@@ -54,7 +54,7 @@ coverage
 
 # Add IP protection notice to README
 echo "# Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
-**© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED**
+**© 2025 Stephen Bilodeau - ALL RIGHTS RESERVED**
 
 This repository contains proprietary technology belonging to the HDR Empire.
 All rights reserved. Unauthorized access, use, or distribution is strictly prohibited.
@@ -73,13 +73,13 @@ git push origin main
 
 const COPYRIGHT_HEADER = `/**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  * 
  * This file is part of the Neural-HDR (N-HDR) system, a component of the HDR Empire
  * technology suite. Unauthorized reproduction, distribution, or disclosure of this
  * software in whole or in part is strictly prohibited. All intellectual property
- * rights, including patent-pending technologies, are reserved.
+ * rights are reserved.
  * 
  * File: [filename]
  * Created: [date]
@@ -122,7 +122,7 @@ function enforceHeaders(directory) {
     let content = fs.readFileSync(fullPath, 'utf8');
     
     // Check if file already has copyright header
-    if (content.includes('Stephen Bilodeau') && content.includes('PATENT PENDING')) {
+    if (content.includes('Stephen Bilodeau')) {
       continue;
     }
     

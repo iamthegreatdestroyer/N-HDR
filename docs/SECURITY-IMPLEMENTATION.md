@@ -1,6 +1,6 @@
 # HDR Empire Framework - Security Implementation Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -77,7 +77,7 @@ The HDR Empire Framework implements defense-in-depth with multiple security laye
  * HDR Empire Framework - Void-Blade HDR System
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { HDRBaseSystem } from "../base/HDRBaseSystem.js";
@@ -1107,7 +1107,7 @@ export { AuditLogger };
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

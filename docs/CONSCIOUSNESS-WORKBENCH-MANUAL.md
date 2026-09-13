@@ -1,6 +1,6 @@
 # Consciousness Workbench - User Manual
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -926,6 +926,6 @@ await workbench.restore({
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For additional information, see [USER-GUIDE.md](./USER-GUIDE.md) and [HDR-SYSTEMS-REFERENCE.md](./HDR-SYSTEMS-REFERENCE.md).

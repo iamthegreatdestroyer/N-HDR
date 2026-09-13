@@ -256,7 +256,7 @@ forge_cascade_prevention_count:
 
 ```bash
 git add src/forge-hdr/ src/mcp-servers/forge-hdr/ tests/unit/forge-hdr/
-git commit -m "Phase 11.1: FORGE-HDR Self-Building Infrastructure - Patent Pending
+git commit -m "Phase 11.1: FORGE-HDR Self-Building Infrastructure
 
 - Implements workload DNA analysis engine
 - Auto-generates topology optimizations
@@ -527,7 +527,7 @@ git commit -m "Phase 11.2: PHANTOM-HDR..."
 git checkout main
 git merge phase-11-ecosystem
 git push origin main
-git tag -a v1.3.0 -m "Phase 11: Ecosystem Launch Complete - Patent Pending"
+git tag -a v1.3.0 -m "Phase 11: Ecosystem Launch Complete"
 git push origin v1.3.0
 ```
 

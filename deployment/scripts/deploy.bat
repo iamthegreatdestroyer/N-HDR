@@ -1,6 +1,6 @@
 @echo off
 REM HDR Empire Framework - Windows Deployment Script
-REM Copyright (c) 2025 Stephen Bilodeau - Patent Pending
+REM Copyright (c) 2025 Stephen Bilodeau
 
 setlocal enabledelayedexpansion
 

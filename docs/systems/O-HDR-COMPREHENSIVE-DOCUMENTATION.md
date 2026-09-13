@@ -1,6 +1,6 @@
 # O-HDR (Omniscient-HDR) System Documentation
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## System Overview
 
@@ -248,7 +248,6 @@ const heritageCrystal = await omniscientHDR.crystallize(retiringSeniorExperts, {
 5. AI consciousness knowledge infusion
 6. 100x+ learning acceleration achievement
 
-**Status:** Patent applications filed. All rights reserved.
 
 ---
 

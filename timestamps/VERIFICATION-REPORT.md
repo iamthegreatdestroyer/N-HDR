@@ -1,7 +1,7 @@
 # HDR Empire Framework - Blockchain Timestamp Verification Report
 
 **Copyright © 2025 Stephen Bilodeau**  
-**All Rights Reserved - Patent Pending**
+**All Rights Reserved**
 
 ---
 
@@ -135,7 +135,7 @@ To verify the timestamp proof:
 
 This verification package establishes provable creation dates and authorship
 for the HDR Empire Framework source code. All intellectual property rights,
-including patent-pending technologies, are reserved by Stephen Bilodeau.
+are reserved by Stephen Bilodeau.
 
 Unauthorized use, reproduction, distribution, or disclosure is strictly prohibited.
 

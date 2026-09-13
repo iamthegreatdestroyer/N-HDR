@@ -2,7 +2,7 @@
 
 **Date:** October 1, 2025  
 **Master Architect:** Stephen Bilodeau  
-**Copyright:** © 2025 - Patent Pending - All Rights Reserved
+**Copyright:** © 2025 - All Rights Reserved
 
 ---
 
@@ -235,10 +235,9 @@ Successfully resolved **multiple critical technical issues**:
 **Master Architect:** Stephen Bilodeau  
 **Framework:** HDR Empire Framework  
 **Version:** 1.0.0  
-**Status:** Patent Pending  
 **Rights:** © 2025 All Rights Reserved - Proprietary and Confidential
 
-**Warning:** This software system contains patent-pending technologies and proprietary algorithms. Unauthorized reproduction, distribution, reverse engineering, or disclosure is strictly prohibited and may result in legal action.
+**Warning:** This software system contains technologies and proprietary algorithms. Unauthorized reproduction, distribution, reverse engineering, or disclosure is strictly prohibited and may result in legal action.
 
 ---
 

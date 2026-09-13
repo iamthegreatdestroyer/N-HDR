@@ -1,6 +1,6 @@
 # HDR Systems Reference
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -1051,7 +1051,7 @@ See [USER-GUIDE.md](./USER-GUIDE.md#configuration) for complete configuration re
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

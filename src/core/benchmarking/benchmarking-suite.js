@@ -1,6 +1,6 @@
 /**
  * @file Benchmarking Suite for N-HDR System
- * @copyright HDR Empire. Patent-pending. All rights reserved.
+ * @copyright HDR Empire. All rights reserved.
  */
 
 import { performance } from "perf_hooks";

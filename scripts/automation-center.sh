@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # HDR Empire Framework - Automation Center
-# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright © 2025 Stephen Bilodeau - All Rights Reserved
 
 set -euo pipefail
 
@@ -62,7 +62,7 @@ show_banner() {
 ║                                                                      ║
 ║                  A U T O M A T I O N   C E N T E R                   ║
 ║                    Neural-HDR DevOps Orchestration                   ║
-║                  Patent Pending - All Rights Reserved                ║
+║                  All Rights Reserved                ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 EOF

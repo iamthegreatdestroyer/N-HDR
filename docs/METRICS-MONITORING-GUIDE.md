@@ -1,6 +1,6 @@
 # HDR Empire Framework - Metrics & Monitoring Guide
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -640,4 +640,4 @@ new Histogram({
 
 **Support:** For issues or questions, refer to the main HDR Empire Framework documentation or contact the development team.
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**

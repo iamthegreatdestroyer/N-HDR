@@ -1,6 +1,6 @@
 # HDR Empire Phase 8 Automation - Implementation Complete
 
-## Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+## Copyright © 2025 Stephen Bilodeau - All Rights Reserved
 
 ### Overview
 
@@ -514,4 +514,4 @@ The HDR Empire Framework now has enterprise-grade DevOps automation with:
 ---
 
 _HDR Empire Framework - Neural-HDR Phase 8 Automation_  
-_Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved_
+_Copyright © 2025 Stephen Bilodeau - All Rights Reserved_

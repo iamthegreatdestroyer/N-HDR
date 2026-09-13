@@ -1330,4 +1330,4 @@ The HDR Empire Framework represents a **unique and patentable** technology suite
 
 ---
 
-_This document is confidential and proprietary to Stephen Bilodeau. All rights reserved. Patent Pending._
+_This document is confidential and proprietary to Stephen Bilodeau. All rights reserved._

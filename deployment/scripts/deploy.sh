@@ -1,6 +1,6 @@
 #!/bin/bash
 # HDR Empire Framework - Deployment Script
-# Copyright (c) 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright (c) 2025 Stephen Bilodeau - All Rights Reserved
 #
 # Deploy HDR Empire Framework to Kubernetes cluster
 

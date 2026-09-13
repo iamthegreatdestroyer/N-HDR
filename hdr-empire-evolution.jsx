@@ -541,7 +541,7 @@ export default function HDREmpireEvolution() {
             marginBottom: 16,
           }}
         >
-          © 2025-2026 STEPHEN BILODEAU — PATENT PENDING — ALL RIGHTS RESERVED
+          © 2025-2026 STEPHEN BILODEAU — ALL RIGHTS RESERVED
         </div>
         <h1
           style={{
@@ -811,7 +811,7 @@ export default function HDREmpireEvolution() {
                 HDR EMPIRE — TRANSCENDING DIMENSIONAL BOUNDARIES
               </p>
               <p style={{ color: "#2d3748", fontSize: 10, fontFamily: "'JetBrains Mono', monospace", marginTop: 4 }}>
-                © 2025-2026 STEPHEN BILODEAU — PATENT PENDING
+                © 2025-2026 STEPHEN BILODEAU
               </p>
             </div>
           </div>

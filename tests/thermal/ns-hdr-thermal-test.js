@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * THERMAL MANAGEMENT TEST FRAMEWORK
@@ -10,7 +10,7 @@
  * This file is part of the Neural-HDR (N-HDR) system, a component of the HDR Empire
  * technology suite. Unauthorized reproduction, distribution, or disclosure of this
  * software in whole or in part is strictly prohibited. All intellectual property
- * rights, including patent-pending technologies, are reserved.
+ * rights are reserved.
  */
 
 const {

@@ -2,7 +2,7 @@
  * HDR Empire Framework - Code Splitting Utilities
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * Dynamic import utilities for lazy loading and code splitting
  */

@@ -3,7 +3,7 @@
  * Self-aware infrastructure system for autonomous topology optimization
  *
  * Copyright (c) 2025-2026 Stephen Bilodeau
- * Patent Pending: Self-Building Infrastructure System
+ * Self-Building Infrastructure System
  * CONFIDENTIAL - HDR Empire Framework
  */
 

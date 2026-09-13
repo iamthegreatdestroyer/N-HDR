@@ -2,7 +2,7 @@
 
 **Date:** October 1, 2025  
 **Master Architect:** Stephen Bilodeau  
-**Copyright:** © 2025 - Patent Pending - All Rights Reserved
+**Copyright:** © 2025 - All Rights Reserved
 
 ---
 
@@ -482,7 +482,6 @@ const optimized = await nanoSwarmHDR.optimizeQuantumProcessing(quantumState);
 
 **Master Architect:** Stephen Bilodeau  
 **Framework:** HDR Empire Framework v1.0.0  
-**Status:** Patent Pending  
 **Rights:** © 2025 All Rights Reserved
 
 ---

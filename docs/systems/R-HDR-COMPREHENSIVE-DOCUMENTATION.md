@@ -1,6 +1,6 @@
 # R-HDR (Reality-HDR) System Documentation
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## System Overview
 
@@ -41,4 +41,3 @@ const compressed = await realityHDR.compressSpace(spatialData, {
 const navigable = await realityHDR.createNavigableSpace(compressed);
 ```
 
-**Patent Status:** Patent applications filed. All rights reserved.

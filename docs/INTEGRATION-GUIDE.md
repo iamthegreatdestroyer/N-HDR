@@ -1,6 +1,6 @@
 # HDR Empire Framework - Integration Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -350,7 +350,7 @@ class N_HDR_S3_Integration {
  * HDR Empire Framework - Custom Application
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { HDREmpireCommander } from "../command-interface/HDREmpireCommander.js";
@@ -541,7 +541,7 @@ const ConsciousnessCapture = () => {
  * HDR Empire Framework - Custom Plugin
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { EventEmitter } from "events";
@@ -1091,7 +1091,7 @@ class RateLimiter {
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

@@ -1,6 +1,6 @@
 # HDR Empire Framework - Kubernetes Guide
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau**
 
 ## Overview
 

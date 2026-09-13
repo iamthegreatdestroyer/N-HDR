@@ -1,6 +1,6 @@
 /**
  * @file Usage Guide Generator for N-HDR System
- * @copyright HDR Empire. Patent-pending. All rights reserved.
+ * @copyright HDR Empire. All rights reserved.
  */
 
 class UsageGuideGenerator {

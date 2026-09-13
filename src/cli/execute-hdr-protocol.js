@@ -4,7 +4,7 @@
  * HDR Empire Framework - Protocol Execution CLI
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
@@ -31,7 +31,7 @@ async function main() {
 ║                        Master Architect                                   ║
 ║                       STEPHEN BILODEAU                                    ║
 ║                                                                           ║
-║               © 2025 - Patent Pending - All Rights Reserved              ║
+║               © 2025 - All Rights Reserved              ║
 ║                                                                           ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 `);

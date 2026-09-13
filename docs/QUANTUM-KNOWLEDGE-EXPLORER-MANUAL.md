@@ -1,6 +1,6 @@
 # Quantum Knowledge Explorer - User Manual
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -956,6 +956,6 @@ ws.onmessage = (event) => {
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For additional information, see [USER-GUIDE.md](./USER-GUIDE.md) and [HDR-SYSTEMS-REFERENCE.md](./HDR-SYSTEMS-REFERENCE.md).

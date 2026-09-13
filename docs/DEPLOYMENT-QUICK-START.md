@@ -1,6 +1,6 @@
 # HDR Empire Framework - Deployment Quick-Start Guide
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -903,4 +903,4 @@ For deployment issues or questions:
 - Consult HDR Empire documentation
 - Contact development team
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**

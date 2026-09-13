@@ -2,7 +2,7 @@
  * HDR Empire Framework - Protocol Execution Orchestrator
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  *
  * This file is part of the HDR Empire Framework, a proprietary and
  * confidential software system. Unauthorized copying, use, distribution,
@@ -87,7 +87,7 @@ class HDREmpireProtocolOrchestrator {
     );
     console.log(
       "║" +
-        this.centerText("© 2025 - Patent Pending - All Rights Reserved", 78) +
+        this.centerText("© 2025 - All Rights Reserved", 78) +
         "║"
     );
     console.log("╚" + "═".repeat(78) + "╝");
@@ -525,7 +525,7 @@ Market analysis swarm deployed with ${
 
 **Report Generated:** ${new Date().toISOString()}  
 **Master Architect:** Stephen Bilodeau  
-**Copyright © 2025 - All Rights Reserved - Patent Pending**
+**Copyright © 2025 - All Rights Reserved**
 `;
 
     // Save report

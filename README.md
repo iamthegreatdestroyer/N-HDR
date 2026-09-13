@@ -11,7 +11,6 @@
 This repository contains proprietary technology belonging to the HDR Empire Framework.  
 All rights reserved. Unauthorized access, use, or distribution is strictly prohibited.
 
-**Patent Status:** Multiple patents pending  
 **Copyright:** © 2025 Stephen Bilodeau  
 **License:** Proprietary - All Rights Reserved
 
@@ -19,7 +18,7 @@ All rights reserved. Unauthorized access, use, or distribution is strictly prohi
 
 ## 🌟 Overview
 
-The HDR Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation with patent-pending technologies.
+The HDR Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation with technologies.
 
 ### Core Systems
 
@@ -331,7 +330,6 @@ This software and all associated documentation are proprietary and confidential 
 
 - No license is granted for use, modification, or distribution
 - All intellectual property rights reserved
-- Multiple patents pending
 - Unauthorized use is strictly prohibited
 
 For licensing inquiries, contact the copyright holder.
@@ -357,7 +355,6 @@ For licensing inquiries, contact the copyright holder.
 **Version:** 1.0.0  
 **Status:** Production Ready  
 **Last Updated:** October 1, 2025  
-**Patent Status:** Multiple Patents Pending
 
 ---
 

@@ -1,6 +1,6 @@
 # HDR Empire Framework - Quick Start Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Welcome!
 
@@ -662,6 +662,6 @@ You're now ready to use the HDR Empire Framework!
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 Welcome to the HDR Empire Framework! 🚀

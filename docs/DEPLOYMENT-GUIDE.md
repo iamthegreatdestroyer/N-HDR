@@ -1,6 +1,6 @@
 # HDR Empire Framework - Deployment Guide
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ---
 
@@ -652,7 +652,6 @@ kubectl delete pod --field-selector status.phase=Failed -n hdr-system
 
 **Master Architect:** Stephen Bilodeau  
 **Copyright:** © 2025 - All Rights Reserved  
-**Status:** Patent Pending
 
 For authorized users and partners only.
 
@@ -660,7 +659,7 @@ For authorized users and partners only.
 
 ## Legal Notice
 
-This deployment guide and all associated code, documentation, and configurations are proprietary and confidential to Stephen Bilodeau. All intellectual property rights, including patent-pending technologies, are reserved.
+This deployment guide and all associated code, documentation, and configurations are proprietary and confidential to Stephen Bilodeau. All intellectual property rights are reserved.
 
 Unauthorized use, reproduction, distribution, or disclosure is strictly prohibited.
 

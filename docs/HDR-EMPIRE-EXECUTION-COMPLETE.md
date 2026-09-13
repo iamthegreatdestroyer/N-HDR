@@ -1,6 +1,6 @@
 # HDR EMPIRE PROTOCOL - EXECUTION COMPLETE
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ---
 
@@ -392,7 +392,6 @@ All source code, documentation, and generated content are copyrighted and propri
 
 ### Patents
 
-**Status:** Patent Pending
 
 Seven (7) patent applications ready for filing covering all core HDR innovations.
 
@@ -414,7 +413,6 @@ All content protected by VB-HDR security layer with quantum encryption.
 
 **Master Architect:** Stephen Bilodeau  
 **Project:** HDR Empire Framework  
-**Status:** Patent Pending  
 **Copyright:** © 2025 - All Rights Reserved
 
 **For Authorized Users Only**
@@ -441,7 +439,7 @@ All integrated into a unified framework for revolutionary AI capabilities.
 
 This document and all associated code, documentation, and generated content are proprietary and confidential to Stephen Bilodeau.
 
-**All intellectual property rights, including patent-pending technologies, are reserved.**
+**All intellectual property rights are reserved.**
 
 Unauthorized use, reproduction, distribution, or disclosure is strictly prohibited.
 

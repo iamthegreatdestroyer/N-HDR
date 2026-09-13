@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # HDR Empire Framework - Self-Healing System
-# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright © 2025 Stephen Bilodeau - All Rights Reserved
 
 set -euo pipefail
 

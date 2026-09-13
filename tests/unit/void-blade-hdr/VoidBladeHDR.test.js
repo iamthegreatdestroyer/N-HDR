@@ -2,7 +2,7 @@
  * HDR Empire Framework - Void-Blade HDR Complete Test Suite
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 describe("VoidBladeHDR", () => {

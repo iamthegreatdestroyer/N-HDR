@@ -127,4 +127,4 @@ Market analysis swarm deployed with 100 bots
 
 **Report Generated:** 2025-10-01T17:33:31.376Z  
 **Master Architect:** Stephen Bilodeau  
-**Copyright © 2025 - All Rights Reserved - Patent Pending**
+**Copyright © 2025 - All Rights Reserved**

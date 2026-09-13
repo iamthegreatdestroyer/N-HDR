@@ -2,7 +2,7 @@
 
 ## 2026 Strategic Execution Framework
 
-> © 2025-2026 Stephen Bilodeau — Patent Pending — All Rights Reserved
+> © 2025-2026 Stephen Bilodeau — All Rights Reserved
 > CONFIDENTIAL — HDR Empire Framework — Proprietary Technology
 
 **Document Version:** 2.0 (Unified Roadmap + Master Action Plan)  
@@ -473,7 +473,7 @@ PHASE 9 WEEK 3:
 - Server health checks every 30 seconds
 - Auto-registration on startup (requires 3 healthy checks)
 
-**Git Commit:** `git commit -m "Phase 9.1: N-HDR MCP Server Protocol - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.1: N-HDR MCP Server Protocol"`
 
 **Success Criteria:**
 
@@ -509,7 +509,7 @@ PHASE 9 WEEK 3:
 - Automated key rotation (90-day cycle, no downtime)
 - Automated crypto strength validation on startup
 
-**Git Commit:** `git commit -m "Phase 9.2: VB-HDR Post-Quantum Cryptography - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.2: VB-HDR Post-Quantum Cryptography"`
 
 **Success Criteria:**
 
@@ -552,7 +552,7 @@ PHASE 9 WEEK 3:
 - Task queue auto-distributes to healthy agents
 - Agents auto-scale between min/max count based on queue depth
 
-**Git Commit:** `git commit -m "Phase 9.3: NS-HDR Claude-Flow Multi-Agent Swarm - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.3: NS-HDR Claude-Flow Multi-Agent Swarm"`
 
 **Success Criteria:**
 
@@ -601,7 +601,7 @@ PHASE 9 WEEK 3:
 - Embedding quality validated automatically
 - Health checks verify index consistency
 
-**Git Commit:** `git commit -m "Phase 9.4: O-HDR RAG + Vector Database - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.4: O-HDR RAG + Vector Database"`
 
 **Success Criteria:**
 
@@ -642,7 +642,7 @@ PHASE 9 WEEK 3:
 - Results cached for 6 hours
 - System auto-selects simulation size based on confidence requirements
 
-**Git Commit:** `git commit -m "Phase 9.5: Q-HDR Monte Carlo Probability Engine - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.5: Q-HDR Monte Carlo Probability Engine"`
 
 **Success Criteria:**
 
@@ -703,7 +703,7 @@ PHASE 9 WEEK 3:
 - Emotional tagging validated (sanity checks)
 - Stale memories auto-compressed
 
-**Git Commit:** `git commit -m "Phase 9.6: ECHO-HDR Temporal Memory Architecture - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 9.6: ECHO-HDR Temporal Memory Architecture"`
 
 **Success Criteria:**
 
@@ -921,7 +921,7 @@ git push origin v1.1.0
 - Metrics pushed to Prometheus automatically
 - Speciation events logged automatically
 
-**Git Commit:** `git commit -m "Phase 10.1: GENESIS-HDR Self-Evolving Agent Ecosystem - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 10.1: GENESIS-HDR Self-Evolving Agent Ecosystem"`
 
 **Success Criteria:**
 
@@ -994,7 +994,7 @@ git push origin v1.1.0
 - Confidence intervals auto-calculated
 - Risk alerts generated and sent automatically
 
-**Git Commit:** `git commit -m "Phase 10.2: ORACLE-HDR Predictive Intelligence Fabric - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 10.2: ORACLE-HDR Predictive Intelligence Fabric"`
 
 **Success Criteria:**
 
@@ -1178,7 +1178,7 @@ git push origin v1.1.0
 - Multi-cloud cost comparison runs daily
 - Recommendations auto-implemented if approved (with human gate)
 
-**Git Commit:** `git commit -m "Phase 11.1: FORGE-HDR Self-Building Infrastructure - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 11.1: FORGE-HDR Self-Building Infrastructure"`
 
 ---
 
@@ -1238,7 +1238,7 @@ git push origin v1.1.0
 - Audit reports generated daily
 - Regulatory notifications sent automatically
 
-**Git Commit:** `git commit -m "Phase 11.2: PHANTOM-HDR Privacy-Preserving Computation - Patent Pending"`
+**Git Commit:** `git commit -m "Phase 11.2: PHANTOM-HDR Privacy-Preserving Computation"`
 
 ---
 

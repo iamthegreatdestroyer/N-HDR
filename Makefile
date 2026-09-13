@@ -1,5 +1,5 @@
 # HDR Empire Framework - Makefile
-# Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved
+# Copyright © 2025 Stephen Bilodeau - All Rights Reserved
 
 # Color definitions
 GREEN  := \033[0;32m

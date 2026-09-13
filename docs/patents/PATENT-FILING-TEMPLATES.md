@@ -1,6 +1,6 @@
 # PATENT FILING TEMPLATES - HDR EMPIRE FRAMEWORK
 
-**Copyright © 2025 Stephen Bilodeau - Patent Pending - All Rights Reserved**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ---
 

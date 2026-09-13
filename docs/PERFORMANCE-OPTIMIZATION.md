@@ -1,6 +1,6 @@
 # HDR Empire Framework - Performance Optimization Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -79,7 +79,7 @@ This comprehensive performance optimization guide covers all optimizations imple
  * HDR Empire Framework - Cache Implementation
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import CacheManager from "./performance/CacheManager.js";
@@ -223,7 +223,7 @@ warmupCache();
  * HDR Empire Framework - Code Splitting
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 // Before optimization: All systems loaded upfront (3.2MB bundle)
@@ -780,7 +780,7 @@ ON knowledge_domains USING gin(to_tsvector('english', content));
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

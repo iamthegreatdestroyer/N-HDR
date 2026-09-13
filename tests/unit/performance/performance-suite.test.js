@@ -2,7 +2,7 @@
  * HDR Empire Framework - Performance Optimization Test Suites
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 describe("CacheManager", () => {

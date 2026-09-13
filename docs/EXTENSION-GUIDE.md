@@ -1,6 +1,6 @@
 # HDR Empire Framework - Extension Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -71,7 +71,7 @@ All HDR systems extend from `HDRBaseSystem`:
  * HDR Empire Framework - Custom HDR System
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { EventEmitter } from "events";
@@ -156,7 +156,7 @@ Create a custom system for temporal manipulation:
  * HDR Empire Framework - Time-HDR System
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { HDRBaseSystem } from "../base/HDRBaseSystem.js";
@@ -665,7 +665,7 @@ const result = await middlewareManager.executeWithMiddleware({
  * HDR Empire Framework - Custom Application Template
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { EventEmitter } from "events";
@@ -980,7 +980,7 @@ async navigateTimeline(options) {
  * HDR Empire Framework - [Component Name]
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 ```
 
@@ -1070,7 +1070,7 @@ my-hdr-extension/
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 

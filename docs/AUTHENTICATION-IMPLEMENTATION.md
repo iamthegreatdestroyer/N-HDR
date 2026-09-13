@@ -1,7 +1,7 @@
 # Authentication Implementation Guide
 
 **HDR Empire Framework - Authentication System**  
-**Copyright © 2025 Stephen Bilodeau - Patent Pending**  
+**Copyright © 2025 Stephen Bilodeau**  
 **Last Updated:** October 2, 2025
 
 ---
@@ -754,4 +754,4 @@ For additional support or questions, contact the HDR Empire security team.
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**

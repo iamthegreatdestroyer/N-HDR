@@ -1,6 +1,6 @@
 # HDR Empire Framework - Monitoring Guide
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 ## Overview
 
@@ -150,7 +150,7 @@ scrape_configs:
  * HDR Empire Framework - Metrics Collection
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import prometheus from "prom-client";
@@ -329,7 +329,7 @@ spec:
  * HDR Empire Framework - Structured Logging
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import winston from "winston";
@@ -561,7 +561,7 @@ spec:
  * HDR Empire Framework - Distributed Tracing
  *
  * Copyright (c) 2025 Stephen Bilodeau
- * All rights reserved - Patent Pending
+ * All rights reserved
  */
 
 import { initTracer } from "jaeger-client";
@@ -904,7 +904,7 @@ inhibit_rules:
 
 ---
 
-**Copyright © 2025 Stephen Bilodeau - All Rights Reserved - Patent Pending**
+**Copyright © 2025 Stephen Bilodeau - All Rights Reserved**
 
 For more information, see:
 
