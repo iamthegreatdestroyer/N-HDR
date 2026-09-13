@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * SECURE TASK EXECUTION
@@ -15,7 +15,7 @@ import VanishingKeyManager from "./vanishing-key-manager.js";
 /**
  * @class SecureTaskExecution
  * @description Manages secure task execution with quantum security protections
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class SecureTaskExecution {

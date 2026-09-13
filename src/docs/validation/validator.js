@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * Documentation validation system for ensuring documentation quality and completeness.
@@ -336,7 +336,6 @@ class DocumentationValidator {
     const results = { valid: true, errors: [], warnings: [] };
     const requiredLicenseText = [
       '© 2025 Stephen Bilodeau',
-      'PATENT PENDING',
       'ALL RIGHTS RESERVED',
       'PROPRIETARY AND CONFIDENTIAL'
     ];

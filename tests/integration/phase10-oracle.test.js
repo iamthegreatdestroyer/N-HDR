@@ -1,6 +1,6 @@
 /**
  * Phase 10 Integration Tests: ORACLE-HDR
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  *
  * Test suite for predictive intelligence & causal reasoning
  */

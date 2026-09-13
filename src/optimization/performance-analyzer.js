@@ -1,6 +1,6 @@
 /**
  * Performance Analyzer for Neural-HDR System
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * Analyzes system performance and provides optimization recommendations.

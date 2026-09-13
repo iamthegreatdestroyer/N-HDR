@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * VANISHING KEY MANAGER
@@ -14,7 +14,7 @@ import QuantumEntropyGenerator from "./quantum-entropy-generator.js";
 /**
  * @class VanishingKeyManager
  * @description Manages time-limited cryptographic keys with quantum security and automatic dissolution
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class VanishingKeyManager {

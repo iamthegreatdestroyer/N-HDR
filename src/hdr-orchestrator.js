@@ -1,6 +1,6 @@
 /**
  * HDR Integration Orchestrator
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025-2026 Stephen Bilodeau - ALL RIGHTS RESERVED
  *
  * Central coordinator for GENESIS-ORACLE-D-HDR workflow orchestration
  * - Manages multi-agent evolutionary breeding and prediction

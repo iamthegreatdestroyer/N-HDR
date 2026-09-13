@@ -56,8 +56,7 @@ function enforceHeaders(directory) {
 
     // Check if file already has copyright header
     if (
-      content.includes("Stephen Bilodeau") &&
-      content.includes("")
+      content.includes("Stephen Bilodeau")
     ) {
       continue;
     }

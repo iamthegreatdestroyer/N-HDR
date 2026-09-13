@@ -1,6 +1,6 @@
 /**
  * ORACLE-HDR MCP Server
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025-2026 Stephen Bilodeau - ALL RIGHTS RESERVED
  *
  * Exposes ORACLE-HDR predictive intelligence as MCP tools
  * Integration with Phase 9 Q-HDR, ECHO-HDR, O-HDR

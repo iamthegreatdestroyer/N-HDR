@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * QUANTUM ENTANGLEMENT
@@ -91,7 +91,7 @@ class EntanglementPair {
 /**
  * @class QuantumEntanglement
  * @description Manages quantum entanglement between consciousness nodes
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class QuantumEntanglement {

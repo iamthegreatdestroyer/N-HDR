@@ -1,6 +1,6 @@
 /**
  * ORACLE-HDR: Predictive Intelligence & Causal Modeling
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025-2026 Stephen Bilodeau - ALL RIGHTS RESERVED
  *
  * Advanced consequence prediction, nth-order cascade analysis,
  * and causal reasoning system built on Monte Carlo simulation.

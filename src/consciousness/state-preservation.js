@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * STATE PRESERVATION
@@ -15,7 +15,7 @@ import { SecureTaskExecution } from "../quantum/secure-task-execution.js";
 /**
  * @class StatePreservation
  * @description Handles preservation and restoration of consciousness states
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class StatePreservation {

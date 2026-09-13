@@ -14,7 +14,7 @@
 
 ## Welcome to HDR Empire
 
-The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation with technologies.
+The HDR (Hyper-Dimensional Roll-a-Dex) Empire Framework is a revolutionary system for consciousness preservation, knowledge crystallization, reality compression, probability exploration, and secure computation.
 
 ### What is HDR Empire?
 

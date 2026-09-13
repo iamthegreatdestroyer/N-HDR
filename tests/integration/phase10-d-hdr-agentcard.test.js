@@ -1,6 +1,6 @@
 /**
  * Phase 10 Integration Tests: D-HDR & Agent Card Schema
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  *
  * Tests for diffusion models & agent metadata validation
  */

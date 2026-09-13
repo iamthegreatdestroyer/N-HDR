@@ -1,6 +1,6 @@
 /**
  * NANO-SWARM HDR (NS-HDR) QUANTUM SECURITY BENCHMARK
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * This module benchmarks the quantum security features of the NS-HDR system,

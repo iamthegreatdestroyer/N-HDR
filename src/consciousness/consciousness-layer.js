@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * CONSCIOUSNESS LAYER
@@ -124,7 +124,7 @@ class ConsciousnessNode {
 /**
  * @class ConsciousnessLayer
  * @description Manages a layer of consciousness with interconnected nodes
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class ConsciousnessLayer {

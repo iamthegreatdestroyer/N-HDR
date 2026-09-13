@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * Documentation Generator Configuration
@@ -51,7 +51,7 @@ module.exports = {
     systemSummary: "AI Consciousness State Preservation & Transfer System",
     systemVersion: "1.0.0",
     systemAuthor: "Stephen Bilodeau",
-    systemCopyright: "© 2025 HDR Empire - PATENT PENDING - ALL RIGHTS RESERVED",
+    systemCopyright: "© 2025 HDR Empire - ALL RIGHTS RESERVED",
     includeDate: true,
     dateFormat: "YYYY-MM-DD",
     navType: "vertical",

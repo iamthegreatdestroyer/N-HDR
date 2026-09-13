@@ -1,6 +1,6 @@
 /**
  * Phase 10 Integration Tests: GENESIS-HDR
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  *
  * Test suite for evolutionary agent ecosystem
  */

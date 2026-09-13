@@ -1,6 +1,6 @@
 /**
  * Usage Guides for Neural-HDR System
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * Provides comprehensive usage guides for the Neural-HDR system.

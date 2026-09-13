@@ -1,6 +1,6 @@
 /**
  * Phase 10 Integration Tests: CI/CD Pipeline & Deployment
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  *
  * Tests for automated testing, deployment, and release processes
  */

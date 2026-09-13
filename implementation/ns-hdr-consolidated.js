@@ -1,6 +1,6 @@
 /**
  * NEURAL-HDR (N-HDR) ENHANCED SYSTEM - CONSOLIDATED IMPLEMENTATION
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * This module contains the enhanced implementation of the Neural-HDR system,

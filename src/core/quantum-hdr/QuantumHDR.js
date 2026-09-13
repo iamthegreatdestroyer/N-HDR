@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * Quantum-HDR (Q-HDR) Core Implementation

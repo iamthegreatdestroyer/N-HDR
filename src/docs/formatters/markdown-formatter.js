@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * Markdown documentation formatter.
@@ -106,7 +106,7 @@ ${this._formatNavigation(data.components)}
 
 ---
 
-Neural-HDR Documentation - © 2025 Stephen Bilodeau - PATENT PENDING
+Neural-HDR Documentation - © 2025 Stephen Bilodeau
 `.trim();
   }
 

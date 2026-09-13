@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * JSON documentation formatter.
@@ -80,7 +80,7 @@ class JsonFormatter extends BaseFormatter {
         generated: new Date().toISOString(),
         generator: "Neural-HDR Documentation Generator",
         version: "1.0.0",
-        copyright: "© 2025 Stephen Bilodeau - PATENT PENDING",
+        copyright: "© 2025 Stephen Bilodeau",
       },
     };
   }

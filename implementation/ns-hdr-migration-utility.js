@@ -1,6 +1,6 @@
 /**
  * NEURAL-HDR (N-HDR) MIGRATION UTILITY
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * This utility facilitates migration from the original NS-HDR implementation

@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * QUANTUM ENTROPY GENERATOR
@@ -16,7 +16,7 @@ import { performance } from "perf_hooks";
  * @class QuantumEntropyGenerator
  * @description Generates high-quality entropy for cryptographic operations using quantum-inspired algorithms
  * and hardware entropy sources. Implements automatic pool refilling and quality monitoring.
- * @copyright © 2025 Stephen Bilodeau - PATENT PENDING
+ * @copyright © 2025 Stephen Bilodeau
  * @license PROPRIETARY
  */
 class QuantumEntropyGenerator {

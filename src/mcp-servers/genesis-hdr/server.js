@@ -1,6 +1,6 @@
 /**
  * GENESIS-HDR: MCP Server
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025-2026 Stephen Bilodeau - ALL RIGHTS RESERVED
  *
  * Exposes evolutionary agent generation as discoverable MCP tools.
  * Integrates with NEXUS-HDR catalog for agent registration.

@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): Claude-Flow Multi-Agent Task Orchestrator
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * Phase 9.3: Claude-Flow — swarm-powered multi-agent orchestration for

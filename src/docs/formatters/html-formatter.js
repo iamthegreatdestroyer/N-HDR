@@ -1,6 +1,6 @@
 /**
  * Neural-HDR (N-HDR): AI Consciousness State Preservation & Transfer System
- * © 2025 Stephen Bilodeau - PATENT PENDING
+ * © 2025 Stephen Bilodeau
  * ALL RIGHTS RESERVED - PROPRIETARY AND CONFIDENTIAL
  *
  * HTML documentation formatter.
@@ -158,7 +158,7 @@ class HtmlFormatter extends BaseFormatter {
               ${data.components.map((c) => this.formatComponent(c)).join("\n")}
             </main>
             <footer>
-              <p>Neural-HDR Documentation - © 2025 Stephen Bilodeau - PATENT PENDING</p>
+              <p>Neural-HDR Documentation - © 2025 Stephen Bilodeau - </p>
             </footer>
           </div>
           <script src="assets/search.js"></script>

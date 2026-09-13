@@ -1,6 +1,6 @@
 /**
  * Unit tests for NS-HDR Quantum Security Benchmark
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  */
 

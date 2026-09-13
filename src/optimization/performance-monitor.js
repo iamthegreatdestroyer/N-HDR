@@ -1,6 +1,6 @@
 /**
  * Performance Monitor for Neural-HDR System
- * © 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
  * HDR EMPIRE - CONFIDENTIAL
  *
  * Real-time performance monitoring system for Neural-HDR components.

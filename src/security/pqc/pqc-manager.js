@@ -1,5 +1,5 @@
 /**
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING
+ * © 2025-2026 Stephen Bilodeau
  *
  * PQC Manager — Post-Quantum Cryptography Manager
  * Unified interface for ML-KEM (FIPS 203) key encapsulation and

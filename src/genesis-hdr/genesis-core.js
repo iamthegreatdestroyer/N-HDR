@@ -1,6 +1,6 @@
 /**
  * GENESIS-HDR: Evolutionary Agent Ecosystem
- * © 2025-2026 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+ * © 2025-2026 Stephen Bilodeau - ALL RIGHTS RESERVED
  *
  * Autonomous evolutionary system that breeds specialized AI agents
  * through fitness-based selection and genetic algorithms.

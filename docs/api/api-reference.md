@@ -1,6 +1,6 @@
 # Neural-HDR (N-HDR) API Reference
 
-© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+© 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
 HDR EMPIRE - CONFIDENTIAL
 
 ## Overview
@@ -220,5 +220,5 @@ For technical support and updates, contact HDR Empire support services.
 
 ---
 
-© 2025 Stephen Bilodeau - PATENT PENDING - ALL RIGHTS RESERVED
+© 2025 Stephen Bilodeau - ALL RIGHTS RESERVED
 HDR EMPIRE - CONFIDENTIAL
